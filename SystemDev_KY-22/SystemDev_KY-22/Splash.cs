@@ -16,6 +16,7 @@ namespace SystemDev_KY_22
         {
             InitializeComponent();
 
+
         }
 
         private void Splash_Load(object sender, EventArgs e)
