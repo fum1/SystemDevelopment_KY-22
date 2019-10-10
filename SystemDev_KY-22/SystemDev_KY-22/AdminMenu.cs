@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace SystemDev_KY_22
 {
-    public partial class Splash : Form
+    public partial class AdminMenu : Form
     {
-        public Splash()
+        public AdminMenu()
         {
             InitializeComponent();
-
-
-        }
-
-        private void Splash_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
