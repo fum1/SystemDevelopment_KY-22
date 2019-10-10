@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SystemDev_KY_22
 {
-    public partial class Meinmenu : Form
+    public partial class Mainmenu : Form
     {
-        public Meinmenu()
+        public Mainmenu()
         {
             InitializeComponent();
         }
