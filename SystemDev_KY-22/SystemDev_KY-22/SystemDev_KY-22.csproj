@@ -53,6 +53,12 @@
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="animator.cs" />
+    <Compile Include="Eigyoumenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eigyoumenu.Designer.cs">
+      <DependentUpon>Eigyoumenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </Compile>
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eigyoumenu.resx">
+      <DependentUpon>Eigyoumenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
