@@ -1,6 +1,6 @@
 ﻿namespace SystemDev_KY_22
 {
-    partial class Eigyoumenu
+    partial class SalesMenu
     {
         /// <summary>
         /// Required designer variable.

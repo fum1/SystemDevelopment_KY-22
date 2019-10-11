@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SystemDev_KY_22
 {
-    public partial class Eigyoumenu : Form
+    public partial class SalesMenu : Form
     {
-        public Eigyoumenu()
+        public SalesMenu()
         {
             InitializeComponent();
         }
