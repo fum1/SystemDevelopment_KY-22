@@ -58,6 +58,11 @@
     </Compile>
     <Compile Include="ClientRegister.Designer.cs">
       <DependentUpon>ClientRegister.cs</DependentUpon>
+    <Compile Include="Eigyoumenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eigyoumenu.Designer.cs">
+      <DependentUpon>Eigyoumenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -84,6 +89,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientRegister.resx">
       <DependentUpon>ClientRegister.cs</DependentUpon>
+    <EmbeddedResource Include="Eigyoumenu.resx">
+      <DependentUpon>Eigyoumenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
