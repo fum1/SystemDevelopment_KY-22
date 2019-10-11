@@ -80,7 +80,6 @@ namespace SystemDev_KY_22
             //実装時には削除するか使いまわすか再検討すること (fum1)
             Mainmenu fs = new Mainmenu();
             fs.Show();
-            this.Close();
 
         }
 
