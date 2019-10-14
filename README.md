@@ -1,25 +1,16 @@
-# System Development
-System Developmentのリポジトリ.
+# SystemDevelopment_KY-22
+システム開発演習、グループ名KY-22用リポジトリ.
 
 ### Gitの運用方法について
+作業用ツリーとして一人につき一つブランチを切る。
+作業担当は作業が終わる度にこまめにコミットすること。
+マージしていない内容が溜まらないよう必ず下校前にPushしてmasterにPull requetを送ること。
+Pull Requestは管理者によって確認後masterにマージされる。
 
-issue毎に `feature-XXXX` ブランチを切って `develop` ブランチにPRを送る.  
-PRはレビュー後 `develop` にマージされ, その後適切なタイミングで `master` にマージされる.
-
-### セットアップ(Forkした後に最初にすること)
+### セットアップ(GitHubDesktopをインストールした後に最初にすること)
 
 - 初回設定
-事前にbashでローカルの作業するディレクトリに移動しておく.
-
-```bash
-$ git clone 各自Forkしたsystem-developmentのリポジトリのurl # わからなかったらgit cloneで調べて
-$ git remote add upstream git@github.com:/SystemDevelopment_KY-22/.git # 上流のリポジトリを登録
-```
-ちなみに設定は、
-```bash
-$ git config --list
-```
-で確認できる.
+GitHubDesktopにログインし、SystemDevelopment_KY-22のリポジトリをcloneする。
 
 - idとemail設定してない人向け
 
