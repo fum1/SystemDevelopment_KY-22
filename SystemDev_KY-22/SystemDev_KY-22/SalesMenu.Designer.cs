@@ -83,16 +83,17 @@
             this.btn_login.Text = "顧客登録";
             this.btn_login.UseVisualStyleBackColor = false;
             // 
-            // Eigyoumenu
+            // SalesMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(903, 450);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.PictB_Logo);
             this.Controls.Add(this.label1);
-            this.Name = "Eigyoumenu";
+            this.Name = "SalesMenu";
             this.Text = "Eigyoumenu";
             ((System.ComponentModel.ISupportInitialize)(this.PictB_Logo)).EndInit();
             this.ResumeLayout(false);
