@@ -61,9 +61,9 @@
             // 
             this.PictB_Logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.PictB_Logo.Image = global::SystemDev_KY_22.Properties.Resources.チェリー;
-            this.PictB_Logo.Location = new System.Drawing.Point(706, 12);
+            this.PictB_Logo.Location = new System.Drawing.Point(611, 12);
             this.PictB_Logo.Name = "PictB_Logo";
-            this.PictB_Logo.Size = new System.Drawing.Size(148, 89);
+            this.PictB_Logo.Size = new System.Drawing.Size(243, 137);
             this.PictB_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictB_Logo.TabIndex = 1;
             this.PictB_Logo.TabStop = false;
@@ -165,9 +165,10 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label12.Location = new System.Drawing.Point(490, 159);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 15);
+            this.label12.Size = new System.Drawing.Size(84, 24);
             this.label12.TabIndex = 13;
             this.label12.Text = "メーカー";
             // 
