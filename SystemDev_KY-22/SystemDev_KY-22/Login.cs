@@ -32,6 +32,8 @@ namespace SystemDev_KY_22
         private int ox { get; set; }
         private int oy { get; set; }
 
+        public int id = 0;
+
         private void Login_Load(object sender, EventArgs e)
         {
             //流れを把握するために仮でコード書いてます。
@@ -75,11 +77,32 @@ namespace SystemDev_KY_22
 
         private void Btn_login_Click(object sender, EventArgs e)
         {
+            if(int.TryParse(textB_id.Text,out id))
+            {
+                switch (id)
+                {
+                    case 0:
+                        SalesMenu sm = new SalesMenu();
+                        sm.ShowDialog();
+                        break;
+                    case 1:
+                        Mainmenu mm = new Mainmenu();
+                        mm.ShowDialog();
+                        break;
+                    case 2:
+                        AdminMenu am = new AdminMenu();
+                        am.ShowDialog();
+                        break;
+                }
+            }
+            else
+            {
+                MessageBox.Show("IDに半角数字を入力してください。 営業 = 0,物流 = 1,Admin = 2");
+            }
 
+            
             //流れを把握するために仮でコード書いてます。
             //実装時には削除するか使いまわすか再検討すること (fum1)
-            Mainmenu fs = new Mainmenu();
-            fs.Show();
 
         }
 
