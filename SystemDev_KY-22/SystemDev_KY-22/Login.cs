@@ -82,7 +82,7 @@ namespace SystemDev_KY_22
                 switch (id)
                 {
                     case 0:
-                        SalesMenu sm = new SalesMenu();
+                        Salesmenu2 sm = new Salesmenu2();
                         sm.ShowDialog();
                         break;
                     case 1:
@@ -109,6 +109,11 @@ namespace SystemDev_KY_22
         private void PictB_Logo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void LB_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
