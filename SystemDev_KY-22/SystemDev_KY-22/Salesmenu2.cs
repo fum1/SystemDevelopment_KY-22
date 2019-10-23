@@ -63,5 +63,10 @@ namespace SystemDev_KY_22
         {
             this.Close();
         }
+
+        private void Salesmenu2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

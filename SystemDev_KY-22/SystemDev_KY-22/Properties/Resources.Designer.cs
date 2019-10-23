@@ -63,6 +63,16 @@ namespace SystemDev_KY_22.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap backgrounds_001 {
+            get {
+                object obj = ResourceManager.GetObject("backgrounds_001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap チェリー {
             get {
                 object obj = ResourceManager.GetObject("チェリー", resourceCulture);

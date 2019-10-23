@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salesmenu2));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel_Back = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.selectPanel = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.btn_Order = new System.Windows.Forms.Button();
             this.btn_ClientRegister = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
+            this.panel_Back = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.order1 = new SystemDev_KY_22.Order();
             this.clientRegisterU1 = new SystemDev_KY_22.ClientRegisterU();
             this.stockList1 = new SystemDev_KY_22.StockList();
@@ -59,37 +59,6 @@
             this.panel1.Size = new System.Drawing.Size(223, 810);
             this.panel1.TabIndex = 5;
             // 
-            // panel_Back
-            // 
-            this.panel_Back.Controls.Add(this.order1);
-            this.panel_Back.Controls.Add(this.clientRegisterU1);
-            this.panel_Back.Controls.Add(this.stockList1);
-            this.panel_Back.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_Back.Location = new System.Drawing.Point(223, 107);
-            this.panel_Back.Name = "panel_Back";
-            this.panel_Back.Size = new System.Drawing.Size(1042, 703);
-            this.panel_Back.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LightGray;
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(223, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1042, 108);
-            this.panel3.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(337, 40);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "営業担当メニュー";
-            // 
             // selectPanel
             // 
             this.selectPanel.BackColor = System.Drawing.Color.Gray;
@@ -98,23 +67,6 @@
             this.selectPanel.Size = new System.Drawing.Size(10, 89);
             this.selectPanel.TabIndex = 0;
             this.selectPanel.Visible = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("ＭＳ 明朝", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(771, 19);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(248, 82);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "ログアウト";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // btn_Order
             // 
@@ -167,10 +119,58 @@
             this.btn_StockList.UseVisualStyleBackColor = false;
             this.btn_StockList.Click += new System.EventHandler(this.Btn_StockList_Click);
             // 
+            // panel_Back
+            // 
+            this.panel_Back.Controls.Add(this.order1);
+            this.panel_Back.Controls.Add(this.clientRegisterU1);
+            this.panel_Back.Controls.Add(this.stockList1);
+            this.panel_Back.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_Back.Location = new System.Drawing.Point(223, 107);
+            this.panel_Back.Name = "panel_Back";
+            this.panel_Back.Size = new System.Drawing.Size(1042, 703);
+            this.panel_Back.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.button4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(223, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1042, 108);
+            this.panel3.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(35, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(236, 27);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "営業担当メニュー";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("ＭＳ 明朝", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(771, 19);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(248, 82);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "ログアウト";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
             // order1
             // 
             this.order1.BackColor = System.Drawing.Color.White;
-            this.order1.Location = new System.Drawing.Point(94, 254);
+            this.order1.Location = new System.Drawing.Point(80, 204);
             this.order1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
             this.order1.Name = "order1";
             this.order1.Size = new System.Drawing.Size(4168, 3471);
@@ -207,6 +207,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Salesmenu2";
             this.Text = "Salesmenu2";
+            this.Load += new System.EventHandler(this.Salesmenu2_Load);
             this.panel1.ResumeLayout(false);
             this.panel_Back.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

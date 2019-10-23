@@ -68,6 +68,12 @@
     <Compile Include="ClientRegister.Designer.cs">
       <DependentUpon>ClientRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainMenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu2.Designer.cs">
+      <DependentUpon>MainMenu2.cs</DependentUpon>
+    </Compile>
     <Compile Include="ユーザーコントロール\ClientRegisterU.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     <EmbeddedResource Include="ClientRegister.resx">
       <DependentUpon>ClientRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu2.resx">
+      <DependentUpon>MainMenu2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\ClientRegisterU.resx">
       <DependentUpon>ClientRegisterU.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +197,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\在庫アイコン1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounds_001.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
