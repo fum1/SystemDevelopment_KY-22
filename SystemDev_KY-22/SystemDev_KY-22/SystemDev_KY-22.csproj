@@ -201,5 +201,20 @@
   <ItemGroup>
     <None Include="Resources\backgrounds_001.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\チェリー1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article_art002730_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db284a40bc008c81929eea5101690368.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudblog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2349476_m.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
