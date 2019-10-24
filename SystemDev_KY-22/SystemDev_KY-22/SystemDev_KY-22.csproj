@@ -68,6 +68,12 @@
     <Compile Include="ClientRegister.Designer.cs">
       <DependentUpon>ClientRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmpRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmpRegister.Designer.cs">
+      <DependentUpon>EmpRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientRegister.resx">
       <DependentUpon>ClientRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpRegister.resx">
+      <DependentUpon>EmpRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu2.resx">
       <DependentUpon>MainMenu2.cs</DependentUpon>
