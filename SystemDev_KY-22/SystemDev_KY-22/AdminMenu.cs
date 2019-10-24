@@ -16,5 +16,20 @@ namespace SystemDev_KY_22
         {
             InitializeComponent();
         }
+
+        private void AdminMenu2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminMenu2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
