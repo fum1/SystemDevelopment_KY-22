@@ -15,9 +15,56 @@ namespace SystemDev_KY_22
         public SalesMenu()
         {
             InitializeComponent();
+
+            stockList1.Visible = false;
+            clientRegisterU1.Visible = false;
+            order1.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Btn_StockList_Click(object sender, EventArgs e)
+        {
+            selectPanel.Visible = true;
+            selectPanel.Height = btn_StockList.Height;
+            selectPanel.Top = btn_StockList.Top;
+
+            stockList1.Visible = true;
+            stockList1.Dock = DockStyle.Fill;
+
+            clientRegisterU1.Visible = false;
+            order1.Visible = false;
+        }
+
+        private void Btn_ClientRegister_Click(object sender, EventArgs e)
+        {
+            selectPanel.Visible = true;
+            selectPanel.Height = btn_ClientRegister.Height;
+            selectPanel.Top = btn_ClientRegister.Top;
+
+            stockList1.Visible = false;
+
+            clientRegisterU1.Visible = true;
+            clientRegisterU1.Dock = DockStyle.Fill;
+            order1.Visible = false;
+        }
+
+        private void Btn_Order_Click(object sender, EventArgs e)
+        {
+            selectPanel.Visible = true;
+            selectPanel.Height = btn_Order.Height;
+            selectPanel.Top = btn_Order.Top;
+
+            stockList1.Visible = false;
+            clientRegisterU1.Visible = false;
+            order1.Visible = true;
+            order1.Dock = DockStyle.Fill;
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Salesmenu2_Load(object sender, EventArgs e)
         {
 
         }
