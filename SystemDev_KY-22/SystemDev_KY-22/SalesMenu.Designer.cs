@@ -170,7 +170,7 @@
             // order1
             // 
             this.order1.BackColor = System.Drawing.Color.White;
-            this.order1.Location = new System.Drawing.Point(80, 204);
+            this.order1.Location = new System.Drawing.Point(27, 84);
             this.order1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
             this.order1.Name = "order1";
             this.order1.Size = new System.Drawing.Size(4168, 3471);

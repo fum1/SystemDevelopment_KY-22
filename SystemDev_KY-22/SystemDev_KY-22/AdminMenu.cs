@@ -31,5 +31,17 @@ namespace SystemDev_KY_22
         {
 
         }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_EmpRegister_Click(object sender, EventArgs e)
+        {
+            selectPanel.Visible = true;
+            selectPanel.Height = Btn_EmpRegister.Height;
+            selectPanel.Top = Btn_EmpRegister.Top;
+        }
     }
 }

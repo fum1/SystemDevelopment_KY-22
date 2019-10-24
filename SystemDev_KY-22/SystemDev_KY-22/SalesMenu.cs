@@ -12,6 +12,9 @@ namespace SystemDev_KY_22
 {
     public partial class SalesMenu : Form
     {
+
+        private bool flg_Close = false;
+
         public SalesMenu()
         {
             InitializeComponent();
