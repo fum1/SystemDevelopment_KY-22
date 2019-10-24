@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace SystemDev_KY_22
 {
-    public partial class MainMenu2 : Form
+    public partial class AdminMenu2 : Form
     {
-        public MainMenu2()
+        public AdminMenu2()
         {
             InitializeComponent();
         }
 
-        private void MainMenu2_Load(object sender, EventArgs e)
+        private void AdminMenu2_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void lB_MainTitle_Click(object sender, EventArgs e)
+        private void AdminMenu2_FormClosing(object sender, FormClosingEventArgs e)
         {
 
         }

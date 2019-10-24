@@ -38,11 +38,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.order1 = new SystemDev_KY_22.Order();
-            this.clientRegisterU1 = new SystemDev_KY_22.ClientRegisterU();
-            this.stockList1 = new SystemDev_KY_22.StockList();
             this.panel1.SuspendLayout();
-            this.panel_Back.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,9 +117,6 @@
             // 
             // panel_Back
             // 
-            this.panel_Back.Controls.Add(this.order1);
-            this.panel_Back.Controls.Add(this.clientRegisterU1);
-            this.panel_Back.Controls.Add(this.stockList1);
             this.panel_Back.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_Back.Location = new System.Drawing.Point(223, 107);
             this.panel_Back.Name = "panel_Back";
@@ -132,7 +125,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.button4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -144,11 +137,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("ＭＳ 明朝", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label1.Location = new System.Drawing.Point(35, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 27);
+            this.label1.Size = new System.Drawing.Size(337, 40);
             this.label1.TabIndex = 5;
             this.label1.Text = "営業担当メニュー";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button4
             // 
@@ -167,33 +162,6 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
-            // order1
-            // 
-            this.order1.BackColor = System.Drawing.Color.White;
-            this.order1.Location = new System.Drawing.Point(80, 204);
-            this.order1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
-            this.order1.Name = "order1";
-            this.order1.Size = new System.Drawing.Size(4168, 3471);
-            this.order1.TabIndex = 2;
-            // 
-            // clientRegisterU1
-            // 
-            this.clientRegisterU1.BackColor = System.Drawing.Color.White;
-            this.clientRegisterU1.Location = new System.Drawing.Point(2372, 1131);
-            this.clientRegisterU1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
-            this.clientRegisterU1.Name = "clientRegisterU1";
-            this.clientRegisterU1.Size = new System.Drawing.Size(4168, 3471);
-            this.clientRegisterU1.TabIndex = 1;
-            // 
-            // stockList1
-            // 
-            this.stockList1.BackColor = System.Drawing.Color.White;
-            this.stockList1.Location = new System.Drawing.Point(1384, 1229);
-            this.stockList1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
-            this.stockList1.Name = "stockList1";
-            this.stockList1.Size = new System.Drawing.Size(4168, 3471);
-            this.stockList1.TabIndex = 0;
-            // 
             // Salesmenu2
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -209,7 +177,6 @@
             this.Text = "Salesmenu2";
             this.Load += new System.EventHandler(this.Salesmenu2_Load);
             this.panel1.ResumeLayout(false);
-            this.panel_Back.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
