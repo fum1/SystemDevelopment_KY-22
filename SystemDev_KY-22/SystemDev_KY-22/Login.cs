@@ -82,7 +82,7 @@ namespace SystemDev_KY_22
                 switch (id)
                 {
                     case 0:
-                        Salesmenu2 sm = new Salesmenu2();
+                        SalesMenu sm = new SalesMenu();
                         sm.ShowDialog();
                         break;
                     case 1:
