@@ -34,9 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.selectPanel = new System.Windows.Forms.Panel();
-            this.btn_StockList = new System.Windows.Forms.Button();
+            this.btn_OrderList = new System.Windows.Forms.Button();
             this.Btn_EmpRegister = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_SalesList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -79,7 +79,7 @@
             this.label1.Location = new System.Drawing.Point(41, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(375, 48);
+            this.label1.Size = new System.Drawing.Size(379, 55);
             this.label1.TabIndex = 6;
             this.label1.Text = "管理者用メニュー";
             // 
@@ -87,9 +87,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.selectPanel);
-            this.panel2.Controls.Add(this.btn_StockList);
+            this.panel2.Controls.Add(this.btn_OrderList);
             this.panel2.Controls.Add(this.Btn_EmpRegister);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btn_SalesList);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 108);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -107,23 +107,24 @@
             this.selectPanel.TabIndex = 5;
             this.selectPanel.Visible = false;
             // 
-            // btn_StockList
+            // btn_OrderList
             // 
-            this.btn_StockList.BackColor = System.Drawing.Color.Transparent;
-            this.btn_StockList.FlatAppearance.BorderSize = 0;
-            this.btn_StockList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_StockList.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-R", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_StockList.ForeColor = System.Drawing.Color.Black;
-            this.btn_StockList.Image = ((System.Drawing.Image)(resources.GetObject("btn_StockList.Image")));
-            this.btn_StockList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_StockList.Location = new System.Drawing.Point(20, 487);
-            this.btn_StockList.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_StockList.Name = "btn_StockList";
-            this.btn_StockList.Size = new System.Drawing.Size(186, 128);
-            this.btn_StockList.TabIndex = 2;
-            this.btn_StockList.Text = "注文履歴";
-            this.btn_StockList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_StockList.UseVisualStyleBackColor = false;
+            this.btn_OrderList.BackColor = System.Drawing.Color.Transparent;
+            this.btn_OrderList.FlatAppearance.BorderSize = 0;
+            this.btn_OrderList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_OrderList.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-R", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_OrderList.ForeColor = System.Drawing.Color.Black;
+            this.btn_OrderList.Image = ((System.Drawing.Image)(resources.GetObject("btn_OrderList.Image")));
+            this.btn_OrderList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_OrderList.Location = new System.Drawing.Point(20, 487);
+            this.btn_OrderList.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_OrderList.Name = "btn_OrderList";
+            this.btn_OrderList.Size = new System.Drawing.Size(186, 128);
+            this.btn_OrderList.TabIndex = 2;
+            this.btn_OrderList.Text = "注文履歴";
+            this.btn_OrderList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_OrderList.UseVisualStyleBackColor = false;
+            this.btn_OrderList.Click += new System.EventHandler(this.Btn_OrderList_Click);
             // 
             // Btn_EmpRegister
             // 
@@ -144,24 +145,24 @@
             this.Btn_EmpRegister.UseVisualStyleBackColor = false;
             this.Btn_EmpRegister.Click += new System.EventHandler(this.Btn_EmpRegister_Click);
             // 
-            // button1
+            // btn_SalesList
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-R", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(20, 75);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 122);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "売上確認";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_SalesList.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SalesList.FlatAppearance.BorderSize = 0;
+            this.btn_SalesList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SalesList.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-R", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_SalesList.ForeColor = System.Drawing.Color.Black;
+            this.btn_SalesList.Image = ((System.Drawing.Image)(resources.GetObject("btn_SalesList.Image")));
+            this.btn_SalesList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_SalesList.Location = new System.Drawing.Point(20, 75);
+            this.btn_SalesList.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_SalesList.Name = "btn_SalesList";
+            this.btn_SalesList.Size = new System.Drawing.Size(186, 122);
+            this.btn_SalesList.TabIndex = 3;
+            this.btn_SalesList.Text = "売上確認";
+            this.btn_SalesList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_SalesList.UseVisualStyleBackColor = false;
+            this.btn_SalesList.Click += new System.EventHandler(this.Btn_SalesCheck_Click);
             // 
             // panel3
             // 
@@ -185,8 +186,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminMenu";
             this.Text = "AdminMenu2";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminMenu2_FormClosing);
-            this.Load += new System.EventHandler(this.AdminMenu2_Load);
+            this.Load += new System.EventHandler(this.AdminMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -202,8 +202,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_logout;
         private System.Windows.Forms.Button Btn_EmpRegister;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btn_StockList;
-        private System.Windows.Forms.Panel selectPanel;
+        private System.Windows.Forms.Button btn_SalesList;
+        private System.Windows.Forms.Button btn_OrderList;
+        public System.Windows.Forms.Panel selectPanel;
     }
 }

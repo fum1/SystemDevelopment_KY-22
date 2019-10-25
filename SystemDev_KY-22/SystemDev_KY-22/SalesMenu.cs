@@ -13,7 +13,8 @@ namespace SystemDev_KY_22
     public partial class SalesMenu : Form
     {
 
-        private bool flg_Close = false;
+        private readonly PanelControl pc = new PanelControl();
+        private UserControl[] userControls;
 
         public SalesMenu()
         {
@@ -26,40 +27,21 @@ namespace SystemDev_KY_22
 
         private void Btn_StockList_Click(object sender, EventArgs e)
         {
-            selectPanel.Visible = true;
-            selectPanel.Height = btn_StockList.Height;
-            selectPanel.Top = btn_StockList.Top;
-
-            stockList1.Visible = true;
-            stockList1.Dock = DockStyle.Fill;
-
-            clientRegisterU1.Visible = false;
-            order1.Visible = false;
+            pc.Set((Button)sender, selectPanel);
+            pc.Chenge(userControls, stockList1);
         }
 
         private void Btn_ClientRegister_Click(object sender, EventArgs e)
         {
-            selectPanel.Visible = true;
-            selectPanel.Height = btn_ClientRegister.Height;
-            selectPanel.Top = btn_ClientRegister.Top;
-
-            stockList1.Visible = false;
-
-            clientRegisterU1.Visible = true;
-            clientRegisterU1.Dock = DockStyle.Fill;
-            order1.Visible = false;
+            pc.Set((Button)sender, selectPanel);
+            pc.Chenge(userControls, clientRegisterU1);
         }
 
         private void Btn_Order_Click(object sender, EventArgs e)
         {
-            selectPanel.Visible = true;
-            selectPanel.Height = btn_Order.Height;
-            selectPanel.Top = btn_Order.Top;
+            pc.Set((Button)sender, selectPanel);
+            pc.Chenge(userControls, order1);
 
-            stockList1.Visible = false;
-            clientRegisterU1.Visible = false;
-            order1.Visible = true;
-            order1.Dock = DockStyle.Fill;
         }
 
         private void Button4_Click(object sender, EventArgs e)
@@ -69,6 +51,7 @@ namespace SystemDev_KY_22
 
         private void Salesmenu2_Load(object sender, EventArgs e)
         {
+            userControls = new UserControl[3] { stockList1, clientRegisterU1, order1 };
 
         }
     }
