@@ -12,24 +12,13 @@ namespace SystemDev_KY_22
 {
     public partial class AdminMenu : Form
     {
+        private readonly PanelControl pc = new PanelControl();
+        private UserControl[] userControls;
+        
+
         public AdminMenu()
         {
             InitializeComponent();
-        }
-
-        private void AdminMenu2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AdminMenu2_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
@@ -39,9 +28,23 @@ namespace SystemDev_KY_22
 
         private void Btn_EmpRegister_Click(object sender, EventArgs e)
         {
-            selectPanel.Visible = true;
-            selectPanel.Height = Btn_EmpRegister.Height;
-            selectPanel.Top = Btn_EmpRegister.Top;
+            pc.Set((Button)sender,selectPanel);
+        }
+
+        private void Btn_SalesCheck_Click(object sender, EventArgs e)
+        {
+            pc.Set((Button)sender,selectPanel);
+        }
+
+        private void Btn_OrderList_Click(object sender, EventArgs e)
+        {
+            pc.Set((Button)sender,selectPanel);
+
+        }
+
+        private void AdminMenu_Load(object sender, EventArgs e)
+        {
+            //userControls = new UserControl[3] { };
         }
     }
 }

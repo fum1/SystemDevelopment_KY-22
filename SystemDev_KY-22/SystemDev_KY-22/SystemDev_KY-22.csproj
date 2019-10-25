@@ -62,10 +62,11 @@
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\animator.cs" />
-    <Compile Include="OrderCheck.cs">
+    <Compile Include="Class\PanelControl.cs" />
+    <Compile Include="ユーザーコントロール\OrderCheck.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="OrderCheck.Designer.cs">
+    <Compile Include="ユーザーコントロール\OrderCheck.Designer.cs">
       <DependentUpon>OrderCheck.cs</DependentUpon>
     </Compile>
     <Compile Include="ユーザーコントロール\EmpRegister.cs">
@@ -80,11 +81,11 @@
     <Compile Include="MainMenu2.Designer.cs">
       <DependentUpon>MainMenu2.cs</DependentUpon>
     </Compile>
-    <Compile Include="ユーザーコントロール\ClientRegisterU.cs">
+    <Compile Include="ユーザーコントロール\ClientRegister.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ユーザーコントロール\ClientRegisterU.Designer.cs">
-      <DependentUpon>ClientRegisterU.cs</DependentUpon>
+    <Compile Include="ユーザーコントロール\ClientRegister.Designer.cs">
+      <DependentUpon>ClientRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="ユーザーコントロール\Order.cs">
       <SubType>UserControl</SubType>
@@ -130,7 +131,7 @@
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrderCheck.resx">
+    <EmbeddedResource Include="ユーザーコントロール\OrderCheck.resx">
       <DependentUpon>OrderCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\EmpRegister.resx">
@@ -139,8 +140,8 @@
     <EmbeddedResource Include="MainMenu2.resx">
       <DependentUpon>MainMenu2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ユーザーコントロール\ClientRegisterU.resx">
-      <DependentUpon>ClientRegisterU.cs</DependentUpon>
+    <EmbeddedResource Include="ユーザーコントロール\ClientRegister.resx">
+      <DependentUpon>ClientRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\Order.resx">
       <DependentUpon>Order.cs</DependentUpon>

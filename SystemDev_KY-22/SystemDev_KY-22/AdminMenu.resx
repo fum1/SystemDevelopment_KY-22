@@ -135,7 +135,7 @@
         qAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btn_StockList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_OrderList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAB0JJREFUeF7t
         m12IFWUcxjcpoi/MiiQNLL+IEgmsUMxcRN11dXVdEIzQ7IMFJcgyAu/Si8ybwLuVvqSrFKysCxOJwCUN
@@ -211,7 +211,7 @@
         IrHHvbYXk6dy8tyySRvX+LnEMWP+A6b0mZMpF6auAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_SalesList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABXhJREFUeF7t
         m0uIHFUUhkd8ID4IRvFBiMlCREEUV0I0oRftvLvnoY0RHSPEjEjERIiC6GKCCxdxEVAXLgRBXbgQN8Yo
