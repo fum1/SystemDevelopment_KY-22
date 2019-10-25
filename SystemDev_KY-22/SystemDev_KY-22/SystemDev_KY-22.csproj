@@ -62,6 +62,12 @@
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\animator.cs" />
+    <Compile Include="OrderCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderCheck.Designer.cs">
+      <DependentUpon>OrderCheck.cs</DependentUpon>
+    </Compile>
     <Compile Include="ユーザーコントロール\EmpRegister.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderCheck.resx">
+      <DependentUpon>OrderCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\EmpRegister.resx">
       <DependentUpon>EmpRegister.cs</DependentUpon>
