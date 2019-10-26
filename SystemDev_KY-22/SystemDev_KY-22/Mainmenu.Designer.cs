@@ -1,6 +1,6 @@
 ﻿namespace SystemDev_KY_22
 {
-    partial class Mainmenu
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,132 +28,192 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lB_MainTitle = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.selectPanel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.stockList1 = new SystemDev_KY_22.StockList();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_StockList = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PictB_Logo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.PictB_Logo)).BeginInit();
+            this.orderCheck1 = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // panel1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(148, 331);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 86);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "受注";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.lB_MainTitle);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1265, 108);
+            this.panel1.TabIndex = 0;
+            // 
+            // lB_MainTitle
+            // 
+            this.lB_MainTitle.AutoSize = true;
+            this.lB_MainTitle.Font = new System.Drawing.Font("ＭＳ 明朝", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lB_MainTitle.Location = new System.Drawing.Point(34, 38);
+            this.lB_MainTitle.Name = "lB_MainTitle";
+            this.lB_MainTitle.Size = new System.Drawing.Size(279, 33);
+            this.lB_MainTitle.TabIndex = 6;
+            this.lB_MainTitle.Text = "物流担当メニュー";
+            this.lB_MainTitle.Click += new System.EventHandler(this.lB_MainTitle_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.selectPanel);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btn_StockList);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 108);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(223, 702);
+            this.panel2.TabIndex = 8;
+            // 
+            // selectPanel
+            // 
+            this.selectPanel.BackColor = System.Drawing.Color.Gray;
+            this.selectPanel.Location = new System.Drawing.Point(210, 160);
+            this.selectPanel.Name = "selectPanel";
+            this.selectPanel.Size = new System.Drawing.Size(10, 89);
+            this.selectPanel.TabIndex = 5;
+            this.selectPanel.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.orderCheck1);
+            this.panel3.Controls.Add(this.stockList1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(223, 108);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1042, 702);
+            this.panel3.TabIndex = 8;
+            // 
+            // stockList1
+            // 
+            this.stockList1.BackColor = System.Drawing.Color.White;
+            this.stockList1.Location = new System.Drawing.Point(38, 90);
+            this.stockList1.Name = "stockList1";
+            this.stockList1.Size = new System.Drawing.Size(1042, 703);
+            this.stockList1.TabIndex = 0;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(598, 331);
+            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.Location = new System.Drawing.Point(16, 322);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 86);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "発注";
+            this.button2.Size = new System.Drawing.Size(201, 115);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "受注";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button1
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(373, 331);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(219, 86);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "在庫一覧";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(12, 493);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(201, 115);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "発注";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btn_StockList
+            // 
+            this.btn_StockList.BackColor = System.Drawing.Color.Transparent;
+            this.btn_StockList.FlatAppearance.BorderSize = 0;
+            this.btn_StockList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_StockList.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_StockList.ForeColor = System.Drawing.Color.Black;
+            this.btn_StockList.Image = ((System.Drawing.Image)(resources.GetObject("btn_StockList.Image")));
+            this.btn_StockList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_StockList.Location = new System.Drawing.Point(16, 151);
+            this.btn_StockList.Name = "btn_StockList";
+            this.btn_StockList.Size = new System.Drawing.Size(201, 115);
+            this.btn_StockList.TabIndex = 2;
+            this.btn_StockList.Text = "在庫一覧";
+            this.btn_StockList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_StockList.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4.Location = new System.Drawing.Point(769, 12);
+            this.button4.Font = new System.Drawing.Font("ＭＳ 明朝", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(1035, 22);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(174, 39);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "バージョン";
+            this.button4.Size = new System.Drawing.Size(208, 73);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "ログアウト";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // orderCheck1
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button5.Location = new System.Drawing.Point(769, 488);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(170, 50);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "閉じる";
-            this.button5.UseVisualStyleBackColor = false;
+            this.orderCheck1.BackColor = System.Drawing.Color.White;
+            this.orderCheck1.Location = new System.Drawing.Point(20, 187);
+            this.orderCheck1.Name = "orderCheck1";
+            this.orderCheck1.Size = new System.Drawing.Size(1042, 703);
+            this.orderCheck1.TabIndex = 1;
             // 
-            // label1
+            // MainMenu
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("メイリオ", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(238, 147);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(501, 65);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "物流担当メインメニュー";
-            // 
-            // PictB_Logo
-            // 
-            this.PictB_Logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.PictB_Logo.Image = global::SystemDev_KY_22.Properties.Resources.チェリー;
-            this.PictB_Logo.Location = new System.Drawing.Point(161, 88);
-            this.PictB_Logo.Name = "PictB_Logo";
-            this.PictB_Logo.Size = new System.Drawing.Size(651, 212);
-            this.PictB_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictB_Logo.TabIndex = 6;
-            this.PictB_Logo.TabStop = false;
-            // 
-            // Mainmenu
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(964, 550);
-            this.Controls.Add(this.PictB_Logo);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Mainmenu";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "メインメニュー";
-            this.Load += new System.EventHandler(this.Meinmenu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.PictB_Logo)).EndInit();
+            this.ClientSize = new System.Drawing.Size(1265, 810);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "MainMenu";
+            this.Text = "MainMenu2";
+            this.Load += new System.EventHandler(this.MainMenu2_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lB_MainTitle;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox PictB_Logo;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_StockList;
+        private System.Windows.Forms.Panel selectPanel;
+        private StockList stockList1;
+        private ユーザーコントロール.OrderCheck orderCheck1;
     }
 }

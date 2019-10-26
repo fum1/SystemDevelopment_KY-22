@@ -10,29 +10,22 @@ using System.Windows.Forms;
 
 namespace SystemDev_KY_22
 {
-    public partial class Mainmenu : Form
+    public partial class MainMenu : Form
     {
-        public Mainmenu()
+        private readonly PanelControl pc = new PanelControl();
+        private UserControl[] userControls;
+
+        public MainMenu()
         {
             InitializeComponent();
         }
 
-        private void Meinmenu_Load(object sender, EventArgs e)
+        private void MainMenu2_Load(object sender, EventArgs e)
         {
-
+            //userControls = new UserControl[3] { };
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void lB_MainTitle_Click(object sender, EventArgs e)
         {
 
         }
