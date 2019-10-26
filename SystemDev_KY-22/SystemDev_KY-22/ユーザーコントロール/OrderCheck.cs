@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SystemDev_KY_22
+namespace SystemDev_KY_22.ユーザーコントロール
 {
     public partial class OrderCheck : UserControl
     {

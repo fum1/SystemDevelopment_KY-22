@@ -86,7 +86,7 @@ namespace SystemDev_KY_22
                         sm.ShowDialog();
                         break;
                     case 1:
-                        Mainmenu mm = new Mainmenu();
+                        MainMenu mm = new MainMenu();
                         mm.ShowDialog();
                         break;
                     case 2:
