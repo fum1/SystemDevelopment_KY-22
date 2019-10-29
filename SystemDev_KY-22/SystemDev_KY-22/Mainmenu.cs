@@ -22,12 +22,30 @@ namespace SystemDev_KY_22
 
         private void MainMenu2_Load(object sender, EventArgs e)
         {
-            //userControls = new UserControl[3] { };
+            userControls = new UserControl[3] {carOrder1,orderCheck1,stockList1};
         }
 
         private void lB_MainTitle_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_StockList_Click(object sender, EventArgs e)
+        {
+            pc.Set((Button)sender, selectPanel);
+            pc.Chenge(userControls, stockList1);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pc.Set((Button)sender, selectPanel);
+            pc.Chenge(userControls, carOrder1);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pc.Set((Button)sender, selectPanel);
+            pc.Chenge(userControls, orderCheck1);
         }
     }
 }
