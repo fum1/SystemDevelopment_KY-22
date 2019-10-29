@@ -68,6 +68,7 @@
     </Compile>
     <Compile Include="ユーザーコントロール\Employee registration.Designer.cs">
       <DependentUpon>Employee registration.cs</DependentUpon>
+    </Compile>
     <Compile Include="ユーザーコントロール\Employee Update.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,6 +145,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\Employee registration.resx">
       <DependentUpon>Employee registration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\Employee Update.resx">
       <DependentUpon>Employee Update.cs</DependentUpon>
     </EmbeddedResource>
