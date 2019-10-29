@@ -87,6 +87,12 @@
     <Compile Include="ユーザーコントロール\ClientRegister.Designer.cs">
       <DependentUpon>ClientRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="ユーザーコントロール\List of employees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ユーザーコントロール\List of employees.Designer.cs">
+      <DependentUpon>List of employees.cs</DependentUpon>
+    </Compile>
     <Compile Include="ユーザーコントロール\Order.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\ClientRegister.resx">
       <DependentUpon>ClientRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ユーザーコントロール\List of employees.resx">
+      <DependentUpon>List of employees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
