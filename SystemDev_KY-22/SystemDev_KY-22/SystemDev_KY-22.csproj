@@ -143,6 +143,12 @@
     <Compile Include="ユーザーコントロール\OrderCheck.Designer.cs">
       <DependentUpon>OrderCheck.cs</DependentUpon>
     </Compile>
+    <Compile Include="ユーザーコントロール\SelesCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ユーザーコントロール\SelesCheck.Designer.cs">
+      <DependentUpon>SelesCheck.cs</DependentUpon>
+    </Compile>
     <Compile Include="ユーザーコントロール\StockList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -160,7 +166,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\CarOrder.resx">
       <DependentUpon>CarOrder.cs</DependentUpon>
-    </EmbeddedResource> 
+    </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\Employee registration.resx">
       <DependentUpon>Employee registration.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\OrderCheck.resx">
       <DependentUpon>OrderCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ユーザーコントロール\SelesCheck.resx">
+      <DependentUpon>SelesCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\StockList.resx">
       <DependentUpon>StockList.cs</DependentUpon>
