@@ -63,12 +63,6 @@
     </Compile>
     <Compile Include="Class\animator.cs" />
     <Compile Include="Class\PanelControl.cs" />
-    <Compile Include="LoaUnloading.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LoaUnloading.Designer.cs">
-      <DependentUpon>LoaUnloading.cs</DependentUpon>
-    </Compile>
     <Compile Include="PassWordChange.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,9 +160,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoaUnloading.resx">
-      <DependentUpon>LoaUnloading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PassWordChange.resx">
       <DependentUpon>PassWordChange.cs</DependentUpon>
