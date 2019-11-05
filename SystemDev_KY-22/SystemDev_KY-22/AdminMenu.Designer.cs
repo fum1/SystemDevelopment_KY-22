@@ -38,9 +38,10 @@
             this.Btn_EmpRegister = new System.Windows.Forms.Button();
             this.btn_SalesList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.employee_registration1 = new SystemDev_KY_22.ユーザーコントロール.Employee_registration();
-            this.list_of_employees1 = new SystemDev_KY_22.ユーザーコントロール.List_of_employees();
             this.empRegister1 = new SystemDev_KY_22.EmpRegister();
+            this.list_of_employees1 = new SystemDev_KY_22.ユーザーコントロール.List_of_employees();
+            this.employee_registration1 = new SystemDev_KY_22.ユーザーコントロール.Employee_registration();
+            this.orderCheck1 = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -170,6 +171,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.orderCheck1);
             this.panel3.Controls.Add(this.empRegister1);
             this.panel3.Controls.Add(this.list_of_employees1);
             this.panel3.Controls.Add(this.employee_registration1);
@@ -180,6 +182,22 @@
             this.panel3.Size = new System.Drawing.Size(1390, 877);
             this.panel3.TabIndex = 2;
             // 
+            // empRegister1
+            // 
+            this.empRegister1.BackColor = System.Drawing.Color.White;
+            this.empRegister1.Location = new System.Drawing.Point(25, 377);
+            this.empRegister1.Name = "empRegister1";
+            this.empRegister1.Size = new System.Drawing.Size(1042, 703);
+            this.empRegister1.TabIndex = 2;
+            // 
+            // list_of_employees1
+            // 
+            this.list_of_employees1.BackColor = System.Drawing.Color.White;
+            this.list_of_employees1.Location = new System.Drawing.Point(250, 240);
+            this.list_of_employees1.Name = "list_of_employees1";
+            this.list_of_employees1.Size = new System.Drawing.Size(1042, 703);
+            this.list_of_employees1.TabIndex = 1;
+            // 
             // employee_registration1
             // 
             this.employee_registration1.BackColor = System.Drawing.Color.White;
@@ -188,21 +206,14 @@
             this.employee_registration1.Size = new System.Drawing.Size(1042, 703);
             this.employee_registration1.TabIndex = 0;
             // 
-            // list_of_employees1
+            // orderCheck1
             // 
-            this.list_of_employees1.BackColor = System.Drawing.Color.White;
-            this.list_of_employees1.Location = new System.Drawing.Point(365, 245);
-            this.list_of_employees1.Name = "list_of_employees1";
-            this.list_of_employees1.Size = new System.Drawing.Size(1042, 703);
-            this.list_of_employees1.TabIndex = 1;
-            // 
-            // empRegister1
-            // 
-            this.empRegister1.BackColor = System.Drawing.Color.White;
-            this.empRegister1.Location = new System.Drawing.Point(52, 369);
-            this.empRegister1.Name = "empRegister1";
-            this.empRegister1.Size = new System.Drawing.Size(1042, 703);
-            this.empRegister1.TabIndex = 2;
+            this.orderCheck1.BackColor = System.Drawing.Color.White;
+            this.orderCheck1.Location = new System.Drawing.Point(167, 320);
+            this.orderCheck1.Margin = new System.Windows.Forms.Padding(4);
+            this.orderCheck1.Name = "orderCheck1";
+            this.orderCheck1.Size = new System.Drawing.Size(1389, 879);
+            this.orderCheck1.TabIndex = 3;
             // 
             // AdminMenu
             // 
@@ -239,5 +250,6 @@
         private EmpRegister empRegister1;
         private ユーザーコントロール.List_of_employees list_of_employees1;
         private ユーザーコントロール.Employee_registration employee_registration1;
+        private ユーザーコントロール.OrderCheck orderCheck1;
     }
 }

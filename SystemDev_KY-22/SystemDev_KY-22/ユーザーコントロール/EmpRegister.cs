@@ -18,7 +18,7 @@ namespace SystemDev_KY_22
         public EmpRegister()
         {
 
-            
+
 
             InitializeComponent();
         }
@@ -30,7 +30,15 @@ namespace SystemDev_KY_22
 
         }
 
-        private void btn_register_Click(object sender, EventArgs e)
+        private void textB_enameID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+            {
+                textB_ename.Focus();
+            }
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
         {
             // ID、Pass、Name、PostNumber、AddressをINSERT  
             OleDbCommand cmd =
@@ -62,14 +70,6 @@ namespace SystemDev_KY_22
 
 
             MessageBox.Show("登録しました", "住所録");
-        }
-
-        private void textB_enameID_KeyDown(object sender, KeyEventArgs e)
-        {
-            if(e.KeyCode == Keys.Tab)
-            {
-                textB_ename.Focus();
-            }
         }
     }
 }
