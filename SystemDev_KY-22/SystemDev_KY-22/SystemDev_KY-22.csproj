@@ -63,10 +63,10 @@
     </Compile>
     <Compile Include="Class\animator.cs" />
     <Compile Include="Class\PanelControl.cs" />
-    <Compile Include="LoaUnloading.cs">
+    <Compile Include="ユーザーコントロール\LoaUnloading.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LoaUnloading.Designer.cs">
+    <Compile Include="ユーザーコントロール\LoaUnloading.Designer.cs">
       <DependentUpon>LoaUnloading.cs</DependentUpon>
     </Compile>
     <Compile Include="PassWordChange.cs">
@@ -75,16 +75,16 @@
     <Compile Include="PassWordChange.Designer.cs">
       <DependentUpon>PassWordChange.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReceiveList.cs">
+    <Compile Include="ユーザーコントロール\ReceiveList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ReceiveList.Designer.cs">
+    <Compile Include="ユーザーコントロール\ReceiveList.Designer.cs">
       <DependentUpon>ReceiveList.cs</DependentUpon>
     </Compile>
-    <Compile Include="SalesList.cs">
+    <Compile Include="ユーザーコントロール\SalesList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SalesList.Designer.cs">
+    <Compile Include="ユーザーコントロール\SalesList.Designer.cs">
       <DependentUpon>SalesList.cs</DependentUpon>
     </Compile>
     <Compile Include="ユーザーコントロール\CarOrder.cs">
@@ -179,16 +179,16 @@
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoaUnloading.resx">
+    <EmbeddedResource Include="ユーザーコントロール\LoaUnloading.resx">
       <DependentUpon>LoaUnloading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PassWordChange.resx">
       <DependentUpon>PassWordChange.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReceiveList.resx">
+    <EmbeddedResource Include="ユーザーコントロール\ReceiveList.resx">
       <DependentUpon>ReceiveList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SalesList.resx">
+    <EmbeddedResource Include="ユーザーコントロール\SalesList.resx">
       <DependentUpon>SalesList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\CarOrder.resx">
