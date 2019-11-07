@@ -38,9 +38,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.stockList1 = new SystemDev_KY_22.StockList();
-            this.carOrder1 = new SystemDev_KY_22.CarOrder();
             this.orderCheck1 = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
+            this.carOrder1 = new SystemDev_KY_22.CarOrder();
+            this.stockList1 = new SystemDev_KY_22.StockList();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -59,6 +59,7 @@
             // 
             // button4
             // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("ＭＳ 明朝", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -72,6 +73,7 @@
             this.button4.Text = "ログアウト";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // lB_MainTitle
             // 
@@ -171,13 +173,14 @@
             this.panel3.Size = new System.Drawing.Size(1042, 702);
             this.panel3.TabIndex = 8;
             // 
-            // stockList1
+            // orderCheck1
             // 
-            this.stockList1.BackColor = System.Drawing.Color.White;
-            this.stockList1.Location = new System.Drawing.Point(36, 251);
-            this.stockList1.Name = "stockList1";
-            this.stockList1.Size = new System.Drawing.Size(1042, 703);
-            this.stockList1.TabIndex = 0;
+            this.orderCheck1.BackColor = System.Drawing.Color.White;
+            this.orderCheck1.Location = new System.Drawing.Point(7, 276);
+            this.orderCheck1.Margin = new System.Windows.Forms.Padding(4);
+            this.orderCheck1.Name = "orderCheck1";
+            this.orderCheck1.Size = new System.Drawing.Size(1389, 879);
+            this.orderCheck1.TabIndex = 2;
             // 
             // carOrder1
             // 
@@ -189,14 +192,13 @@
             this.carOrder1.Size = new System.Drawing.Size(858, 500);
             this.carOrder1.TabIndex = 1;
             // 
-            // orderCheck1
+            // stockList1
             // 
-            this.orderCheck1.BackColor = System.Drawing.Color.White;
-            this.orderCheck1.Location = new System.Drawing.Point(7, 276);
-            this.orderCheck1.Margin = new System.Windows.Forms.Padding(4);
-            this.orderCheck1.Name = "orderCheck1";
-            this.orderCheck1.Size = new System.Drawing.Size(1389, 879);
-            this.orderCheck1.TabIndex = 2;
+            this.stockList1.BackColor = System.Drawing.Color.White;
+            this.stockList1.Location = new System.Drawing.Point(36, 251);
+            this.stockList1.Name = "stockList1";
+            this.stockList1.Size = new System.Drawing.Size(1042, 703);
+            this.stockList1.TabIndex = 0;
             // 
             // MainMenu
             // 
