@@ -25,6 +25,7 @@ namespace SystemDev_KY_22
 
         private void EmpRegister_Load(object sender, EventArgs e)
         {
+            groupBox3.Visible = false;
             cn.ConnectionString =
                  @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
 
@@ -70,6 +71,11 @@ namespace SystemDev_KY_22
 
 
             MessageBox.Show("登録しました", "住所録");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            groupBox3.Visible = true;
         }
     }
 }
