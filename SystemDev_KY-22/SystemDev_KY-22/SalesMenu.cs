@@ -52,7 +52,7 @@ namespace SystemDev_KY_22
         private void Salesmenu2_Load(object sender, EventArgs e)
         {
             userControls = new UserControl[3] { stockList1, clientRegisterU1, order1 };
-
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }

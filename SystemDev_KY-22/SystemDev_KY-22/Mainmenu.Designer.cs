@@ -59,6 +59,7 @@
             // 
             // button4
             // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("ＭＳ 明朝", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -72,6 +73,7 @@
             this.button4.Text = "ログアウト";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // lB_MainTitle
             // 
@@ -174,12 +176,11 @@
             // orderCheck1
             // 
             this.orderCheck1.BackColor = System.Drawing.Color.White;
-            this.orderCheck1.Location = new System.Drawing.Point(36, 151);
+            this.orderCheck1.Location = new System.Drawing.Point(7, 276);
             this.orderCheck1.Margin = new System.Windows.Forms.Padding(4);
             this.orderCheck1.Name = "orderCheck1";
             this.orderCheck1.Size = new System.Drawing.Size(1389, 879);
             this.orderCheck1.TabIndex = 2;
-            this.orderCheck1.Visible = false;
             // 
             // carOrder1
             // 
