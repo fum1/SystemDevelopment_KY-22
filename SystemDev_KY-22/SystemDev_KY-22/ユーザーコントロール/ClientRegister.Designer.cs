@@ -1,6 +1,6 @@
 ﻿namespace SystemDev_KY_22
 {
-    partial class ClientRegisterU
+    partial class ClientRegister
     {
         /// <summary> 
         /// 必要なデザイナー変数です。
@@ -28,47 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox = new System.Windows.Forms.GroupBox();
             this.btn_login = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textB_id = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
+            this.txt_tel = new System.Windows.Forms.TextBox();
+            this.lbl_tel = new System.Windows.Forms.Label();
+            this.lbl_address = new System.Windows.Forms.Label();
+            this.txt_address = new System.Windows.Forms.TextBox();
+            this.lbl_birthday = new System.Windows.Forms.Label();
+            this.dtp_birthday = new System.Windows.Forms.DateTimePicker();
+            this.lbl_name = new System.Windows.Forms.Label();
+            this.rbtn_woman = new System.Windows.Forms.RadioButton();
+            this.lbl_sex = new System.Windows.Forms.Label();
+            this.rbtn_man = new System.Windows.Forms.RadioButton();
+            this.txt_id = new System.Windows.Forms.TextBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
+            this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // groupBox
             // 
-            this.groupBox1.Controls.Add(this.btn_login);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.textB_id);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.groupBox1.Location = new System.Drawing.Point(20, 20);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1004, 645);
-            this.groupBox1.TabIndex = 14;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "顧客情報";
+            this.groupBox.Controls.Add(this.btn_login);
+            this.groupBox.Controls.Add(this.txt_tel);
+            this.groupBox.Controls.Add(this.lbl_tel);
+            this.groupBox.Controls.Add(this.lbl_address);
+            this.groupBox.Controls.Add(this.txt_address);
+            this.groupBox.Controls.Add(this.lbl_birthday);
+            this.groupBox.Controls.Add(this.dtp_birthday);
+            this.groupBox.Controls.Add(this.lbl_name);
+            this.groupBox.Controls.Add(this.rbtn_woman);
+            this.groupBox.Controls.Add(this.lbl_sex);
+            this.groupBox.Controls.Add(this.rbtn_man);
+            this.groupBox.Controls.Add(this.txt_id);
+            this.groupBox.Controls.Add(this.txt_name);
+            this.groupBox.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.groupBox.Location = new System.Drawing.Point(20, 20);
+            this.groupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox.Name = "groupBox";
+            this.groupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox.Size = new System.Drawing.Size(1004, 645);
+            this.groupBox.TabIndex = 14;
+            this.groupBox.TabStop = false;
+            this.groupBox.Text = "顧客情報";
             // 
             // btn_login
             // 
@@ -84,161 +84,161 @@
             this.btn_login.Text = "登録";
             this.btn_login.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // txt_tel
             // 
-            this.textBox3.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox3.Location = new System.Drawing.Point(182, 449);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(774, 64);
-            this.textBox3.TabIndex = 18;
+            this.txt_tel.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_tel.Location = new System.Drawing.Point(182, 449);
+            this.txt_tel.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_tel.Name = "txt_tel";
+            this.txt_tel.Size = new System.Drawing.Size(774, 54);
+            this.txt_tel.TabIndex = 18;
             // 
-            // label6
+            // lbl_tel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(40, 449);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(134, 57);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "TEL:";
+            this.lbl_tel.AutoSize = true;
+            this.lbl_tel.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_tel.Location = new System.Drawing.Point(40, 449);
+            this.lbl_tel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_tel.Name = "lbl_tel";
+            this.lbl_tel.Size = new System.Drawing.Size(111, 48);
+            this.lbl_tel.TabIndex = 17;
+            this.lbl_tel.Text = "TEL:";
             // 
-            // label5
+            // lbl_address
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(29, 353);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(151, 57);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "住所:";
+            this.lbl_address.AutoSize = true;
+            this.lbl_address.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_address.Location = new System.Drawing.Point(29, 353);
+            this.lbl_address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_address.Name = "lbl_address";
+            this.lbl_address.Size = new System.Drawing.Size(126, 48);
+            this.lbl_address.TabIndex = 16;
+            this.lbl_address.Text = "住所:";
             // 
-            // textBox2
+            // txt_address
             // 
-            this.textBox2.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox2.Location = new System.Drawing.Point(188, 350);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(768, 64);
-            this.textBox2.TabIndex = 15;
+            this.txt_address.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_address.Location = new System.Drawing.Point(188, 350);
+            this.txt_address.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(768, 54);
+            this.txt_address.TabIndex = 15;
             // 
-            // label4
+            // lbl_birthday
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(8, 261);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(265, 57);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "生年月日:";
+            this.lbl_birthday.AutoSize = true;
+            this.lbl_birthday.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_birthday.Location = new System.Drawing.Point(8, 261);
+            this.lbl_birthday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_birthday.Name = "lbl_birthday";
+            this.lbl_birthday.Size = new System.Drawing.Size(222, 48);
+            this.lbl_birthday.TabIndex = 14;
+            this.lbl_birthday.Text = "生年月日:";
             // 
-            // dateTimePicker1
+            // dtp_birthday
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(281, 263);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(675, 55);
-            this.dateTimePicker1.TabIndex = 13;
+            this.dtp_birthday.CalendarFont = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dtp_birthday.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dtp_birthday.Location = new System.Drawing.Point(281, 263);
+            this.dtp_birthday.Margin = new System.Windows.Forms.Padding(4);
+            this.dtp_birthday.Name = "dtp_birthday";
+            this.dtp_birthday.Size = new System.Drawing.Size(675, 47);
+            this.dtp_birthday.TabIndex = 13;
             // 
-            // label1
+            // lbl_name
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(23, 68);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 57);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "氏名:";
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_name.Location = new System.Drawing.Point(8, 57);
+            this.lbl_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(126, 48);
+            this.lbl_name.TabIndex = 7;
+            this.lbl_name.Text = "氏名:";
             // 
-            // radioButton2
+            // rbtn_woman
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioButton2.Location = new System.Drawing.Point(337, 168);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(141, 52);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "女性";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtn_woman.AutoSize = true;
+            this.rbtn_woman.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.rbtn_woman.Location = new System.Drawing.Point(337, 168);
+            this.rbtn_woman.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtn_woman.Name = "rbtn_woman";
+            this.rbtn_woman.Size = new System.Drawing.Size(118, 44);
+            this.rbtn_woman.TabIndex = 11;
+            this.rbtn_woman.TabStop = true;
+            this.rbtn_woman.Text = "女性";
+            this.rbtn_woman.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // lbl_sex
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(29, 163);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 57);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "性別:";
+            this.lbl_sex.AutoSize = true;
+            this.lbl_sex.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_sex.Location = new System.Drawing.Point(29, 163);
+            this.lbl_sex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_sex.Name = "lbl_sex";
+            this.lbl_sex.Size = new System.Drawing.Size(126, 48);
+            this.lbl_sex.TabIndex = 12;
+            this.lbl_sex.Text = "性別:";
             // 
-            // radioButton1
+            // rbtn_man
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioButton1.Location = new System.Drawing.Point(188, 168);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(141, 52);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "男性";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtn_man.AutoSize = true;
+            this.rbtn_man.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.rbtn_man.Location = new System.Drawing.Point(188, 168);
+            this.rbtn_man.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtn_man.Name = "rbtn_man";
+            this.rbtn_man.Size = new System.Drawing.Size(118, 44);
+            this.rbtn_man.TabIndex = 10;
+            this.rbtn_man.TabStop = true;
+            this.rbtn_man.Text = "男性";
+            this.rbtn_man.UseVisualStyleBackColor = true;
             // 
-            // textB_id
+            // txt_id
             // 
-            this.textB_id.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textB_id.Location = new System.Drawing.Point(182, 68);
-            this.textB_id.Margin = new System.Windows.Forms.Padding(4);
-            this.textB_id.Name = "textB_id";
-            this.textB_id.Size = new System.Drawing.Size(383, 64);
-            this.textB_id.TabIndex = 5;
+            this.txt_id.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_id.Location = new System.Drawing.Point(182, 68);
+            this.txt_id.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(383, 54);
+            this.txt_id.TabIndex = 5;
             // 
-            // textBox1
+            // txt_name
             // 
-            this.textBox1.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox1.Location = new System.Drawing.Point(573, 68);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(383, 64);
-            this.textBox1.TabIndex = 8;
+            this.txt_name.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_name.Location = new System.Drawing.Point(573, 68);
+            this.txt_name.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(383, 54);
+            this.txt_name.TabIndex = 8;
             // 
-            // ClientRegisterU
+            // ClientRegister
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.groupBox1);
-            this.Name = "ClientRegisterU";
+            this.Controls.Add(this.groupBox);
+            this.Name = "ClientRegister";
             this.Size = new System.Drawing.Size(1042, 703);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBox.ResumeLayout(false);
+            this.groupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox;
         private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textB_id;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_tel;
+        private System.Windows.Forms.Label lbl_tel;
+        private System.Windows.Forms.Label lbl_address;
+        private System.Windows.Forms.TextBox txt_address;
+        private System.Windows.Forms.Label lbl_birthday;
+        private System.Windows.Forms.DateTimePicker dtp_birthday;
+        private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.RadioButton rbtn_woman;
+        private System.Windows.Forms.Label lbl_sex;
+        private System.Windows.Forms.RadioButton rbtn_man;
+        private System.Windows.Forms.TextBox txt_id;
+        private System.Windows.Forms.TextBox txt_name;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SystemDev_KY_22
 {
-    public partial class ClientRegisterU : UserControl
+    public partial class ClientRegister : UserControl
     {
-        public ClientRegisterU()
+        public ClientRegister()
         {
             InitializeComponent();
         }
