@@ -47,6 +47,7 @@ namespace SystemDev_KY_22
 
         private void AdminMenu_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             userControls = new UserControl[3] {empRegister1, orderCheck1, list_of_employees1};
         }
     }

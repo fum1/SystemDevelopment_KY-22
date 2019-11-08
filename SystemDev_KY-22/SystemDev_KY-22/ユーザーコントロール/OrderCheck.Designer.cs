@@ -54,7 +54,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(20, 879);
+            this.panel1.Size = new System.Drawing.Size(10, 703);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -63,7 +63,7 @@
             this.panel2.Location = new System.Drawing.Point(1369, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(20, 879);
+            this.panel2.Size = new System.Drawing.Size(10, 703);
             this.panel2.TabIndex = 0;
             // 
             // panel3
@@ -203,7 +203,7 @@
             // 
             // OrderCheck
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel4);
@@ -213,7 +213,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OrderCheck";
-            this.Size = new System.Drawing.Size(1389, 879);
+            this.Size = new System.Drawing.Size(1042, 703);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();

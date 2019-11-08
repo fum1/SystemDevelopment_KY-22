@@ -17,6 +17,7 @@ namespace SystemDev_KY_22
         {
             InitializeComponent();
 
+            
             //流れを把握するために仮でコード書いてます。
             //実装時には削除するか使いまわすか再検討すること (fum1)
             radius = (int)(Math.Sqrt(Width * Width + Height * Height) / 2);
@@ -33,12 +34,13 @@ namespace SystemDev_KY_22
         private int oy { get; set; }
 
         public int id = 0;
+        
 
         private void Login_Load(object sender, EventArgs e)
         {
             //流れを把握するために仮でコード書いてます。
             //実装時には削除するか使いまわすか再検討すること (fum1)
-            Animator.Animate(500, (frame, resolution) =>
+            Animator.Animate(200, (frame, resolution) =>
             {
                 if (!Visible || IsDisposed) return false;
                 var graphicsPath = new GraphicsPath();
@@ -119,6 +121,11 @@ namespace SystemDev_KY_22
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
