@@ -36,7 +36,7 @@
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel_Back = new System.Windows.Forms.Panel();
             this.order1 = new SystemDev_KY_22.Order();
-            this.clientRegisterU1 = new SystemDev_KY_22.ClientRegisterU();
+            this.clientRegisterU1 = new SystemDev_KY_22.ClientRegister();
             this.stockList1 = new SystemDev_KY_22.StockList();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -229,7 +229,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private Order order1;
-        private ClientRegisterU clientRegisterU1;
+        private ClientRegister clientRegisterU1;
         private StockList stockList1;
     }
 }

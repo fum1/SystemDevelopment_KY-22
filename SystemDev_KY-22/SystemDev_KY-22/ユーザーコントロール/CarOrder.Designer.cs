@@ -28,233 +28,233 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lbl_supplier = new System.Windows.Forms.Label();
+            this.cmb_supplier = new System.Windows.Forms.ComboBox();
+            this.lbl_Person = new System.Windows.Forms.Label();
+            this.cmb_Person = new System.Windows.Forms.ComboBox();
+            this.lbl_orderdate = new System.Windows.Forms.Label();
+            this.lbl_productname = new System.Windows.Forms.Label();
+            this.txt_productname = new System.Windows.Forms.TextBox();
+            this.dtp_admissionday = new System.Windows.Forms.DateTimePicker();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.btn_order = new System.Windows.Forms.Button();
+            this.lbl_color = new System.Windows.Forms.Label();
+            this.lbl_model = new System.Windows.Forms.Label();
+            this.lbl_option = new System.Windows.Forms.Label();
+            this.txt_model = new System.Windows.Forms.TextBox();
+            this.txt_color = new System.Windows.Forms.TextBox();
+            this.txt_option = new System.Windows.Forms.TextBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_supplier
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(29, 61);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 57);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "仕入先";
+            this.lbl_supplier.AutoSize = true;
+            this.lbl_supplier.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_supplier.Location = new System.Drawing.Point(29, 61);
+            this.lbl_supplier.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_supplier.Name = "lbl_supplier";
+            this.lbl_supplier.Size = new System.Drawing.Size(139, 57);
+            this.lbl_supplier.TabIndex = 0;
+            this.lbl_supplier.Text = "仕入先";
             // 
-            // comboBox1
+            // cmb_supplier
             // 
-            this.comboBox1.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(278, 61);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(233, 42);
-            this.comboBox1.TabIndex = 2;
+            this.cmb_supplier.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmb_supplier.FormattingEnabled = true;
+            this.cmb_supplier.Location = new System.Drawing.Point(278, 61);
+            this.cmb_supplier.Margin = new System.Windows.Forms.Padding(5);
+            this.cmb_supplier.Name = "cmb_supplier";
+            this.cmb_supplier.Size = new System.Drawing.Size(233, 42);
+            this.cmb_supplier.TabIndex = 2;
             // 
-            // label2
+            // lbl_Person
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(29, 132);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 57);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "担当者";
+            this.lbl_Person.AutoSize = true;
+            this.lbl_Person.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_Person.Location = new System.Drawing.Point(29, 132);
+            this.lbl_Person.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_Person.Name = "lbl_Person";
+            this.lbl_Person.Size = new System.Drawing.Size(139, 57);
+            this.lbl_Person.TabIndex = 12;
+            this.lbl_Person.Text = "担当者";
             // 
-            // comboBox2
+            // cmb_Person
             // 
-            this.comboBox2.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(278, 132);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(233, 42);
-            this.comboBox2.TabIndex = 13;
+            this.cmb_Person.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmb_Person.FormattingEnabled = true;
+            this.cmb_Person.Location = new System.Drawing.Point(278, 132);
+            this.cmb_Person.Margin = new System.Windows.Forms.Padding(5);
+            this.cmb_Person.Name = "cmb_Person";
+            this.cmb_Person.Size = new System.Drawing.Size(233, 42);
+            this.cmb_Person.TabIndex = 13;
             // 
-            // label3
+            // lbl_orderdate
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(29, 203);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 57);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "発注日";
+            this.lbl_orderdate.AutoSize = true;
+            this.lbl_orderdate.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_orderdate.Location = new System.Drawing.Point(29, 203);
+            this.lbl_orderdate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_orderdate.Name = "lbl_orderdate";
+            this.lbl_orderdate.Size = new System.Drawing.Size(139, 57);
+            this.lbl_orderdate.TabIndex = 14;
+            this.lbl_orderdate.Text = "発注日";
             // 
-            // label5
+            // lbl_productname
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(29, 274);
-            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 57);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "商品名";
+            this.lbl_productname.AutoSize = true;
+            this.lbl_productname.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_productname.Location = new System.Drawing.Point(29, 274);
+            this.lbl_productname.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_productname.Name = "lbl_productname";
+            this.lbl_productname.Size = new System.Drawing.Size(139, 57);
+            this.lbl_productname.TabIndex = 18;
+            this.lbl_productname.Text = "商品名";
             // 
-            // textBox1
+            // txt_productname
             // 
-            this.textBox1.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox1.Location = new System.Drawing.Point(278, 274);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(233, 42);
-            this.textBox1.TabIndex = 19;
+            this.txt_productname.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_productname.Location = new System.Drawing.Point(278, 274);
+            this.txt_productname.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_productname.Name = "txt_productname";
+            this.txt_productname.Size = new System.Drawing.Size(233, 42);
+            this.txt_productname.TabIndex = 19;
             // 
-            // dateTimePicker1
+            // dtp_admissionday
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(278, 203);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(233, 48);
-            this.dateTimePicker1.TabIndex = 21;
+            this.dtp_admissionday.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dtp_admissionday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_admissionday.Location = new System.Drawing.Point(278, 203);
+            this.dtp_admissionday.Margin = new System.Windows.Forms.Padding(4);
+            this.dtp_admissionday.Name = "dtp_admissionday";
+            this.dtp_admissionday.Size = new System.Drawing.Size(233, 48);
+            this.dtp_admissionday.TabIndex = 21;
             // 
-            // button3
+            // btn_clear
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(205, 567);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 56);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "クリア";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_clear.BackColor = System.Drawing.Color.Transparent;
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_clear.Location = new System.Drawing.Point(205, 567);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(150, 56);
+            this.btn_clear.TabIndex = 25;
+            this.btn_clear.Text = "クリア";
+            this.btn_clear.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btn_order
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4.Location = new System.Drawing.Point(361, 567);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 56);
-            this.button4.TabIndex = 26;
-            this.button4.Text = "発注";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_order.BackColor = System.Drawing.Color.Transparent;
+            this.btn_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_order.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_order.Location = new System.Drawing.Point(361, 567);
+            this.btn_order.Name = "btn_order";
+            this.btn_order.Size = new System.Drawing.Size(150, 56);
+            this.btn_order.TabIndex = 26;
+            this.btn_order.Text = "発注";
+            this.btn_order.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // lbl_color
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(29, 416);
-            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 57);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "色";
+            this.lbl_color.AutoSize = true;
+            this.lbl_color.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_color.Location = new System.Drawing.Point(29, 416);
+            this.lbl_color.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_color.Name = "lbl_color";
+            this.lbl_color.Size = new System.Drawing.Size(63, 57);
+            this.lbl_color.TabIndex = 29;
+            this.lbl_color.Text = "色";
             // 
-            // label6
+            // lbl_model
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(29, 345);
-            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 57);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "モデル";
+            this.lbl_model.AutoSize = true;
+            this.lbl_model.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_model.Location = new System.Drawing.Point(29, 345);
+            this.lbl_model.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_model.Name = "lbl_model";
+            this.lbl_model.Size = new System.Drawing.Size(139, 57);
+            this.lbl_model.TabIndex = 33;
+            this.lbl_model.Text = "モデル";
             // 
-            // label7
+            // lbl_option
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label7.Location = new System.Drawing.Point(29, 487);
-            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(215, 57);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "オプション";
+            this.lbl_option.AutoSize = true;
+            this.lbl_option.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_option.Location = new System.Drawing.Point(29, 487);
+            this.lbl_option.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_option.Name = "lbl_option";
+            this.lbl_option.Size = new System.Drawing.Size(215, 57);
+            this.lbl_option.TabIndex = 34;
+            this.lbl_option.Text = "オプション";
             // 
-            // textBox2
+            // txt_model
             // 
-            this.textBox2.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox2.Location = new System.Drawing.Point(278, 345);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(233, 42);
-            this.textBox2.TabIndex = 35;
+            this.txt_model.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_model.Location = new System.Drawing.Point(278, 345);
+            this.txt_model.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_model.Name = "txt_model";
+            this.txt_model.Size = new System.Drawing.Size(233, 42);
+            this.txt_model.TabIndex = 35;
             // 
-            // textBox3
+            // txt_color
             // 
-            this.textBox3.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox3.Location = new System.Drawing.Point(278, 416);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(233, 42);
-            this.textBox3.TabIndex = 36;
+            this.txt_color.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_color.Location = new System.Drawing.Point(278, 416);
+            this.txt_color.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_color.Name = "txt_color";
+            this.txt_color.Size = new System.Drawing.Size(233, 42);
+            this.txt_color.TabIndex = 36;
             // 
-            // textBox4
+            // txt_option
             // 
-            this.textBox4.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox4.Location = new System.Drawing.Point(278, 487);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(233, 42);
-            this.textBox4.TabIndex = 37;
+            this.txt_option.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_option.Location = new System.Drawing.Point(278, 487);
+            this.txt_option.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_option.Name = "txt_option";
+            this.txt_option.Size = new System.Drawing.Size(233, 42);
+            this.txt_option.TabIndex = 37;
             // 
-            // pictureBox1
+            // pictureBox
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::SystemDev_KY_22.Properties.Resources.チェリー;
-            this.pictureBox1.Location = new System.Drawing.Point(644, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(567, 608);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox.Image = global::SystemDev_KY_22.Properties.Resources.チェリー;
+            this.pictureBox.Location = new System.Drawing.Point(644, 15);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(567, 608);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox.TabIndex = 38;
+            this.pictureBox.TabStop = false;
             // 
             // CarOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.txt_option);
+            this.Controls.Add(this.txt_color);
+            this.Controls.Add(this.txt_model);
+            this.Controls.Add(this.lbl_option);
+            this.Controls.Add(this.lbl_model);
+            this.Controls.Add(this.lbl_color);
+            this.Controls.Add(this.btn_order);
+            this.Controls.Add(this.btn_clear);
+            this.Controls.Add(this.dtp_admissionday);
+            this.Controls.Add(this.txt_productname);
+            this.Controls.Add(this.lbl_productname);
+            this.Controls.Add(this.lbl_orderdate);
+            this.Controls.Add(this.cmb_Person);
+            this.Controls.Add(this.lbl_Person);
+            this.Controls.Add(this.cmb_supplier);
+            this.Controls.Add(this.lbl_supplier);
             this.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "CarOrder";
             this.Size = new System.Drawing.Size(1230, 735);
             this.Load += new System.EventHandler(this.CarOrder_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,22 +262,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbl_supplier;
+        private System.Windows.Forms.ComboBox cmb_supplier;
+        private System.Windows.Forms.Label lbl_Person;
+        private System.Windows.Forms.ComboBox cmb_Person;
+        private System.Windows.Forms.Label lbl_orderdate;
+        private System.Windows.Forms.Label lbl_productname;
+        private System.Windows.Forms.TextBox txt_productname;
+        private System.Windows.Forms.DateTimePicker dtp_admissionday;
+        private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.Button btn_order;
+        private System.Windows.Forms.Label lbl_color;
+        private System.Windows.Forms.Label lbl_model;
+        private System.Windows.Forms.Label lbl_option;
+        private System.Windows.Forms.TextBox txt_model;
+        private System.Windows.Forms.TextBox txt_color;
+        private System.Windows.Forms.TextBox txt_option;
+        private System.Windows.Forms.PictureBox pictureBox;
     }
 }

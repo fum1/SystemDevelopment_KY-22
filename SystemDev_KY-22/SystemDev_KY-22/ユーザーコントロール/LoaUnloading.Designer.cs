@@ -28,51 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.lbl_storing = new System.Windows.Forms.Label();
+            this.rbtn_storing = new System.Windows.Forms.RadioButton();
+            this.rbtn_Issue = new System.Windows.Forms.RadioButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btn_search = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.txt_productname = new System.Windows.Forms.TextBox();
+            this.lbl_productname = new System.Windows.Forms.Label();
+            this.lbl_ten = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_storing
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.label1.Location = new System.Drawing.Point(41, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "入出庫画面";
+            this.lbl_storing.AutoSize = true;
+            this.lbl_storing.Font = new System.Drawing.Font("MS UI Gothic", 18F);
+            this.lbl_storing.Location = new System.Drawing.Point(41, 29);
+            this.lbl_storing.Name = "lbl_storing";
+            this.lbl_storing.Size = new System.Drawing.Size(163, 30);
+            this.lbl_storing.TabIndex = 0;
+            this.lbl_storing.Text = "入出庫画面";
             // 
-            // radioButton1
+            // rbtn_storing
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("MS UI Gothic", 16F);
-            this.radioButton1.Location = new System.Drawing.Point(46, 131);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(87, 31);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "入庫";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtn_storing.AutoSize = true;
+            this.rbtn_storing.Font = new System.Drawing.Font("MS UI Gothic", 16F);
+            this.rbtn_storing.Location = new System.Drawing.Point(46, 131);
+            this.rbtn_storing.Name = "rbtn_storing";
+            this.rbtn_storing.Size = new System.Drawing.Size(87, 31);
+            this.rbtn_storing.TabIndex = 2;
+            this.rbtn_storing.TabStop = true;
+            this.rbtn_storing.Text = "入庫";
+            this.rbtn_storing.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbtn_Issue
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("MS UI Gothic", 16F);
-            this.radioButton2.Location = new System.Drawing.Point(155, 133);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(87, 31);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "出庫";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtn_Issue.AutoSize = true;
+            this.rbtn_Issue.Font = new System.Drawing.Font("MS UI Gothic", 16F);
+            this.rbtn_Issue.Location = new System.Drawing.Point(155, 133);
+            this.rbtn_Issue.Name = "rbtn_Issue";
+            this.rbtn_Issue.Size = new System.Drawing.Size(87, 31);
+            this.rbtn_Issue.TabIndex = 3;
+            this.rbtn_Issue.TabStop = true;
+            this.rbtn_Issue.Text = "出庫";
+            this.rbtn_Issue.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -83,68 +83,68 @@
             this.dataGridView1.Size = new System.Drawing.Size(996, 422);
             this.dataGridView1.TabIndex = 4;
             // 
-            // button1
+            // btn_search
             // 
-            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 16F);
-            this.button1.Location = new System.Drawing.Point(908, 124);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 40);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "検索";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_search.Font = new System.Drawing.Font("MS UI Gothic", 16F);
+            this.btn_search.Location = new System.Drawing.Point(908, 124);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(81, 40);
+            this.btn_search.TabIndex = 5;
+            this.btn_search.Text = "検索";
+            this.btn_search.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_clear
             // 
-            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 16F);
-            this.button2.Location = new System.Drawing.Point(818, 124);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 40);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "クリア";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_clear.Font = new System.Drawing.Font("MS UI Gothic", 16F);
+            this.btn_clear.Location = new System.Drawing.Point(818, 124);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(84, 40);
+            this.btn_clear.TabIndex = 6;
+            this.btn_clear.Text = "クリア";
+            this.btn_clear.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txt_productname
             // 
-            this.textBox1.Font = new System.Drawing.Font("MS UI Gothic", 16F);
-            this.textBox1.Location = new System.Drawing.Point(590, 130);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 34);
-            this.textBox1.TabIndex = 7;
+            this.txt_productname.Font = new System.Drawing.Font("MS UI Gothic", 16F);
+            this.txt_productname.Location = new System.Drawing.Point(590, 130);
+            this.txt_productname.Name = "txt_productname";
+            this.txt_productname.Size = new System.Drawing.Size(206, 34);
+            this.txt_productname.TabIndex = 7;
             // 
-            // label2
+            // lbl_productname
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 16F);
-            this.label2.Location = new System.Drawing.Point(459, 137);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 27);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "商品名";
+            this.lbl_productname.AutoSize = true;
+            this.lbl_productname.Font = new System.Drawing.Font("MS UI Gothic", 16F);
+            this.lbl_productname.Location = new System.Drawing.Point(459, 137);
+            this.lbl_productname.Name = "lbl_productname";
+            this.lbl_productname.Size = new System.Drawing.Size(93, 27);
+            this.lbl_productname.TabIndex = 8;
+            this.lbl_productname.Text = "商品名";
             // 
-            // label3
+            // lbl_ten
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 16F);
-            this.label3.Location = new System.Drawing.Point(558, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 27);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "：";
+            this.lbl_ten.AutoSize = true;
+            this.lbl_ten.Font = new System.Drawing.Font("MS UI Gothic", 16F);
+            this.lbl_ten.Location = new System.Drawing.Point(558, 135);
+            this.lbl_ten.Name = "lbl_ten";
+            this.lbl_ten.Size = new System.Drawing.Size(26, 27);
+            this.lbl_ten.TabIndex = 9;
+            this.lbl_ten.Text = "：";
             // 
             // LoaUnloading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lbl_ten);
+            this.Controls.Add(this.lbl_productname);
+            this.Controls.Add(this.txt_productname);
+            this.Controls.Add(this.btn_clear);
+            this.Controls.Add(this.btn_search);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.rbtn_Issue);
+            this.Controls.Add(this.rbtn_storing);
+            this.Controls.Add(this.lbl_storing);
             this.Name = "LoaUnloading";
             this.Size = new System.Drawing.Size(1002, 592);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -155,14 +155,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label lbl_storing;
+        private System.Windows.Forms.RadioButton rbtn_storing;
+        private System.Windows.Forms.RadioButton rbtn_Issue;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_search;
+        private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.TextBox txt_productname;
+        private System.Windows.Forms.Label lbl_productname;
+        private System.Windows.Forms.Label lbl_ten;
     }
 }

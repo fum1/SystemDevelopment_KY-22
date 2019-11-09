@@ -31,25 +31,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.lbl_name = new System.Windows.Forms.Label();
+            this.lbl_address = new System.Windows.Forms.Label();
+            this.lbl_tel = new System.Windows.Forms.Label();
+            this.lbl_sex = new System.Windows.Forms.Label();
+            this.lbl_department = new System.Windows.Forms.Label();
+            this.lbl_position = new System.Windows.Forms.Label();
+            this.lbl_clerk = new System.Windows.Forms.Label();
+            this.txt_name = new System.Windows.Forms.TextBox();
+            this.txt_postal = new System.Windows.Forms.TextBox();
+            this.txt_address = new System.Windows.Forms.TextBox();
+            this.cmb_sex = new System.Windows.Forms.ComboBox();
+            this.cmb_department = new System.Windows.Forms.ComboBox();
+            this.cmb_position = new System.Windows.Forms.ComboBox();
+            this.cmb_clerk = new System.Windows.Forms.ComboBox();
+            this.lbl_postal = new System.Windows.Forms.Label();
+            this.groupBox = new System.Windows.Forms.GroupBox();
+            this.txt_tel = new System.Windows.Forms.TextBox();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +58,7 @@
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label1.Location = new System.Drawing.Point(167, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 44);
+            this.label1.Size = new System.Drawing.Size(144, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "社員ID";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -82,206 +82,206 @@
             this.textBox1.Size = new System.Drawing.Size(393, 50);
             this.textBox1.TabIndex = 2;
             // 
-            // label2
+            // lbl_name
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(179, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 30);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "氏名";
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_name.Location = new System.Drawing.Point(179, 61);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(73, 30);
+            this.lbl_name.TabIndex = 3;
+            this.lbl_name.Text = "氏名";
             // 
-            // label3
+            // lbl_address
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(179, 153);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 30);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "住所";
+            this.lbl_address.AutoSize = true;
+            this.lbl_address.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_address.Location = new System.Drawing.Point(179, 153);
+            this.lbl_address.Name = "lbl_address";
+            this.lbl_address.Size = new System.Drawing.Size(73, 30);
+            this.lbl_address.TabIndex = 4;
+            this.lbl_address.Text = "住所";
             // 
-            // label4
+            // lbl_tel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(119, 199);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 30);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "電話番号";
+            this.lbl_tel.AutoSize = true;
+            this.lbl_tel.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_tel.Location = new System.Drawing.Point(119, 199);
+            this.lbl_tel.Name = "lbl_tel";
+            this.lbl_tel.Size = new System.Drawing.Size(133, 30);
+            this.lbl_tel.TabIndex = 5;
+            this.lbl_tel.Text = "電話番号";
             // 
-            // label5
+            // lbl_sex
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(179, 245);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 30);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "性別";
+            this.lbl_sex.AutoSize = true;
+            this.lbl_sex.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_sex.Location = new System.Drawing.Point(179, 245);
+            this.lbl_sex.Name = "lbl_sex";
+            this.lbl_sex.Size = new System.Drawing.Size(73, 30);
+            this.lbl_sex.TabIndex = 6;
+            this.lbl_sex.Text = "性別";
             // 
-            // label6
+            // lbl_department
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(179, 291);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 30);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "部署";
+            this.lbl_department.AutoSize = true;
+            this.lbl_department.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_department.Location = new System.Drawing.Point(179, 291);
+            this.lbl_department.Name = "lbl_department";
+            this.lbl_department.Size = new System.Drawing.Size(73, 30);
+            this.lbl_department.TabIndex = 7;
+            this.lbl_department.Text = "部署";
             // 
-            // label7
+            // lbl_position
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label7.Location = new System.Drawing.Point(179, 337);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 30);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "役職";
+            this.lbl_position.AutoSize = true;
+            this.lbl_position.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_position.Location = new System.Drawing.Point(179, 337);
+            this.lbl_position.Name = "lbl_position";
+            this.lbl_position.Size = new System.Drawing.Size(73, 30);
+            this.lbl_position.TabIndex = 8;
+            this.lbl_position.Text = "役職";
             // 
-            // label8
+            // lbl_clerk
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label8.Location = new System.Drawing.Point(153, 383);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 30);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "店舗ID";
+            this.lbl_clerk.AutoSize = true;
+            this.lbl_clerk.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_clerk.Location = new System.Drawing.Point(153, 383);
+            this.lbl_clerk.Name = "lbl_clerk";
+            this.lbl_clerk.Size = new System.Drawing.Size(99, 30);
+            this.lbl_clerk.TabIndex = 9;
+            this.lbl_clerk.Text = "店舗ID";
             // 
-            // textBox2
+            // txt_name
             // 
-            this.textBox2.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox2.Location = new System.Drawing.Point(258, 61);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 34);
-            this.textBox2.TabIndex = 10;
+            this.txt_name.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_name.Location = new System.Drawing.Point(258, 57);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(191, 34);
+            this.txt_name.TabIndex = 10;
             // 
-            // textBox3
+            // txt_postal
             // 
-            this.textBox3.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox3.Location = new System.Drawing.Point(258, 107);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 34);
-            this.textBox3.TabIndex = 11;
+            this.txt_postal.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_postal.Location = new System.Drawing.Point(258, 107);
+            this.txt_postal.Name = "txt_postal";
+            this.txt_postal.Size = new System.Drawing.Size(191, 34);
+            this.txt_postal.TabIndex = 11;
             // 
-            // textBox4
+            // txt_address
             // 
-            this.textBox4.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox4.Location = new System.Drawing.Point(258, 153);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(640, 34);
-            this.textBox4.TabIndex = 12;
+            this.txt_address.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_address.Location = new System.Drawing.Point(258, 153);
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(640, 34);
+            this.txt_address.TabIndex = 12;
             // 
-            // comboBox1
+            // cmb_sex
             // 
-            this.comboBox1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(258, 245);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(74, 35);
-            this.comboBox1.TabIndex = 17;
+            this.cmb_sex.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmb_sex.FormattingEnabled = true;
+            this.cmb_sex.Location = new System.Drawing.Point(258, 245);
+            this.cmb_sex.Name = "cmb_sex";
+            this.cmb_sex.Size = new System.Drawing.Size(74, 35);
+            this.cmb_sex.TabIndex = 17;
             // 
-            // comboBox2
+            // cmb_department
             // 
-            this.comboBox2.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(258, 291);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(136, 35);
-            this.comboBox2.TabIndex = 18;
+            this.cmb_department.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmb_department.FormattingEnabled = true;
+            this.cmb_department.Location = new System.Drawing.Point(258, 291);
+            this.cmb_department.Name = "cmb_department";
+            this.cmb_department.Size = new System.Drawing.Size(136, 35);
+            this.cmb_department.TabIndex = 18;
             // 
-            // comboBox3
+            // cmb_position
             // 
-            this.comboBox3.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(258, 337);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(136, 35);
-            this.comboBox3.TabIndex = 19;
+            this.cmb_position.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmb_position.FormattingEnabled = true;
+            this.cmb_position.Location = new System.Drawing.Point(258, 337);
+            this.cmb_position.Name = "cmb_position";
+            this.cmb_position.Size = new System.Drawing.Size(136, 35);
+            this.cmb_position.TabIndex = 19;
             // 
-            // comboBox4
+            // cmb_clerk
             // 
-            this.comboBox4.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(258, 383);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(136, 35);
-            this.comboBox4.TabIndex = 20;
+            this.cmb_clerk.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmb_clerk.FormattingEnabled = true;
+            this.cmb_clerk.Location = new System.Drawing.Point(258, 383);
+            this.cmb_clerk.Name = "cmb_clerk";
+            this.cmb_clerk.Size = new System.Drawing.Size(136, 35);
+            this.cmb_clerk.TabIndex = 20;
             // 
-            // label9
+            // lbl_postal
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label9.Location = new System.Drawing.Point(119, 107);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(133, 30);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "郵便番号";
+            this.lbl_postal.AutoSize = true;
+            this.lbl_postal.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_postal.Location = new System.Drawing.Point(119, 107);
+            this.lbl_postal.Name = "lbl_postal";
+            this.lbl_postal.Size = new System.Drawing.Size(133, 30);
+            this.lbl_postal.TabIndex = 21;
+            this.lbl_postal.Text = "郵便番号";
             // 
-            // groupBox1
+            // groupBox
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBox4);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(56, 142);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(934, 472);
-            this.groupBox1.TabIndex = 22;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.groupBox.BackColor = System.Drawing.Color.White;
+            this.groupBox.Controls.Add(this.txt_tel);
+            this.groupBox.Controls.Add(this.lbl_name);
+            this.groupBox.Controls.Add(this.lbl_postal);
+            this.groupBox.Controls.Add(this.lbl_address);
+            this.groupBox.Controls.Add(this.cmb_clerk);
+            this.groupBox.Controls.Add(this.lbl_tel);
+            this.groupBox.Controls.Add(this.cmb_position);
+            this.groupBox.Controls.Add(this.lbl_sex);
+            this.groupBox.Controls.Add(this.cmb_department);
+            this.groupBox.Controls.Add(this.lbl_department);
+            this.groupBox.Controls.Add(this.cmb_sex);
+            this.groupBox.Controls.Add(this.lbl_position);
+            this.groupBox.Controls.Add(this.txt_address);
+            this.groupBox.Controls.Add(this.lbl_clerk);
+            this.groupBox.Controls.Add(this.txt_postal);
+            this.groupBox.Controls.Add(this.txt_name);
+            this.groupBox.ForeColor = System.Drawing.Color.Black;
+            this.groupBox.Location = new System.Drawing.Point(56, 142);
+            this.groupBox.Name = "groupBox";
+            this.groupBox.Size = new System.Drawing.Size(934, 472);
+            this.groupBox.TabIndex = 22;
+            this.groupBox.TabStop = false;
+            this.groupBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox5
+            // txt_tel
             // 
-            this.textBox5.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox5.Location = new System.Drawing.Point(258, 195);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(246, 34);
-            this.textBox5.TabIndex = 22;
+            this.txt_tel.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_tel.Location = new System.Drawing.Point(258, 195);
+            this.txt_tel.Name = "txt_tel";
+            this.txt_tel.Size = new System.Drawing.Size(246, 34);
+            this.txt_tel.TabIndex = 22;
             // 
-            // button2
+            // btn_update
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(835, 631);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 50);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "更新";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_update.Location = new System.Drawing.Point(835, 631);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(155, 50);
+            this.btn_update.TabIndex = 23;
+            this.btn_update.Text = "更新";
+            this.btn_update.UseVisualStyleBackColor = true;
             // 
             // Employee_Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btn_update);
+            this.Controls.Add(this.groupBox);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "Employee_Update";
             this.Size = new System.Drawing.Size(1042, 703);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBox.ResumeLayout(false);
+            this.groupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,23 +292,23 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.Label lbl_address;
+        private System.Windows.Forms.Label lbl_tel;
+        private System.Windows.Forms.Label lbl_sex;
+        private System.Windows.Forms.Label lbl_department;
+        private System.Windows.Forms.Label lbl_position;
+        private System.Windows.Forms.Label lbl_clerk;
+        private System.Windows.Forms.TextBox txt_name;
+        private System.Windows.Forms.TextBox txt_postal;
+        private System.Windows.Forms.TextBox txt_address;
+        private System.Windows.Forms.ComboBox cmb_sex;
+        private System.Windows.Forms.ComboBox cmb_department;
+        private System.Windows.Forms.ComboBox cmb_position;
+        private System.Windows.Forms.ComboBox cmb_clerk;
+        private System.Windows.Forms.Label lbl_postal;
+        private System.Windows.Forms.GroupBox groupBox;
+        private System.Windows.Forms.TextBox txt_tel;
+        private System.Windows.Forms.Button btn_update;
     }
 }
