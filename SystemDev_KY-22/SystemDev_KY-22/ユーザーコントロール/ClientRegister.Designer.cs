@@ -76,7 +76,7 @@
             this.btn_login.BackColor = System.Drawing.Color.Transparent;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_login.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_login.Location = new System.Drawing.Point(308, 535);
+            this.btn_login.Location = new System.Drawing.Point(441, 632);
             this.btn_login.Margin = new System.Windows.Forms.Padding(4);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(395, 74);
@@ -225,7 +225,6 @@
         }
 
         #endregion
-
         private System.Windows.Forms.GroupBox groupBox;
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.TextBox txt_tel;
