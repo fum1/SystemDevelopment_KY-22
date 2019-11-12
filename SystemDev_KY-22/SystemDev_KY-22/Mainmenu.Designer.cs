@@ -33,14 +33,16 @@
             this.button4 = new System.Windows.Forms.Button();
             this.lB_MainTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.selectPanel = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.orderCheck1 = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
-            this.carOrder1 = new SystemDev_KY_22.CarOrder();
-            this.stockList1 = new SystemDev_KY_22.StockList();
+            this.loaUnloading1 = new SystemDev_KY_22.LoaUnloading();
+            this.stockList2 = new SystemDev_KY_22.StockList();
+            this.orderCheck2 = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
+            this.carOrder2 = new SystemDev_KY_22.CarOrder();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -81,7 +83,7 @@
             this.lB_MainTitle.Font = new System.Drawing.Font("ＭＳ 明朝", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lB_MainTitle.Location = new System.Drawing.Point(34, 38);
             this.lB_MainTitle.Name = "lB_MainTitle";
-            this.lB_MainTitle.Size = new System.Drawing.Size(279, 33);
+            this.lB_MainTitle.Size = new System.Drawing.Size(345, 40);
             this.lB_MainTitle.TabIndex = 6;
             this.lB_MainTitle.Text = "物流担当メニュー";
             this.lB_MainTitle.Click += new System.EventHandler(this.lB_MainTitle_Click);
@@ -89,6 +91,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.selectPanel);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
@@ -99,10 +102,28 @@
             this.panel2.Size = new System.Drawing.Size(223, 702);
             this.panel2.TabIndex = 8;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button3.Location = new System.Drawing.Point(12, 215);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(201, 115);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "入出庫一覧";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // selectPanel
             // 
             this.selectPanel.BackColor = System.Drawing.Color.Gray;
-            this.selectPanel.Location = new System.Drawing.Point(210, 160);
+            this.selectPanel.Location = new System.Drawing.Point(210, 69);
             this.selectPanel.Name = "selectPanel";
             this.selectPanel.Size = new System.Drawing.Size(10, 89);
             this.selectPanel.TabIndex = 5;
@@ -117,7 +138,7 @@
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(16, 322);
+            this.button2.Location = new System.Drawing.Point(12, 374);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(201, 115);
             this.button2.TabIndex = 4;
@@ -135,7 +156,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(12, 493);
+            this.button1.Location = new System.Drawing.Point(12, 525);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(201, 115);
             this.button1.TabIndex = 3;
@@ -153,7 +174,7 @@
             this.btn_StockList.ForeColor = System.Drawing.Color.Black;
             this.btn_StockList.Image = ((System.Drawing.Image)(resources.GetObject("btn_StockList.Image")));
             this.btn_StockList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_StockList.Location = new System.Drawing.Point(16, 151);
+            this.btn_StockList.Location = new System.Drawing.Point(12, 69);
             this.btn_StockList.Name = "btn_StockList";
             this.btn_StockList.Size = new System.Drawing.Size(201, 115);
             this.btn_StockList.TabIndex = 2;
@@ -164,42 +185,50 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.orderCheck1);
-            this.panel3.Controls.Add(this.carOrder1);
-            this.panel3.Controls.Add(this.stockList1);
+            this.panel3.Controls.Add(this.loaUnloading1);
+            this.panel3.Controls.Add(this.stockList2);
+            this.panel3.Controls.Add(this.orderCheck2);
+            this.panel3.Controls.Add(this.carOrder2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(223, 108);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1042, 702);
             this.panel3.TabIndex = 8;
             // 
-            // orderCheck1
+            // loaUnloading1
             // 
-            this.orderCheck1.BackColor = System.Drawing.Color.White;
-            this.orderCheck1.Location = new System.Drawing.Point(7, 276);
-            this.orderCheck1.Margin = new System.Windows.Forms.Padding(4);
-            this.orderCheck1.Name = "orderCheck1";
-            this.orderCheck1.Size = new System.Drawing.Size(1389, 879);
-            this.orderCheck1.TabIndex = 2;
+            this.loaUnloading1.BackColor = System.Drawing.Color.White;
+            this.loaUnloading1.Location = new System.Drawing.Point(161, 291);
+            this.loaUnloading1.Name = "loaUnloading1";
+            this.loaUnloading1.Size = new System.Drawing.Size(1002, 592);
+            this.loaUnloading1.TabIndex = 3;
             // 
-            // carOrder1
+            // stockList2
             // 
-            this.carOrder1.BackColor = System.Drawing.Color.White;
-            this.carOrder1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.carOrder1.Location = new System.Drawing.Point(106, 62);
-            this.carOrder1.Margin = new System.Windows.Forms.Padding(5);
-            this.carOrder1.Name = "carOrder1";
-            this.carOrder1.Size = new System.Drawing.Size(858, 500);
-            this.carOrder1.TabIndex = 1;
-            this.carOrder1.Visible = false;
+            this.stockList2.BackColor = System.Drawing.Color.White;
+            this.stockList2.Location = new System.Drawing.Point(56, 281);
+            this.stockList2.Name = "stockList2";
+            this.stockList2.Size = new System.Drawing.Size(1042, 703);
+            this.stockList2.TabIndex = 2;
             // 
-            // stockList1
+            // orderCheck2
             // 
-            this.stockList1.BackColor = System.Drawing.Color.White;
-            this.stockList1.Location = new System.Drawing.Point(36, 251);
-            this.stockList1.Name = "stockList1";
-            this.stockList1.Size = new System.Drawing.Size(1042, 703);
-            this.stockList1.TabIndex = 0;
+            this.orderCheck2.BackColor = System.Drawing.Color.White;
+            this.orderCheck2.Location = new System.Drawing.Point(207, 234);
+            this.orderCheck2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.orderCheck2.Name = "orderCheck2";
+            this.orderCheck2.Size = new System.Drawing.Size(1389, 879);
+            this.orderCheck2.TabIndex = 1;
+            // 
+            // carOrder2
+            // 
+            this.carOrder2.BackColor = System.Drawing.Color.White;
+            this.carOrder2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.carOrder2.Location = new System.Drawing.Point(366, 203);
+            this.carOrder2.Margin = new System.Windows.Forms.Padding(5);
+            this.carOrder2.Name = "carOrder2";
+            this.carOrder2.Size = new System.Drawing.Size(1230, 735);
+            this.carOrder2.TabIndex = 0;
             // 
             // MainMenu
             // 
@@ -235,5 +264,10 @@
         private StockList stockList1;
         private ユーザーコントロール.OrderCheck orderCheck1;
         private CarOrder carOrder1;
+        private System.Windows.Forms.Button button3;
+        private LoaUnloading loaUnloading1;
+        private StockList stockList2;
+        private ユーザーコントロール.OrderCheck orderCheck2;
+        private CarOrder carOrder2;
     }
 }
