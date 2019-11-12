@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace SystemDev_KY_22
 {
     public partial class Login : Form
     {
+        OleDbConnection cn = new OleDbConnection();  //コネクションオブジェクト
         public Login()
         {
             InitializeComponent();
@@ -34,7 +36,10 @@ namespace SystemDev_KY_22
         private int oy { get; set; }
 
         public int id = 0;
-        
+
+
+        public int flg;
+
 
         private void Login_Load(object sender, EventArgs e)
         {
@@ -50,6 +55,9 @@ namespace SystemDev_KY_22
                 if (frame == resolution) Region = null;
                 return true;
             });
+
+            cn.ConnectionString =
+     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -79,8 +87,22 @@ namespace SystemDev_KY_22
 
         private void Btn_login_Click(object sender, EventArgs e)
         {
-            if(int.TryParse(textB_id.Text,out id))
+            OleDbDataAdapter da = new OleDbDataAdapter(); //データアダプタオブジェクト
+            OleDbCommand cmd = new OleDbCommand();        //コマンドオブジェクト
+            string sid = textB_id.Text;
+            string spass = MaskedTextB_PassWord.Text;
+            cmd.Connection = cn;
+            cmd.CommandText = "SELECT * FROM 社員マスタ WHERE 社員ID=@id AND パスワード=@pass";
+            da.SelectCommand = cmd;
+            cmd.Parameters.AddWithValue("@id", sid);         //IDのパラメータ
+            cmd.Parameters.AddWithValue("@pass", spass);     //Passのパラメータ
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            if (dt.Rows.Count > 0)    //データテーブルの行数
             {
+                //   MessageBox.Show("プレーヤーを表示", "WinSystem02");   //後でコード変更
+                this.Hide();
                 switch (id)
                 {
                     case 0:
@@ -99,12 +121,26 @@ namespace SystemDev_KY_22
             }
             else
             {
-                MessageBox.Show("IDに半角数字を入力してください。 営業 = 0,物流 = 1,Admin = 2");
+                MessageBox.Show("ID、パスワードを確認してください。", "WinSystem02");
+
             }
 
-            
-            //流れを把握するために仮でコード書いてます。
-            //実装時には削除するか使いまわすか再検討すること (fum1)
+            cn.Close();
+
+
+
+            //if(int.TryParse(textB_id.Text,out id))
+            //{
+
+            //}
+            //else
+            //{
+            //    MessageBox.Show("IDに半角数字を入力してください。 営業 = 0,物流 = 1,Admin = 2");
+            //}
+
+
+            ////流れを把握するために仮でコード書いてます。
+            ////実装時には削除するか使いまわすか再検討すること (fum1)
 
         }
 
