@@ -208,6 +208,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "List_of_employees";
             this.Size = new System.Drawing.Size(1149, 764);
+            this.Load += new System.EventHandler(this.List_of_employees_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
