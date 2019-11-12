@@ -41,10 +41,25 @@ namespace SystemDev_KY_22
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+ 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            groupBox_update.Visible = true;
+        }
+
+        private void txt_password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_register_Click(object sender, EventArgs e)
+        {
             // ID、Pass、Name、PostNumber、AddressをINSERT  
             OleDbCommand cmd =
-                new OleDbCommand("INSERT INTO 社員マスタ (社員ID,氏名, 住所, 郵便番号, 電話番号,性別,部署,役職,店舗ID) " +
-                "VALUES (@社員ID, @社員名, @住所, @郵便番号, @電話番号,@性別,@部署,@役職,@店舗ID)", cn);
+                new OleDbCommand("INSERT INTO 社員マスタ (社員ID,氏名, 住所, 郵便番号, 電話番号,性別,部署,役職,店舗ID,パスワード) " +
+                "VALUES (@社員ID, @社員名, @住所, @郵便番号, @電話番号,@性別,@部署,@役職,@店舗ID,@パスワード)", cn);
             //DBの列名に、PassWord (Microsoft Jet 4.0 の予約語)は使用できない
             //@パラメータが出てくる順番に設定する
             cmd.Parameters.AddWithValue("@社員ID", txt_id.Text);
@@ -56,6 +71,7 @@ namespace SystemDev_KY_22
             cmd.Parameters.AddWithValue("@部署", txt_department.Text);
             cmd.Parameters.AddWithValue("@役職", txt_position.Text);
             cmd.Parameters.AddWithValue("@店舗ID", txt_clerk.Text);
+            cmd.Parameters.AddWithValue("@パスワード", txt_password.Text);
             try
             {
                 cn.Open();                 //コネクションを開く
@@ -71,11 +87,6 @@ namespace SystemDev_KY_22
 
 
             MessageBox.Show("登録しました", "住所録");
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            groupBox_update.Visible = true;
         }
     }
 }
