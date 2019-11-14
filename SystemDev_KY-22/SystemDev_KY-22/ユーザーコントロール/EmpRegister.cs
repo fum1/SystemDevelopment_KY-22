@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Data.SqlClient;
 
 namespace SystemDev_KY_22
 {
     public partial class EmpRegister : UserControl
     {
-        OleDbConnection cn = new OleDbConnection();  //コネクションオブジェクト
-
+        OleDbConnection cn = new OleDbConnection(); //コネクションオブジェクト
+        DataTable dt = new DataTable();
         public EmpRegister()
         {
 
@@ -44,12 +45,9 @@ namespace SystemDev_KY_22
  
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            groupBox_update.Visible = true;
-        }
+      
 
-        private void txt_password_TextChanged(object sender, EventArgs e)
+            private void txt_password_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -87,6 +85,33 @@ namespace SystemDev_KY_22
 
 
             MessageBox.Show("登録しました", "住所録");
+        }
+
+        private void txt_id1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+           /* OleDbCommand cmd =
+               new OleDbCommand("SELECT 社員ID FROM 社員マスタ WHERE PostNumber=@posnum", cn);
+            OleDbDataAdapter da = new OleDbDataAdapter();
+            da.SelectCommand = cmd;
+            string postal = txt_id1.Text.("");
+            cmd.Parameters.AddWithValue("", postal);             //郵便番号のパラメータ
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+            {
+                txt_name1.Text =
+                    dt.Rows[0][0].ToString() + dt.Rows[0][1].ToString() + dt.Rows[0][2].ToString();
+            }
+            else
+            {
+                txt_name1.Text = "郵便番号辞書に登録されていません";
+            }*/
         }
     }
 }
