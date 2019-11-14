@@ -101,22 +101,25 @@ namespace SystemDev_KY_22
 
             if (dt.Rows.Count > 0)    //データテーブルの行数
             {
-                //   MessageBox.Show("プレーヤーを表示", "WinSystem02");   //後でコード変更
-                this.Hide();
-                switch (id)
+                if (int.TryParse(textB_id.Text, out id))
                 {
-                    case 0:
-                        SalesMenu sm = new SalesMenu();
-                        sm.ShowDialog();
-                        break;
-                    case 1:
-                        MainMenu mm = new MainMenu();
-                        mm.ShowDialog();
-                        break;
-                    case 2:
-                        AdminMenu am = new AdminMenu();
-                        am.ShowDialog();
-                        break;
+                    //   MessageBox.Show("プレーヤーを表示", "WinSystem02");   //後でコード変更
+                    this.Hide();
+                    switch (id)
+                    {
+                        case 0:
+                            SalesMenu sm = new SalesMenu();
+                            sm.ShowDialog();
+                            break;
+                        case 1:
+                            MainMenu mm = new MainMenu();
+                            mm.ShowDialog();
+                            break;
+                        case 2:
+                            AdminMenu am = new AdminMenu();
+                            am.ShowDialog();
+                            break;
+                    }
                 }
             }
             else
