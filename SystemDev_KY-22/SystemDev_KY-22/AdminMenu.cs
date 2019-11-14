@@ -35,7 +35,7 @@ namespace SystemDev_KY_22
         private void Btn_SalesCheck_Click(object sender, EventArgs e)
         {
             pc.Set((Button)sender,selectPanel);
-            pc.Chenge(userControls, list_of_employees1);
+            pc.Chenge(userControls, salesList1);
 
         }
 
@@ -45,10 +45,21 @@ namespace SystemDev_KY_22
             pc.Chenge(userControls, orderCheck1);
         }
 
+        private void btn_employees_Click(object sender, EventArgs e)
+        {
+            pc.Set((Button)sender, selectPanel);
+            pc.Chenge(userControls, list_of_employees1);
+        }
+
+       
+
+
         private void AdminMenu_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            userControls = new UserControl[3] {empRegister1, orderCheck1, list_of_employees1};
+            userControls = new UserControl[4] { empRegister1, orderCheck1, salesList1, list_of_employees1 };
+               
         }
-    }
+    };
 }
+

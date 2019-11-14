@@ -33,11 +33,13 @@
             this.btn_logout = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_employees = new System.Windows.Forms.Button();
             this.selectPanel = new System.Windows.Forms.Panel();
             this.btn_OrderList = new System.Windows.Forms.Button();
             this.Btn_EmpRegister = new System.Windows.Forms.Button();
             this.btn_SalesList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.salesList1 = new SystemDev_KY_22.SalesList();
             this.orderCheck1 = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
             this.empRegister1 = new SystemDev_KY_22.EmpRegister();
             this.list_of_employees1 = new SystemDev_KY_22.ユーザーコントロール.List_of_employees();
@@ -53,7 +55,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1167, 108);
             this.panel1.TabIndex = 0;
@@ -68,7 +70,7 @@
             this.btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_logout.Image")));
             this.btn_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_logout.Location = new System.Drawing.Point(885, 11);
-            this.btn_logout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_logout.Margin = new System.Windows.Forms.Padding(2);
             this.btn_logout.Name = "btn_logout";
             this.btn_logout.Size = new System.Drawing.Size(271, 82);
             this.btn_logout.TabIndex = 7;
@@ -91,22 +93,42 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.btn_employees);
             this.panel2.Controls.Add(this.selectPanel);
             this.panel2.Controls.Add(this.btn_OrderList);
             this.panel2.Controls.Add(this.Btn_EmpRegister);
             this.panel2.Controls.Add(this.btn_SalesList);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 108);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(223, 599);
             this.panel2.TabIndex = 1;
+            // 
+            // btn_employees
+            // 
+            this.btn_employees.BackColor = System.Drawing.Color.Transparent;
+            this.btn_employees.FlatAppearance.BorderSize = 0;
+            this.btn_employees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_employees.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-R", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_employees.ForeColor = System.Drawing.Color.Black;
+            this.btn_employees.Image = ((System.Drawing.Image)(resources.GetObject("btn_employees.Image")));
+            this.btn_employees.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_employees.Location = new System.Drawing.Point(21, 554);
+            this.btn_employees.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_employees.Name = "btn_employees";
+            this.btn_employees.Size = new System.Drawing.Size(186, 128);
+            this.btn_employees.TabIndex = 6;
+            this.btn_employees.Text = "社員一覧";
+            this.btn_employees.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_employees.UseVisualStyleBackColor = false;
+            this.btn_employees.Click += new System.EventHandler(this.btn_employees_Click);
             // 
             // selectPanel
             // 
             this.selectPanel.BackColor = System.Drawing.Color.Gray;
             this.selectPanel.Location = new System.Drawing.Point(211, 77);
-            this.selectPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.selectPanel.Margin = new System.Windows.Forms.Padding(2);
             this.selectPanel.Name = "selectPanel";
             this.selectPanel.Size = new System.Drawing.Size(8, 71);
             this.selectPanel.TabIndex = 5;
@@ -121,8 +143,8 @@
             this.btn_OrderList.ForeColor = System.Drawing.Color.Black;
             this.btn_OrderList.Image = ((System.Drawing.Image)(resources.GetObject("btn_OrderList.Image")));
             this.btn_OrderList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_OrderList.Location = new System.Drawing.Point(20, 487);
-            this.btn_OrderList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_OrderList.Location = new System.Drawing.Point(21, 376);
+            this.btn_OrderList.Margin = new System.Windows.Forms.Padding(2);
             this.btn_OrderList.Name = "btn_OrderList";
             this.btn_OrderList.Size = new System.Drawing.Size(186, 128);
             this.btn_OrderList.TabIndex = 2;
@@ -140,8 +162,8 @@
             this.Btn_EmpRegister.ForeColor = System.Drawing.Color.Black;
             this.Btn_EmpRegister.Image = ((System.Drawing.Image)(resources.GetObject("Btn_EmpRegister.Image")));
             this.Btn_EmpRegister.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_EmpRegister.Location = new System.Drawing.Point(20, 278);
-            this.Btn_EmpRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_EmpRegister.Location = new System.Drawing.Point(21, 198);
+            this.Btn_EmpRegister.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_EmpRegister.Name = "Btn_EmpRegister";
             this.Btn_EmpRegister.Size = new System.Drawing.Size(186, 128);
             this.Btn_EmpRegister.TabIndex = 4;
@@ -159,8 +181,8 @@
             this.btn_SalesList.ForeColor = System.Drawing.Color.Black;
             this.btn_SalesList.Image = ((System.Drawing.Image)(resources.GetObject("btn_SalesList.Image")));
             this.btn_SalesList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_SalesList.Location = new System.Drawing.Point(20, 75);
-            this.btn_SalesList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_SalesList.Location = new System.Drawing.Point(21, 26);
+            this.btn_SalesList.Margin = new System.Windows.Forms.Padding(2);
             this.btn_SalesList.Name = "btn_SalesList";
             this.btn_SalesList.Size = new System.Drawing.Size(186, 122);
             this.btn_SalesList.TabIndex = 3;
@@ -172,20 +194,31 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.salesList1);
             this.panel3.Controls.Add(this.orderCheck1);
             this.panel3.Controls.Add(this.empRegister1);
             this.panel3.Controls.Add(this.list_of_employees1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(223, 108);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(944, 599);
             this.panel3.TabIndex = 2;
             // 
+            // salesList1
+            // 
+            this.salesList1.BackColor = System.Drawing.Color.White;
+            this.salesList1.Location = new System.Drawing.Point(50, 543);
+            this.salesList1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.salesList1.Name = "salesList1";
+            this.salesList1.Size = new System.Drawing.Size(782, 562);
+            this.salesList1.TabIndex = 0;
+            // 
             // orderCheck1
             // 
             this.orderCheck1.BackColor = System.Drawing.Color.White;
-            this.orderCheck1.Location = new System.Drawing.Point(120, 261);
+            this.orderCheck1.Location = new System.Drawing.Point(91, 238);
+            this.orderCheck1.Margin = new System.Windows.Forms.Padding(5);
             this.orderCheck1.Name = "orderCheck1";
             this.orderCheck1.Size = new System.Drawing.Size(1042, 703);
             this.orderCheck1.TabIndex = 3;
@@ -202,7 +235,7 @@
             // list_of_employees1
             // 
             this.list_of_employees1.BackColor = System.Drawing.Color.White;
-            this.list_of_employees1.Location = new System.Drawing.Point(220, 246);
+            this.list_of_employees1.Location = new System.Drawing.Point(260, 278);
             this.list_of_employees1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.list_of_employees1.Name = "list_of_employees1";
             this.list_of_employees1.Size = new System.Drawing.Size(782, 562);
@@ -218,7 +251,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminMenu";
             this.Text = "AdminMenu2";
             this.Load += new System.EventHandler(this.AdminMenu_Load);
@@ -244,5 +277,7 @@
         private EmpRegister empRegister1;
         private ユーザーコントロール.List_of_employees list_of_employees1;
         private ユーザーコントロール.OrderCheck orderCheck1;
+        private SalesList salesList1;
+        private System.Windows.Forms.Button btn_employees;
     }
 }
