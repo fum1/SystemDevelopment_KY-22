@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox = new System.Windows.Forms.GroupBox();
+            this.cmb_sex = new System.Windows.Forms.ComboBox();
             this.txt_pos = new System.Windows.Forms.TextBox();
             this.lbl_pos = new System.Windows.Forms.Label();
             this.txt_id = new System.Windows.Forms.TextBox();
@@ -41,15 +42,14 @@
             this.lbl_birthday = new System.Windows.Forms.Label();
             this.dtp_birthday = new System.Windows.Forms.DateTimePicker();
             this.lbl_name = new System.Windows.Forms.Label();
-            this.rbtn_woman = new System.Windows.Forms.RadioButton();
             this.lbl_sex = new System.Windows.Forms.Label();
-            this.rbtn_man = new System.Windows.Forms.RadioButton();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox
             // 
+            this.groupBox.Controls.Add(this.cmb_sex);
             this.groupBox.Controls.Add(this.txt_pos);
             this.groupBox.Controls.Add(this.lbl_pos);
             this.groupBox.Controls.Add(this.txt_id);
@@ -62,9 +62,7 @@
             this.groupBox.Controls.Add(this.lbl_birthday);
             this.groupBox.Controls.Add(this.dtp_birthday);
             this.groupBox.Controls.Add(this.lbl_name);
-            this.groupBox.Controls.Add(this.rbtn_woman);
             this.groupBox.Controls.Add(this.lbl_sex);
-            this.groupBox.Controls.Add(this.rbtn_man);
             this.groupBox.Controls.Add(this.txt_name);
             this.groupBox.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.groupBox.Location = new System.Drawing.Point(22, 20);
@@ -75,6 +73,17 @@
             this.groupBox.TabIndex = 14;
             this.groupBox.TabStop = false;
             this.groupBox.Text = "顧客情報";
+            // 
+            // cmb_sex
+            // 
+            this.cmb_sex.FormattingEnabled = true;
+            this.cmb_sex.Items.AddRange(new object[] {
+            "男性",
+            "女性"});
+            this.cmb_sex.Location = new System.Drawing.Point(325, 241);
+            this.cmb_sex.Name = "cmb_sex";
+            this.cmb_sex.Size = new System.Drawing.Size(213, 35);
+            this.cmb_sex.TabIndex = 25;
             // 
             // txt_pos
             // 
@@ -131,6 +140,7 @@
             this.btn_login.TabIndex = 19;
             this.btn_login.Text = "登録";
             this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // txt_tel
             // 
@@ -172,7 +182,6 @@
             this.txt_address.Name = "txt_address";
             this.txt_address.Size = new System.Drawing.Size(768, 54);
             this.txt_address.TabIndex = 15;
-            this.txt_address.TextChanged += new System.EventHandler(this.txt_address_TextChanged);
             this.txt_address.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_address_KeyDown);
             // 
             // lbl_birthday
@@ -208,19 +217,6 @@
             this.lbl_name.TabIndex = 7;
             this.lbl_name.Text = "氏名:";
             // 
-            // rbtn_woman
-            // 
-            this.rbtn_woman.AutoSize = true;
-            this.rbtn_woman.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.rbtn_woman.Location = new System.Drawing.Point(423, 231);
-            this.rbtn_woman.Margin = new System.Windows.Forms.Padding(4);
-            this.rbtn_woman.Name = "rbtn_woman";
-            this.rbtn_woman.Size = new System.Drawing.Size(118, 44);
-            this.rbtn_woman.TabIndex = 11;
-            this.rbtn_woman.TabStop = true;
-            this.rbtn_woman.Text = "女性";
-            this.rbtn_woman.UseVisualStyleBackColor = true;
-            // 
             // lbl_sex
             // 
             this.lbl_sex.AutoSize = true;
@@ -231,20 +227,6 @@
             this.lbl_sex.Size = new System.Drawing.Size(126, 48);
             this.lbl_sex.TabIndex = 12;
             this.lbl_sex.Text = "性別:";
-            // 
-            // rbtn_man
-            // 
-            this.rbtn_man.AutoSize = true;
-            this.rbtn_man.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.rbtn_man.Location = new System.Drawing.Point(327, 230);
-            this.rbtn_man.Margin = new System.Windows.Forms.Padding(4);
-            this.rbtn_man.Name = "rbtn_man";
-            this.rbtn_man.Size = new System.Drawing.Size(118, 44);
-            this.rbtn_man.TabIndex = 10;
-            this.rbtn_man.TabStop = true;
-            this.rbtn_man.Text = "男性";
-            this.rbtn_man.UseVisualStyleBackColor = true;
-            this.rbtn_man.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rbtn_man_KeyDown);
             // 
             // txt_name
             // 
@@ -280,13 +262,12 @@
         private System.Windows.Forms.Label lbl_birthday;
         private System.Windows.Forms.DateTimePicker dtp_birthday;
         private System.Windows.Forms.Label lbl_name;
-        private System.Windows.Forms.RadioButton rbtn_woman;
         private System.Windows.Forms.Label lbl_sex;
-        private System.Windows.Forms.RadioButton rbtn_man;
         private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.Label lbl_id;
         private System.Windows.Forms.TextBox txt_pos;
         private System.Windows.Forms.Label lbl_pos;
+        private System.Windows.Forms.ComboBox cmb_sex;
     }
 }
