@@ -71,5 +71,38 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
             dataGridView1.AutoResizeColumns();          //列の幅の自動調整
         }
+
+        private void cmb_position_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OleDbCommand cmd =
+                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
+                "FROM 社員マスタ WHERE 役職 LIKE '%'+ @役職 + '%' ORDER BY 役職");
+            cmd.Connection = cn;
+            OleDbDataAdapter da = new OleDbDataAdapter();
+            da.SelectCommand = cmd;
+            cmd.Parameters.AddWithValue("@役職", cmb_position.Text);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
+            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+        }
+        private void cmb_clerk_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            OleDbCommand cmd =
+                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
+                "FROM 社員マスタ WHERE 店舗ID = @店舗ID ORDER BY 店舗ID");
+            cmd.Connection = cn;
+            OleDbDataAdapter da = new OleDbDataAdapter();
+            da.SelectCommand = cmd;
+            cmd.Parameters.AddWithValue("@店舗ID", cmb_clerk.Text);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
+            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+        }
     }
 }
