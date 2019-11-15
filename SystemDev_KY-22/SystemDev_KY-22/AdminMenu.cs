@@ -60,6 +60,8 @@ namespace SystemDev_KY_22
             userControls = new UserControl[4] { empRegister1, orderCheck1, salesList1, list_of_employees1 };
                
         }
+
+       
     };
 }
 
