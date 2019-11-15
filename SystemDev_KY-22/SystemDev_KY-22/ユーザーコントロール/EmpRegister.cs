@@ -16,6 +16,7 @@ namespace SystemDev_KY_22
     {
         OleDbConnection cn = new OleDbConnection(); //コネクションオブジェクト
         DataTable dt = new DataTable();
+        
         public EmpRegister()
         {
 
@@ -94,24 +95,70 @@ namespace SystemDev_KY_22
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-           /* OleDbCommand cmd =
-               new OleDbCommand("SELECT 社員ID FROM 社員マスタ WHERE PostNumber=@posnum", cn);
+
+            groupBox_update.Visible = true;
+
+            OleDbCommand cmd =
+                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
+                "FROM 社員マスタ WHERE 社員ID = @社員ID ORDER BY 社員ID");
+            cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
-            string postal = txt_id1.Text.("");
-            cmd.Parameters.AddWithValue("", postal);             //郵便番号のパラメータ
+            cmd.Parameters.AddWithValue("@社員ID", txt_id1.Text);
             DataTable dt = new DataTable();
             da.Fill(dt);
 
-            if (dt.Rows.Count > 0)
-            {
-                txt_name1.Text =
-                    dt.Rows[0][0].ToString() + dt.Rows[0][1].ToString() + dt.Rows[0][2].ToString();
-            }
-            else
-            {
-                txt_name1.Text = "郵便番号辞書に登録されていません";
-            }*/
+            DataRow dr = dt.Rows[0];
+            txt_name1.Text = dr["氏名"].ToString();
+            txt_postal1.Text = dr["郵便番号"].ToString();
+            txt_address1.Text = dr["住所"].ToString();
+            txt_tel1.Text = dr["電話番号"].ToString();
+            cmb_sex1.Text = dr["性別"].ToString();
+            cmb_department1.Text = dr["部署"].ToString();
+            cmb_position1.Text = dr["役職"].ToString();
+            cmb_clerk1.Text = dr["店舗ID"].ToString();
+
+            cn.Close();
+
         }
+
+        private void cmb_sex1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+            string selectedItem = cmb_sex1.SelectedItem.ToString();
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            OleDbCommand cmd =new OleDbCommand("UPDATE 社員マスタ SET 氏名 = @name, " +
+              " 郵便番号 = @postal,住所 = @address, 電話番号 = @tell,性別 = @sex, " +
+              " 部署 = @department,役所 = @position,店舗ID = @shopID,パスワード = @pas,"+ "WHERE 社員ID= @社員ID", cn);
+           //@パラメータが出てくる順番に設定する
+           cmd.Parameters.AddWithValue("@name", txt_name1.Text);               //Passのデータ
+           cmd.Parameters.AddWithValue("@postal", txt_postal1.Text);               //Nameのデータ
+           cmd.Parameters.AddWithValue("@address", txt_address1.Text);     //PostNumberのデータ
+           cmd.Parameters.AddWithValue("@tell", txt_tel1.Text);           //Addressのデータ
+           cmd.Parameters.AddWithValue("@sex", cmb_sex1);//IDのデータ
+           cmd.Parameters.AddWithValue("@department", cmb_department1.Text);
+           cmd.Parameters.AddWithValue("@position", cmb_position1.Text);
+           cmd.Parameters.AddWithValue("@shopID", cmb_clerk1.Text);
+           cmd.Parameters.AddWithValue("@社員ID", txt_id1.Text);
+
+            try
+            {
+                cn.Open();                  //コネクションを開く
+                cmd.ExecuteNonQuery();     //SQLを実行
+                cn.Close();                //コネクションを閉じる
+            }
+            catch (Exception ex)
+            {
+               MessageBox.Show(ex.Message);
+                cn.Close();                //コネクションを閉じる
+                return;
+            }
+            MessageBox.Show("更新しました");
+        }
+
     }
 }
