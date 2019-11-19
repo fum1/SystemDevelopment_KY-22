@@ -86,6 +86,7 @@
             this.cmb_clerk.Name = "cmb_clerk";
             this.cmb_clerk.Size = new System.Drawing.Size(145, 31);
             this.cmb_clerk.TabIndex = 18;
+            this.cmb_clerk.SelectedIndexChanged += new System.EventHandler(this.cmb_clerk_SelectedIndexChanged_1);
             // 
             // cmb_department
             // 
@@ -106,6 +107,7 @@
             this.cmb_position.Name = "cmb_position";
             this.cmb_position.Size = new System.Drawing.Size(121, 31);
             this.cmb_position.TabIndex = 16;
+            this.cmb_position.SelectedIndexChanged += new System.EventHandler(this.cmb_position_SelectedIndexChanged);
             // 
             // lbl_clerk
             // 
