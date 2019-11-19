@@ -39,6 +39,12 @@ namespace SystemDev_KY_22
             dataGridView1.AllowUserToAddRows = false;    //最下行を非表示
             dataGridView1.AutoResizeColumns();           //列の幅の自動調整
 
+            cmb_sex.DataSource = dt;
+            cmb_sex.DisplayMember = "性別";
+            cmb_sex.ValueMember = "性別";
+
+            
+
             // コンボボックスにデータテーブルをセット
             /*this.comboB_CarName.DataSource = dt;
             this.comboB_CarName.DisplayMember = "商品名";
@@ -47,7 +53,22 @@ namespace SystemDev_KY_22
             this.comboB_Maker.DataSource = dt;
             this.comboB_Maker.DisplayMember = "メーカー";
             this.comboB_Maker.ValueMember = "メーカー";*/
+        }
 
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            OleDbCommand cmd =
+                 new OleDbCommand("SELECT 顧客ID,氏名,性別,生年月日,郵便番号,住所,電話番号 " +
+                 "FROM 顧客マスタ WHERE 顧客ID LIKE '%'+ @氏名 + '%' ORDER BY 顧客ID");
+            cmd.Connection = cn;
+            OleDbDataAdapter da = new OleDbDataAdapter();
+            da.SelectCommand = cmd;
+            cmd.Parameters.AddWithValue("@氏名", txt_id.Text);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
+            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
         }
     }
 }

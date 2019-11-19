@@ -43,6 +43,7 @@
             this.lbl_sex = new System.Windows.Forms.Label();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_search = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -199,10 +200,25 @@
             this.dataGridView1.Size = new System.Drawing.Size(1308, 514);
             this.dataGridView1.TabIndex = 40;
             // 
+            // btn_search
+            // 
+            this.btn_search.BackColor = System.Drawing.Color.Transparent;
+            this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_search.Font = new System.Drawing.Font("MS UI Gothic", 13.8F);
+            this.btn_search.Location = new System.Drawing.Point(1040, 89);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(146, 67);
+            this.btn_search.TabIndex = 41;
+            this.btn_search.Text = "検索";
+            this.btn_search.UseVisualStyleBackColor = false;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
+            // 
             // ClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btn_search);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cmb_sex);
             this.Controls.Add(this.txt_pos);
@@ -244,5 +260,6 @@
         private System.Windows.Forms.Label lbl_sex;
         private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_search;
     }
 }
