@@ -25,13 +25,6 @@ namespace SystemDev_KY_22
                  @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
         }
 
-        private void txt_address_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
         private void txt_id_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -44,7 +37,7 @@ namespace SystemDev_KY_22
         {
             if (e.KeyCode == Keys.Enter)
             {
-                rbtn_man.Focus();    //性別の入力にフォーカスを当てる
+                cmb_sex.Focus();    //性別の入力にフォーカスを当てる
             }
         }
 
@@ -87,7 +80,39 @@ namespace SystemDev_KY_22
                 btn_login.Focus();    //TELの入力にフォーカスを当てる
             }
         }
-    }
-    }
+
+       private void btn_login_Click(object sender, EventArgs e)
+        {
+            // ID、Pass、Name、PostNumber、AddressをINSERT  
+            OleDbCommand cmd =
+                new OleDbCommand("INSERT INTO 顧客マスタ (顧客ID,氏名, 性別, 生年月日, 郵便番号,住所,電話番号) " +
+                "VALUES (@顧客ID, @氏名, @性別, @生年月日, @郵便番号,@住所,@電話番号)", cn);
+            //DBの列名に、PassWord (Microsoft Jet 4.0 の予約語)は使用できない
+            //@パラメータが出てくる順番に設定する
+            cmd.Parameters.AddWithValue("@顧客ID", txt_id.Text);
+            cmd.Parameters.AddWithValue("@氏名", txt_name.Text);
+            cmd.Parameters.AddWithValue("@性別", cmb_sex.Text);
+            cmd.Parameters.AddWithValue("@生年月日", dtp_birthday.Text);
+            cmd.Parameters.AddWithValue("@郵便番号", txt_pos.Text);
+            cmd.Parameters.AddWithValue("@住所", txt_address.Text);
+            cmd.Parameters.AddWithValue("@電話番号", txt_tel.Text);
+            
+            try
+            {
+                cn.Open();                 //コネクションを開く
+                cmd.ExecuteNonQuery();     //SQLを実行
+                cn.Close();                //コネクションを閉じる
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                cn.Close();               //コネクションを閉じる
+                return;
+            }
 
 
+            MessageBox.Show("登録しました", "住所録");
+        }
+        
+    }
+    }
