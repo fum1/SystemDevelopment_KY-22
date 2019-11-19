@@ -63,6 +63,16 @@ namespace SystemDev_KY_22.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap _7c551aa4c82b1dde22c873ab39369b5d {
+            get {
+                object obj = ResourceManager.GetObject("7c551aa4c82b1dde22c873ab39369b5d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap article_art002730_2 {
             get {
                 object obj = ResourceManager.GetObject("article_art002730_2", resourceCulture);
@@ -106,6 +116,26 @@ namespace SystemDev_KY_22.Properties {
         internal static System.Drawing.Bitmap image_2349476_m {
             get {
                 object obj = ResourceManager.GetObject("image_2349476_m", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap mercedes_benz_slr_mclaren_stirling_moss_for_sale_in_miami_30172_1 {
+            get {
+                object obj = ResourceManager.GetObject("mercedes-benz-slr-mclaren-stirling-moss-for-sale-in-miami-30172_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap pnOXdeemuDxTqA01573795760_1573795763 {
+            get {
+                object obj = ResourceManager.GetObject("pnOXdeemuDxTqA01573795760_1573795763", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

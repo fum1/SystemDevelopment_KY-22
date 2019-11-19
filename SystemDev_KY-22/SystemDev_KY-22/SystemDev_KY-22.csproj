@@ -262,5 +262,14 @@
   <ItemGroup>
     <None Include="Resources\image_2349476_m.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pnOXdeemuDxTqA01573795760_1573795763.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7c551aa4c82b1dde22c873ab39369b5d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercedes-benz-slr-mclaren-stirling-moss-for-sale-in-miami-30172_1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
