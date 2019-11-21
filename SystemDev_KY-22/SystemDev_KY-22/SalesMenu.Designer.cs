@@ -30,13 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesMenu));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_ClientList = new System.Windows.Forms.Button();
             this.selectPanel = new System.Windows.Forms.Panel();
             this.btn_Order = new System.Windows.Forms.Button();
             this.btn_ClientRegister = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel_Back = new System.Windows.Forms.Panel();
+            this.clientList1 = new SystemDev_KY_22.ClientList();
+            this.clientRegister1 = new SystemDev_KY_22.ClientRegister();
             this.order1 = new SystemDev_KY_22.Order();
-            this.clientRegisterU1 = new SystemDev_KY_22.ClientRegister();
             this.stockList1 = new SystemDev_KY_22.StockList();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,6 +51,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel1.Controls.Add(this.btn_ClientList);
             this.panel1.Controls.Add(this.selectPanel);
             this.panel1.Controls.Add(this.btn_Order);
             this.panel1.Controls.Add(this.btn_ClientRegister);
@@ -58,6 +61,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(223, 810);
             this.panel1.TabIndex = 5;
+            // 
+            // btn_ClientList
+            // 
+            this.btn_ClientList.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ClientList.FlatAppearance.BorderSize = 0;
+            this.btn_ClientList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ClientList.ForeColor = System.Drawing.Color.Black;
+            this.btn_ClientList.Image = ((System.Drawing.Image)(resources.GetObject("btn_ClientList.Image")));
+            this.btn_ClientList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ClientList.Location = new System.Drawing.Point(12, 683);
+            this.btn_ClientList.Name = "btn_ClientList";
+            this.btn_ClientList.Size = new System.Drawing.Size(201, 115);
+            this.btn_ClientList.TabIndex = 4;
+            this.btn_ClientList.Text = "顧客一覧";
+            this.btn_ClientList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_ClientList.UseVisualStyleBackColor = false;
+            this.btn_ClientList.Click += new System.EventHandler(this.btn_ClientList_Click);
             // 
             // selectPanel
             // 
@@ -121,8 +141,9 @@
             // 
             // panel_Back
             // 
+            this.panel_Back.Controls.Add(this.clientList1);
+            this.panel_Back.Controls.Add(this.clientRegister1);
             this.panel_Back.Controls.Add(this.order1);
-            this.panel_Back.Controls.Add(this.clientRegisterU1);
             this.panel_Back.Controls.Add(this.stockList1);
             this.panel_Back.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_Back.Location = new System.Drawing.Point(223, 107);
@@ -130,23 +151,30 @@
             this.panel_Back.Size = new System.Drawing.Size(1042, 703);
             this.panel_Back.TabIndex = 0;
             // 
+            // clientList1
+            // 
+            this.clientList1.Location = new System.Drawing.Point(6, 11);
+            this.clientList1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.clientList1.Name = "clientList1";
+            this.clientList1.Size = new System.Drawing.Size(1314, 768);
+            this.clientList1.TabIndex = 4;
+            // 
+            // clientRegister1
+            // 
+            this.clientRegister1.BackColor = System.Drawing.Color.White;
+            this.clientRegister1.Location = new System.Drawing.Point(6, 270);
+            this.clientRegister1.Name = "clientRegister1";
+            this.clientRegister1.Size = new System.Drawing.Size(1314, 768);
+            this.clientRegister1.TabIndex = 3;
+            // 
             // order1
             // 
             this.order1.BackColor = System.Drawing.Color.White;
-            this.order1.Location = new System.Drawing.Point(27, 84);
+            this.order1.Location = new System.Drawing.Point(133, 97);
             this.order1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
             this.order1.Name = "order1";
             this.order1.Size = new System.Drawing.Size(4168, 3471);
             this.order1.TabIndex = 2;
-            // 
-            // clientRegisterU1
-            // 
-            this.clientRegisterU1.BackColor = System.Drawing.Color.White;
-            this.clientRegisterU1.Location = new System.Drawing.Point(2372, 1131);
-            this.clientRegisterU1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
-            this.clientRegisterU1.Name = "clientRegisterU1";
-            this.clientRegisterU1.Size = new System.Drawing.Size(4168, 3471);
-            this.clientRegisterU1.TabIndex = 1;
             // 
             // stockList1
             // 
@@ -231,5 +259,8 @@
         private Order order1;
         private ClientRegister clientRegisterU1;
         private StockList stockList1;
+        private System.Windows.Forms.Button btn_ClientList;
+        private ClientRegister clientRegister1;
+        private ClientList clientList1;
     }
 }

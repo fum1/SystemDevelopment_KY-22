@@ -21,8 +21,12 @@ namespace SystemDev_KY_22
             InitializeComponent();
 
             stockList1.Visible = false;
-            clientRegisterU1.Visible = false;
+            clientRegister1.Visible = false;
             order1.Visible = false;
+            clientList1.Visible = false;
+            
+            
+
         }
 
         private void Btn_StockList_Click(object sender, EventArgs e)
@@ -51,8 +55,14 @@ namespace SystemDev_KY_22
 
         private void Salesmenu2_Load(object sender, EventArgs e)
         {
-            userControls = new UserControl[3] { stockList1, clientRegisterU1, order1 };
+            userControls = new UserControl[4] { stockList1, clientRegister1, order1,clientList1};
             this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void btn_ClientList_Click(object sender, EventArgs e)
+        {
+            pc.Set((Button)sender, selectPanel);
+            pc.Chenge(userControls, clientList1);
         }
     }
 }

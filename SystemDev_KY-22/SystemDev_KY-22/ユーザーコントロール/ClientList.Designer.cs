@@ -48,30 +48,33 @@
             // 
             // cmb_sex
             // 
+            this.cmb_sex.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmb_sex.Font = new System.Drawing.Font("MS UI Gothic", 18F);
             this.cmb_sex.FormattingEnabled = true;
             this.cmb_sex.Items.AddRange(new object[] {
             "男性",
             "女性"});
-            this.cmb_sex.Location = new System.Drawing.Point(144, 77);
+            this.cmb_sex.Location = new System.Drawing.Point(185, 87);
             this.cmb_sex.Name = "cmb_sex";
             this.cmb_sex.Size = new System.Drawing.Size(213, 38);
             this.cmb_sex.TabIndex = 39;
             // 
             // txt_pos
             // 
+            this.txt_pos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_pos.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.txt_pos.Location = new System.Drawing.Point(144, 140);
+            this.txt_pos.Location = new System.Drawing.Point(185, 146);
             this.txt_pos.Margin = new System.Windows.Forms.Padding(4);
             this.txt_pos.Name = "txt_pos";
-            this.txt_pos.Size = new System.Drawing.Size(290, 37);
+            this.txt_pos.Size = new System.Drawing.Size(213, 37);
             this.txt_pos.TabIndex = 38;
             // 
             // lbl_pos
             // 
+            this.lbl_pos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pos.AutoSize = true;
             this.lbl_pos.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.lbl_pos.Location = new System.Drawing.Point(4, 143);
+            this.lbl_pos.Location = new System.Drawing.Point(4, 146);
             this.lbl_pos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_pos.Name = "lbl_pos";
             this.lbl_pos.Size = new System.Drawing.Size(148, 30);
@@ -80,8 +83,9 @@
             // 
             // txt_id
             // 
+            this.txt_id.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_id.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.txt_id.Location = new System.Drawing.Point(617, 11);
+            this.txt_id.Location = new System.Drawing.Point(694, 28);
             this.txt_id.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(290, 37);
@@ -89,10 +93,10 @@
             // 
             // lbl_id
             // 
-            this.lbl_id.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbl_id.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_id.AutoSize = true;
             this.lbl_id.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.lbl_id.Location = new System.Drawing.Point(23, 14);
+            this.lbl_id.Location = new System.Drawing.Point(38, 31);
             this.lbl_id.Name = "lbl_id";
             this.lbl_id.Size = new System.Drawing.Size(114, 30);
             this.lbl_id.TabIndex = 35;
@@ -100,18 +104,21 @@
             // 
             // txt_tel
             // 
+            this.txt_tel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_tel.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.txt_tel.Location = new System.Drawing.Point(145, 191);
+            this.txt_tel.Location = new System.Drawing.Point(185, 194);
             this.txt_tel.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tel.Name = "txt_tel";
-            this.txt_tel.Size = new System.Drawing.Size(290, 37);
+            this.txt_tel.Size = new System.Drawing.Size(213, 37);
             this.txt_tel.TabIndex = 34;
+            this.txt_tel.TextChanged += new System.EventHandler(this.txt_tel_TextChanged);
             // 
             // lbl_tel
             // 
+            this.lbl_tel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_tel.AutoSize = true;
             this.lbl_tel.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.lbl_tel.Location = new System.Drawing.Point(67, 194);
+            this.lbl_tel.Location = new System.Drawing.Point(73, 197);
             this.lbl_tel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_tel.Name = "lbl_tel";
             this.lbl_tel.Size = new System.Drawing.Size(70, 30);
@@ -120,9 +127,10 @@
             // 
             // lbl_address
             // 
+            this.lbl_address.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_address.AutoSize = true;
             this.lbl_address.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.lbl_address.Location = new System.Drawing.Point(521, 143);
+            this.lbl_address.Location = new System.Drawing.Point(607, 149);
             this.lbl_address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_address.Name = "lbl_address";
             this.lbl_address.Size = new System.Drawing.Size(79, 30);
@@ -131,8 +139,9 @@
             // 
             // txt_address
             // 
+            this.txt_address.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_address.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.txt_address.Location = new System.Drawing.Point(617, 140);
+            this.txt_address.Location = new System.Drawing.Point(694, 143);
             this.txt_address.Margin = new System.Windows.Forms.Padding(4);
             this.txt_address.Name = "txt_address";
             this.txt_address.Size = new System.Drawing.Size(290, 37);
@@ -140,9 +149,10 @@
             // 
             // lbl_birthday
             // 
+            this.lbl_birthday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_birthday.AutoSize = true;
             this.lbl_birthday.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.lbl_birthday.Location = new System.Drawing.Point(470, 80);
+            this.lbl_birthday.Location = new System.Drawing.Point(547, 90);
             this.lbl_birthday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_birthday.Name = "lbl_birthday";
             this.lbl_birthday.Size = new System.Drawing.Size(139, 30);
@@ -151,9 +161,10 @@
             // 
             // dtp_birthday
             // 
+            this.dtp_birthday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtp_birthday.CalendarFont = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtp_birthday.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.dtp_birthday.Location = new System.Drawing.Point(617, 75);
+            this.dtp_birthday.Location = new System.Drawing.Point(694, 85);
             this.dtp_birthday.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_birthday.Name = "dtp_birthday";
             this.dtp_birthday.Size = new System.Drawing.Size(290, 37);
@@ -161,9 +172,10 @@
             // 
             // lbl_name
             // 
+            this.lbl_name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_name.AutoSize = true;
             this.lbl_name.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.lbl_name.Location = new System.Drawing.Point(530, 14);
+            this.lbl_name.Location = new System.Drawing.Point(607, 31);
             this.lbl_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(79, 30);
@@ -172,9 +184,10 @@
             // 
             // lbl_sex
             // 
+            this.lbl_sex.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_sex.AutoSize = true;
             this.lbl_sex.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.lbl_sex.Location = new System.Drawing.Point(49, 80);
+            this.lbl_sex.Location = new System.Drawing.Point(73, 85);
             this.lbl_sex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sex.Name = "lbl_sex";
             this.lbl_sex.Size = new System.Drawing.Size(79, 30);
@@ -183,11 +196,12 @@
             // 
             // txt_name
             // 
+            this.txt_name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_name.Font = new System.Drawing.Font("MS UI Gothic", 18F);
-            this.txt_name.Location = new System.Drawing.Point(144, 11);
+            this.txt_name.Location = new System.Drawing.Point(185, 28);
             this.txt_name.Margin = new System.Windows.Forms.Padding(4);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(290, 37);
+            this.txt_name.Size = new System.Drawing.Size(238, 37);
             this.txt_name.TabIndex = 26;
             // 
             // dataGridView1
@@ -196,7 +210,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 251);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1308, 514);
+            this.dataGridView1.Size = new System.Drawing.Size(1308, 499);
             this.dataGridView1.TabIndex = 40;
             // 
             // ClientList
