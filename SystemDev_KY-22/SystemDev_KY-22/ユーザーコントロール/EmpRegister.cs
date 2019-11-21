@@ -161,7 +161,7 @@ namespace SystemDev_KY_22
             //}
 
 
-               cn.Open();
+               //cn.Open();
 
             // Pass、Name、PostNumber、AddressをUPDATE
             OleDbCommand cmd =
@@ -178,12 +178,11 @@ namespace SystemDev_KY_22
             cmd.Parameters.AddWithValue("@position", cmb_position1.Text);
             cmd.Parameters.AddWithValue("@shopID", cmb_clerk1.Text);
             cmd.Parameters.AddWithValue("@社員ID", txt_id1.Text);
-
             try
             {
-             //   cn.Open();
-                int aa= cmd.ExecuteNonQuery();
-                cn.Close();                //コネクションを閉じる
+                cn.Open();
+                cmd.ExecuteNonQuery();
+                cn.Close();               //コネクションを閉じる
             }
             catch (Exception ex)
             {
@@ -191,8 +190,8 @@ namespace SystemDev_KY_22
                 cn.Close();                //コネクションを閉じる
                 return;
             }
-            
             MessageBox.Show("更新しました");
+
 
 
 
