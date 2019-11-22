@@ -16,7 +16,7 @@ namespace SystemDev_KY_22
     {
         OleDbConnection cn = new OleDbConnection(); //コネクションオブジェクト
         DataTable dt = new DataTable();
-        
+
         public EmpRegister()
         {
 
@@ -43,12 +43,12 @@ namespace SystemDev_KY_22
 
         private void btn_login_Click(object sender, EventArgs e)
         {
- 
+
         }
 
-      
 
-            private void txt_password_TextChanged(object sender, EventArgs e)
+
+        private void txt_password_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -90,7 +90,7 @@ namespace SystemDev_KY_22
 
         private void txt_id1_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btn_search_Click(object sender, EventArgs e)
@@ -125,40 +125,78 @@ namespace SystemDev_KY_22
 
         private void cmb_sex1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
             string selectedItem = cmb_sex1.SelectedItem.ToString();
         }
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =new OleDbCommand("UPDATE 社員マスタ SET 氏名 = @name, " +
-              " 郵便番号 = @postal,住所 = @address, 電話番号 = @tell,性別 = @sex, " +
-              " 部署 = @department,役所 = @position,店舗ID = @shopID,パスワード = @pas,"+ "WHERE 社員ID= @社員ID", cn);
-           //@パラメータが出てくる順番に設定する
-           cmd.Parameters.AddWithValue("@name", txt_name1.Text);               //Passのデータ
-           cmd.Parameters.AddWithValue("@postal", txt_postal1.Text);               //Nameのデータ
-           cmd.Parameters.AddWithValue("@address", txt_address1.Text);     //PostNumberのデータ
-           cmd.Parameters.AddWithValue("@tell", txt_tel1.Text);           //Addressのデータ
-           cmd.Parameters.AddWithValue("@sex", cmb_sex1);//IDのデータ
-           cmd.Parameters.AddWithValue("@department", cmb_department1.Text);
-           cmd.Parameters.AddWithValue("@position", cmb_position1.Text);
-           cmd.Parameters.AddWithValue("@shopID", cmb_clerk1.Text);
-           cmd.Parameters.AddWithValue("@社員ID", txt_id1.Text);
+            //    OleDbCommand cmd = new OleDbCommand("UPDATE 社員マスタ SET 氏名 = @name, " +
+            //      " 郵便番号 = @postal,住所 = @address, 電話番号 = @tell,性別 = @sex, " +
+            //      " 部署 = @department,役所 = @position,店舗ID = @shopID WHERE 社員ID = @社員ID", cn);
+            //    //@パラメータが出てくる順番に設定する
+            //    cmd.Parameters.AddWithValue("@name", txt_name1.Text);               //Passのデータ
+            //    cmd.Parameters.AddWithValue("@postal", txt_postal1.Text);               //Nameのデータ
+            //    cmd.Parameters.AddWithValue("@address", txt_address1.Text);     //PostNumberのデータ
+            //    cmd.Parameters.AddWithValue("@tell", txt_tel1.Text);           //Addressのデータ
+            //    cmd.Parameters.AddWithValue("@sex", cmb_sex1);//IDのデータ
+            //    cmd.Parameters.AddWithValue("@department", cmb_department1.Text);
+            //    cmd.Parameters.AddWithValue("@position", cmb_position1.Text);
+            //    cmd.Parameters.AddWithValue("@shopID", cmb_clerk1.Text);
+            //    cmd.Parameters.AddWithValue("@社員ID", txt_id1.Text);
 
+            //    try
+            //    {
+            //        cn.Open();                  //コネクションを開く
+            //        cmd.ExecuteNonQuery();     //SQLを実行
+            //        cn.Close();                //コネクションを閉じる
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show(ex.Message);
+            //        cn.Close();                //コネクションを閉じる
+            //        return;
+            //    }
+            //    MessageBox.Show("更新しました");
+            //}
+
+
+               //cn.Open();
+
+            // Pass、Name、PostNumber、AddressをUPDATE
+            OleDbCommand cmd =
+                new OleDbCommand("UPDATE 社員マスタ SET 社員ID = @社員ID,氏名 = @name, " +
+                 " 郵便番号 = @postal,住所 = @address,電話番号 = @tell,性別 = @sex,部署 = @department,役職 = @position," +
+                 "店舗ID = @shopID WHERE (社員ID = @社員ID)", cn);
+            //@パラメータが出てくる順番に設定する
+            cmd.Parameters.AddWithValue("@name", txt_name1.Text);               //Passのデータ
+            cmd.Parameters.AddWithValue("@postal", txt_postal1.Text);               //Nameのデータ
+            cmd.Parameters.AddWithValue("@address", txt_address1.Text);     //PostNumberのデータ
+            cmd.Parameters.AddWithValue("@tell", txt_tel1.Text);           //Addressのデータ
+            cmd.Parameters.AddWithValue("@sex", cmb_sex1);//IDのデータ
+            cmd.Parameters.AddWithValue("@department", cmb_department1.Text);
+            cmd.Parameters.AddWithValue("@position", cmb_position1.Text);
+            cmd.Parameters.AddWithValue("@shopID", cmb_clerk1.Text);
+            cmd.Parameters.AddWithValue("@社員ID", txt_id1.Text);
             try
             {
-                cn.Open();                  //コネクションを開く
-                cmd.ExecuteNonQuery();     //SQLを実行
-                cn.Close();                //コネクションを閉じる
+                cn.Open();
+                cmd.ExecuteNonQuery();
+                cn.Close();               //コネクションを閉じる
             }
             catch (Exception ex)
             {
-               MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
                 cn.Close();                //コネクションを閉じる
                 return;
             }
             MessageBox.Show("更新しました");
-        }
 
+
+
+
+
+
+        }
     }
 }
