@@ -63,6 +63,12 @@
     </Compile>
     <Compile Include="Class\animator.cs" />
     <Compile Include="Class\PanelControl.cs" />
+    <Compile Include="ユーザーコントロール\ClientList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ユーザーコントロール\ClientList.Designer.cs">
+      <DependentUpon>ClientList.cs</DependentUpon>
+    </Compile>
     <Compile Include="ユーザーコントロール\LoaUnloading.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ユーザーコントロール\ClientList.resx">
+      <DependentUpon>ClientList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\LoaUnloading.resx">
       <DependentUpon>LoaUnloading.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,6 +261,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image_2349476_m.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pnOXdeemuDxTqA01573795760_1573795763.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7c551aa4c82b1dde22c873ab39369b5d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercedes-benz-slr-mclaren-stirling-moss-for-sale-in-miami-30172_1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
