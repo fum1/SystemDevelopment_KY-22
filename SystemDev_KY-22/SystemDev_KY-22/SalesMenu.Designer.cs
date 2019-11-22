@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesMenu));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_ClientList = new System.Windows.Forms.Button();
             this.selectPanel = new System.Windows.Forms.Panel();
             this.btn_Order = new System.Windows.Forms.Button();
             this.btn_ClientRegister = new System.Windows.Forms.Button();
@@ -41,6 +42,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.clientList21 = new SystemDev_KY_22.ユーザーコントロール.ClientList2();
             this.panel1.SuspendLayout();
             this.panel_Back.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -49,6 +51,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel1.Controls.Add(this.btn_ClientList);
             this.panel1.Controls.Add(this.selectPanel);
             this.panel1.Controls.Add(this.btn_Order);
             this.panel1.Controls.Add(this.btn_ClientRegister);
@@ -58,6 +61,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(223, 810);
             this.panel1.TabIndex = 5;
+            // 
+            // btn_ClientList
+            // 
+            this.btn_ClientList.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ClientList.FlatAppearance.BorderSize = 0;
+            this.btn_ClientList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ClientList.ForeColor = System.Drawing.Color.Black;
+            this.btn_ClientList.Image = ((System.Drawing.Image)(resources.GetObject("btn_ClientList.Image")));
+            this.btn_ClientList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ClientList.Location = new System.Drawing.Point(16, 670);
+            this.btn_ClientList.Name = "btn_ClientList";
+            this.btn_ClientList.Size = new System.Drawing.Size(201, 115);
+            this.btn_ClientList.TabIndex = 4;
+            this.btn_ClientList.Text = "顧客一覧";
+            this.btn_ClientList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_ClientList.UseVisualStyleBackColor = false;
+            this.btn_ClientList.Click += new System.EventHandler(this.btn_ClientList_Click);
             // 
             // selectPanel
             // 
@@ -121,6 +141,7 @@
             // 
             // panel_Back
             // 
+            this.panel_Back.Controls.Add(this.clientList21);
             this.panel_Back.Controls.Add(this.order1);
             this.panel_Back.Controls.Add(this.clientRegisterU1);
             this.panel_Back.Controls.Add(this.stockList1);
@@ -173,7 +194,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(35, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 34);
+            this.label1.Size = new System.Drawing.Size(236, 27);
             this.label1.TabIndex = 5;
             this.label1.Text = "営業担当メニュー";
             // 
@@ -194,6 +215,14 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // clientList21
+            // 
+            this.clientList21.Location = new System.Drawing.Point(53, 260);
+            this.clientList21.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.clientList21.Name = "clientList21";
+            this.clientList21.Size = new System.Drawing.Size(846, 443);
+            this.clientList21.TabIndex = 3;
             // 
             // SalesMenu
             // 
@@ -231,5 +260,7 @@
         private Order order1;
         private ClientRegister clientRegisterU1;
         private StockList stockList1;
+        private System.Windows.Forms.Button btn_ClientList;
+        private ユーザーコントロール.ClientList2 clientList21;
     }
 }
