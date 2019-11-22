@@ -69,6 +69,12 @@
     <Compile Include="ユーザーコントロール\ClientList.Designer.cs">
       <DependentUpon>ClientList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ユーザーコントロール\ClientList2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ユーザーコントロール\ClientList2.Designer.cs">
+      <DependentUpon>ClientList2.cs</DependentUpon>
+    </Compile>
     <Compile Include="ユーザーコントロール\LoaUnloading.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\ClientList.resx">
       <DependentUpon>ClientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ユーザーコントロール\ClientList2.resx">
+      <DependentUpon>ClientList2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\LoaUnloading.resx">
       <DependentUpon>LoaUnloading.cs</DependentUpon>
