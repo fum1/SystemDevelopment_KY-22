@@ -31,6 +31,11 @@ namespace SystemDev_KY_22
             cn.ConnectionString =
                  @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
 
+            dataload();
+
+
+
+
         }
 
         private void textB_enameID_KeyDown(object sender, KeyEventArgs e)
@@ -67,9 +72,9 @@ namespace SystemDev_KY_22
             cmd.Parameters.AddWithValue("@郵便番号", txt_postal.Text);             //Nameのデータ
             cmd.Parameters.AddWithValue("@電話番号", txt_tel.Text);   //PostNumberのデータ
             cmd.Parameters.AddWithValue("@性別", cmb_sex.Text);      //Addressのデータ
-            cmd.Parameters.AddWithValue("@部署", txt_department.Text);
-            cmd.Parameters.AddWithValue("@役職", txt_position.Text);
-            cmd.Parameters.AddWithValue("@店舗ID", txt_clerk.Text);
+            cmd.Parameters.AddWithValue("@部署", cmb_department.Text);
+            cmd.Parameters.AddWithValue("@役職", cmb_position.Text);
+            cmd.Parameters.AddWithValue("@店舗ID", cmb_clerk.Text);
             cmd.Parameters.AddWithValue("@パスワード", txt_password.Text);
             try
             {
@@ -118,6 +123,7 @@ namespace SystemDev_KY_22
             cmb_department1.Text = dr["部署"].ToString();
             cmb_position1.Text = dr["役職"].ToString();
             cmb_clerk1.Text = dr["店舗ID"].ToString();
+            mtextB_Pass.Text = dr["パスワード"].ToString();
 
             cn.Close();
 
@@ -161,23 +167,25 @@ namespace SystemDev_KY_22
             //}
 
 
-               //cn.Open();
+            //cn.Open();
 
             // Pass、Name、PostNumber、AddressをUPDATE
             OleDbCommand cmd =
                 new OleDbCommand("UPDATE 社員マスタ SET 社員ID = @社員ID,氏名 = @name, " +
                  " 郵便番号 = @postal,住所 = @address,電話番号 = @tell,性別 = @sex,部署 = @department,役職 = @position," +
-                 "店舗ID = @shopID WHERE (社員ID = @社員ID)", cn);
+                 "店舗ID = @shopID,パスワード = @pass WHERE (社員ID = @社員ID)", cn);
             //@パラメータが出てくる順番に設定する
+            cmd.Parameters.AddWithValue("@社員ID", txt_id1.Text);
             cmd.Parameters.AddWithValue("@name", txt_name1.Text);               //Passのデータ
             cmd.Parameters.AddWithValue("@postal", txt_postal1.Text);               //Nameのデータ
             cmd.Parameters.AddWithValue("@address", txt_address1.Text);     //PostNumberのデータ
             cmd.Parameters.AddWithValue("@tell", txt_tel1.Text);           //Addressのデータ
-            cmd.Parameters.AddWithValue("@sex", cmb_sex1);//IDのデータ
+            cmd.Parameters.AddWithValue("@sex", cmb_sex1.Text);//IDのデータ
             cmd.Parameters.AddWithValue("@department", cmb_department1.Text);
             cmd.Parameters.AddWithValue("@position", cmb_position1.Text);
             cmd.Parameters.AddWithValue("@shopID", cmb_clerk1.Text);
-            cmd.Parameters.AddWithValue("@社員ID", txt_id1.Text);
+            cmd.Parameters.AddWithValue("@pass", mtextB_Pass.Text);
+
             try
             {
                 cn.Open();
@@ -193,10 +201,77 @@ namespace SystemDev_KY_22
             MessageBox.Show("更新しました");
 
 
+        }
 
 
+        private void dataload()   //カスタム関数
+        {
 
+
+            OleDbDataAdapter department_da =
+               new OleDbDataAdapter("SELECT 部署ID,部署名,部署責任者 FROM 部署テーブル", cn);
+            DataTable department_dt = new DataTable();
+            department_da.Fill(department_dt);
+
+            cmb_department1.DataSource = department_dt;
+            cmb_department1.DisplayMember = "部署名";
+            cmb_department1.ValueMember = "部署名";
+
+
+            OleDbDataAdapter position_da =
+                new OleDbDataAdapter("SELECT 役職ID,役職名 FROM 役職テーブル", cn);
+            DataTable position_dt = new DataTable();
+            position_da.Fill(position_dt);
+
+            cmb_position1.DataSource = position_dt;
+            cmb_position1.DisplayMember = "役職名";
+            cmb_position1.ValueMember = "役職名";
+
+            OleDbDataAdapter clerk_da =
+                new OleDbDataAdapter("SELECT 店舗ID,店舗名,郵便番号,住所,責任者,電話番号" +
+                " FROM 店舗マスタ", cn);
+            DataTable clerk_dt = new DataTable();
+            clerk_da.Fill(clerk_dt);
+
+            cmb_clerk1.DataSource = clerk_dt;
+            cmb_clerk1.DisplayMember = "店舗ID";
+            cmb_clerk1.ValueMember = "店舗ID";
+
+            OleDbDataAdapter department1_da =
+               new OleDbDataAdapter("SELECT 部署ID,部署名,部署責任者 FROM 部署テーブル", cn);
+            DataTable department1_dt = new DataTable();
+            department1_da.Fill(department1_dt);
+
+            cmb_department.DataSource = department1_dt;
+            cmb_department.DisplayMember = "部署名";
+            cmb_department.ValueMember = "部署名";
+
+
+            OleDbDataAdapter position1_da =
+                new OleDbDataAdapter("SELECT 役職ID,役職名 FROM 役職テーブル", cn);
+            DataTable position1_dt = new DataTable();
+            position1_da.Fill(position1_dt);
+
+            cmb_position.DataSource = position1_dt;
+            cmb_position.DisplayMember = "役職名";
+            cmb_position.ValueMember = "役職名";
+
+            OleDbDataAdapter clerk1_da =
+                new OleDbDataAdapter("SELECT 店舗ID,店舗名,郵便番号,住所,責任者,電話番号" +
+                " FROM 店舗マスタ", cn);
+            DataTable clerk1_dt = new DataTable();
+            clerk1_da.Fill(clerk1_dt);
+
+            cmb_clerk.DataSource = clerk1_dt;
+            cmb_clerk.DisplayMember = "店舗ID";
+            cmb_clerk.ValueMember = "店舗ID";
 
         }
+
+        private void cmb_sex_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedItem = cmb_sex.SelectedItem.ToString();
+        }
     }
+    
 }
