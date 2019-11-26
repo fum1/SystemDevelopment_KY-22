@@ -38,7 +38,7 @@ namespace SystemDev_KY_22
                 "商品詳細テーブル.実売価格, 商品詳細テーブル.仕入先ID, 商品詳細テーブル.車種 " +
                 "FROM((車種マスタ INNER JOIN 商品マスタ ON 車種マスタ.車種ID = 商品マスタ.車種ID) " +
                 "INNER JOIN 商品詳細テーブル ON 商品マスタ.商品ID = 商品詳細テーブル.商品ID) " +
-                "INNER JOIN 在庫テーブル ON 商品詳細テーブル.商品詳細ID = 在庫テーブル.商品詳細ID ",cn);
+                "INNER JOIN 在庫テーブル ON 商品詳細テーブル.商品詳細ID = 在庫テーブル.商品詳細ID",cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
