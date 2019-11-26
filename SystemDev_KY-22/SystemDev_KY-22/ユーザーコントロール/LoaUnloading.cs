@@ -16,5 +16,10 @@ namespace SystemDev_KY_22
         {
             InitializeComponent();
         }
+
+        private void LoaUnloading_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

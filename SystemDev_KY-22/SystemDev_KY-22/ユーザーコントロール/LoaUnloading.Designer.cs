@@ -45,7 +45,7 @@
             this.rbtn_storing.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.rbtn_storing.Location = new System.Drawing.Point(662, 38);
             this.rbtn_storing.Name = "rbtn_storing";
-            this.rbtn_storing.Size = new System.Drawing.Size(104, 38);
+            this.rbtn_storing.Size = new System.Drawing.Size(102, 37);
             this.rbtn_storing.TabIndex = 2;
             this.rbtn_storing.TabStop = true;
             this.rbtn_storing.Text = "入庫";
@@ -57,7 +57,7 @@
             this.rbtn_Issue.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.rbtn_Issue.Location = new System.Drawing.Point(797, 38);
             this.rbtn_Issue.Name = "rbtn_Issue";
-            this.rbtn_Issue.Size = new System.Drawing.Size(104, 38);
+            this.rbtn_Issue.Size = new System.Drawing.Size(102, 37);
             this.rbtn_Issue.TabIndex = 3;
             this.rbtn_Issue.TabStop = true;
             this.rbtn_Issue.Text = "出庫";
@@ -135,6 +135,7 @@
             this.Controls.Add(this.rbtn_storing);
             this.Name = "LoaUnloading";
             this.Size = new System.Drawing.Size(1746, 929);
+            this.Load += new System.EventHandler(this.LoaUnloading_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

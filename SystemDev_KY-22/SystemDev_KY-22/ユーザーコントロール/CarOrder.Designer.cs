@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.lbl_supplier = new System.Windows.Forms.Label();
-            this.cmb_supplier = new System.Windows.Forms.ComboBox();
             this.lbl_Person = new System.Windows.Forms.Label();
-            this.cmb_Person = new System.Windows.Forms.ComboBox();
             this.lbl_orderdate = new System.Windows.Forms.Label();
             this.lbl_productname = new System.Windows.Forms.Label();
             this.txt_productname = new System.Windows.Forms.TextBox();
@@ -45,6 +43,8 @@
             this.txt_color = new System.Windows.Forms.TextBox();
             this.txt_option = new System.Windows.Forms.TextBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.txt_person = new System.Windows.Forms.TextBox();
+            this.cmb_supplier = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,16 +59,6 @@
             this.lbl_supplier.TabIndex = 0;
             this.lbl_supplier.Text = "仕入先";
             // 
-            // cmb_supplier
-            // 
-            this.cmb_supplier.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cmb_supplier.FormattingEnabled = true;
-            this.cmb_supplier.Location = new System.Drawing.Point(278, 61);
-            this.cmb_supplier.Margin = new System.Windows.Forms.Padding(5);
-            this.cmb_supplier.Name = "cmb_supplier";
-            this.cmb_supplier.Size = new System.Drawing.Size(233, 42);
-            this.cmb_supplier.TabIndex = 2;
-            // 
             // lbl_Person
             // 
             this.lbl_Person.AutoSize = true;
@@ -79,16 +69,6 @@
             this.lbl_Person.Size = new System.Drawing.Size(139, 57);
             this.lbl_Person.TabIndex = 12;
             this.lbl_Person.Text = "担当者";
-            // 
-            // cmb_Person
-            // 
-            this.cmb_Person.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cmb_Person.FormattingEnabled = true;
-            this.cmb_Person.Location = new System.Drawing.Point(278, 132);
-            this.cmb_Person.Margin = new System.Windows.Forms.Padding(5);
-            this.cmb_Person.Name = "cmb_Person";
-            this.cmb_Person.Size = new System.Drawing.Size(233, 42);
-            this.cmb_Person.TabIndex = 13;
             // 
             // lbl_orderdate
             // 
@@ -142,6 +122,7 @@
             this.btn_clear.TabIndex = 25;
             this.btn_clear.Text = "クリア";
             this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_order
             // 
@@ -154,6 +135,7 @@
             this.btn_order.TabIndex = 26;
             this.btn_order.Text = "発注";
             this.btn_order.UseVisualStyleBackColor = false;
+            this.btn_order.Click += new System.EventHandler(this.btn_order_Click);
             // 
             // lbl_color
             // 
@@ -227,11 +209,32 @@
             this.pictureBox.TabIndex = 38;
             this.pictureBox.TabStop = false;
             // 
+            // txt_person
+            // 
+            this.txt_person.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_person.Location = new System.Drawing.Point(278, 132);
+            this.txt_person.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_person.Name = "txt_person";
+            this.txt_person.Size = new System.Drawing.Size(233, 42);
+            this.txt_person.TabIndex = 42;
+            // 
+            // cmb_supplier
+            // 
+            this.cmb_supplier.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmb_supplier.FormattingEnabled = true;
+            this.cmb_supplier.Location = new System.Drawing.Point(278, 61);
+            this.cmb_supplier.Margin = new System.Windows.Forms.Padding(5);
+            this.cmb_supplier.Name = "cmb_supplier";
+            this.cmb_supplier.Size = new System.Drawing.Size(233, 42);
+            this.cmb_supplier.TabIndex = 39;
+            // 
             // CarOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.txt_person);
+            this.Controls.Add(this.cmb_supplier);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.txt_option);
             this.Controls.Add(this.txt_color);
@@ -245,9 +248,7 @@
             this.Controls.Add(this.txt_productname);
             this.Controls.Add(this.lbl_productname);
             this.Controls.Add(this.lbl_orderdate);
-            this.Controls.Add(this.cmb_Person);
             this.Controls.Add(this.lbl_Person);
-            this.Controls.Add(this.cmb_supplier);
             this.Controls.Add(this.lbl_supplier);
             this.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -263,9 +264,7 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_supplier;
-        private System.Windows.Forms.ComboBox cmb_supplier;
         private System.Windows.Forms.Label lbl_Person;
-        private System.Windows.Forms.ComboBox cmb_Person;
         private System.Windows.Forms.Label lbl_orderdate;
         private System.Windows.Forms.Label lbl_productname;
         private System.Windows.Forms.TextBox txt_productname;
@@ -279,5 +278,7 @@
         private System.Windows.Forms.TextBox txt_color;
         private System.Windows.Forms.TextBox txt_option;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.TextBox txt_person;
+        private System.Windows.Forms.ComboBox cmb_supplier;
     }
 }
