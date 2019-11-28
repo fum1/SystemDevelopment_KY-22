@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox_login = new System.Windows.Forms.GroupBox();
+            this.txt_idhead = new System.Windows.Forms.TextBox();
+            this.cmb_clerk = new System.Windows.Forms.ComboBox();
+            this.cmb_position = new System.Windows.Forms.ComboBox();
+            this.cmb_department = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.btn_register = new System.Windows.Forms.Button();
@@ -50,6 +54,8 @@
             this.lbl_department = new System.Windows.Forms.Label();
             this.groupBox_information = new System.Windows.Forms.GroupBox();
             this.groupBox_update = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.mtextB_Pass = new System.Windows.Forms.MaskedTextBox();
             this.txt_tel1 = new System.Windows.Forms.TextBox();
             this.lbl_name1 = new System.Windows.Forms.Label();
             this.lbl_postal1 = new System.Windows.Forms.Label();
@@ -70,12 +76,11 @@
             this.btn_search = new System.Windows.Forms.Button();
             this.lbl_id1 = new System.Windows.Forms.Label();
             this.btn_update = new System.Windows.Forms.Button();
-            this.mtextB_Pass = new System.Windows.Forms.MaskedTextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmb_department = new System.Windows.Forms.ComboBox();
-            this.cmb_position = new System.Windows.Forms.ComboBox();
-            this.cmb_clerk = new System.Windows.Forms.ComboBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.txt_idhead1 = new System.Windows.Forms.TextBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox_login.SuspendLayout();
             this.groupBox_information.SuspendLayout();
             this.groupBox_update.SuspendLayout();
@@ -85,6 +90,7 @@
             // 
             this.groupBox_login.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox_login.Controls.Add(this.txt_idhead);
             this.groupBox_login.Controls.Add(this.cmb_clerk);
             this.groupBox_login.Controls.Add(this.cmb_position);
             this.groupBox_login.Controls.Add(this.cmb_department);
@@ -115,6 +121,58 @@
             this.groupBox_login.TabIndex = 12;
             this.groupBox_login.TabStop = false;
             this.groupBox_login.Text = "社員登録画面";
+            // 
+            // txt_idhead
+            // 
+            this.txt_idhead.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txt_idhead.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_idhead.Location = new System.Drawing.Point(236, 58);
+            this.txt_idhead.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_idhead.Name = "txt_idhead";
+            this.txt_idhead.Size = new System.Drawing.Size(56, 37);
+            this.txt_idhead.TabIndex = 40;
+            this.txt_idhead.TextChanged += new System.EventHandler(this.txt_idhead_TextChanged);
+            // 
+            // cmb_clerk
+            // 
+            this.cmb_clerk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmb_clerk.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmb_clerk.FormattingEnabled = true;
+            this.cmb_clerk.Location = new System.Drawing.Point(236, 666);
+            this.cmb_clerk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_clerk.Name = "cmb_clerk";
+            this.cmb_clerk.Size = new System.Drawing.Size(171, 35);
+            this.cmb_clerk.TabIndex = 38;
+            // 
+            // cmb_position
+            // 
+            this.cmb_position.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmb_position.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmb_position.FormattingEnabled = true;
+            this.cmb_position.Location = new System.Drawing.Point(236, 590);
+            this.cmb_position.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_position.Name = "cmb_position";
+            this.cmb_position.Size = new System.Drawing.Size(171, 35);
+            this.cmb_position.TabIndex = 37;
+            this.cmb_position.SelectedIndexChanged += new System.EventHandler(this.cmb_position_SelectedIndexChanged);
+            // 
+            // cmb_department
+            // 
+            this.cmb_department.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmb_department.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmb_department.FormattingEnabled = true;
+            this.cmb_department.Location = new System.Drawing.Point(236, 514);
+            this.cmb_department.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_department.Name = "cmb_department";
+            this.cmb_department.Size = new System.Drawing.Size(171, 35);
+            this.cmb_department.TabIndex = 36;
+            this.cmb_department.SelectedIndexChanged += new System.EventHandler(this.cmb_department_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -245,11 +303,12 @@
             // 
             this.txt_id.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_id.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_id.Location = new System.Drawing.Point(236, 58);
+            this.txt_id.Location = new System.Drawing.Point(298, 58);
             this.txt_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(525, 37);
+            this.txt_id.Size = new System.Drawing.Size(463, 37);
             this.txt_id.TabIndex = 7;
+            this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
             // 
             // lbl_tel
             // 
@@ -342,6 +401,8 @@
             // 
             this.groupBox_update.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox_update.Controls.Add(this.label3);
+            this.groupBox_update.Controls.Add(this.txt_idhead1);
             this.groupBox_update.Controls.Add(this.label2);
             this.groupBox_update.Controls.Add(this.mtextB_Pass);
             this.groupBox_update.Controls.Add(this.txt_tel1);
@@ -361,12 +422,33 @@
             this.groupBox_update.Controls.Add(this.txt_postal1);
             this.groupBox_update.Controls.Add(this.txt_name1);
             this.groupBox_update.Location = new System.Drawing.Point(7, 95);
-            this.groupBox_update.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox_update.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox_update.Name = "groupBox_update";
-            this.groupBox_update.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox_update.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox_update.Size = new System.Drawing.Size(851, 554);
             this.groupBox_update.TabIndex = 32;
             this.groupBox_update.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label2.Location = new System.Drawing.Point(33, 606);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 27);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "パスワード：";
+            // 
+            // mtextB_Pass
+            // 
+            this.mtextB_Pass.Location = new System.Drawing.Point(180, 606);
+            this.mtextB_Pass.Name = "mtextB_Pass";
+            this.mtextB_Pass.PasswordChar = '*';
+            this.mtextB_Pass.Size = new System.Drawing.Size(366, 34);
+            this.mtextB_Pass.TabIndex = 39;
             // 
             // txt_tel1
             // 
@@ -387,7 +469,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_name1.AutoSize = true;
             this.lbl_name1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_name1.Location = new System.Drawing.Point(90, 46);
+            this.lbl_name1.Location = new System.Drawing.Point(84, 65);
             this.lbl_name1.Name = "lbl_name1";
             this.lbl_name1.Size = new System.Drawing.Size(80, 27);
             this.lbl_name1.TabIndex = 23;
@@ -570,10 +652,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_name1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_name1.Location = new System.Drawing.Point(180, 42);
+            this.txt_name1.Location = new System.Drawing.Point(180, 61);
             this.txt_name1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_name1.Name = "txt_name1";
-            this.txt_name1.Size = new System.Drawing.Size(171, 34);
+            this.txt_name1.Size = new System.Drawing.Size(255, 34);
             this.txt_name1.TabIndex = 30;
             // 
             // txt_id1
@@ -593,7 +675,7 @@
             // 
             this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_search.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_search.Location = new System.Drawing.Point(588, 50);
+            this.btn_search.Location = new System.Drawing.Point(586, 48);
             this.btn_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(160, 39);
@@ -630,71 +712,45 @@
             this.btn_update.UseVisualStyleBackColor = true;
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
-            // mtextB_Pass
-            // 
-            this.mtextB_Pass.Location = new System.Drawing.Point(180, 606);
-            this.mtextB_Pass.Name = "mtextB_Pass";
-            this.mtextB_Pass.PasswordChar = '*';
-            this.mtextB_Pass.Size = new System.Drawing.Size(366, 34);
-            this.mtextB_Pass.TabIndex = 39;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // label2
+            // timer1
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // txt_idhead1
+            // 
+            this.txt_idhead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(33, 606);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 27);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "パスワード：";
+            this.txt_idhead1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_idhead1.Location = new System.Drawing.Point(180, 20);
+            this.txt_idhead1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_idhead1.Name = "txt_idhead1";
+            this.txt_idhead1.Size = new System.Drawing.Size(51, 34);
+            this.txt_idhead1.TabIndex = 41;
             // 
-            // cmb_department
+            // timer2
             // 
-            this.cmb_department.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmb_department.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cmb_department.FormattingEnabled = true;
-            this.cmb_department.Location = new System.Drawing.Point(236, 514);
-            this.cmb_department.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmb_department.Name = "cmb_department";
-            this.cmb_department.Size = new System.Drawing.Size(171, 35);
-            this.cmb_department.TabIndex = 36;
-            // 
-            // cmb_position
-            // 
-            this.cmb_position.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmb_position.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cmb_position.FormattingEnabled = true;
-            this.cmb_position.Location = new System.Drawing.Point(236, 590);
-            this.cmb_position.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmb_position.Name = "cmb_position";
-            this.cmb_position.Size = new System.Drawing.Size(171, 35);
-            this.cmb_position.TabIndex = 37;
-            // 
-            // cmb_clerk
-            // 
-            this.cmb_clerk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmb_clerk.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cmb_clerk.FormattingEnabled = true;
-            this.cmb_clerk.Location = new System.Drawing.Point(236, 666);
-            this.cmb_clerk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmb_clerk.Name = "cmb_clerk";
-            this.cmb_clerk.Size = new System.Drawing.Size(171, 35);
-            this.cmb_clerk.TabIndex = 38;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label3.Location = new System.Drawing.Point(22, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(148, 27);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "アクセス権限";
             // 
             // EmpRegister
             // 
@@ -766,5 +822,10 @@
         private System.Windows.Forms.ComboBox cmb_position;
         private System.Windows.Forms.ComboBox cmb_department;
         private System.Windows.Forms.ComboBox cmb_clerk;
+        private System.Windows.Forms.TextBox txt_idhead;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox txt_idhead1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label label3;
     }
 }

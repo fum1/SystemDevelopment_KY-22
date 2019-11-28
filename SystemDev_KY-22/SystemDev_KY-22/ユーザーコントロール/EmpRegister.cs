@@ -32,6 +32,7 @@ namespace SystemDev_KY_22
                  @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
 
             dataload();
+            
 
 
 
@@ -66,7 +67,7 @@ namespace SystemDev_KY_22
                 "VALUES (@社員ID, @社員名, @住所, @郵便番号, @電話番号,@性別,@部署,@役職,@店舗ID,@パスワード)", cn);
             //DBの列名に、PassWord (Microsoft Jet 4.0 の予約語)は使用できない
             //@パラメータが出てくる順番に設定する
-            cmd.Parameters.AddWithValue("@社員ID", txt_id.Text);
+            cmd.Parameters.AddWithValue("@社員ID", txt_idhead.Text + txt_id.Text);
             cmd.Parameters.AddWithValue("@社員名", txt_name.Text);                 //IDのデータ
             cmd.Parameters.AddWithValue("@住所", txt_address.Text);             //Passのデータ
             cmd.Parameters.AddWithValue("@郵便番号", txt_postal.Text);             //Nameのデータ
@@ -90,7 +91,7 @@ namespace SystemDev_KY_22
             }
 
 
-            MessageBox.Show("登録しました", "住所録");
+            MessageBox.Show("登録しました", "管理者");
         }
 
         private void txt_id1_TextChanged(object sender, EventArgs e)
@@ -115,7 +116,9 @@ namespace SystemDev_KY_22
             da.Fill(dt);
 
             DataRow dr = dt.Rows[0];
-            txt_name1.Text = dr["氏名"].ToString();
+           
+            txt_idhead1.Text = dr["社員ID"].ToString();
+            txt_name1.Text= dr["氏名"].ToString();
             txt_postal1.Text = dr["郵便番号"].ToString();
             txt_address1.Text = dr["住所"].ToString();
             txt_tel1.Text = dr["電話番号"].ToString();
@@ -127,6 +130,8 @@ namespace SystemDev_KY_22
 
             cn.Close();
 
+            txt_idhead1.Text = txt_id1.Text.Substring(0, 1);
+
         }
 
         private void cmb_sex1_SelectedIndexChanged(object sender, EventArgs e)
@@ -137,45 +142,15 @@ namespace SystemDev_KY_22
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-            //    OleDbCommand cmd = new OleDbCommand("UPDATE 社員マスタ SET 氏名 = @name, " +
-            //      " 郵便番号 = @postal,住所 = @address, 電話番号 = @tell,性別 = @sex, " +
-            //      " 部署 = @department,役所 = @position,店舗ID = @shopID WHERE 社員ID = @社員ID", cn);
-            //    //@パラメータが出てくる順番に設定する
-            //    cmd.Parameters.AddWithValue("@name", txt_name1.Text);               //Passのデータ
-            //    cmd.Parameters.AddWithValue("@postal", txt_postal1.Text);               //Nameのデータ
-            //    cmd.Parameters.AddWithValue("@address", txt_address1.Text);     //PostNumberのデータ
-            //    cmd.Parameters.AddWithValue("@tell", txt_tel1.Text);           //Addressのデータ
-            //    cmd.Parameters.AddWithValue("@sex", cmb_sex1);//IDのデータ
-            //    cmd.Parameters.AddWithValue("@department", cmb_department1.Text);
-            //    cmd.Parameters.AddWithValue("@position", cmb_position1.Text);
-            //    cmd.Parameters.AddWithValue("@shopID", cmb_clerk1.Text);
-            //    cmd.Parameters.AddWithValue("@社員ID", txt_id1.Text);
-
-            //    try
-            //    {
-            //        cn.Open();                  //コネクションを開く
-            //        cmd.ExecuteNonQuery();     //SQLを実行
-            //        cn.Close();                //コネクションを閉じる
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.Message);
-            //        cn.Close();                //コネクションを閉じる
-            //        return;
-            //    }
-            //    MessageBox.Show("更新しました");
-            //}
-
-
-            //cn.Open();
-
             // Pass、Name、PostNumber、AddressをUPDATE
             OleDbCommand cmd =
                 new OleDbCommand("UPDATE 社員マスタ SET 社員ID = @社員ID,氏名 = @name, " +
                  " 郵便番号 = @postal,住所 = @address,電話番号 = @tell,性別 = @sex,部署 = @department,役職 = @position," +
                  "店舗ID = @shopID,パスワード = @pass WHERE (社員ID = @社員ID)", cn);
             //@パラメータが出てくる順番に設定する
-            cmd.Parameters.AddWithValue("@社員ID", txt_id1.Text);
+            int length = txt_id1.TextLength;
+
+            cmd.Parameters.AddWithValue("@社員ID",txt_idhead1.Text + txt_id1.Text.Substring(1,length -1));
             cmd.Parameters.AddWithValue("@name", txt_name1.Text);               //Passのデータ
             cmd.Parameters.AddWithValue("@postal", txt_postal1.Text);               //Nameのデータ
             cmd.Parameters.AddWithValue("@address", txt_address1.Text);     //PostNumberのデータ
@@ -271,6 +246,134 @@ namespace SystemDev_KY_22
         private void cmb_sex_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedItem = cmb_sex.SelectedItem.ToString();
+        }
+
+        private void cmb_department_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmb_position_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (cmb_department.Text == "営業")
+            {
+                txt_idhead.Text = "A";
+            }
+            else
+            {
+                if (cmb_department.Text == "物流")
+                {
+                    txt_idhead.Text = "B";
+                }
+                else
+                {
+                    txt_idhead.Text = "Z";
+                }
+            }
+
+            if (cmb_position.Text != "一般社員")
+            {
+                switch (txt_idhead.Text)
+                {
+                    case "A":
+                        txt_idhead.Text = "D";
+                        break;
+
+                    case "B":
+                        txt_idhead.Text = "E";
+                        break;
+
+                    case "Z":
+                        txt_idhead.Text = "C";
+                        break;
+                }
+            }
+
+            if (cmb_department1.Text == "営業")
+            {
+                txt_idhead1.Text = "A";
+            }
+            else
+            {
+                if (cmb_department1.Text == "物流")
+                {
+                    txt_idhead1.Text = "B";
+                }
+                else
+                {
+                    txt_idhead1.Text = "Z";
+                }
+            }
+
+            if (cmb_position1.Text != "一般社員")
+            {
+                switch (txt_idhead1.Text)
+                {
+                    case "A":
+                        txt_idhead1.Text = "D";
+                        break;
+
+                    case "B":
+                        txt_idhead1.Text = "E";
+                        break;
+
+                    case "Z":
+                        txt_idhead1.Text = "C";
+                        break;
+                }
+            }
+        }
+
+        private void txt_id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (cmb_department1.Text == "営業")
+            {
+                txt_idhead1.Text = "A";
+            }
+            else
+            {
+                if (cmb_department.Text == "物流")
+                {
+                    txt_idhead1.Text = "B";
+                }
+                else
+                {
+                    txt_idhead1.Text = "Z";
+                }
+            }
+
+            if (cmb_position1.Text != "一般社員")
+            {
+                switch (txt_idhead1.Text)
+                {
+                    case "A":
+                        txt_idhead1.Text = "D";
+                        break;
+
+                    case "B":
+                        txt_idhead1.Text = "E";
+                        break;
+
+                    case "Z":
+                        txt_idhead1.Text = "C";
+                        break;
+                }
+            }
+        }
+
+        private void txt_idhead_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
     

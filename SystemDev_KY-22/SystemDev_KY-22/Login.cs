@@ -35,7 +35,7 @@ namespace SystemDev_KY_22
         private int ox { get; set; }
         private int oy { get; set; }
 
-        public int id = 0;
+        public string id;
 
 
         public int flg;
@@ -99,27 +99,51 @@ namespace SystemDev_KY_22
             DataTable dt = new DataTable();
             da.Fill(dt);
 
+            SalesMenu sm = new SalesMenu();
+            MainMenu mm = new MainMenu();
+            AdminMenu am = new AdminMenu();
+            
+
             if (dt.Rows.Count > 0)    //データテーブルの行数
             {
-                if (int.TryParse(textB_id.Text, out id))
+                this.Hide();
+                id = textB_id.Text;
+                switch (id.Substring(0,1))
                 {
-                    //   MessageBox.Show("プレーヤーを表示", "WinSystem02");   //後でコード変更
-                    this.Hide();
-                    switch (id)
-                    {
-                        case 0:
-                            SalesMenu sm = new SalesMenu();
-                            sm.ShowDialog();
-                            break;
-                        case 1:
-                            MainMenu mm = new MainMenu();
-                            mm.ShowDialog();
-                            break;
-                        case 2:
-                            AdminMenu am = new AdminMenu();
+                    case "A":
+                        sm.ShowDialog();
+                        break;
+                    case "B":
+                        mm.ShowDialog();
+                        break;
+                    case "C":
+                        am.ShowDialog();
+                        break;
+                    case "D":
+                        DialogResult result = MessageBox.Show("管理者用メニューに切り替えますか？", "ログインメニュー", MessageBoxButtons.YesNo);
+                        if(result == DialogResult.Yes)
+                        {
                             am.ShowDialog();
-                            break;
-                    }
+                        }
+                        else
+                        {
+                            sm.ShowDialog();
+                        }
+                        break;
+                    case "E":
+                        DialogResult result2 = MessageBox.Show("管理者用メニューに切り替えますか？", "ログインメニュー", MessageBoxButtons.YesNo);
+                        if (result2 == DialogResult.Yes)
+                        {
+                            am.ShowDialog();
+                        }
+                        else
+                        {
+                            mm.ShowDialog();
+                        }
+                        break;
+                    case "Z":
+                        MessageBox.Show("ログインには成功しましたが、あなたには使用する権限がありません。");
+                        break;
                 }
             }
             else
