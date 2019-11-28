@@ -42,25 +42,24 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 72);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 121);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1123, 690);
+            this.dataGridView1.Size = new System.Drawing.Size(1123, 641);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.cmb_clerk);
             this.panel1.Controls.Add(this.cmb_department);
             this.panel1.Controls.Add(this.cmb_position);
@@ -74,7 +73,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1149, 72);
+            this.panel1.Size = new System.Drawing.Size(1149, 121);
             this.panel1.TabIndex = 1;
             // 
             // cmb_clerk
@@ -151,14 +150,14 @@
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(136, 51);
             this.btn_search.TabIndex = 12;
-            this.btn_search.Text = "検索";
+            this.btn_search.Text = "絞り込み";
             this.btn_search.UseVisualStyleBackColor = false;
             this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // txt_id
             // 
             this.txt_id.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_id.Location = new System.Drawing.Point(772, 21);
+            this.txt_id.Location = new System.Drawing.Point(105, 69);
             this.txt_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(207, 30);
@@ -168,7 +167,7 @@
             // 
             this.lbl_id.AutoSize = true;
             this.lbl_id.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_id.Location = new System.Drawing.Point(681, 25);
+            this.lbl_id.Location = new System.Drawing.Point(19, 72);
             this.lbl_id.Name = "lbl_id";
             this.lbl_id.Size = new System.Drawing.Size(80, 24);
             this.lbl_id.TabIndex = 10;
@@ -177,19 +176,19 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 72);
+            this.panel2.Location = new System.Drawing.Point(0, 121);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(13, 692);
+            this.panel2.Size = new System.Drawing.Size(13, 643);
             this.panel2.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1136, 72);
+            this.panel3.Location = new System.Drawing.Point(1136, 121);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(13, 692);
+            this.panel3.Size = new System.Drawing.Size(13, 643);
             this.panel3.TabIndex = 3;
             // 
             // panel4
@@ -200,6 +199,21 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1123, 12);
             this.panel4.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button1.Location = new System.Drawing.Point(318, 69);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 30);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "検索";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // List_of_employees
             // 
@@ -238,5 +252,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button1;
     }
 }
