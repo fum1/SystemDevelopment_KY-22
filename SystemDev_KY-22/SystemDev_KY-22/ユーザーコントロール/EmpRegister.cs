@@ -65,15 +65,16 @@ namespace SystemDev_KY_22
         {
             // ID、Pass、Name、PostNumber、AddressをINSERT  
             OleDbCommand cmd =
-                new OleDbCommand("INSERT INTO 社員マスタ (社員ID,氏名, 住所, 郵便番号, 電話番号,性別,部署,役職,店舗ID,パスワード) " +
-                "VALUES (@社員ID, @社員名, @住所, @郵便番号, @電話番号,@性別,@部署,@役職,@店舗ID,@パスワード)", cn);
+                new OleDbCommand("INSERT INTO 社員マスタ (社員ID,氏名, 住所, 郵便番号, 電話番号,生年月日,性別,部署,役職,店舗ID,パスワード) " +
+                "VALUES (@社員ID, @社員名, @住所, @郵便番号, @電話番号,@生年月日,@性別,@部署,@役職,@店舗ID,@パスワード)", cn);
             //DBの列名に、PassWord (Microsoft Jet 4.0 の予約語)は使用できない
             //@パラメータが出てくる順番に設定する
             cmd.Parameters.AddWithValue("@社員ID", txt_idhead.Text + txt_id.Text);
             cmd.Parameters.AddWithValue("@社員名", txt_name.Text);                 //IDのデータ
             cmd.Parameters.AddWithValue("@住所", txt_address.Text);             //Passのデータ
             cmd.Parameters.AddWithValue("@郵便番号", txt_postal.Text);             //Nameのデータ
-            cmd.Parameters.AddWithValue("@電話番号", txt_tel.Text);   //PostNumberのデータ
+            cmd.Parameters.AddWithValue("@電話番号", txt_tel.Text);  //PostNumberのデータ
+            cmd.Parameters.AddWithValue("@生年月日", txt_birthday.Text); 
             cmd.Parameters.AddWithValue("@性別", cmb_sex.Text);      //Addressのデータ
             cmd.Parameters.AddWithValue("@部署", cmb_department.Text);
             cmd.Parameters.AddWithValue("@役職", cmb_position.Text);
@@ -108,7 +109,7 @@ namespace SystemDev_KY_22
 
             OleDbCommand cmd =
                 new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
+                "電話番号 , 生年月日 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
                 "FROM 社員マスタ WHERE 社員ID = @社員ID ORDER BY 社員ID");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -126,6 +127,7 @@ namespace SystemDev_KY_22
                 txt_postal1.Text = dr["郵便番号"].ToString();
                 txt_address1.Text = dr["住所"].ToString();
                 txt_tel1.Text = dr["電話番号"].ToString();
+                txt_birthday1.Text = dr["生年月日"].ToString();
                 cmb_sex1.Text = dr["性別"].ToString();
                 cmb_department1.Text = dr["部署"].ToString();
                 cmb_position1.Text = dr["役職"].ToString();
@@ -182,7 +184,7 @@ namespace SystemDev_KY_22
                     // Pass、Name、PostNumber、AddressをUPDATE
                     OleDbCommand cmd =
                         new OleDbCommand("UPDATE 社員マスタ SET 社員ID = @社員ID,氏名 = @name, " +
-                         " 郵便番号 = @postal,住所 = @address,電話番号 = @tell,性別 = @sex,部署 = @department,役職 = @position," +
+                         " 郵便番号 = @postal,住所 = @address,電話番号 = @tell,生年月日 = @birthday,性別 = @sex,部署 = @department,役職 = @position," +
                          "店舗ID = @shopID,パスワード = @pass WHERE (社員ID = @社員ID)", cn);
                     //@パラメータが出てくる順番に設定する
 
@@ -192,6 +194,7 @@ namespace SystemDev_KY_22
                     cmd.Parameters.AddWithValue("@postal", txt_postal1.Text);               //Nameのデータ
                     cmd.Parameters.AddWithValue("@address", txt_address1.Text);     //PostNumberのデータ
                     cmd.Parameters.AddWithValue("@tell", txt_tel1.Text);           //Addressのデータ
+                    cmd.Parameters.AddWithValue("@birthday", txt_birthday1.Text);
                     cmd.Parameters.AddWithValue("@sex", cmb_sex1.Text);//IDのデータ
                     cmd.Parameters.AddWithValue("@department", cmb_department1.Text);
                     cmd.Parameters.AddWithValue("@position", cmb_position1.Text);
@@ -216,7 +219,7 @@ namespace SystemDev_KY_22
                 else
                 {
                     OleDbCommand cmd =
-                    new OleDbCommand("INSERT INTO 社員マスタ (社員ID,氏名, 住所, 郵便番号, 電話番号,性別,部署,役職,店舗ID,パスワード) " +
+                    new OleDbCommand("INSERT INTO 社員マスタ (社員ID,氏名, 住所, 郵便番号, 電話番号,生年月日,性別,部署,役職,店舗ID,パスワード) " +
                     "VALUES (@社員ID, @社員名, @住所, @郵便番号, @電話番号,@性別,@部署,@役職,@店舗ID,@パスワード)", cn);
                     //DBの列名に、PassWord (Microsoft Jet 4.0 の予約語)は使用できない
                     //@パラメータが出てくる順番に設定する
@@ -225,6 +228,7 @@ namespace SystemDev_KY_22
                     cmd.Parameters.AddWithValue("@住所", txt_address1.Text);             //Passのデータ
                     cmd.Parameters.AddWithValue("@郵便番号", txt_postal1.Text);             //Nameのデータ
                     cmd.Parameters.AddWithValue("@電話番号", txt_tel1.Text);   //PostNumberのデータ
+                    cmd.Parameters.AddWithValue("@生年月日", txt_birthday1.Text);
                     cmd.Parameters.AddWithValue("@性別", cmb_sex1.Text);      //Addressのデータ
                     cmd.Parameters.AddWithValue("@部署", cmb_department1.Text);
                     cmd.Parameters.AddWithValue("@役職", cmb_position1.Text);
@@ -475,6 +479,8 @@ namespace SystemDev_KY_22
             }
 
         }
+
+       
     }
     
 }
