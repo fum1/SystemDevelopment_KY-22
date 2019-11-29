@@ -53,11 +53,13 @@ namespace SystemDev_KY_22.ユーザーコントロール
             groupBox_client.Visible = true;
 
             OleDbCommand cmd =
-                new OleDbCommand("SELECT 顧客ID , 氏名 , 住所 , 郵便番号 , 電話番号 , 性別 , 生年月日 FROM 顧客マスタ ORDER BY 社員ID",cn);
+                new OleDbCommand("SELECT 顧客ID , 氏名 , 住所 , 郵便番号 , 電話番号 , 性別 , 生年月日 FROM 顧客マスタ WHERE 顧客ID = @顧客ID ORDER BY 顧客ID",cn);
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
+
             cmd.Parameters.AddWithValue("@顧客ID", txt_id.Text);
+
             DataTable dt = new DataTable();
             da.Fill(dt);
 
@@ -67,6 +69,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
             txt_address.Text = dr["住所"].ToString();
             txt_tel.Text = dr["電話番号"].ToString();
             cmb_sex.Text = dr["性別"].ToString();
+            dtp_birthday.Text = dr["生年月日"].ToString();
 
             cn.Close();
         }

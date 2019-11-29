@@ -113,6 +113,15 @@ namespace SystemDev_KY_22
 
             MessageBox.Show("登録しました", "住所録");
         }
-        
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            txt_id.Clear();
+            txt_name.Clear();
+            txt_pos.Clear();
+            txt_address.Clear();
+            txt_tel.Clear();
+            cmb_sex.SelectedIndex = -1;
+        }
     }
     }

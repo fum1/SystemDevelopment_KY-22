@@ -44,11 +44,13 @@
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_sex = new System.Windows.Forms.Label();
             this.txt_name = new System.Windows.Forms.TextBox();
+            this.btn_clear = new System.Windows.Forms.Button();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox
             // 
+            this.groupBox.Controls.Add(this.btn_clear);
             this.groupBox.Controls.Add(this.cmb_sex);
             this.groupBox.Controls.Add(this.txt_pos);
             this.groupBox.Controls.Add(this.lbl_pos);
@@ -133,7 +135,7 @@
             this.btn_login.BackColor = System.Drawing.Color.Transparent;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_login.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_login.Location = new System.Drawing.Point(418, 564);
+            this.btn_login.Location = new System.Drawing.Point(149, 564);
             this.btn_login.Margin = new System.Windows.Forms.Padding(4);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(395, 74);
@@ -238,6 +240,21 @@
             this.txt_name.TabIndex = 5;
             this.txt_name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_name_KeyDown);
             // 
+            // btn_clear
+            // 
+            this.btn_clear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_clear.BackColor = System.Drawing.Color.Transparent;
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_clear.Location = new System.Drawing.Point(571, 564);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(395, 74);
+            this.btn_clear.TabIndex = 26;
+            this.btn_clear.Text = "クリア";
+            this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
             // ClientRegister
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -269,5 +286,6 @@
         private System.Windows.Forms.TextBox txt_pos;
         private System.Windows.Forms.Label lbl_pos;
         private System.Windows.Forms.ComboBox cmb_sex;
+        private System.Windows.Forms.Button btn_clear;
     }
 }

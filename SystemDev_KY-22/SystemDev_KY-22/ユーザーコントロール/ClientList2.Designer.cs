@@ -136,7 +136,7 @@
             this.txt_address.Location = new System.Drawing.Point(270, 93);
             this.txt_address.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_address.Name = "txt_address";
-            this.txt_address.Size = new System.Drawing.Size(216, 27);
+            this.txt_address.Size = new System.Drawing.Size(228, 27);
             this.txt_address.TabIndex = 12;
             // 
             // txt_pos
@@ -144,7 +144,7 @@
             this.txt_pos.Location = new System.Drawing.Point(270, 49);
             this.txt_pos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_pos.Name = "txt_pos";
-            this.txt_pos.Size = new System.Drawing.Size(116, 27);
+            this.txt_pos.Size = new System.Drawing.Size(93, 27);
             this.txt_pos.TabIndex = 11;
             // 
             // txt_name
