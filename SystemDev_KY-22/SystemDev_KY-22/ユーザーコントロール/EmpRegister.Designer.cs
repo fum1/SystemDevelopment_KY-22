@@ -54,6 +54,8 @@
             this.lbl_department = new System.Windows.Forms.Label();
             this.groupBox_information = new System.Windows.Forms.GroupBox();
             this.groupBox_update = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_idhead1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.mtextB_Pass = new System.Windows.Forms.MaskedTextBox();
             this.txt_tel1 = new System.Windows.Forms.TextBox();
@@ -78,9 +80,8 @@
             this.btn_update = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.txt_idhead1 = new System.Windows.Forms.TextBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
+            this.checkB_Delete = new System.Windows.Forms.CheckBox();
             this.groupBox_login.SuspendLayout();
             this.groupBox_information.SuspendLayout();
             this.groupBox_update.SuspendLayout();
@@ -118,7 +119,7 @@
             this.groupBox_login.Name = "groupBox_login";
             this.groupBox_login.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox_login.Size = new System.Drawing.Size(801, 946);
-            this.groupBox_login.TabIndex = 12;
+            this.groupBox_login.TabIndex = 1;
             this.groupBox_login.TabStop = false;
             this.groupBox_login.Text = "社員登録画面";
             // 
@@ -129,6 +130,7 @@
             this.txt_idhead.Location = new System.Drawing.Point(236, 58);
             this.txt_idhead.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_idhead.Name = "txt_idhead";
+            this.txt_idhead.ReadOnly = true;
             this.txt_idhead.Size = new System.Drawing.Size(56, 37);
             this.txt_idhead.TabIndex = 40;
             this.txt_idhead.TextChanged += new System.EventHandler(this.txt_idhead_TextChanged);
@@ -144,7 +146,7 @@
             this.cmb_clerk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_clerk.Name = "cmb_clerk";
             this.cmb_clerk.Size = new System.Drawing.Size(171, 35);
-            this.cmb_clerk.TabIndex = 38;
+            this.cmb_clerk.TabIndex = 8;
             // 
             // cmb_position
             // 
@@ -157,7 +159,7 @@
             this.cmb_position.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_position.Name = "cmb_position";
             this.cmb_position.Size = new System.Drawing.Size(171, 35);
-            this.cmb_position.TabIndex = 37;
+            this.cmb_position.TabIndex = 7;
             this.cmb_position.SelectedIndexChanged += new System.EventHandler(this.cmb_position_SelectedIndexChanged);
             // 
             // cmb_department
@@ -171,7 +173,7 @@
             this.cmb_department.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_department.Name = "cmb_department";
             this.cmb_department.Size = new System.Drawing.Size(171, 35);
-            this.cmb_department.TabIndex = 36;
+            this.cmb_department.TabIndex = 6;
             this.cmb_department.SelectedIndexChanged += new System.EventHandler(this.cmb_department_SelectedIndexChanged);
             // 
             // label1
@@ -193,7 +195,7 @@
             this.txt_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(525, 37);
-            this.txt_password.TabIndex = 19;
+            this.txt_password.TabIndex = 9;
             this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             // 
             // btn_register
@@ -239,7 +241,7 @@
             this.lbl_postal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_postal.AutoSize = true;
             this.lbl_postal.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_postal.Location = new System.Drawing.Point(55, 289);
+            this.lbl_postal.Location = new System.Drawing.Point(55, 210);
             this.lbl_postal.Name = "lbl_postal";
             this.lbl_postal.Size = new System.Drawing.Size(138, 28);
             this.lbl_postal.TabIndex = 16;
@@ -256,7 +258,7 @@
             this.cmb_sex.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_sex.Name = "cmb_sex";
             this.cmb_sex.Size = new System.Drawing.Size(120, 35);
-            this.cmb_sex.TabIndex = 12;
+            this.cmb_sex.TabIndex = 5;
             this.cmb_sex.SelectedIndexChanged += new System.EventHandler(this.cmb_sex_SelectedIndexChanged);
             // 
             // txt_tel
@@ -267,27 +269,27 @@
             this.txt_tel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_tel.Name = "txt_tel";
             this.txt_tel.Size = new System.Drawing.Size(525, 37);
-            this.txt_tel.TabIndex = 11;
+            this.txt_tel.TabIndex = 4;
             // 
             // txt_postal
             // 
             this.txt_postal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_postal.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_postal.Location = new System.Drawing.Point(236, 283);
+            this.txt_postal.Location = new System.Drawing.Point(236, 204);
             this.txt_postal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_postal.Name = "txt_postal";
             this.txt_postal.Size = new System.Drawing.Size(525, 37);
-            this.txt_postal.TabIndex = 10;
+            this.txt_postal.TabIndex = 2;
             // 
             // txt_address
             // 
             this.txt_address.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_address.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_address.Location = new System.Drawing.Point(236, 207);
+            this.txt_address.Location = new System.Drawing.Point(236, 277);
             this.txt_address.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_address.Name = "txt_address";
             this.txt_address.Size = new System.Drawing.Size(525, 37);
-            this.txt_address.TabIndex = 9;
+            this.txt_address.TabIndex = 3;
             // 
             // txt_name
             // 
@@ -297,7 +299,7 @@
             this.txt_name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(525, 37);
-            this.txt_name.TabIndex = 8;
+            this.txt_name.TabIndex = 1;
             // 
             // txt_id
             // 
@@ -307,7 +309,7 @@
             this.txt_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(463, 37);
-            this.txt_id.TabIndex = 7;
+            this.txt_id.TabIndex = 0;
             this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
             // 
             // lbl_tel
@@ -337,7 +339,7 @@
             this.lbl_address.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_address.AutoSize = true;
             this.lbl_address.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_address.Location = new System.Drawing.Point(114, 213);
+            this.lbl_address.Location = new System.Drawing.Point(114, 283);
             this.lbl_address.Name = "lbl_address";
             this.lbl_address.Size = new System.Drawing.Size(82, 28);
             this.lbl_address.TabIndex = 2;
@@ -385,7 +387,6 @@
             this.groupBox_information.Controls.Add(this.txt_id1);
             this.groupBox_information.Controls.Add(this.btn_search);
             this.groupBox_information.Controls.Add(this.lbl_id1);
-            this.groupBox_information.Controls.Add(this.btn_update);
             this.groupBox_information.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.groupBox_information.ForeColor = System.Drawing.Color.Black;
             this.groupBox_information.Location = new System.Drawing.Point(884, 15);
@@ -401,9 +402,11 @@
             // 
             this.groupBox_update.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox_update.Controls.Add(this.checkB_Delete);
             this.groupBox_update.Controls.Add(this.label3);
             this.groupBox_update.Controls.Add(this.txt_idhead1);
             this.groupBox_update.Controls.Add(this.label2);
+            this.groupBox_update.Controls.Add(this.btn_update);
             this.groupBox_update.Controls.Add(this.mtextB_Pass);
             this.groupBox_update.Controls.Add(this.txt_tel1);
             this.groupBox_update.Controls.Add(this.lbl_name1);
@@ -425,9 +428,35 @@
             this.groupBox_update.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox_update.Name = "groupBox_update";
             this.groupBox_update.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox_update.Size = new System.Drawing.Size(851, 554);
+            this.groupBox_update.Size = new System.Drawing.Size(851, 761);
             this.groupBox_update.TabIndex = 32;
             this.groupBox_update.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label3.Location = new System.Drawing.Point(22, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(148, 27);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "アクセス権限";
+            // 
+            // txt_idhead1
+            // 
+            this.txt_idhead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_idhead1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_idhead1.Location = new System.Drawing.Point(180, 20);
+            this.txt_idhead1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_idhead1.Name = "txt_idhead1";
+            this.txt_idhead1.ReadOnly = true;
+            this.txt_idhead1.Size = new System.Drawing.Size(51, 34);
+            this.txt_idhead1.TabIndex = 0;
             // 
             // label2
             // 
@@ -448,7 +477,7 @@
             this.mtextB_Pass.Name = "mtextB_Pass";
             this.mtextB_Pass.PasswordChar = '*';
             this.mtextB_Pass.Size = new System.Drawing.Size(366, 34);
-            this.mtextB_Pass.TabIndex = 39;
+            this.mtextB_Pass.TabIndex = 9;
             // 
             // txt_tel1
             // 
@@ -460,7 +489,7 @@
             this.txt_tel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_tel1.Name = "txt_tel1";
             this.txt_tel1.Size = new System.Drawing.Size(227, 34);
-            this.txt_tel1.TabIndex = 38;
+            this.txt_tel1.TabIndex = 4;
             // 
             // lbl_name1
             // 
@@ -512,7 +541,7 @@
             this.cmb_clerk1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_clerk1.Name = "cmb_clerk1";
             this.cmb_clerk1.Size = new System.Drawing.Size(171, 35);
-            this.cmb_clerk1.TabIndex = 36;
+            this.cmb_clerk1.TabIndex = 8;
             // 
             // lbl_tel1
             // 
@@ -538,7 +567,7 @@
             this.cmb_position1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_position1.Name = "cmb_position1";
             this.cmb_position1.Size = new System.Drawing.Size(171, 35);
-            this.cmb_position1.TabIndex = 35;
+            this.cmb_position1.TabIndex = 7;
             // 
             // lbl_sex1
             // 
@@ -564,7 +593,7 @@
             this.cmb_department1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_department1.Name = "cmb_department1";
             this.cmb_department1.Size = new System.Drawing.Size(171, 35);
-            this.cmb_department1.TabIndex = 34;
+            this.cmb_department1.TabIndex = 6;
             // 
             // lbl_department1
             // 
@@ -593,7 +622,7 @@
             this.cmb_sex1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_sex1.Name = "cmb_sex1";
             this.cmb_sex1.Size = new System.Drawing.Size(99, 35);
-            this.cmb_sex1.TabIndex = 33;
+            this.cmb_sex1.TabIndex = 5;
             this.cmb_sex1.SelectedIndexChanged += new System.EventHandler(this.cmb_sex1_SelectedIndexChanged);
             // 
             // lbl_position1
@@ -619,7 +648,7 @@
             this.txt_address1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_address1.Name = "txt_address1";
             this.txt_address1.Size = new System.Drawing.Size(615, 34);
-            this.txt_address1.TabIndex = 32;
+            this.txt_address1.TabIndex = 3;
             // 
             // lbl_clerk1
             // 
@@ -644,7 +673,7 @@
             this.txt_postal1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_postal1.Name = "txt_postal1";
             this.txt_postal1.Size = new System.Drawing.Size(171, 34);
-            this.txt_postal1.TabIndex = 31;
+            this.txt_postal1.TabIndex = 2;
             // 
             // txt_name1
             // 
@@ -656,7 +685,7 @@
             this.txt_name1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_name1.Name = "txt_name1";
             this.txt_name1.Size = new System.Drawing.Size(255, 34);
-            this.txt_name1.TabIndex = 30;
+            this.txt_name1.TabIndex = 1;
             // 
             // txt_id1
             // 
@@ -668,7 +697,7 @@
             this.txt_id1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_id1.Name = "txt_id1";
             this.txt_id1.Size = new System.Drawing.Size(393, 37);
-            this.txt_id1.TabIndex = 31;
+            this.txt_id1.TabIndex = 0;
             this.txt_id1.TextChanged += new System.EventHandler(this.txt_id1_TextChanged);
             // 
             // btn_search
@@ -679,7 +708,7 @@
             this.btn_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(160, 39);
-            this.btn_search.TabIndex = 30;
+            this.btn_search.TabIndex = 1;
             this.btn_search.Text = "検索";
             this.btn_search.UseVisualStyleBackColor = true;
             this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
@@ -699,15 +728,13 @@
             // 
             // btn_update
             // 
-            this.btn_update.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_update.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_update.Location = new System.Drawing.Point(198, 680);
+            this.btn_update.Location = new System.Drawing.Point(244, 662);
             this.btn_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(421, 74);
-            this.btn_update.TabIndex = 28;
+            this.btn_update.TabIndex = 11;
             this.btn_update.Text = "更新";
             this.btn_update.UseVisualStyleBackColor = true;
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
@@ -723,34 +750,20 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // txt_idhead1
-            // 
-            this.txt_idhead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_idhead1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_idhead1.Location = new System.Drawing.Point(180, 20);
-            this.txt_idhead1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_idhead1.Name = "txt_idhead1";
-            this.txt_idhead1.Size = new System.Drawing.Size(51, 34);
-            this.txt_idhead1.TabIndex = 41;
-            // 
             // timer2
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // label3
+            // checkB_Delete
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(22, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 27);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "アクセス権限";
+            this.checkB_Delete.AutoSize = true;
+            this.checkB_Delete.Location = new System.Drawing.Point(579, 609);
+            this.checkB_Delete.Name = "checkB_Delete";
+            this.checkB_Delete.Size = new System.Drawing.Size(245, 31);
+            this.checkB_Delete.TabIndex = 43;
+            this.checkB_Delete.Text = "従業員情報の削除";
+            this.checkB_Delete.UseVisualStyleBackColor = true;
+            this.checkB_Delete.CheckedChanged += new System.EventHandler(this.checkB_Delete_CheckedChanged);
             // 
             // EmpRegister
             // 
@@ -827,5 +840,6 @@
         private System.Windows.Forms.TextBox txt_idhead1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkB_Delete;
     }
 }
