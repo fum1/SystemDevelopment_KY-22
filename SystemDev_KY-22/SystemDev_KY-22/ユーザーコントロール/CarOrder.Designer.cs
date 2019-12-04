@@ -328,7 +328,6 @@
             this.Name = "CarOrder";
             this.Size = new System.Drawing.Size(1230, 735);
             this.Load += new System.EventHandler(this.CarOrder_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
