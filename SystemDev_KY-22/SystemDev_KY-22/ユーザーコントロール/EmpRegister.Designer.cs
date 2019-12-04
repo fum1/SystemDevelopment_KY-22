@@ -55,11 +55,9 @@
             this.lbl_department = new System.Windows.Forms.Label();
             this.groupBox_information = new System.Windows.Forms.GroupBox();
             this.groupBox_update = new System.Windows.Forms.GroupBox();
-            this.checkB_Delete = new System.Windows.Forms.CheckBox();
-            this.lbl_idhead1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txt_idhead1 = new System.Windows.Forms.TextBox();
-            this.lbl_pass = new System.Windows.Forms.Label();
-            this.btn_update = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.mtextB_Pass = new System.Windows.Forms.MaskedTextBox();
             this.txt_tel1 = new System.Windows.Forms.TextBox();
             this.lbl_name1 = new System.Windows.Forms.Label();
@@ -457,29 +455,6 @@
             this.label3.Size = new System.Drawing.Size(148, 27);
             this.label3.TabIndex = 42;
             this.label3.Text = "アクセス権限";
-            // checkB_Delete
-            // 
-            this.checkB_Delete.AutoSize = true;
-            this.checkB_Delete.Location = new System.Drawing.Point(579, 609);
-            this.checkB_Delete.Name = "checkB_Delete";
-            this.checkB_Delete.Size = new System.Drawing.Size(245, 31);
-            this.checkB_Delete.TabIndex = 43;
-            this.checkB_Delete.Text = "従業員情報の削除";
-            this.checkB_Delete.UseVisualStyleBackColor = true;
-            this.checkB_Delete.CheckedChanged += new System.EventHandler(this.checkB_Delete_CheckedChanged);
-            // 
-            // lbl_idhead1
-            // 
-            this.lbl_idhead1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_idhead1.AutoSize = true;
-            this.lbl_idhead1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_idhead1.Location = new System.Drawing.Point(16, 24);
-            this.lbl_idhead1.Name = "lbl_idhead1";
-            this.lbl_idhead1.Size = new System.Drawing.Size(148, 27);
-            this.lbl_idhead1.TabIndex = 42;
-            this.lbl_idhead1.Text = "アクセス権限";
             // 
             // txt_idhead1
             // 
@@ -890,6 +865,5 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkB_Delete;
-
     }
 }
