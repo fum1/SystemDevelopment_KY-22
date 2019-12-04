@@ -44,8 +44,8 @@
             this.txt_model = new System.Windows.Forms.TextBox();
             this.txt_color = new System.Windows.Forms.TextBox();
             this.txt_option = new System.Windows.Forms.TextBox();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.pic_logo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_supplier
@@ -215,24 +215,24 @@
             this.txt_option.Size = new System.Drawing.Size(233, 42);
             this.txt_option.TabIndex = 37;
             // 
-            // pictureBox
+            // pic_logo
             // 
-            this.pictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox.Image = global::SystemDev_KY_22.Properties.Resources.チェリー;
-            this.pictureBox.Location = new System.Drawing.Point(644, 15);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(567, 608);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox.TabIndex = 38;
-            this.pictureBox.TabStop = false;
+            this.pic_logo.BackColor = System.Drawing.Color.Transparent;
+            this.pic_logo.Image = global::SystemDev_KY_22.Properties.Resources.チェリー;
+            this.pic_logo.Location = new System.Drawing.Point(644, 15);
+            this.pic_logo.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_logo.Name = "pic_logo";
+            this.pic_logo.Size = new System.Drawing.Size(567, 608);
+            this.pic_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_logo.TabIndex = 38;
+            this.pic_logo.TabStop = false;
             // 
             // CarOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.pic_logo);
             this.Controls.Add(this.txt_option);
             this.Controls.Add(this.txt_color);
             this.Controls.Add(this.txt_model);
@@ -254,7 +254,7 @@
             this.Name = "CarOrder";
             this.Size = new System.Drawing.Size(1230, 735);
             this.Load += new System.EventHandler(this.CarOrder_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,6 +278,6 @@
         private System.Windows.Forms.TextBox txt_model;
         private System.Windows.Forms.TextBox txt_color;
         private System.Windows.Forms.TextBox txt_option;
-        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.PictureBox pic_logo;
     }
 }
