@@ -213,7 +213,7 @@
             this.txt_option.Size = new System.Drawing.Size(233, 42);
             this.txt_option.TabIndex = 37;
             // 
-            // pictureBox
+            // pic_logo
             // 
             this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.Image = global::SystemDev_KY_22.Properties.Resources.チェリー;
@@ -328,7 +328,7 @@
             this.Name = "CarOrder";
             this.Size = new System.Drawing.Size(1230, 735);
             this.Load += new System.EventHandler(this.CarOrder_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
