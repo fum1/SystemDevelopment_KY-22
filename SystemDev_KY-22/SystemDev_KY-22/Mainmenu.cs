@@ -22,7 +22,7 @@ namespace SystemDev_KY_22
 
         private void MainMenu2_Load(object sender, EventArgs e)
         {
-            userControls = new UserControl[4] {carOrder2,orderCheck2,stockList2,loaUnloading1};
+            userControls = new UserControl[3] {carOrder2,orderCheck2,loaUnloading1};
             this.WindowState = FormWindowState.Maximized;
         }
 
@@ -33,8 +33,8 @@ namespace SystemDev_KY_22
 
         private void btn_StockList_Click(object sender, EventArgs e)
         {
-            pc.Set((Button)sender, selectPanel);
-            pc.Chenge(userControls, stockList2);
+            //pc.Set((Button)sender, selectPanel);
+            //pc.Chenge(userControls, stockList2);
         }
 
         private void button1_Click(object sender, EventArgs e)
