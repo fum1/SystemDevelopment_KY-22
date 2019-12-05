@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox_login = new System.Windows.Forms.GroupBox();
-            //this.lbl_birthday = new System.Windows.Forms.Label();
             this.txt_idhead = new System.Windows.Forms.TextBox();
             this.cmb_clerk = new System.Windows.Forms.ComboBox();
             this.cmb_position = new System.Windows.Forms.ComboBox();
@@ -55,9 +54,9 @@
             this.lbl_department = new System.Windows.Forms.Label();
             this.groupBox_information = new System.Windows.Forms.GroupBox();
             this.groupBox_update = new System.Windows.Forms.GroupBox();
+            this.checkB_Delete = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_idhead1 = new System.Windows.Forms.TextBox();
-            //this.label2 = new System.Windows.Forms.Label();
             this.mtextB_Pass = new System.Windows.Forms.MaskedTextBox();
             this.txt_tel1 = new System.Windows.Forms.TextBox();
             this.lbl_name1 = new System.Windows.Forms.Label();
@@ -81,7 +80,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.checkB_Delete = new System.Windows.Forms.CheckBox();
+            this.lbl_password1 = new System.Windows.Forms.Label();
             this.groupBox_login.SuspendLayout();
             this.groupBox_information.SuspendLayout();
             this.groupBox_update.SuspendLayout();
@@ -91,8 +90,6 @@
             // 
             this.groupBox_login.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            //this.groupBox_login.Controls.Add(this.txt_birthday);
-            //this.groupBox_login.Controls.Add(this.lbl_birthday);
             this.groupBox_login.Controls.Add(this.txt_idhead);
             this.groupBox_login.Controls.Add(this.cmb_clerk);
             this.groupBox_login.Controls.Add(this.cmb_position);
@@ -124,15 +121,6 @@
             this.groupBox_login.TabIndex = 1;
             this.groupBox_login.TabStop = false;
             this.groupBox_login.Text = "社員登録画面";
-            //// 
-            //// lbl_birthday
-            //// 
-            //this.lbl_birthday.AutoSize = true;
-            //this.lbl_birthday.Location = new System.Drawing.Point(58, 388);
-            //this.lbl_birthday.Name = "lbl_birthday";
-            //this.lbl_birthday.Size = new System.Drawing.Size(138, 28);
-            //this.lbl_birthday.TabIndex = 41;
-            //this.lbl_birthday.Text = "生年月日：";
             // 
             // txt_idhead
             // 
@@ -413,11 +401,10 @@
             // 
             this.groupBox_update.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox_update.Controls.Add(this.lbl_password1);
             this.groupBox_update.Controls.Add(this.checkB_Delete);
             this.groupBox_update.Controls.Add(this.label3);
             this.groupBox_update.Controls.Add(this.txt_idhead1);
-            //this.groupBox_update.Controls.Add(this.label2);
-            this.groupBox_update.Controls.Add(this.btn_update);
             this.groupBox_update.Controls.Add(this.mtextB_Pass);
             this.groupBox_update.Controls.Add(this.txt_tel1);
             this.groupBox_update.Controls.Add(this.lbl_name1);
@@ -442,6 +429,17 @@
             this.groupBox_update.Size = new System.Drawing.Size(851, 761);
             this.groupBox_update.TabIndex = 32;
             this.groupBox_update.TabStop = false;
+            // 
+            // checkB_Delete
+            // 
+            this.checkB_Delete.AutoSize = true;
+            this.checkB_Delete.Location = new System.Drawing.Point(579, 609);
+            this.checkB_Delete.Name = "checkB_Delete";
+            this.checkB_Delete.Size = new System.Drawing.Size(245, 31);
+            this.checkB_Delete.TabIndex = 43;
+            this.checkB_Delete.Text = "従業員情報の削除";
+            this.checkB_Delete.UseVisualStyleBackColor = true;
+            this.checkB_Delete.CheckedChanged += new System.EventHandler(this.checkB_Delete_CheckedChanged);
             // 
             // label3
             // 
@@ -468,32 +466,6 @@
             this.txt_idhead1.ReadOnly = true;
             this.txt_idhead1.Size = new System.Drawing.Size(51, 34);
             this.txt_idhead1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.lbl_pass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_pass.AutoSize = true;
-            this.lbl_pass.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_pass.Location = new System.Drawing.Point(33, 606);
-            this.lbl_pass.Name = "lbl_pass";
-            this.lbl_pass.Size = new System.Drawing.Size(131, 27);
-            this.lbl_pass.TabIndex = 40;
-            this.lbl_pass.Text = "パスワード：";
-            // 
-            // btn_update
-            // 
-            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_update.Location = new System.Drawing.Point(244, 662);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(421, 74);
-            this.btn_update.TabIndex = 11;
-            this.btn_update.Text = "更新";
-            this.btn_update.UseVisualStyleBackColor = true;
-            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // mtextB_Pass
             // 
@@ -750,19 +722,6 @@
             this.lbl_id1.TabIndex = 29;
             this.lbl_id1.Text = "社員ID：";
             // 
-            // btn_update
-            // 
-            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_update.Location = new System.Drawing.Point(244, 662);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(421, 74);
-            this.btn_update.TabIndex = 11;
-            this.btn_update.Text = "更新";
-            this.btn_update.UseVisualStyleBackColor = true;
-            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -778,16 +737,18 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // checkB_Delete
+            // lbl_password1
             // 
-            this.checkB_Delete.AutoSize = true;
-            this.checkB_Delete.Location = new System.Drawing.Point(579, 609);
-            this.checkB_Delete.Name = "checkB_Delete";
-            this.checkB_Delete.Size = new System.Drawing.Size(245, 31);
-            this.checkB_Delete.TabIndex = 43;
-            this.checkB_Delete.Text = "従業員情報の削除";
-            this.checkB_Delete.UseVisualStyleBackColor = true;
-            this.checkB_Delete.CheckedChanged += new System.EventHandler(this.checkB_Delete_CheckedChanged);
+            this.lbl_password1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_password1.AutoSize = true;
+            this.lbl_password1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_password1.Location = new System.Drawing.Point(39, 609);
+            this.lbl_password1.Name = "lbl_password1";
+            this.lbl_password1.Size = new System.Drawing.Size(131, 27);
+            this.lbl_password1.TabIndex = 44;
+            this.lbl_password1.Text = "パスワード：";
             // 
             // EmpRegister
             // 
@@ -853,7 +814,6 @@
         private System.Windows.Forms.TextBox txt_name1;
         private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.TextBox txt_password;
-        private System.Windows.Forms.Label lbl_pass;
         private System.Windows.Forms.MaskedTextBox mtextB_Pass;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ComboBox cmb_position;
@@ -865,5 +825,6 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkB_Delete;
+        private System.Windows.Forms.Label lbl_password1;
     }
 }
