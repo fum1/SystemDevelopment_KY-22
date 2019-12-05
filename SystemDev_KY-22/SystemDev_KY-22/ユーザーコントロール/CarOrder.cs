@@ -31,9 +31,8 @@ namespace SystemDev_KY_22
         private void btn_print_Click(object sender, EventArgs e)
         {
             DialogResult dr = printDialog.ShowDialog();
-            /* PrintDocument pd = new PrintDocument();
-             pd.PrintPage += new PrintPageEventHandler(printDocument_PrintPage);
-             pd.Print();*/
+            printDocument.PrintPage += new PrintPageEventHandler(printDocument_PrintPage);
+            printDocument.Print();
         }
 
 
@@ -105,15 +104,17 @@ namespace SystemDev_KY_22
         private void printDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
             //表示する文字列
-            string print_lblsupplier = lbl_supplier.Text;
-            string print_lblPerson = lbl_Person.Text;
+            string print_lblorderID = lbl_orderID.Text;
+            string print_lblsupplier = lbl_supplierID.Text;
+            string print_lblPerson = lbl_PersonID.Text;
             string print_lblorderdate = lbl_orderdate.Text;
             string print_lblproductname = lbl_productname.Text;
             string print_lblmodel = lbl_model.Text;
             string print_lblcolor = lbl_color.Text;
             string print_lbloption = lbl_option.Text;
-            string print_cmbsupplier = cmb_supplier.Text;
-            string print_cmbPerson = txt_Person.Text;
+            string print_txtorderID = txt_orderID.Text;
+            string print_txtsupplier = txt_supplierID.Text;
+            string print_txtPerson = txt_PersonID.Text;
             string print_cmborderdate = dtp_admissionday.Text;
             string print_cmbproductname = txt_productname.Text;
             string print_cmbmodel = txt_model.Text;
@@ -130,25 +131,25 @@ namespace SystemDev_KY_22
             SizeF stringSize = g.MeasureString(print_lblsupplier, fnt, 500, sf);*/
             Font font = new Font("HGS創英ﾌﾟﾚｾﾞﾝｽEB", 50.0f);
             Brush brush = new SolidBrush(Color.Black);
-            e.Graphics.DrawString("発注書", font, brush, new PointF(300, 20));
+            e.Graphics.DrawString("発注書", font, brush, new PointF(280, 20));
 
             Graphics g = e.Graphics;
 
 
-            Font a = new Font("HGP明朝E", 40);
+            Font a = new Font("HGP明朝E", 30);
 
 
             //文字列を描画する
+            g.DrawString(print_lblorderID + "        " + print_txtorderID, a, Brushes.Black, 110, 200);
+            g.DrawString(print_lblsupplier + "     " + print_txtsupplier, a, Brushes.Black, 110,300);
+            g.DrawString(print_lblPerson + "        " + print_txtPerson, a, Brushes.Black, 110,400);
+            g.DrawString(print_lblorderdate + "  " + print_cmborderdate, a, Brushes.Black, 110,500);
+            g.DrawString(print_lblproductname + "        " + print_cmbproductname, a, Brushes.Black, 110,600);
+            g.DrawString(print_lblmodel + "        " + print_cmbmodel, a, Brushes.Black, 110,700);
+            g.DrawString(print_lblcolor + "              " + print_cmbcolor, a, Brushes.Black, 110,800);
+            g.DrawString(print_lbloption + "    " + print_cmboption, a, Brushes.Black, 110,900);
 
-            g.DrawString(print_lblsupplier + "     " + print_cmbsupplier, a, Brushes.Black, 210,300);
-            g.DrawString(print_lblPerson + "     " + print_cmbPerson, a, Brushes.Black, 210,300);
-            g.DrawString(print_lblorderdate + "     " + print_cmborderdate, a, Brushes.Black, 210,300);
-            g.DrawString(print_lblproductname + "     " + print_cmbproductname, a, Brushes.Black, 210,300);
-            g.DrawString(print_lblmodel + "     " + print_cmbmodel, a, Brushes.Black, 210,300);
-            g.DrawString(print_lblcolor + "           " + print_cmbcolor, a, Brushes.Black, 210,300);
-            g.DrawString(print_lbloption + " " + print_cmboption, a, Brushes.Black, 210,300);
-
-
+            
 
            /* //リソースを解放する
             fnt.Dispose();
@@ -164,8 +165,9 @@ namespace SystemDev_KY_22
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-            cmb_supplier.ResetText();
-            txt_Person.ResetText();
+            txt_orderID.ResetText();
+            txt_supplierID.ResetText();
+            txt_PersonID.ResetText();
             dtp_admissionday.ResetText();
             txt_productname.ResetText();
             txt_model.ResetText();
@@ -181,10 +183,10 @@ namespace SystemDev_KY_22
                 "VALUES (@発注ID, @発注年月日, @社員ID, @仕入先ID, @商品名,@モデル,@色,@オプション)", cn);
             //DBの列名に、PassWord (Microsoft Jet 4.0 の予約語)は使用できない
             //@パラメータが出てくる順番に設定する
-            cmd.Parameters.AddWithValue("@発注ID", txt_orderID);
+            cmd.Parameters.AddWithValue("@発注ID", txt_orderID.Text);
             cmd.Parameters.AddWithValue("@発注年月日", dtp_admissionday.Text);                 //IDのデータ
-            cmd.Parameters.AddWithValue("@社員ID", txt_Person.Text);             //Passのデータ
-            cmd.Parameters.AddWithValue("@仕入先ID", dtp_admissionday.Text);             //Nameのデータ
+            cmd.Parameters.AddWithValue("@社員ID", txt_PersonID.Text);             //Passのデータ
+            cmd.Parameters.AddWithValue("@仕入先ID", txt_supplierID.Text);             //Nameのデータ
             cmd.Parameters.AddWithValue("@商品名", txt_productname.Text);   //PostNumberのデータ
             cmd.Parameters.AddWithValue("@モデル", txt_model.Text);      //Addressのデータ
             cmd.Parameters.AddWithValue("@色", txt_color.Text);
