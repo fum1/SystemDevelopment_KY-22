@@ -36,10 +36,15 @@
             this.btn_ClientRegister = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel_Back = new System.Windows.Forms.Panel();
+            this.order1 = new SystemDev_KY_22.Order();
+            this.clientRegisterU1 = new SystemDev_KY_22.ClientRegister();
+            this.stockList1 = new SystemDev_KY_22.StockList();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.clientList21 = new SystemDev_KY_22.ユーザーコントロール.ClientList2();
             this.panel1.SuspendLayout();
+            this.panel_Back.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,7 +117,7 @@
             this.btn_ClientRegister.Name = "btn_ClientRegister";
             this.btn_ClientRegister.Size = new System.Drawing.Size(201, 115);
             this.btn_ClientRegister.TabIndex = 2;
-            this.btn_ClientRegister.Text = "登録・更新";
+            this.btn_ClientRegister.Text = "顧客登録";
             this.btn_ClientRegister.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ClientRegister.UseVisualStyleBackColor = false;
             this.btn_ClientRegister.Click += new System.EventHandler(this.Btn_ClientRegister_Click);
@@ -136,11 +141,42 @@
             // 
             // panel_Back
             // 
+            this.panel_Back.Controls.Add(this.clientList21);
+            this.panel_Back.Controls.Add(this.order1);
+            this.panel_Back.Controls.Add(this.clientRegisterU1);
+            this.panel_Back.Controls.Add(this.stockList1);
             this.panel_Back.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_Back.Location = new System.Drawing.Point(223, 107);
             this.panel_Back.Name = "panel_Back";
             this.panel_Back.Size = new System.Drawing.Size(1042, 703);
             this.panel_Back.TabIndex = 0;
+            // 
+            // order1
+            // 
+            this.order1.BackColor = System.Drawing.Color.White;
+            this.order1.Location = new System.Drawing.Point(27, 84);
+            this.order1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
+            this.order1.Name = "order1";
+            this.order1.Size = new System.Drawing.Size(4168, 3471);
+            this.order1.TabIndex = 2;
+            // 
+            // clientRegisterU1
+            // 
+            this.clientRegisterU1.BackColor = System.Drawing.Color.White;
+            this.clientRegisterU1.Location = new System.Drawing.Point(2372, 1131);
+            this.clientRegisterU1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
+            this.clientRegisterU1.Name = "clientRegisterU1";
+            this.clientRegisterU1.Size = new System.Drawing.Size(4168, 3471);
+            this.clientRegisterU1.TabIndex = 1;
+            // 
+            // stockList1
+            // 
+            this.stockList1.BackColor = System.Drawing.Color.White;
+            this.stockList1.Location = new System.Drawing.Point(1384, 1229);
+            this.stockList1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
+            this.stockList1.Name = "stockList1";
+            this.stockList1.Size = new System.Drawing.Size(4168, 3471);
+            this.stockList1.TabIndex = 0;
             // 
             // panel3
             // 
@@ -158,7 +194,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(35, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 34);
+            this.label1.Size = new System.Drawing.Size(236, 27);
             this.label1.TabIndex = 5;
             this.label1.Text = "営業担当メニュー";
             // 
@@ -180,6 +216,14 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
+            // clientList21
+            // 
+            this.clientList21.Location = new System.Drawing.Point(53, 260);
+            this.clientList21.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.clientList21.Name = "clientList21";
+            this.clientList21.Size = new System.Drawing.Size(846, 443);
+            this.clientList21.TabIndex = 3;
+            // 
             // SalesMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -195,6 +239,7 @@
             this.Text = "Salesmenu2";
             this.Load += new System.EventHandler(this.Salesmenu2_Load);
             this.panel1.ResumeLayout(false);
+            this.panel_Back.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -216,6 +261,6 @@
         private ClientRegister clientRegisterU1;
         private StockList stockList1;
         private System.Windows.Forms.Button btn_ClientList;
-        private ユーザーコントロール.ClientList clientList21;
+        private ユーザーコントロール.ClientList2 clientList21;
     }
 }
