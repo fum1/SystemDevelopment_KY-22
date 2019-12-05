@@ -28,422 +28,422 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.btn_decision = new System.Windows.Forms.Button();
+            this.gbx_vehicle = new System.Windows.Forms.GroupBox();
+            this.cmb_manufacturer = new System.Windows.Forms.ComboBox();
+            this.lbl_circle = new System.Windows.Forms.Label();
+            this.rtb_total = new System.Windows.Forms.RichTextBox();
+            this.lbl_total = new System.Windows.Forms.Label();
+            this.txt_consumptiontax = new System.Windows.Forms.TextBox();
+            this.txt_amountofmoney = new System.Windows.Forms.TextBox();
+            this.lst_status = new System.Windows.Forms.ListBox();
+            this.lst_bodycolor = new System.Windows.Forms.ListBox();
+            this.lst_carname = new System.Windows.Forms.ListBox();
+            this.lbl_carname = new System.Windows.Forms.Label();
+            this.lst_modelname = new System.Windows.Forms.ListBox();
+            this.lbl_manufacturer = new System.Windows.Forms.Label();
+            this.lbl_bodycolor = new System.Windows.Forms.Label();
+            this.lbl_status = new System.Windows.Forms.Label();
+            this.lbl_amountofmoney = new System.Windows.Forms.Label();
+            this.lbl_modelname = new System.Windows.Forms.Label();
+            this.lbl_consumptiontax = new System.Windows.Forms.Label();
+            this.gbx_order = new System.Windows.Forms.GroupBox();
+            this.gbx_remarks = new System.Windows.Forms.GroupBox();
+            this.rtb_remarks = new System.Windows.Forms.RichTextBox();
+            this.txt_clientID = new System.Windows.Forms.TextBox();
+            this.txt_employeeID = new System.Windows.Forms.TextBox();
+            this.txt_storeID = new System.Windows.Forms.TextBox();
+            this.dtp_Orderdate = new System.Windows.Forms.DateTimePicker();
+            this.lbl_storeID = new System.Windows.Forms.Label();
+            this.lbl_Orderdate = new System.Windows.Forms.Label();
+            this.lbl_employeeID = new System.Windows.Forms.Label();
+            this.lbl_clientID = new System.Windows.Forms.Label();
+            this.gbx_vehicle.SuspendLayout();
+            this.gbx_order.SuspendLayout();
+            this.gbx_remarks.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_decision
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(856, 616);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(235, 60);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "決定";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_decision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_decision.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_decision.Location = new System.Drawing.Point(856, 616);
+            this.btn_decision.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_decision.Name = "btn_decision";
+            this.btn_decision.Size = new System.Drawing.Size(235, 60);
+            this.btn_decision.TabIndex = 21;
+            this.btn_decision.Text = "決定";
+            this.btn_decision.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // gbx_vehicle
             // 
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.richTextBox2);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.listBox5);
-            this.groupBox2.Controls.Add(this.listBox4);
-            this.groupBox2.Controls.Add(this.listBox3);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.listBox2);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.groupBox2.Location = new System.Drawing.Point(662, 0);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(642, 602);
-            this.groupBox2.TabIndex = 20;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "車両";
+            this.gbx_vehicle.Controls.Add(this.cmb_manufacturer);
+            this.gbx_vehicle.Controls.Add(this.lbl_circle);
+            this.gbx_vehicle.Controls.Add(this.rtb_total);
+            this.gbx_vehicle.Controls.Add(this.lbl_total);
+            this.gbx_vehicle.Controls.Add(this.txt_consumptiontax);
+            this.gbx_vehicle.Controls.Add(this.txt_amountofmoney);
+            this.gbx_vehicle.Controls.Add(this.lst_status);
+            this.gbx_vehicle.Controls.Add(this.lst_bodycolor);
+            this.gbx_vehicle.Controls.Add(this.lst_carname);
+            this.gbx_vehicle.Controls.Add(this.lbl_carname);
+            this.gbx_vehicle.Controls.Add(this.lst_modelname);
+            this.gbx_vehicle.Controls.Add(this.lbl_manufacturer);
+            this.gbx_vehicle.Controls.Add(this.lbl_bodycolor);
+            this.gbx_vehicle.Controls.Add(this.lbl_status);
+            this.gbx_vehicle.Controls.Add(this.lbl_amountofmoney);
+            this.gbx_vehicle.Controls.Add(this.lbl_modelname);
+            this.gbx_vehicle.Controls.Add(this.lbl_consumptiontax);
+            this.gbx_vehicle.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.gbx_vehicle.Location = new System.Drawing.Point(662, 0);
+            this.gbx_vehicle.Margin = new System.Windows.Forms.Padding(4);
+            this.gbx_vehicle.Name = "gbx_vehicle";
+            this.gbx_vehicle.Padding = new System.Windows.Forms.Padding(4);
+            this.gbx_vehicle.Size = new System.Drawing.Size(642, 602);
+            this.gbx_vehicle.TabIndex = 20;
+            this.gbx_vehicle.TabStop = false;
+            this.gbx_vehicle.Text = "車両";
             // 
-            // label10
+            // cmb_manufacturer
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label10.Location = new System.Drawing.Point(438, 520);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 28);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "円";
+            this.cmb_manufacturer.FormattingEnabled = true;
+            this.cmb_manufacturer.Location = new System.Drawing.Point(189, 58);
+            this.cmb_manufacturer.Name = "cmb_manufacturer";
+            this.cmb_manufacturer.Size = new System.Drawing.Size(240, 30);
+            this.cmb_manufacturer.TabIndex = 26;
             // 
-            // richTextBox2
+            // lbl_circle
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(194, 490);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(235, 76);
-            this.richTextBox2.TabIndex = 25;
-            this.richTextBox2.Text = "";
+            this.lbl_circle.AutoSize = true;
+            this.lbl_circle.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_circle.Location = new System.Drawing.Point(438, 520);
+            this.lbl_circle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_circle.Name = "lbl_circle";
+            this.lbl_circle.Size = new System.Drawing.Size(32, 22);
+            this.lbl_circle.TabIndex = 18;
+            this.lbl_circle.Text = "円";
             // 
-            // label8
+            // rtb_total
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("MS UI Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label8.Location = new System.Drawing.Point(37, 501);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 43);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "合計：";
+            this.rtb_total.Location = new System.Drawing.Point(194, 490);
+            this.rtb_total.Margin = new System.Windows.Forms.Padding(4);
+            this.rtb_total.Name = "rtb_total";
+            this.rtb_total.Size = new System.Drawing.Size(235, 76);
+            this.rtb_total.TabIndex = 25;
+            this.rtb_total.Text = "";
             // 
-            // textBox5
+            // lbl_total
             // 
-            this.textBox5.Location = new System.Drawing.Point(194, 343);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(236, 34);
-            this.textBox5.TabIndex = 23;
+            this.lbl_total.AutoSize = true;
+            this.lbl_total.Font = new System.Drawing.Font("MS UI Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_total.Location = new System.Drawing.Point(37, 501);
+            this.lbl_total.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_total.Name = "lbl_total";
+            this.lbl_total.Size = new System.Drawing.Size(103, 35);
+            this.lbl_total.TabIndex = 24;
+            this.lbl_total.Text = "合計：";
             // 
-            // textBox4
+            // txt_consumptiontax
             // 
-            this.textBox4.Location = new System.Drawing.Point(195, 290);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(235, 34);
-            this.textBox4.TabIndex = 22;
+            this.txt_consumptiontax.Location = new System.Drawing.Point(194, 343);
+            this.txt_consumptiontax.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_consumptiontax.Name = "txt_consumptiontax";
+            this.txt_consumptiontax.Size = new System.Drawing.Size(236, 29);
+            this.txt_consumptiontax.TabIndex = 23;
             // 
-            // listBox5
+            // txt_amountofmoney
             // 
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.ItemHeight = 27;
-            this.listBox5.Location = new System.Drawing.Point(194, 239);
-            this.listBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(236, 31);
-            this.listBox5.TabIndex = 21;
+            this.txt_amountofmoney.Location = new System.Drawing.Point(195, 290);
+            this.txt_amountofmoney.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_amountofmoney.Name = "txt_amountofmoney";
+            this.txt_amountofmoney.Size = new System.Drawing.Size(235, 29);
+            this.txt_amountofmoney.TabIndex = 22;
             // 
-            // listBox4
+            // lst_status
             // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 27;
-            this.listBox4.Location = new System.Drawing.Point(194, 193);
-            this.listBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(240, 31);
-            this.listBox4.TabIndex = 20;
+            this.lst_status.FormattingEnabled = true;
+            this.lst_status.ItemHeight = 22;
+            this.lst_status.Location = new System.Drawing.Point(194, 239);
+            this.lst_status.Margin = new System.Windows.Forms.Padding(4);
+            this.lst_status.Name = "lst_status";
+            this.lst_status.Size = new System.Drawing.Size(236, 26);
+            this.lst_status.TabIndex = 21;
             // 
-            // listBox3
+            // lst_bodycolor
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 27;
-            this.listBox3.Location = new System.Drawing.Point(195, 149);
-            this.listBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(239, 31);
-            this.listBox3.TabIndex = 19;
+            this.lst_bodycolor.FormattingEnabled = true;
+            this.lst_bodycolor.ItemHeight = 22;
+            this.lst_bodycolor.Location = new System.Drawing.Point(194, 193);
+            this.lst_bodycolor.Margin = new System.Windows.Forms.Padding(4);
+            this.lst_bodycolor.Name = "lst_bodycolor";
+            this.lst_bodycolor.Size = new System.Drawing.Size(240, 26);
+            this.lst_bodycolor.TabIndex = 20;
             // 
-            // label3
+            // lst_carname
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(100, 155);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 20);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "車名：";
+            this.lst_carname.FormattingEnabled = true;
+            this.lst_carname.ItemHeight = 22;
+            this.lst_carname.Location = new System.Drawing.Point(195, 149);
+            this.lst_carname.Margin = new System.Windows.Forms.Padding(4);
+            this.lst_carname.Name = "lst_carname";
+            this.lst_carname.Size = new System.Drawing.Size(239, 26);
+            this.lst_carname.TabIndex = 19;
             // 
-            // listBox2
+            // lbl_carname
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 27;
-            this.listBox2.Location = new System.Drawing.Point(194, 102);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(240, 31);
-            this.listBox2.TabIndex = 17;
+            this.lbl_carname.AutoSize = true;
+            this.lbl_carname.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_carname.Location = new System.Drawing.Point(100, 155);
+            this.lbl_carname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_carname.Name = "lbl_carname";
+            this.lbl_carname.Size = new System.Drawing.Size(48, 16);
+            this.lbl_carname.TabIndex = 18;
+            this.lbl_carname.Text = "車名：";
             // 
-            // label12
+            // lst_modelname
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label12.Location = new System.Drawing.Point(75, 67);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(79, 20);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "メーカー：";
+            this.lst_modelname.FormattingEnabled = true;
+            this.lst_modelname.ItemHeight = 22;
+            this.lst_modelname.Location = new System.Drawing.Point(194, 102);
+            this.lst_modelname.Margin = new System.Windows.Forms.Padding(4);
+            this.lst_modelname.Name = "lst_modelname";
+            this.lst_modelname.Size = new System.Drawing.Size(240, 26);
+            this.lst_modelname.TabIndex = 17;
             // 
-            // label6
+            // lbl_manufacturer
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(20, 205);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 20);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "ボディーカラー：";
+            this.lbl_manufacturer.AutoSize = true;
+            this.lbl_manufacturer.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_manufacturer.Location = new System.Drawing.Point(75, 67);
+            this.lbl_manufacturer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_manufacturer.Name = "lbl_manufacturer";
+            this.lbl_manufacturer.Size = new System.Drawing.Size(64, 16);
+            this.lbl_manufacturer.TabIndex = 13;
+            this.lbl_manufacturer.Text = "メーカー：";
             // 
-            // label14
+            // lbl_bodycolor
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label14.Location = new System.Drawing.Point(100, 252);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(59, 20);
-            this.label14.TabIndex = 15;
-            this.label14.Text = "状態：";
+            this.lbl_bodycolor.AutoSize = true;
+            this.lbl_bodycolor.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_bodycolor.Location = new System.Drawing.Point(20, 205);
+            this.lbl_bodycolor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_bodycolor.Name = "lbl_bodycolor";
+            this.lbl_bodycolor.Size = new System.Drawing.Size(99, 16);
+            this.lbl_bodycolor.TabIndex = 7;
+            this.lbl_bodycolor.Text = "ボディーカラー：";
             // 
-            // label9
+            // lbl_status
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label9.Location = new System.Drawing.Point(100, 301);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 20);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "金額：";
+            this.lbl_status.AutoSize = true;
+            this.lbl_status.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_status.Location = new System.Drawing.Point(100, 252);
+            this.lbl_status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_status.Name = "lbl_status";
+            this.lbl_status.Size = new System.Drawing.Size(48, 16);
+            this.lbl_status.TabIndex = 15;
+            this.lbl_status.Text = "状態：";
             // 
-            // label13
+            // lbl_amountofmoney
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label13.Location = new System.Drawing.Point(75, 115);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(79, 20);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "車種名：";
+            this.lbl_amountofmoney.AutoSize = true;
+            this.lbl_amountofmoney.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_amountofmoney.Location = new System.Drawing.Point(100, 301);
+            this.lbl_amountofmoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_amountofmoney.Name = "lbl_amountofmoney";
+            this.lbl_amountofmoney.Size = new System.Drawing.Size(48, 16);
+            this.lbl_amountofmoney.TabIndex = 10;
+            this.lbl_amountofmoney.Text = "金額：";
             // 
-            // label11
+            // lbl_modelname
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label11.Location = new System.Drawing.Point(75, 431);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 20);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "消費税：";
+            this.lbl_modelname.AutoSize = true;
+            this.lbl_modelname.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_modelname.Location = new System.Drawing.Point(75, 115);
+            this.lbl_modelname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_modelname.Name = "lbl_modelname";
+            this.lbl_modelname.Size = new System.Drawing.Size(64, 16);
+            this.lbl_modelname.TabIndex = 14;
+            this.lbl_modelname.Text = "車種名：";
             // 
-            // groupBox1
+            // lbl_consumptiontax
             // 
-            this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.groupBox1.Location = new System.Drawing.Point(11, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(643, 699);
-            this.groupBox1.TabIndex = 19;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "注文";
+            this.lbl_consumptiontax.AutoSize = true;
+            this.lbl_consumptiontax.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_consumptiontax.Location = new System.Drawing.Point(75, 431);
+            this.lbl_consumptiontax.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_consumptiontax.Name = "lbl_consumptiontax";
+            this.lbl_consumptiontax.Size = new System.Drawing.Size(64, 16);
+            this.lbl_consumptiontax.TabIndex = 12;
+            this.lbl_consumptiontax.Text = "消費税：";
             // 
-            // groupBox3
+            // gbx_order
             // 
-            this.groupBox3.Controls.Add(this.richTextBox1);
-            this.groupBox3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.groupBox3.Location = new System.Drawing.Point(8, 371);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(496, 305);
-            this.groupBox3.TabIndex = 13;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "備考";
+            this.gbx_order.Controls.Add(this.gbx_remarks);
+            this.gbx_order.Controls.Add(this.txt_clientID);
+            this.gbx_order.Controls.Add(this.txt_employeeID);
+            this.gbx_order.Controls.Add(this.txt_storeID);
+            this.gbx_order.Controls.Add(this.dtp_Orderdate);
+            this.gbx_order.Controls.Add(this.lbl_storeID);
+            this.gbx_order.Controls.Add(this.lbl_Orderdate);
+            this.gbx_order.Controls.Add(this.lbl_employeeID);
+            this.gbx_order.Controls.Add(this.lbl_clientID);
+            this.gbx_order.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.gbx_order.Location = new System.Drawing.Point(11, 0);
+            this.gbx_order.Margin = new System.Windows.Forms.Padding(4);
+            this.gbx_order.Name = "gbx_order";
+            this.gbx_order.Padding = new System.Windows.Forms.Padding(4);
+            this.gbx_order.Size = new System.Drawing.Size(643, 699);
+            this.gbx_order.TabIndex = 19;
+            this.gbx_order.TabStop = false;
+            this.gbx_order.Text = "注文";
             // 
-            // richTextBox1
+            // gbx_remarks
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(8, 32);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(480, 265);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.gbx_remarks.Controls.Add(this.rtb_remarks);
+            this.gbx_remarks.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.gbx_remarks.Location = new System.Drawing.Point(8, 371);
+            this.gbx_remarks.Margin = new System.Windows.Forms.Padding(4);
+            this.gbx_remarks.Name = "gbx_remarks";
+            this.gbx_remarks.Padding = new System.Windows.Forms.Padding(4);
+            this.gbx_remarks.Size = new System.Drawing.Size(496, 305);
+            this.gbx_remarks.TabIndex = 13;
+            this.gbx_remarks.TabStop = false;
+            this.gbx_remarks.Text = "備考";
             // 
-            // textBox3
+            // rtb_remarks
             // 
-            this.textBox3.Location = new System.Drawing.Point(149, 289);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(318, 34);
-            this.textBox3.TabIndex = 12;
+            this.rtb_remarks.Location = new System.Drawing.Point(8, 32);
+            this.rtb_remarks.Margin = new System.Windows.Forms.Padding(4);
+            this.rtb_remarks.Name = "rtb_remarks";
+            this.rtb_remarks.Size = new System.Drawing.Size(480, 265);
+            this.rtb_remarks.TabIndex = 0;
+            this.rtb_remarks.Text = "";
             // 
-            // textBox2
+            // txt_clientID
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 225);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(316, 34);
-            this.textBox2.TabIndex = 11;
+            this.txt_clientID.Location = new System.Drawing.Point(149, 289);
+            this.txt_clientID.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_clientID.Name = "txt_clientID";
+            this.txt_clientID.Size = new System.Drawing.Size(318, 29);
+            this.txt_clientID.TabIndex = 12;
             // 
-            // textBox1
+            // txt_employeeID
             // 
-            this.textBox1.Location = new System.Drawing.Point(149, 161);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(316, 34);
-            this.textBox1.TabIndex = 10;
+            this.txt_employeeID.Location = new System.Drawing.Point(148, 225);
+            this.txt_employeeID.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_employeeID.Name = "txt_employeeID";
+            this.txt_employeeID.Size = new System.Drawing.Size(316, 29);
+            this.txt_employeeID.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // txt_storeID
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(149, 102);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(315, 34);
-            this.dateTimePicker1.TabIndex = 9;
+            this.txt_storeID.Location = new System.Drawing.Point(149, 161);
+            this.txt_storeID.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_storeID.Name = "txt_storeID";
+            this.txt_storeID.Size = new System.Drawing.Size(316, 29);
+            this.txt_storeID.TabIndex = 10;
             // 
-            // label4
+            // dtp_Orderdate
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(32, 171);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 20);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "店舗ID：";
+            this.dtp_Orderdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_Orderdate.Location = new System.Drawing.Point(149, 102);
+            this.dtp_Orderdate.Margin = new System.Windows.Forms.Padding(4);
+            this.dtp_Orderdate.Name = "dtp_Orderdate";
+            this.dtp_Orderdate.Size = new System.Drawing.Size(315, 29);
+            this.dtp_Orderdate.TabIndex = 9;
             // 
-            // label1
+            // lbl_storeID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(30, 107);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "受注日：";
+            this.lbl_storeID.AutoSize = true;
+            this.lbl_storeID.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_storeID.Location = new System.Drawing.Point(32, 171);
+            this.lbl_storeID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_storeID.Name = "lbl_storeID";
+            this.lbl_storeID.Size = new System.Drawing.Size(62, 16);
+            this.lbl_storeID.TabIndex = 5;
+            this.lbl_storeID.Text = "店舗ID：";
             // 
-            // label7
+            // lbl_Orderdate
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label7.Location = new System.Drawing.Point(32, 235);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 20);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "社員ID：";
+            this.lbl_Orderdate.AutoSize = true;
+            this.lbl_Orderdate.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_Orderdate.Location = new System.Drawing.Point(30, 107);
+            this.lbl_Orderdate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Orderdate.Name = "lbl_Orderdate";
+            this.lbl_Orderdate.Size = new System.Drawing.Size(64, 16);
+            this.lbl_Orderdate.TabIndex = 3;
+            this.lbl_Orderdate.Text = "受注日：";
             // 
-            // label5
+            // lbl_employeeID
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(32, 299);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 20);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "顧客ID：";
+            this.lbl_employeeID.AutoSize = true;
+            this.lbl_employeeID.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_employeeID.Location = new System.Drawing.Point(32, 235);
+            this.lbl_employeeID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_employeeID.Name = "lbl_employeeID";
+            this.lbl_employeeID.Size = new System.Drawing.Size(62, 16);
+            this.lbl_employeeID.TabIndex = 8;
+            this.lbl_employeeID.Text = "社員ID：";
             // 
-            // comboBox1
+            // lbl_clientID
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(189, 58);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(240, 35);
-            this.comboBox1.TabIndex = 26;
+            this.lbl_clientID.AutoSize = true;
+            this.lbl_clientID.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_clientID.Location = new System.Drawing.Point(32, 299);
+            this.lbl_clientID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_clientID.Name = "lbl_clientID";
+            this.lbl_clientID.Size = new System.Drawing.Size(62, 16);
+            this.lbl_clientID.TabIndex = 6;
+            this.lbl_clientID.Text = "顧客ID：";
             // 
             // Order
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btn_decision);
+            this.Controls.Add(this.gbx_vehicle);
+            this.Controls.Add(this.gbx_order);
             this.Name = "Order";
             this.Size = new System.Drawing.Size(1317, 703);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
+            this.gbx_vehicle.ResumeLayout(false);
+            this.gbx_vehicle.PerformLayout();
+            this.gbx_order.ResumeLayout(false);
+            this.gbx_order.PerformLayout();
+            this.gbx_remarks.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ListBox listBox5;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btn_decision;
+        private System.Windows.Forms.GroupBox gbx_vehicle;
+        private System.Windows.Forms.Label lbl_circle;
+        private System.Windows.Forms.RichTextBox rtb_total;
+        private System.Windows.Forms.Label lbl_total;
+        private System.Windows.Forms.TextBox txt_consumptiontax;
+        private System.Windows.Forms.TextBox txt_amountofmoney;
+        private System.Windows.Forms.ListBox lst_status;
+        private System.Windows.Forms.ListBox lst_bodycolor;
+        private System.Windows.Forms.ListBox lst_carname;
+        private System.Windows.Forms.Label lbl_carname;
+        private System.Windows.Forms.ListBox lst_modelname;
+        private System.Windows.Forms.Label lbl_manufacturer;
+        private System.Windows.Forms.Label lbl_bodycolor;
+        private System.Windows.Forms.Label lbl_status;
+        private System.Windows.Forms.Label lbl_amountofmoney;
+        private System.Windows.Forms.Label lbl_modelname;
+        private System.Windows.Forms.Label lbl_consumptiontax;
+        private System.Windows.Forms.GroupBox gbx_order;
+        private System.Windows.Forms.GroupBox gbx_remarks;
+        private System.Windows.Forms.RichTextBox rtb_remarks;
+        private System.Windows.Forms.TextBox txt_clientID;
+        private System.Windows.Forms.TextBox txt_employeeID;
+        private System.Windows.Forms.TextBox txt_storeID;
+        private System.Windows.Forms.DateTimePicker dtp_Orderdate;
+        private System.Windows.Forms.Label lbl_storeID;
+        private System.Windows.Forms.Label lbl_Orderdate;
+        private System.Windows.Forms.Label lbl_employeeID;
+        private System.Windows.Forms.Label lbl_clientID;
+        private System.Windows.Forms.ComboBox cmb_manufacturer;
     }
 }
