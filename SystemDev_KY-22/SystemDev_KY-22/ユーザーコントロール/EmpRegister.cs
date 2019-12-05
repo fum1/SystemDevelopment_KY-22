@@ -74,7 +74,7 @@ namespace SystemDev_KY_22
             cmd.Parameters.AddWithValue("@住所", txt_address.Text);             //Passのデータ
             cmd.Parameters.AddWithValue("@郵便番号", txt_postal.Text);             //Nameのデータ
             cmd.Parameters.AddWithValue("@電話番号", txt_tel.Text);  //PostNumberのデータ
-            cmd.Parameters.AddWithValue("@生年月日", txt_birthday.Text); 
+            //cmd.Parameters.AddWithValue("@生年月日", txt_birthday.Text); 
             cmd.Parameters.AddWithValue("@性別", cmb_sex.Text);      //Addressのデータ
             cmd.Parameters.AddWithValue("@部署", cmb_department.Text);
             cmd.Parameters.AddWithValue("@役職", cmb_position.Text);

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox_login = new System.Windows.Forms.GroupBox();
-            this.lbl_birthday = new System.Windows.Forms.Label();
+            //this.lbl_birthday = new System.Windows.Forms.Label();
             this.txt_idhead = new System.Windows.Forms.TextBox();
             this.cmb_clerk = new System.Windows.Forms.ComboBox();
             this.cmb_position = new System.Windows.Forms.ComboBox();
@@ -57,7 +57,7 @@
             this.groupBox_update = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_idhead1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            //this.label2 = new System.Windows.Forms.Label();
             this.mtextB_Pass = new System.Windows.Forms.MaskedTextBox();
             this.txt_tel1 = new System.Windows.Forms.TextBox();
             this.lbl_name1 = new System.Windows.Forms.Label();
@@ -91,8 +91,8 @@
             // 
             this.groupBox_login.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox_login.Controls.Add(this.txt_birthday);
-            this.groupBox_login.Controls.Add(this.lbl_birthday);
+            //this.groupBox_login.Controls.Add(this.txt_birthday);
+            //this.groupBox_login.Controls.Add(this.lbl_birthday);
             this.groupBox_login.Controls.Add(this.txt_idhead);
             this.groupBox_login.Controls.Add(this.cmb_clerk);
             this.groupBox_login.Controls.Add(this.cmb_position);
@@ -124,15 +124,15 @@
             this.groupBox_login.TabIndex = 1;
             this.groupBox_login.TabStop = false;
             this.groupBox_login.Text = "社員登録画面";
-            // 
-            // lbl_birthday
-            // 
-            this.lbl_birthday.AutoSize = true;
-            this.lbl_birthday.Location = new System.Drawing.Point(58, 388);
-            this.lbl_birthday.Name = "lbl_birthday";
-            this.lbl_birthday.Size = new System.Drawing.Size(138, 28);
-            this.lbl_birthday.TabIndex = 41;
-            this.lbl_birthday.Text = "生年月日：";
+            //// 
+            //// lbl_birthday
+            //// 
+            //this.lbl_birthday.AutoSize = true;
+            //this.lbl_birthday.Location = new System.Drawing.Point(58, 388);
+            //this.lbl_birthday.Name = "lbl_birthday";
+            //this.lbl_birthday.Size = new System.Drawing.Size(138, 28);
+            //this.lbl_birthday.TabIndex = 41;
+            //this.lbl_birthday.Text = "生年月日：";
             // 
             // txt_idhead
             // 
@@ -416,7 +416,7 @@
             this.groupBox_update.Controls.Add(this.checkB_Delete);
             this.groupBox_update.Controls.Add(this.label3);
             this.groupBox_update.Controls.Add(this.txt_idhead1);
-            this.groupBox_update.Controls.Add(this.label2);
+            //this.groupBox_update.Controls.Add(this.label2);
             this.groupBox_update.Controls.Add(this.btn_update);
             this.groupBox_update.Controls.Add(this.mtextB_Pass);
             this.groupBox_update.Controls.Add(this.txt_tel1);
