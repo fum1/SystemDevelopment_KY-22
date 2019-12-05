@@ -39,7 +39,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
             DataTable dt = new DataTable();
             da.Fill(dt);
 
-            dt.Rows.InsertAt(dt.NewRow(), 0);
+            
             dataGridView1.DataSource = dt;
             dataGridView1.AllowUserToAddRows = false;    //最下行を非表示
             dataGridView1.AutoResizeColumns();           //列の幅の自動調整
@@ -182,5 +182,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
             dataGridView1.AutoResizeColumns();          //列の幅の自動調整
         }
+
+        
     }
 }
