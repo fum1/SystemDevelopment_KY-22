@@ -47,7 +47,7 @@ namespace SystemDev_KY_22
             }
         }
 
-        private void rbtn_man_KeyDown(object sender, KeyEventArgs e)
+        private void cmb_sex_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -187,7 +187,6 @@ namespace SystemDev_KY_22
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-
             OleDbCommand cmd =
                 new OleDbCommand("SELECT 顧客ID , 氏名 , 住所 , 郵便番号 , 電話番号 , 性別 , 生年月日 FROM 顧客マスタ WHERE 顧客ID = @顧客ID ORDER BY 顧客ID", cn);
             cmd.Connection = cn;
