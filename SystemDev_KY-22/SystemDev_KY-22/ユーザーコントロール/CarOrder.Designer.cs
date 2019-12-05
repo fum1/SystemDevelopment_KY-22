@@ -45,12 +45,12 @@
             this.txt_option = new System.Windows.Forms.TextBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.btn_print = new System.Windows.Forms.Button();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.btn_Check = new System.Windows.Forms.Button();
+            this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.btn_preview = new System.Windows.Forms.Button();
             this.lbl_orderID = new System.Windows.Forms.Label();
             this.txt_orderID = new System.Windows.Forms.TextBox();
             this.txt_Person = new System.Windows.Forms.TextBox();
+            this.printDialog = new System.Windows.Forms.PrintDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,7 +132,7 @@
             this.btn_clear.BackColor = System.Drawing.Color.Transparent;
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_clear.Location = new System.Drawing.Point(361, 567);
+            this.btn_clear.Location = new System.Drawing.Point(374, 567);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(150, 56);
             this.btn_clear.TabIndex = 25;
@@ -213,7 +213,7 @@
             this.txt_option.Size = new System.Drawing.Size(233, 42);
             this.txt_option.TabIndex = 37;
             // 
-            // pic_logo
+            // pictureBox
             // 
             this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.Image = global::SystemDev_KY_22.Properties.Resources.チェリー;
@@ -230,7 +230,7 @@
             this.btn_print.BackColor = System.Drawing.Color.Transparent;
             this.btn_print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_print.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_print.Location = new System.Drawing.Point(517, 629);
+            this.btn_print.Location = new System.Drawing.Point(374, 629);
             this.btn_print.Name = "btn_print";
             this.btn_print.Size = new System.Drawing.Size(150, 56);
             this.btn_print.TabIndex = 39;
@@ -238,29 +238,16 @@
             this.btn_print.UseVisualStyleBackColor = false;
             this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
-            // printDocument1
+            // printDocument
             // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // btn_Check
-            // 
-            this.btn_Check.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Check.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_Check.Location = new System.Drawing.Point(205, 629);
-            this.btn_Check.Name = "btn_Check";
-            this.btn_Check.Size = new System.Drawing.Size(150, 56);
-            this.btn_Check.TabIndex = 40;
-            this.btn_Check.Text = "表示";
-            this.btn_Check.UseVisualStyleBackColor = false;
-            this.btn_Check.Click += new System.EventHandler(this.btn_Check_Click);
+            this.printDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument_PrintPage);
             // 
             // btn_preview
             // 
             this.btn_preview.BackColor = System.Drawing.Color.Transparent;
             this.btn_preview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_preview.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_preview.Location = new System.Drawing.Point(361, 629);
+            this.btn_preview.Location = new System.Drawing.Point(205, 629);
             this.btn_preview.Name = "btn_preview";
             this.btn_preview.Size = new System.Drawing.Size(150, 56);
             this.btn_preview.TabIndex = 41;
@@ -296,6 +283,10 @@
             this.txt_Person.Size = new System.Drawing.Size(233, 42);
             this.txt_Person.TabIndex = 44;
             // 
+            // printDialog
+            // 
+            this.printDialog.UseEXDialog = true;
+            // 
             // CarOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
@@ -305,7 +296,6 @@
             this.Controls.Add(this.txt_orderID);
             this.Controls.Add(this.lbl_orderID);
             this.Controls.Add(this.btn_preview);
-            this.Controls.Add(this.btn_Check);
             this.Controls.Add(this.btn_print);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.txt_option);
@@ -328,6 +318,7 @@
             this.Name = "CarOrder";
             this.Size = new System.Drawing.Size(1230, 735);
             this.Load += new System.EventHandler(this.CarOrder_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,11 +343,11 @@
         private System.Windows.Forms.TextBox txt_option;
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Button btn_print;
-        private System.Drawing.Printing.PrintDocument printDocument1;
-        private System.Windows.Forms.Button btn_Check;
+        private System.Drawing.Printing.PrintDocument printDocument;
         private System.Windows.Forms.Button btn_preview;
         private System.Windows.Forms.Label lbl_orderID;
         private System.Windows.Forms.TextBox txt_orderID;
         private System.Windows.Forms.TextBox txt_Person;
+        private System.Windows.Forms.PrintDialog printDialog;
     }
 }
