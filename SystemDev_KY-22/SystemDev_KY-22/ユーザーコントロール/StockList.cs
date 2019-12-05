@@ -33,8 +33,7 @@ namespace SystemDev_KY_22
             // ID、Pass（パスワード）、Name(名前）
             // PostNumber（郵便番号）、Address（住所）  Memberテーブルから
             OleDbDataAdapter da =
-                new OleDbDataAdapter("SELECT 在庫テーブル.在庫ID, 在庫テーブル.商品詳細ID, 商品詳細テーブル.商品ID, 商品マスタ.商品名, 商品詳細テーブル.色, 商品マスタ.車種ID, 商品詳細テーブル.[モデル], 商品マスタ.[メーカーID], 商品詳細テーブル.安全在庫数, 在庫テーブル.在庫数量, 商品詳細テーブル.[オプション], 商品詳細テーブル.走行距離, 商品詳細テーブル.発売日, 商品マスタ.定価, 商品詳細テーブル.実売価格" +
-                                     "FROM((車種マスタ INNER JOIN(メーカーマスター INNER JOIN 商品マスタ ON[メーカーマスター].[メーカーID] = 商品マスタ.[メーカーID]) ON 車種マスタ.車種ID = 商品マスタ.車種ID) INNER JOIN 商品詳細テーブル ON 商品マスタ.商品ID = 商品詳細テーブル.商品ID) INNER JOIN 在庫テーブル ON 商品詳細テーブル.商品詳細ID = 在庫テーブル.商品詳細ID",cn);
+                new OleDbDataAdapter("SELECT 在庫テーブル.在庫ID, 在庫テーブル.商品詳細ID, 商品詳細テーブル.商品ID, 商品マスタ.商品名, 商品マスタ.定価, 在庫テーブル.在庫数量, 商品詳細テーブル.走行距離, 商品詳細テーブル.発売日, 商品詳細テーブル.色, 商品詳細テーブル.[モデル], 商品詳細テーブル.実売価格, 商品詳細テーブル.仕入先ID, 商品マスタ.[メーカーID], 商品マスタ.車種ID, 車種マスタ.安全在庫数 FROM((車種マスタ INNER JOIN(メーカーマスター INNER JOIN 商品マスタ ON[メーカーマスター].[メーカーID] = 商品マスタ.[メーカーID]) ON 車種マスタ.車種ID = 商品マスタ.車種ID) INNER JOIN 商品詳細テーブル ON 商品マスタ.商品ID = 商品詳細テーブル.商品ID) INNER JOIN 在庫テーブル ON 商品詳細テーブル.商品詳細ID = 在庫テーブル.商品詳細ID",cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
