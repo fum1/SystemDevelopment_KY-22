@@ -30,24 +30,32 @@ namespace SystemDev_KY_22
 
         private void btn_print_Click(object sender, EventArgs e)
         {
-
-            PrintDocument pd = new PrintDocument();
-            pd.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
-            pd.Print();
+            DialogResult dr = printDialog.ShowDialog();
+            /* PrintDocument pd = new PrintDocument();
+             pd.PrintPage += new PrintPageEventHandler(printDocument_PrintPage);
+             pd.Print();*/
         }
 
 
 
         private void btn_preview_Click(object sender, EventArgs e)
         {
-            System.Drawing.Printing.PrintDocument pd = new System.Drawing.Printing.PrintDocument();
-            pd.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(printDocument1_PrintPage);
+            //PrintDocumentオブジェクトの作成
+            System.Drawing.Printing.PrintDocument po =
+                new System.Drawing.Printing.PrintDocument();
+            //PrintPageイベントハンドラの追加
+            po.PrintPage +=
+                new System.Drawing.Printing.PrintPageEventHandler(printDocument_PrintPage);
+
+            ///PrintPreviewDialogオブジェクトの作成
             PrintPreviewDialog ppd = new PrintPreviewDialog();
-            ppd.Document = pd;
+            //プレビューするPrintDocumentを設定
+            ppd.Document = po;
+            //印刷プレビューダイアログを表示する
             ppd.ShowDialog();
         }
 
-        private void btn_Check_Click(object sender, EventArgs e)
+       /* private void btn_Check_Click(object sender, EventArgs e)
         {
             //表示する文字列
             string print_lblsupplier = lbl_supplier.Text;
@@ -93,11 +101,65 @@ namespace SystemDev_KY_22
 
             //PictureBox1に表示する
             pictureBox.Image = canvas;
-        }
-        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        }*/
+        private void printDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
-            var image = pictureBox.Image;
-            e.Graphics.DrawImage(image, e.MarginBounds);
+            //表示する文字列
+            string print_lblsupplier = lbl_supplier.Text;
+            string print_lblPerson = lbl_Person.Text;
+            string print_lblorderdate = lbl_orderdate.Text;
+            string print_lblproductname = lbl_productname.Text;
+            string print_lblmodel = lbl_model.Text;
+            string print_lblcolor = lbl_color.Text;
+            string print_lbloption = lbl_option.Text;
+            string print_cmbsupplier = cmb_supplier.Text;
+            string print_cmbPerson = txt_Person.Text;
+            string print_cmborderdate = dtp_admissionday.Text;
+            string print_cmbproductname = txt_productname.Text;
+            string print_cmbmodel = txt_model.Text;
+            string print_cmbcolor = txt_color.Text;
+            string print_cmboption = txt_option.Text;
+
+            /*Bitmap canvas = new Bitmap(pictureBox.Width, pictureBox.Height);
+            //ImageオブジェクトのGraphicsオブジェクトを作成する
+            Graphics g = Graphics.FromImage(canvas);
+
+            Font fnt = new Font("HGP明朝E", 20);
+            StringFormat sf = new StringFormat();
+            //文字列を描画するときの大きさを計測する
+            SizeF stringSize = g.MeasureString(print_lblsupplier, fnt, 500, sf);*/
+            Font font = new Font("HGS創英ﾌﾟﾚｾﾞﾝｽEB", 50.0f);
+            Brush brush = new SolidBrush(Color.Black);
+            e.Graphics.DrawString("発注書", font, brush, new PointF(300, 20));
+
+            Graphics g = e.Graphics;
+
+
+            Font a = new Font("HGP明朝E", 40);
+
+
+            //文字列を描画する
+
+            g.DrawString(print_lblsupplier + "     " + print_cmbsupplier, a, Brushes.Black, 210,300);
+            g.DrawString(print_lblPerson + "     " + print_cmbPerson, a, Brushes.Black, 210,300);
+            g.DrawString(print_lblorderdate + "     " + print_cmborderdate, a, Brushes.Black, 210,300);
+            g.DrawString(print_lblproductname + "     " + print_cmbproductname, a, Brushes.Black, 210,300);
+            g.DrawString(print_lblmodel + "     " + print_cmbmodel, a, Brushes.Black, 210,300);
+            g.DrawString(print_lblcolor + "           " + print_cmbcolor, a, Brushes.Black, 210,300);
+            g.DrawString(print_lbloption + " " + print_cmboption, a, Brushes.Black, 210,300);
+
+
+
+           /* //リソースを解放する
+            fnt.Dispose();
+            sf.Dispose();
+            g.Dispose();
+
+            //PictureBox1に表示する
+
+
+            /*var image = pictureBox.Image;
+            e.Graphics.DrawImage(image, e.MarginBounds);*/
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
