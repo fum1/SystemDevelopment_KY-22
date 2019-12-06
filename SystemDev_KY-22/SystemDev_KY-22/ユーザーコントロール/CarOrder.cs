@@ -206,9 +206,10 @@ namespace SystemDev_KY_22
             }
 
 
-            MessageBox.Show("登録しました", "管理者");
+            MessageBox.Show("登録しました", "発注登録");
 
-            //発注登録途中　完成まだ
+            
+
         }
     }
 }
