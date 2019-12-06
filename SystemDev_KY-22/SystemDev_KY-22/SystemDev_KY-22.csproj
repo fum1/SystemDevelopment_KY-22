@@ -173,6 +173,12 @@
     <Compile Include="ユーザーコントロール\StockList.Designer.cs">
       <DependentUpon>StockList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ユーザーコントロール\Vendor list.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ユーザーコントロール\Vendor list.Designer.cs">
+      <DependentUpon>Vendor list.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\StockList.resx">
       <DependentUpon>StockList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ユーザーコントロール\Vendor list.resx">
+      <DependentUpon>Vendor list.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
