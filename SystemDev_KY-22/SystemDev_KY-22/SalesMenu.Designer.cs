@@ -42,7 +42,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.clientList1 = new SystemDev_KY_22.ClientList();
             this.panel1.SuspendLayout();
             this.panel_Back.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -141,7 +140,6 @@
             // 
             // panel_Back
             // 
-            this.panel_Back.Controls.Add(this.clientList1);
             this.panel_Back.Controls.Add(this.order1);
             this.panel_Back.Controls.Add(this.clientRegisterU1);
             this.panel_Back.Controls.Add(this.stockList1);
@@ -216,15 +214,6 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
-            // clientList1
-            // 
-            this.clientList1.BackColor = System.Drawing.Color.White;
-            this.clientList1.Location = new System.Drawing.Point(27, 71);
-            this.clientList1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.clientList1.Name = "clientList1";
-            this.clientList1.Size = new System.Drawing.Size(1200, 560);
-            this.clientList1.TabIndex = 3;
-            // 
             // SalesMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -262,6 +251,5 @@
         private ClientRegister clientRegisterU1;
         private StockList stockList1;
         private System.Windows.Forms.Button btn_ClientList;
-        private ClientList clientList1;
     }
 }
