@@ -213,9 +213,15 @@ namespace SystemDev_KY_22
 
         }
 
-        private void btn_clear_Click(object sender, EventArgs e)
+        private void btn_clear_Click_1(object sender, EventArgs e)
         {
-           dt.Clear();
+            txt_orderID.Clear();
+            txt_supplierID.Clear();
+            txt_PersonID.Clear();
+            txt_productname.Clear();
+            txt_model.Clear();
+            txt_color.Clear();
+            txt_option.Clear();
         }
     }
 }

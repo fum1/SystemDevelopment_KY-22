@@ -61,7 +61,7 @@
             this.lbl_supplierID.Location = new System.Drawing.Point(42, 81);
             this.lbl_supplierID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_supplierID.Name = "lbl_supplierID";
-            this.lbl_supplierID.Size = new System.Drawing.Size(182, 57);
+            this.lbl_supplierID.Size = new System.Drawing.Size(144, 45);
             this.lbl_supplierID.TabIndex = 0;
             this.lbl_supplierID.Text = "仕入先ID";
             // 
@@ -72,7 +72,7 @@
             this.lbl_PersonID.Location = new System.Drawing.Point(42, 152);
             this.lbl_PersonID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_PersonID.Name = "lbl_PersonID";
-            this.lbl_PersonID.Size = new System.Drawing.Size(144, 57);
+            this.lbl_PersonID.Size = new System.Drawing.Size(114, 45);
             this.lbl_PersonID.TabIndex = 12;
             this.lbl_PersonID.Text = "社員ID";
             // 
@@ -83,7 +83,7 @@
             this.lbl_orderdate.Location = new System.Drawing.Point(42, 223);
             this.lbl_orderdate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_orderdate.Name = "lbl_orderdate";
-            this.lbl_orderdate.Size = new System.Drawing.Size(215, 57);
+            this.lbl_orderdate.Size = new System.Drawing.Size(170, 45);
             this.lbl_orderdate.TabIndex = 14;
             this.lbl_orderdate.Text = "発注年月日";
             // 
@@ -94,7 +94,7 @@
             this.lbl_productname.Location = new System.Drawing.Point(42, 294);
             this.lbl_productname.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_productname.Name = "lbl_productname";
-            this.lbl_productname.Size = new System.Drawing.Size(139, 57);
+            this.lbl_productname.Size = new System.Drawing.Size(110, 45);
             this.lbl_productname.TabIndex = 18;
             this.lbl_productname.Text = "商品名";
             // 
@@ -104,7 +104,7 @@
             this.txt_productname.Location = new System.Drawing.Point(291, 294);
             this.txt_productname.Margin = new System.Windows.Forms.Padding(5);
             this.txt_productname.Name = "txt_productname";
-            this.txt_productname.Size = new System.Drawing.Size(233, 42);
+            this.txt_productname.Size = new System.Drawing.Size(233, 35);
             this.txt_productname.TabIndex = 19;
             // 
             // dtp_admissionday
@@ -114,7 +114,7 @@
             this.dtp_admissionday.Location = new System.Drawing.Point(291, 223);
             this.dtp_admissionday.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_admissionday.Name = "dtp_admissionday";
-            this.dtp_admissionday.Size = new System.Drawing.Size(233, 48);
+            this.dtp_admissionday.Size = new System.Drawing.Size(233, 40);
             this.dtp_admissionday.TabIndex = 21;
             // 
             // btn_clear
@@ -128,7 +128,7 @@
             this.btn_clear.TabIndex = 25;
             this.btn_clear.Text = "クリア";
             this.btn_clear.UseVisualStyleBackColor = false;
-            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click_1);
             // 
             // btn_order
             // 
@@ -150,7 +150,7 @@
             this.lbl_color.Location = new System.Drawing.Point(42, 436);
             this.lbl_color.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_color.Name = "lbl_color";
-            this.lbl_color.Size = new System.Drawing.Size(63, 57);
+            this.lbl_color.Size = new System.Drawing.Size(50, 45);
             this.lbl_color.TabIndex = 29;
             this.lbl_color.Text = "色";
             // 
@@ -161,7 +161,7 @@
             this.lbl_model.Location = new System.Drawing.Point(42, 365);
             this.lbl_model.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_model.Name = "lbl_model";
-            this.lbl_model.Size = new System.Drawing.Size(139, 57);
+            this.lbl_model.Size = new System.Drawing.Size(110, 45);
             this.lbl_model.TabIndex = 33;
             this.lbl_model.Text = "モデル";
             // 
@@ -172,7 +172,7 @@
             this.lbl_option.Location = new System.Drawing.Point(42, 507);
             this.lbl_option.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_option.Name = "lbl_option";
-            this.lbl_option.Size = new System.Drawing.Size(215, 57);
+            this.lbl_option.Size = new System.Drawing.Size(170, 45);
             this.lbl_option.TabIndex = 34;
             this.lbl_option.Text = "オプション";
             // 
@@ -182,7 +182,7 @@
             this.txt_model.Location = new System.Drawing.Point(291, 365);
             this.txt_model.Margin = new System.Windows.Forms.Padding(5);
             this.txt_model.Name = "txt_model";
-            this.txt_model.Size = new System.Drawing.Size(233, 42);
+            this.txt_model.Size = new System.Drawing.Size(233, 35);
             this.txt_model.TabIndex = 35;
             // 
             // txt_color
@@ -191,7 +191,7 @@
             this.txt_color.Location = new System.Drawing.Point(291, 436);
             this.txt_color.Margin = new System.Windows.Forms.Padding(5);
             this.txt_color.Name = "txt_color";
-            this.txt_color.Size = new System.Drawing.Size(233, 42);
+            this.txt_color.Size = new System.Drawing.Size(233, 35);
             this.txt_color.TabIndex = 36;
             // 
             // txt_option
@@ -200,7 +200,7 @@
             this.txt_option.Location = new System.Drawing.Point(291, 507);
             this.txt_option.Margin = new System.Windows.Forms.Padding(5);
             this.txt_option.Name = "txt_option";
-            this.txt_option.Size = new System.Drawing.Size(233, 42);
+            this.txt_option.Size = new System.Drawing.Size(233, 35);
             this.txt_option.TabIndex = 37;
             // 
             // pictureBox
@@ -251,7 +251,7 @@
             this.lbl_orderID.Font = new System.Drawing.Font("メイリオ", 22.2F);
             this.lbl_orderID.Location = new System.Drawing.Point(42, 15);
             this.lbl_orderID.Name = "lbl_orderID";
-            this.lbl_orderID.Size = new System.Drawing.Size(144, 57);
+            this.lbl_orderID.Size = new System.Drawing.Size(114, 45);
             this.lbl_orderID.TabIndex = 42;
             this.lbl_orderID.Text = "発注ID";
             // 
@@ -261,7 +261,7 @@
             this.txt_orderID.Location = new System.Drawing.Point(291, 15);
             this.txt_orderID.Margin = new System.Windows.Forms.Padding(5);
             this.txt_orderID.Name = "txt_orderID";
-            this.txt_orderID.Size = new System.Drawing.Size(233, 42);
+            this.txt_orderID.Size = new System.Drawing.Size(233, 35);
             this.txt_orderID.TabIndex = 43;
             // 
             // txt_PersonID
@@ -270,7 +270,7 @@
             this.txt_PersonID.Location = new System.Drawing.Point(291, 152);
             this.txt_PersonID.Margin = new System.Windows.Forms.Padding(5);
             this.txt_PersonID.Name = "txt_PersonID";
-            this.txt_PersonID.Size = new System.Drawing.Size(233, 42);
+            this.txt_PersonID.Size = new System.Drawing.Size(233, 35);
             this.txt_PersonID.TabIndex = 44;
             // 
             // printDialog
@@ -283,12 +283,12 @@
             this.txt_supplierID.Location = new System.Drawing.Point(291, 81);
             this.txt_supplierID.Margin = new System.Windows.Forms.Padding(5);
             this.txt_supplierID.Name = "txt_supplierID";
-            this.txt_supplierID.Size = new System.Drawing.Size(233, 42);
+            this.txt_supplierID.Size = new System.Drawing.Size(233, 35);
             this.txt_supplierID.TabIndex = 45;
             // 
             // CarOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.txt_supplierID);
