@@ -138,10 +138,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataload();
         }
 
-        private void cmb_position_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
