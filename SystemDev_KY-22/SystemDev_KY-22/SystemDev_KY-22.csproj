@@ -161,6 +161,12 @@
     <Compile Include="ユーザーコントロール\OrderCheck.Designer.cs">
       <DependentUpon>OrderCheck.cs</DependentUpon>
     </Compile>
+    <Compile Include="ユーザーコントロール\shipping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ユーザーコントロール\shipping.Designer.cs">
+      <DependentUpon>shipping.cs</DependentUpon>
+    </Compile>
     <Compile Include="ユーザーコントロール\StockList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\OrderCheck.resx">
       <DependentUpon>OrderCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ユーザーコントロール\shipping.resx">
+      <DependentUpon>shipping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\StockList.resx">
       <DependentUpon>StockList.cs</DependentUpon>
