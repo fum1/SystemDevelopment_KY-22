@@ -27,16 +27,19 @@ namespace SystemDev_KY_22.ユーザーコントロール
                  @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
 
             dataload();
+            
         }
         private void dataload()   //カスタム関数
         {
             
             OleDbDataAdapter da =
                 new OleDbDataAdapter("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
                 "FROM 社員マスタ ORDER BY 社員ID", cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
+
+            
             dataGridView1.DataSource = dt;
             dataGridView1.AllowUserToAddRows = false;    //最下行を非表示
             dataGridView1.AutoResizeColumns();           //列の幅の自動調整
@@ -85,22 +88,19 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
         }
 
-        private void btn_search_Click(object sender, EventArgs e)
-        {
 
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
             OleDbCommand cmd =
-               new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
-                "FROM 社員マスタ WHERE 役職 = @役職 AND 部署 = @部署 ORDER BY 社員ID");  //Birthdayが指定した間にある
+                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "FROM 社員マスタ WHERE 役職 = @役職 ORDER BY 役職", cn);    
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
 
-            cmd.Parameters.AddWithValue("@役職", cmb_position.Text);
-            cmd.Parameters.AddWithValue("@店舗ID", cmb_clerk.ToString());
-            cmd.Parameters.AddWithValue("@部署", cmb_department.Text);
-            
-
+            cmd.Parameters.AddWithValue("@役職", cmb_position.Text);   
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -108,27 +108,12 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.AutoResizeColumns();          //列の幅の自動調整
         }
 
-        private void cmb_position_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-
-        }
-        private void cmb_clerk_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmb_department_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             OleDbCommand cmd =
                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
-                "FROM 社員マスタ WHERE 社員ID = @社員ID  ORDER BY 社員ID");  //Birthdayが指定した間にある
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "FROM 社員マスタ WHERE 社員ID = @社員ID  ORDER BY 社員ID");  
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
@@ -142,5 +127,62 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
             dataGridView1.AutoResizeColumns();          //列の幅の自動調整
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txt_id.Clear();
+            cmb_position.SelectedIndex = -1;
+            cmb_clerk.SelectedIndex = -1;
+            cmb_department.SelectedIndex = -1;
+
+            dataload();
+        }
+
+        private void cmb_position_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OleDbCommand cmd =
+               new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "FROM 社員マスタ WHERE 店舗ID = @店舗ID  ORDER BY 社員ID");
+            cmd.Connection = cn;
+            OleDbDataAdapter da = new OleDbDataAdapter();
+            da.SelectCommand = cmd;
+
+            cmd.Parameters.AddWithValue("@店舗ID", cmb_clerk.Text);
+
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
+            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OleDbCommand cmd =
+               new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "FROM 社員マスタ WHERE 部署 = @部署  ORDER BY 社員ID");
+            cmd.Connection = cn;
+            OleDbDataAdapter da = new OleDbDataAdapter();
+            da.SelectCommand = cmd;
+
+            cmd.Parameters.AddWithValue("@部署", cmb_department.Text);
+
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
+            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+        }
+
+        
     }
 }

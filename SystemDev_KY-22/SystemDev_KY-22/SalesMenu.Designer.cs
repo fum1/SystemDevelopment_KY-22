@@ -42,7 +42,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.clientList21 = new SystemDev_KY_22.ユーザーコントロール.ClientList2();
+            this.clientList1 = new SystemDev_KY_22.ClientList();
             this.panel1.SuspendLayout();
             this.panel_Back.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -141,7 +141,7 @@
             // 
             // panel_Back
             // 
-            this.panel_Back.Controls.Add(this.clientList21);
+            this.panel_Back.Controls.Add(this.clientList1);
             this.panel_Back.Controls.Add(this.order1);
             this.panel_Back.Controls.Add(this.clientRegisterU1);
             this.panel_Back.Controls.Add(this.stockList1);
@@ -194,7 +194,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(35, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 27);
+            this.label1.Size = new System.Drawing.Size(287, 34);
             this.label1.TabIndex = 5;
             this.label1.Text = "営業担当メニュー";
             // 
@@ -216,13 +216,14 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
-            // clientList21
+            // clientList1
             // 
-            this.clientList21.Location = new System.Drawing.Point(53, 260);
-            this.clientList21.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
-            this.clientList21.Name = "clientList21";
-            this.clientList21.Size = new System.Drawing.Size(846, 443);
-            this.clientList21.TabIndex = 3;
+            this.clientList1.BackColor = System.Drawing.Color.White;
+            this.clientList1.Location = new System.Drawing.Point(27, 71);
+            this.clientList1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.clientList1.Name = "clientList1";
+            this.clientList1.Size = new System.Drawing.Size(1200, 560);
+            this.clientList1.TabIndex = 3;
             // 
             // SalesMenu
             // 
@@ -261,6 +262,6 @@
         private ClientRegister clientRegisterU1;
         private StockList stockList1;
         private System.Windows.Forms.Button btn_ClientList;
-        private ユーザーコントロール.ClientList2 clientList21;
+        private ClientList clientList1;
     }
 }

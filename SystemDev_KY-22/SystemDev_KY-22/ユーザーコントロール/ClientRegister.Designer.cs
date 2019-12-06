@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox = new System.Windows.Forms.GroupBox();
+            this.btn_search = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioB_Update = new System.Windows.Forms.RadioButton();
+            this.radioB_Register = new System.Windows.Forms.RadioButton();
+            this.btn_clear = new System.Windows.Forms.Button();
             this.cmb_sex = new System.Windows.Forms.ComboBox();
             this.txt_pos = new System.Windows.Forms.TextBox();
             this.lbl_pos = new System.Windows.Forms.Label();
@@ -44,46 +48,93 @@
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_sex = new System.Windows.Forms.Label();
             this.txt_name = new System.Windows.Forms.TextBox();
+            this.groupBox = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox
+            // btn_search
             // 
-            this.groupBox.Controls.Add(this.cmb_sex);
-            this.groupBox.Controls.Add(this.txt_pos);
-            this.groupBox.Controls.Add(this.lbl_pos);
-            this.groupBox.Controls.Add(this.txt_id);
-            this.groupBox.Controls.Add(this.lbl_id);
-            this.groupBox.Controls.Add(this.btn_login);
-            this.groupBox.Controls.Add(this.txt_tel);
-            this.groupBox.Controls.Add(this.lbl_tel);
-            this.groupBox.Controls.Add(this.lbl_address);
-            this.groupBox.Controls.Add(this.txt_address);
-            this.groupBox.Controls.Add(this.lbl_birthday);
-            this.groupBox.Controls.Add(this.dtp_birthday);
-            this.groupBox.Controls.Add(this.lbl_name);
-            this.groupBox.Controls.Add(this.lbl_sex);
-            this.groupBox.Controls.Add(this.txt_name);
-            this.groupBox.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.groupBox.Location = new System.Drawing.Point(22, 20);
-            this.groupBox.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox.Name = "groupBox";
-            this.groupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox.Size = new System.Drawing.Size(1275, 673);
-            this.groupBox.TabIndex = 14;
-            this.groupBox.TabStop = false;
-            this.groupBox.Text = "顧客情報";
+            this.btn_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btn_search.BackColor = System.Drawing.Color.Transparent;
+            this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_search.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_search.Location = new System.Drawing.Point(716, 61);
+            this.btn_search.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(80, 54);
+            this.btn_search.TabIndex = 28;
+            this.btn_search.Text = "🔍";
+            this.btn_search.UseVisualStyleBackColor = false;
+            this.btn_search.Visible = false;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioB_Update);
+            this.groupBox1.Controls.Add(this.radioB_Register);
+            this.groupBox1.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.groupBox1.Location = new System.Drawing.Point(18, 45);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(126, 108);
+            this.groupBox1.TabIndex = 27;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "実行する作業";
+            // 
+            // radioB_Update
+            // 
+            this.radioB_Update.AutoSize = true;
+            this.radioB_Update.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.radioB_Update.Location = new System.Drawing.Point(13, 64);
+            this.radioB_Update.Name = "radioB_Update";
+            this.radioB_Update.Size = new System.Drawing.Size(89, 32);
+            this.radioB_Update.TabIndex = 20;
+            this.radioB_Update.TabStop = true;
+            this.radioB_Update.Text = "更新";
+            this.radioB_Update.UseVisualStyleBackColor = true;
+            this.radioB_Update.CheckedChanged += new System.EventHandler(this.radioB_Update_CheckedChanged);
+            // 
+            // radioB_Register
+            // 
+            this.radioB_Register.AutoSize = true;
+            this.radioB_Register.Checked = true;
+            this.radioB_Register.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.radioB_Register.Location = new System.Drawing.Point(13, 26);
+            this.radioB_Register.Name = "radioB_Register";
+            this.radioB_Register.Size = new System.Drawing.Size(89, 32);
+            this.radioB_Register.TabIndex = 19;
+            this.radioB_Register.TabStop = true;
+            this.radioB_Register.Text = "登録";
+            this.radioB_Register.UseVisualStyleBackColor = true;
+            this.radioB_Register.CheckedChanged += new System.EventHandler(this.radioB_Register_CheckedChanged);
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_clear.BackColor = System.Drawing.Color.Transparent;
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_clear.Location = new System.Drawing.Point(571, 579);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(395, 74);
+            this.btn_clear.TabIndex = 26;
+            this.btn_clear.Text = "クリア";
+            this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // cmb_sex
             // 
+            this.cmb_sex.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmb_sex.FormattingEnabled = true;
             this.cmb_sex.Items.AddRange(new object[] {
             "男性",
             "女性"});
-            this.cmb_sex.Location = new System.Drawing.Point(325, 241);
+            this.cmb_sex.Location = new System.Drawing.Point(331, 225);
             this.cmb_sex.Name = "cmb_sex";
-            this.cmb_sex.Size = new System.Drawing.Size(213, 35);
+            this.cmb_sex.Size = new System.Drawing.Size(213, 55);
             this.cmb_sex.TabIndex = 25;
+            this.cmb_sex.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmb_sex_KeyDown);
             // 
             // txt_pos
             // 
@@ -133,7 +184,7 @@
             this.btn_login.BackColor = System.Drawing.Color.Transparent;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_login.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_login.Location = new System.Drawing.Point(418, 564);
+            this.btn_login.Location = new System.Drawing.Point(149, 579);
             this.btn_login.Margin = new System.Windows.Forms.Padding(4);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(395, 74);
@@ -238,6 +289,36 @@
             this.txt_name.TabIndex = 5;
             this.txt_name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_name_KeyDown);
             // 
+            // groupBox
+            // 
+            this.groupBox.Controls.Add(this.btn_search);
+            this.groupBox.Controls.Add(this.groupBox1);
+            this.groupBox.Controls.Add(this.btn_clear);
+            this.groupBox.Controls.Add(this.cmb_sex);
+            this.groupBox.Controls.Add(this.txt_pos);
+            this.groupBox.Controls.Add(this.lbl_pos);
+            this.groupBox.Controls.Add(this.txt_id);
+            this.groupBox.Controls.Add(this.lbl_id);
+            this.groupBox.Controls.Add(this.btn_login);
+            this.groupBox.Controls.Add(this.txt_tel);
+            this.groupBox.Controls.Add(this.lbl_tel);
+            this.groupBox.Controls.Add(this.lbl_address);
+            this.groupBox.Controls.Add(this.txt_address);
+            this.groupBox.Controls.Add(this.lbl_birthday);
+            this.groupBox.Controls.Add(this.dtp_birthday);
+            this.groupBox.Controls.Add(this.lbl_name);
+            this.groupBox.Controls.Add(this.lbl_sex);
+            this.groupBox.Controls.Add(this.txt_name);
+            this.groupBox.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.groupBox.Location = new System.Drawing.Point(20, 4);
+            this.groupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox.Name = "groupBox";
+            this.groupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox.Size = new System.Drawing.Size(1275, 688);
+            this.groupBox.TabIndex = 15;
+            this.groupBox.TabStop = false;
+            this.groupBox.Text = "顧客情報";
+            // 
             // ClientRegister
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -246,6 +327,8 @@
             this.Name = "ClientRegister";
             this.Size = new System.Drawing.Size(1314, 768);
             this.Load += new System.EventHandler(this.ClientRegister_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -253,7 +336,17 @@
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox;
+
+        private System.Windows.Forms.Button btn_search;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioB_Update;
+        private System.Windows.Forms.RadioButton radioB_Register;
+        private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.ComboBox cmb_sex;
+        private System.Windows.Forms.TextBox txt_pos;
+        private System.Windows.Forms.Label lbl_pos;
+        private System.Windows.Forms.TextBox txt_id;
+        private System.Windows.Forms.Label lbl_id;
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.TextBox txt_tel;
         private System.Windows.Forms.Label lbl_tel;
@@ -264,10 +357,6 @@
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.Label lbl_sex;
         private System.Windows.Forms.TextBox txt_name;
-        private System.Windows.Forms.TextBox txt_id;
-        private System.Windows.Forms.Label lbl_id;
-        private System.Windows.Forms.TextBox txt_pos;
-        private System.Windows.Forms.Label lbl_pos;
-        private System.Windows.Forms.ComboBox cmb_sex;
+        private System.Windows.Forms.GroupBox groupBox;
     }
 }
