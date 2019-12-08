@@ -63,12 +63,6 @@
     </Compile>
     <Compile Include="Class\animator.cs" />
     <Compile Include="Class\PanelControl.cs" />
-    <Compile Include="ユーザーコントロール\ClientList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ユーザーコントロール\ClientList.Designer.cs">
-      <DependentUpon>ClientList.cs</DependentUpon>
-    </Compile>
     <Compile Include="ユーザーコントロール\ClientList2.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -184,9 +178,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ユーザーコントロール\ClientList.resx">
-      <DependentUpon>ClientList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\ClientList2.resx">
       <DependentUpon>ClientList2.cs</DependentUpon>
