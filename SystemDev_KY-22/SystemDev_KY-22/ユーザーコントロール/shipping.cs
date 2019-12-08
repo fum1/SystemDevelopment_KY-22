@@ -39,7 +39,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
             DataTable dt = new DataTable();
             da.Fill(dt);
 
-            try
+            /*try
             {
                 DataRow dr = dt.Rows[0];
 
@@ -53,7 +53,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
                 cmb_position1.Text = dr["役職"].ToString();
                 cmb_clerk1.Text = dr["店舗ID"].ToString();
                 mtextB_Pass.Text = dr["パスワード"].ToString();
-                MessageBox.Show(dr["商品詳細ID"].ToString() + Environment.NewLine + dr["仕入先ID"].ToString() + Environment.NewLine + dr["走行距離"].ToString() + Environment.NewLine + dr["車種"].ToString() + Environment.NewLine + dr["発売日"].ToString() + Environment.NewLine + dr["オプション"].ToString() + Environment.NewLine +, "IDチェック");
+                MessageBox.Show(dr["商品詳細ID"].ToString() + Environment.NewLine + dr["仕入先ID"].ToString() + Environment.NewLine + dr["走行距離"].ToString() + Environment.NewLine + dr["車種"].ToString() + Environment.NewLine + dr["発売日"].ToString() + Environment.NewLine + dr["オプション"].ToString() + Environment.NewLine +"IDチェック");
                 cn.Close();
 
                 txt_idhead1.Text = txt_id1.Text.Substring(0, 1);
@@ -63,7 +63,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
                 MessageBox.Show("IDが見つかりませんでした");
                 cn.Close();                //コネクションを閉じる
                 return;
-            }
+            }*/
         }
 
         private void shipping_Load(object sender, EventArgs e)
