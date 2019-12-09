@@ -223,6 +223,11 @@ namespace SystemDev_KY_22
             txt_color.Clear();
             txt_option.Clear();
         }
+
+        private void btn_Suppliersearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
