@@ -114,9 +114,9 @@
             this.groupBox_login.Controls.Add(this.lbl_department);
             this.groupBox_login.Font = new System.Drawing.Font("MS UI Gothic", 16.2F);
             this.groupBox_login.Location = new System.Drawing.Point(13, 12);
-            this.groupBox_login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox_login.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox_login.Name = "groupBox_login";
-            this.groupBox_login.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox_login.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox_login.Size = new System.Drawing.Size(601, 757);
             this.groupBox_login.TabIndex = 1;
             this.groupBox_login.TabStop = false;
@@ -127,7 +127,7 @@
             this.txt_idhead.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_idhead.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_idhead.Location = new System.Drawing.Point(177, 46);
-            this.txt_idhead.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_idhead.Margin = new System.Windows.Forms.Padding(2);
             this.txt_idhead.Name = "txt_idhead";
             this.txt_idhead.ReadOnly = true;
             this.txt_idhead.Size = new System.Drawing.Size(43, 31);
@@ -142,7 +142,7 @@
             this.cmb_clerk.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmb_clerk.FormattingEnabled = true;
             this.cmb_clerk.Location = new System.Drawing.Point(177, 533);
-            this.cmb_clerk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_clerk.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_clerk.Name = "cmb_clerk";
             this.cmb_clerk.Size = new System.Drawing.Size(129, 30);
             this.cmb_clerk.TabIndex = 8;
@@ -155,7 +155,7 @@
             this.cmb_position.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmb_position.FormattingEnabled = true;
             this.cmb_position.Location = new System.Drawing.Point(177, 472);
-            this.cmb_position.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_position.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_position.Name = "cmb_position";
             this.cmb_position.Size = new System.Drawing.Size(129, 30);
             this.cmb_position.TabIndex = 7;
@@ -169,7 +169,7 @@
             this.cmb_department.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmb_department.FormattingEnabled = true;
             this.cmb_department.Location = new System.Drawing.Point(177, 411);
-            this.cmb_department.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_department.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_department.Name = "cmb_department";
             this.cmb_department.Size = new System.Drawing.Size(129, 30);
             this.cmb_department.TabIndex = 6;
@@ -192,7 +192,7 @@
             this.txt_password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_password.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_password.Location = new System.Drawing.Point(177, 591);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(2);
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(395, 31);
             this.txt_password.TabIndex = 9;
@@ -206,7 +206,7 @@
             this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_register.Font = new System.Drawing.Font("MS UI Gothic", 19.8F);
             this.btn_register.Location = new System.Drawing.Point(141, 546);
-            this.btn_register.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_register.Margin = new System.Windows.Forms.Padding(2);
             this.btn_register.Name = "btn_register";
             this.btn_register.Size = new System.Drawing.Size(296, 59);
             this.btn_register.TabIndex = 10;
@@ -258,7 +258,7 @@
             "男",
             "女"});
             this.cmb_sex.Location = new System.Drawing.Point(177, 350);
-            this.cmb_sex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_sex.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_sex.Name = "cmb_sex";
             this.cmb_sex.Size = new System.Drawing.Size(91, 30);
             this.cmb_sex.TabIndex = 5;
@@ -269,7 +269,7 @@
             this.txt_tel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_tel.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_tel.Location = new System.Drawing.Point(177, 268);
-            this.txt_tel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_tel.Margin = new System.Windows.Forms.Padding(2);
             this.txt_tel.Name = "txt_tel";
             this.txt_tel.Size = new System.Drawing.Size(395, 31);
             this.txt_tel.TabIndex = 4;
@@ -279,7 +279,7 @@
             this.txt_postal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_postal.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_postal.Location = new System.Drawing.Point(177, 163);
-            this.txt_postal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_postal.Margin = new System.Windows.Forms.Padding(2);
             this.txt_postal.Name = "txt_postal";
             this.txt_postal.Size = new System.Drawing.Size(395, 31);
             this.txt_postal.TabIndex = 2;
@@ -289,7 +289,7 @@
             this.txt_address.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_address.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_address.Location = new System.Drawing.Point(177, 222);
-            this.txt_address.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_address.Margin = new System.Windows.Forms.Padding(2);
             this.txt_address.Name = "txt_address";
             this.txt_address.Size = new System.Drawing.Size(395, 31);
             this.txt_address.TabIndex = 3;
@@ -299,7 +299,7 @@
             this.txt_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_name.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_name.Location = new System.Drawing.Point(177, 110);
-            this.txt_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_name.Margin = new System.Windows.Forms.Padding(2);
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(395, 31);
             this.txt_name.TabIndex = 1;
@@ -309,7 +309,7 @@
             this.txt_id.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_id.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_id.Location = new System.Drawing.Point(224, 46);
-            this.txt_id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_id.Margin = new System.Windows.Forms.Padding(2);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(348, 31);
             this.txt_id.TabIndex = 0;
@@ -399,9 +399,9 @@
             this.groupBox_information.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.groupBox_information.ForeColor = System.Drawing.Color.Black;
             this.groupBox_information.Location = new System.Drawing.Point(663, 12);
-            this.groupBox_information.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox_information.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox_information.Name = "groupBox_information";
-            this.groupBox_information.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox_information.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox_information.Size = new System.Drawing.Size(663, 757);
             this.groupBox_information.TabIndex = 28;
             this.groupBox_information.TabStop = false;
@@ -456,7 +456,7 @@
             // 
             this.checkB_Delete.AutoSize = true;
             this.checkB_Delete.Location = new System.Drawing.Point(434, 487);
-            this.checkB_Delete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkB_Delete.Margin = new System.Windows.Forms.Padding(2);
             this.checkB_Delete.Name = "checkB_Delete";
             this.checkB_Delete.Size = new System.Drawing.Size(193, 25);
             this.checkB_Delete.TabIndex = 43;
@@ -485,7 +485,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_idhead1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_idhead1.Location = new System.Drawing.Point(135, 16);
-            this.txt_idhead1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_idhead1.Margin = new System.Windows.Forms.Padding(2);
             this.txt_idhead1.Name = "txt_idhead1";
             this.txt_idhead1.ReadOnly = true;
             this.txt_idhead1.Size = new System.Drawing.Size(39, 29);
@@ -494,7 +494,7 @@
             // mtextB_Pass
             // 
             this.mtextB_Pass.Location = new System.Drawing.Point(135, 485);
-            this.mtextB_Pass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtextB_Pass.Margin = new System.Windows.Forms.Padding(2);
             this.mtextB_Pass.Name = "mtextB_Pass";
             this.mtextB_Pass.PasswordChar = '*';
             this.mtextB_Pass.Size = new System.Drawing.Size(276, 28);
@@ -507,7 +507,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_tel1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_tel1.Location = new System.Drawing.Point(135, 186);
-            this.txt_tel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_tel1.Margin = new System.Windows.Forms.Padding(2);
             this.txt_tel1.Name = "txt_tel1";
             this.txt_tel1.Size = new System.Drawing.Size(171, 29);
             this.txt_tel1.TabIndex = 4;
@@ -562,7 +562,7 @@
             this.cmb_clerk1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmb_clerk1.FormattingEnabled = true;
             this.cmb_clerk1.Location = new System.Drawing.Point(135, 426);
-            this.cmb_clerk1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_clerk1.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_clerk1.Name = "cmb_clerk1";
             this.cmb_clerk1.Size = new System.Drawing.Size(129, 30);
             this.cmb_clerk1.TabIndex = 8;
@@ -589,7 +589,7 @@
             this.cmb_position1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmb_position1.FormattingEnabled = true;
             this.cmb_position1.Location = new System.Drawing.Point(135, 370);
-            this.cmb_position1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_position1.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_position1.Name = "cmb_position1";
             this.cmb_position1.Size = new System.Drawing.Size(129, 30);
             this.cmb_position1.TabIndex = 7;
@@ -616,10 +616,11 @@
             this.cmb_department1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmb_department1.FormattingEnabled = true;
             this.cmb_department1.Location = new System.Drawing.Point(135, 314);
-            this.cmb_department1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_department1.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_department1.Name = "cmb_department1";
             this.cmb_department1.Size = new System.Drawing.Size(129, 30);
             this.cmb_department1.TabIndex = 6;
+            this.cmb_department1.SelectedIndexChanged += new System.EventHandler(this.cmb_department1_SelectedIndexChanged);
             // 
             // lbl_department1
             // 
@@ -646,7 +647,7 @@
             "男",
             "女"});
             this.cmb_sex1.Location = new System.Drawing.Point(135, 258);
-            this.cmb_sex1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_sex1.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_sex1.Name = "cmb_sex1";
             this.cmb_sex1.Size = new System.Drawing.Size(75, 30);
             this.cmb_sex1.TabIndex = 5;
@@ -673,7 +674,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_address1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_address1.Location = new System.Drawing.Point(135, 146);
-            this.txt_address1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_address1.Margin = new System.Windows.Forms.Padding(2);
             this.txt_address1.Name = "txt_address1";
             this.txt_address1.Size = new System.Drawing.Size(462, 29);
             this.txt_address1.TabIndex = 3;
@@ -699,7 +700,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_postal1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_postal1.Location = new System.Drawing.Point(135, 90);
-            this.txt_postal1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_postal1.Margin = new System.Windows.Forms.Padding(2);
             this.txt_postal1.Name = "txt_postal1";
             this.txt_postal1.Size = new System.Drawing.Size(129, 29);
             this.txt_postal1.TabIndex = 2;
@@ -711,7 +712,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_name1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_name1.Location = new System.Drawing.Point(135, 49);
-            this.txt_name1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_name1.Margin = new System.Windows.Forms.Padding(2);
             this.txt_name1.Name = "txt_name1";
             this.txt_name1.Size = new System.Drawing.Size(192, 29);
             this.txt_name1.TabIndex = 1;
@@ -723,7 +724,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_id1.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_id1.Location = new System.Drawing.Point(140, 40);
-            this.txt_id1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_id1.Margin = new System.Windows.Forms.Padding(2);
             this.txt_id1.Name = "txt_id1";
             this.txt_id1.Size = new System.Drawing.Size(296, 31);
             this.txt_id1.TabIndex = 0;
@@ -734,7 +735,7 @@
             this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_search.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btn_search.Location = new System.Drawing.Point(440, 38);
-            this.btn_search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_search.Margin = new System.Windows.Forms.Padding(2);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(120, 31);
             this.btn_search.TabIndex = 1;
@@ -778,7 +779,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.groupBox_information);
             this.Controls.Add(this.groupBox_login);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EmpRegister";
             this.Size = new System.Drawing.Size(1349, 786);
             this.Load += new System.EventHandler(this.EmpRegister_Load);

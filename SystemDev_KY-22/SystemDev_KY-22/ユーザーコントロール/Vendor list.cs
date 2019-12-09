@@ -268,6 +268,11 @@ namespace SystemDev_KY_22.ユーザーコントロール
             }
             MessageBox.Show("更新しました");
         }
+
+        private void btn_Clear_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
 

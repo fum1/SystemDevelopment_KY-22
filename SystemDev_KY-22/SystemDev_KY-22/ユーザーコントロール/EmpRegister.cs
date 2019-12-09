@@ -476,6 +476,11 @@ namespace SystemDev_KY_22
             }
 
         }
+
+        private void cmb_department1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

@@ -299,6 +299,7 @@
             this.btn_Clear.TabIndex = 20;
             this.btn_Clear.Text = "クリア";
             this.btn_Clear.UseVisualStyleBackColor = false;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // btn_telsearch
             // 
