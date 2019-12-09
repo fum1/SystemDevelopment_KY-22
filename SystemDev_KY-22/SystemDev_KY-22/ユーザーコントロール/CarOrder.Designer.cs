@@ -51,6 +51,11 @@
             this.txt_PersonID = new System.Windows.Forms.TextBox();
             this.printDialog = new System.Windows.Forms.PrintDialog();
             this.txt_supplierID = new System.Windows.Forms.TextBox();
+            this.txt_suppliername = new System.Windows.Forms.TextBox();
+            this.txt_suppliertel = new System.Windows.Forms.TextBox();
+            this.lbl_suppliertel = new System.Windows.Forms.Label();
+            this.lbl_txt_suppliername = new System.Windows.Forms.Label();
+            this.btn_Suppliersearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +63,7 @@
             // 
             this.lbl_supplierID.AutoSize = true;
             this.lbl_supplierID.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_supplierID.Location = new System.Drawing.Point(42, 81);
+            this.lbl_supplierID.Location = new System.Drawing.Point(42, 83);
             this.lbl_supplierID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_supplierID.Name = "lbl_supplierID";
             this.lbl_supplierID.Size = new System.Drawing.Size(144, 45);
@@ -69,7 +74,7 @@
             // 
             this.lbl_PersonID.AutoSize = true;
             this.lbl_PersonID.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_PersonID.Location = new System.Drawing.Point(42, 152);
+            this.lbl_PersonID.Location = new System.Drawing.Point(42, 237);
             this.lbl_PersonID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_PersonID.Name = "lbl_PersonID";
             this.lbl_PersonID.Size = new System.Drawing.Size(114, 45);
@@ -80,7 +85,7 @@
             // 
             this.lbl_orderdate.AutoSize = true;
             this.lbl_orderdate.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_orderdate.Location = new System.Drawing.Point(42, 223);
+            this.lbl_orderdate.Location = new System.Drawing.Point(42, 291);
             this.lbl_orderdate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_orderdate.Name = "lbl_orderdate";
             this.lbl_orderdate.Size = new System.Drawing.Size(170, 45);
@@ -91,7 +96,7 @@
             // 
             this.lbl_productname.AutoSize = true;
             this.lbl_productname.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_productname.Location = new System.Drawing.Point(42, 294);
+            this.lbl_productname.Location = new System.Drawing.Point(42, 345);
             this.lbl_productname.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_productname.Name = "lbl_productname";
             this.lbl_productname.Size = new System.Drawing.Size(110, 45);
@@ -101,7 +106,7 @@
             // txt_productname
             // 
             this.txt_productname.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_productname.Location = new System.Drawing.Point(291, 294);
+            this.txt_productname.Location = new System.Drawing.Point(291, 345);
             this.txt_productname.Margin = new System.Windows.Forms.Padding(5);
             this.txt_productname.Name = "txt_productname";
             this.txt_productname.Size = new System.Drawing.Size(233, 35);
@@ -111,7 +116,7 @@
             // 
             this.dtp_admissionday.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtp_admissionday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_admissionday.Location = new System.Drawing.Point(291, 223);
+            this.dtp_admissionday.Location = new System.Drawing.Point(291, 291);
             this.dtp_admissionday.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_admissionday.Name = "dtp_admissionday";
             this.dtp_admissionday.Size = new System.Drawing.Size(233, 40);
@@ -147,7 +152,7 @@
             // 
             this.lbl_color.AutoSize = true;
             this.lbl_color.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_color.Location = new System.Drawing.Point(42, 436);
+            this.lbl_color.Location = new System.Drawing.Point(42, 453);
             this.lbl_color.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_color.Name = "lbl_color";
             this.lbl_color.Size = new System.Drawing.Size(50, 45);
@@ -158,7 +163,7 @@
             // 
             this.lbl_model.AutoSize = true;
             this.lbl_model.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_model.Location = new System.Drawing.Point(42, 365);
+            this.lbl_model.Location = new System.Drawing.Point(42, 399);
             this.lbl_model.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_model.Name = "lbl_model";
             this.lbl_model.Size = new System.Drawing.Size(110, 45);
@@ -179,7 +184,7 @@
             // txt_model
             // 
             this.txt_model.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_model.Location = new System.Drawing.Point(291, 365);
+            this.txt_model.Location = new System.Drawing.Point(291, 399);
             this.txt_model.Margin = new System.Windows.Forms.Padding(5);
             this.txt_model.Name = "txt_model";
             this.txt_model.Size = new System.Drawing.Size(233, 35);
@@ -188,7 +193,7 @@
             // txt_color
             // 
             this.txt_color.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_color.Location = new System.Drawing.Point(291, 436);
+            this.txt_color.Location = new System.Drawing.Point(291, 453);
             this.txt_color.Margin = new System.Windows.Forms.Padding(5);
             this.txt_color.Name = "txt_color";
             this.txt_color.Size = new System.Drawing.Size(233, 35);
@@ -249,7 +254,7 @@
             // 
             this.lbl_orderID.AutoSize = true;
             this.lbl_orderID.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_orderID.Location = new System.Drawing.Point(42, 15);
+            this.lbl_orderID.Location = new System.Drawing.Point(42, 29);
             this.lbl_orderID.Name = "lbl_orderID";
             this.lbl_orderID.Size = new System.Drawing.Size(114, 45);
             this.lbl_orderID.TabIndex = 42;
@@ -258,7 +263,7 @@
             // txt_orderID
             // 
             this.txt_orderID.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_orderID.Location = new System.Drawing.Point(291, 15);
+            this.txt_orderID.Location = new System.Drawing.Point(291, 29);
             this.txt_orderID.Margin = new System.Windows.Forms.Padding(5);
             this.txt_orderID.Name = "txt_orderID";
             this.txt_orderID.Size = new System.Drawing.Size(233, 35);
@@ -267,7 +272,7 @@
             // txt_PersonID
             // 
             this.txt_PersonID.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_PersonID.Location = new System.Drawing.Point(291, 152);
+            this.txt_PersonID.Location = new System.Drawing.Point(291, 237);
             this.txt_PersonID.Margin = new System.Windows.Forms.Padding(5);
             this.txt_PersonID.Name = "txt_PersonID";
             this.txt_PersonID.Size = new System.Drawing.Size(233, 35);
@@ -280,17 +285,77 @@
             // txt_supplierID
             // 
             this.txt_supplierID.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_supplierID.Location = new System.Drawing.Point(291, 81);
+            this.txt_supplierID.Location = new System.Drawing.Point(291, 83);
             this.txt_supplierID.Margin = new System.Windows.Forms.Padding(5);
             this.txt_supplierID.Name = "txt_supplierID";
             this.txt_supplierID.Size = new System.Drawing.Size(233, 35);
             this.txt_supplierID.TabIndex = 45;
+            // 
+            // txt_suppliername
+            // 
+            this.txt_suppliername.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_suppliername.Location = new System.Drawing.Point(291, 137);
+            this.txt_suppliername.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_suppliername.Name = "txt_suppliername";
+            this.txt_suppliername.ReadOnly = true;
+            this.txt_suppliername.Size = new System.Drawing.Size(233, 35);
+            this.txt_suppliername.TabIndex = 46;
+            // 
+            // txt_suppliertel
+            // 
+            this.txt_suppliertel.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_suppliertel.Location = new System.Drawing.Point(291, 187);
+            this.txt_suppliertel.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_suppliertel.Name = "txt_suppliertel";
+            this.txt_suppliertel.ReadOnly = true;
+            this.txt_suppliertel.Size = new System.Drawing.Size(233, 35);
+            this.txt_suppliertel.TabIndex = 47;
+            // 
+            // lbl_suppliertel
+            // 
+            this.lbl_suppliertel.AutoSize = true;
+            this.lbl_suppliertel.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_suppliertel.Location = new System.Drawing.Point(101, 187);
+            this.lbl_suppliertel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_suppliertel.Name = "lbl_suppliertel";
+            this.lbl_suppliertel.Size = new System.Drawing.Size(180, 41);
+            this.lbl_suppliertel.TabIndex = 48;
+            this.lbl_suppliertel.Text = "（電話番号）";
+            // 
+            // lbl_txt_suppliername
+            // 
+            this.lbl_txt_suppliername.AutoSize = true;
+            this.lbl_txt_suppliername.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_txt_suppliername.Location = new System.Drawing.Point(101, 137);
+            this.lbl_txt_suppliername.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_txt_suppliername.Name = "lbl_txt_suppliername";
+            this.lbl_txt_suppliername.Size = new System.Drawing.Size(153, 41);
+            this.lbl_txt_suppliername.TabIndex = 49;
+            this.lbl_txt_suppliername.Text = "（会社名）";
+            // 
+            // btn_Suppliersearch
+            // 
+            this.btn_Suppliersearch.BackColor = System.Drawing.Color.White;
+            this.btn_Suppliersearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Suppliersearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_Suppliersearch.Location = new System.Drawing.Point(531, 83);
+            this.btn_Suppliersearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Suppliersearch.Name = "btn_Suppliersearch";
+            this.btn_Suppliersearch.Size = new System.Drawing.Size(41, 36);
+            this.btn_Suppliersearch.TabIndex = 50;
+            this.btn_Suppliersearch.Text = "🔍";
+            this.btn_Suppliersearch.UseVisualStyleBackColor = false;
             // 
             // CarOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btn_Suppliersearch);
+            this.Controls.Add(this.lbl_txt_suppliername);
+            this.Controls.Add(this.lbl_suppliertel);
+            this.Controls.Add(this.txt_suppliertel);
+            this.Controls.Add(this.txt_suppliername);
             this.Controls.Add(this.txt_supplierID);
             this.Controls.Add(this.txt_PersonID);
             this.Controls.Add(this.txt_orderID);
@@ -348,5 +413,10 @@
         private System.Windows.Forms.TextBox txt_PersonID;
         private System.Windows.Forms.PrintDialog printDialog;
         private System.Windows.Forms.TextBox txt_supplierID;
+        private System.Windows.Forms.TextBox txt_suppliername;
+        private System.Windows.Forms.TextBox txt_suppliertel;
+        private System.Windows.Forms.Label lbl_suppliertel;
+        private System.Windows.Forms.Label lbl_txt_suppliername;
+        private System.Windows.Forms.Button btn_Suppliersearch;
     }
 }

@@ -223,6 +223,8 @@ namespace SystemDev_KY_22
             txt_color.Clear();
             txt_option.Clear();
         }
+
+      
     }
 }
 

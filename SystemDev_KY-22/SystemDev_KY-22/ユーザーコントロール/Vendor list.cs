@@ -205,5 +205,69 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dgv_vendorlist.AllowUserToAddRows = false;   //最下行を非表示
             dgv_vendorlist.AutoResizeColumns();          //列の幅の自動調整
         }
+
+        private void btn_registration_Click(object sender, EventArgs e)
+        {
+            // ID、Pass、Name、PostNumber、AddressをINSERT  
+            OleDbCommand cmd =
+                new OleDbCommand("INSERT INTO 仕入先マスタ (仕入先ID,仕入先会社名, 仕入先郵便番号,仕入先住所, 仕入先電話番号,商品ID) " +
+                "VALUES (@仕入先ID, @仕入先会社名, @仕入先郵便番号, @仕入先住所, @商品ID)", cn);
+            //DBの列名に、PassWord (Microsoft Jet 4.0 の予約語)は使用できない
+            //@パラメータが出てくる順番に設定する
+            cmd.Parameters.AddWithValue("@仕入先ID", cmb_SupplierID);
+            cmd.Parameters.AddWithValue("@仕入先会社名", cmb_Suppliername);                 //IDのデータ
+            cmd.Parameters.AddWithValue("@仕入先郵便番号", cmb_postalcode);             //Passのデータ
+            cmd.Parameters.AddWithValue("@仕入先住所", cmb_tel);             //Nameのデータ
+            cmd.Parameters.AddWithValue("@仕入先電話番号", cmb_address.Text);  //PostNumberのデータ
+            cmd.Parameters.AddWithValue("@商品ID", cmb_productID.Text); 
+            
+            try
+            {
+                cn.Open();                 //コネクションを開く
+                cmd.ExecuteNonQuery();     //SQLを実行
+                cn.Close();                //コネクションを閉じる
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                cn.Close();               //コネクションを閉じる
+                return;
+            }
+
+
+            MessageBox.Show("登録しました", "管理者");
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            OleDbCommand cmd =
+                       new OleDbCommand("UPDATE 仕入先マスタ SET 仕入先ID = @SupplierID,仕入先会社名 = @Suppliername, " +
+                        " 仕入先郵便番号 = @Supplierpostal,仕入先住所 = @Supplieraddress,仕入先電話番号 = @Suppliertell,商品ID = @productID, WHERE (仕入先ID = @仕入先ID)", cn);
+            //@パラメータが出てくる順番に設定する
+
+
+            cmd.Parameters.AddWithValue("@SupplierID", cmb_SupplierID);
+            cmd.Parameters.AddWithValue(" @Suppliername", cmb_Suppliername.Text);               //Passのデータ
+            cmd.Parameters.AddWithValue("@Supplierpostal", cmb_postalcode.Text);               //Nameのデータ
+            cmd.Parameters.AddWithValue("@Supplieraddress", cmb_tel.Text);     //PostNumberのデータ
+            cmd.Parameters.AddWithValue("@Suppliertell", cmb_address.Text);           //Addressのデータ
+            cmd.Parameters.AddWithValue("@productID", cmb_productID.Text);//IDのデータ
+            
+
+            try
+            {
+                cn.Open();
+                cmd.ExecuteNonQuery();
+                cn.Close();               //コネクションを閉じる
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                cn.Close();                //コネクションを閉じる
+                return;
+            }
+            MessageBox.Show("更新しました");
+        }
     }
 }
+

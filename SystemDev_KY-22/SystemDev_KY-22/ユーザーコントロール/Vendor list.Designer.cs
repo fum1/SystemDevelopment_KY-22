@@ -141,7 +141,6 @@
             this.btn_productsearch.TabIndex = 33;
             this.btn_productsearch.Text = "🔍";
             this.btn_productsearch.UseVisualStyleBackColor = false;
-            this.btn_productsearch.Click += new System.EventHandler(this.btn_productsearch_Click);
             // 
             // cmb_productID
             // 
@@ -177,7 +176,6 @@
             this.btn_addresssearch.TabIndex = 30;
             this.btn_addresssearch.Text = "🔍";
             this.btn_addresssearch.UseVisualStyleBackColor = false;
-            this.btn_addresssearch.Click += new System.EventHandler(this.btn_addresssearch_Click);
             // 
             // cmb_postalcode
             // 
@@ -213,7 +211,6 @@
             this.btn_postalcodesearch.TabIndex = 27;
             this.btn_postalcodesearch.Text = "🔍";
             this.btn_postalcodesearch.UseVisualStyleBackColor = false;
-            this.btn_postalcodesearch.Click += new System.EventHandler(this.btn_postalcodesearch_Click);
             // 
             // cmb_address
             // 
@@ -316,7 +313,6 @@
             this.btn_telsearch.TabIndex = 5;
             this.btn_telsearch.Text = "🔍";
             this.btn_telsearch.UseVisualStyleBackColor = false;
-            this.btn_telsearch.Click += new System.EventHandler(this.btn_telsearch_Click);
             // 
             // btn_Suppliersearch
             // 
@@ -330,7 +326,6 @@
             this.btn_Suppliersearch.TabIndex = 5;
             this.btn_Suppliersearch.Text = "🔍";
             this.btn_Suppliersearch.UseVisualStyleBackColor = false;
-            this.btn_Suppliersearch.Click += new System.EventHandler(this.btn_Suppliersearch_Click);
             // 
             // cmb_SupplierID
             // 
@@ -396,7 +391,6 @@
             this.btn_Suppliernamesearch.TabIndex = 5;
             this.btn_Suppliernamesearch.Text = "🔍";
             this.btn_Suppliernamesearch.UseVisualStyleBackColor = false;
-            this.btn_Suppliernamesearch.Click += new System.EventHandler(this.btn_Suppliernamesearch_Click);
             // 
             // cmb_Suppliername
             // 
@@ -431,7 +425,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Vendor_list";
             this.Size = new System.Drawing.Size(862, 611);
-            this.Load += new System.EventHandler(this.Vendor_list_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vendorlist)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
