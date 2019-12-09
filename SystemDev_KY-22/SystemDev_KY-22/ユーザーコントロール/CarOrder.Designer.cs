@@ -345,7 +345,6 @@
             this.btn_Suppliersearch.TabIndex = 50;
             this.btn_Suppliersearch.Text = "🔍";
             this.btn_Suppliersearch.UseVisualStyleBackColor = false;
-            this.btn_Suppliersearch.Click += new System.EventHandler(this.btn_Suppliersearch_Click);
             // 
             // CarOrder
             // 
