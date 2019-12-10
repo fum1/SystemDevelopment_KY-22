@@ -40,12 +40,8 @@
             this.Btn_EmpRegister = new System.Windows.Forms.Button();
             this.btn_SalesList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.orderCheck2 = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
-            this.salesList2 = new SystemDev_KY_22.SalesList();
-            this.vendor_list1 = new SystemDev_KY_22.ユーザーコントロール.Vendor_list();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -211,40 +207,12 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.orderCheck2);
-            this.panel3.Controls.Add(this.salesList2);
-            this.panel3.Controls.Add(this.vendor_list1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(297, 135);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1259, 749);
             this.panel3.TabIndex = 2;
-            // 
-            // orderCheck2
-            // 
-            this.orderCheck2.BackColor = System.Drawing.Color.White;
-            this.orderCheck2.Location = new System.Drawing.Point(111, 376);
-            this.orderCheck2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.orderCheck2.Name = "orderCheck2";
-            this.orderCheck2.Size = new System.Drawing.Size(799, 349);
-            this.orderCheck2.TabIndex = 2;
-            // 
-            // salesList2
-            // 
-            this.salesList2.BackColor = System.Drawing.Color.White;
-            this.salesList2.Location = new System.Drawing.Point(279, 444);
-            this.salesList2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.salesList2.Name = "salesList2";
-            this.salesList2.Size = new System.Drawing.Size(980, 698);
-            this.salesList2.TabIndex = 1;
-            // 
-            // vendor_list1
-            // 
-            this.vendor_list1.Location = new System.Drawing.Point(669, 256);
-            this.vendor_list1.Name = "vendor_list1";
-            this.vendor_list1.Size = new System.Drawing.Size(531, 695);
-            this.vendor_list1.TabIndex = 0;
             // 
             // AdminMenu
             // 
@@ -262,7 +230,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
