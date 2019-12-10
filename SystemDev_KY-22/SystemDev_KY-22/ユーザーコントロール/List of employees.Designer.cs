@@ -42,12 +42,14 @@
             this.lbl_id = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -57,7 +59,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1055, 736);
+            this.dataGridView1.Size = new System.Drawing.Size(1055, 920);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel1
@@ -75,7 +77,7 @@
             this.btn_Clear.BackColor = System.Drawing.Color.White;
             this.btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Clear.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_Clear.Location = new System.Drawing.Point(120, 645);
+            this.btn_Clear.Location = new System.Drawing.Point(172, 515);
             this.btn_Clear.Name = "btn_Clear";
             this.btn_Clear.Size = new System.Drawing.Size(165, 59);
             this.btn_Clear.TabIndex = 20;
@@ -87,13 +89,13 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(120, 485);
+            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button1.Location = new System.Drawing.Point(387, 77);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 55);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "検索";
+            this.button1.Size = new System.Drawing.Size(55, 51);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "🔍";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -188,6 +190,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.btn_Clear);
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.button1);
@@ -208,6 +211,47 @@
             this.panel3.Size = new System.Drawing.Size(579, 754);
             this.panel3.TabIndex = 3;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button4.Location = new System.Drawing.Point(387, 282);
+            this.button4.Name = "button4";
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button4.Size = new System.Drawing.Size(55, 51);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "🔍";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button3.Location = new System.Drawing.Point(387, 385);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button3.Size = new System.Drawing.Size(55, 50);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "🔍";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button2.Location = new System.Drawing.Point(387, 188);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(55, 53);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "🔍";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -217,44 +261,15 @@
             this.panel4.Size = new System.Drawing.Size(557, 12);
             this.panel4.TabIndex = 4;
             // 
-            // button2
+            // pictureBox1
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(387, 75);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 64);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "🔍";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(387, 180);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(78, 64);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "🔍";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4.Location = new System.Drawing.Point(387, 278);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(78, 64);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "🔍";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.pictureBox1.BackgroundImage = global::SystemDev_KY_22.Properties.Resources.チェリー;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(35, 661);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(467, 170);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
             // 
             // List_of_employees
             // 
@@ -273,6 +288,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,5 +313,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

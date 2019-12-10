@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_supplier = new System.Windows.Forms.Label();
-            this.cmb_supplier = new System.Windows.Forms.ComboBox();
-            this.lbl_Person = new System.Windows.Forms.Label();
+            this.lbl_supplierID = new System.Windows.Forms.Label();
+            this.lbl_PersonID = new System.Windows.Forms.Label();
             this.lbl_orderdate = new System.Windows.Forms.Label();
             this.lbl_productname = new System.Windows.Forms.Label();
             this.txt_productname = new System.Windows.Forms.TextBox();
@@ -49,42 +48,33 @@
             this.btn_preview = new System.Windows.Forms.Button();
             this.lbl_orderID = new System.Windows.Forms.Label();
             this.txt_orderID = new System.Windows.Forms.TextBox();
-            this.txt_Person = new System.Windows.Forms.TextBox();
+            this.txt_PersonID = new System.Windows.Forms.TextBox();
             this.printDialog = new System.Windows.Forms.PrintDialog();
+            this.txt_supplierID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbl_supplier
+            // lbl_supplierID
             // 
-            this.lbl_supplier.AutoSize = true;
-            this.lbl_supplier.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_supplier.Location = new System.Drawing.Point(42, 81);
-            this.lbl_supplier.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lbl_supplier.Name = "lbl_supplier";
-            this.lbl_supplier.Size = new System.Drawing.Size(182, 57);
-            this.lbl_supplier.TabIndex = 0;
-            this.lbl_supplier.Text = "仕入先ID";
+            this.lbl_supplierID.AutoSize = true;
+            this.lbl_supplierID.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_supplierID.Location = new System.Drawing.Point(42, 81);
+            this.lbl_supplierID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_supplierID.Name = "lbl_supplierID";
+            this.lbl_supplierID.Size = new System.Drawing.Size(182, 57);
+            this.lbl_supplierID.TabIndex = 0;
+            this.lbl_supplierID.Text = "仕入先ID";
             // 
-            // cmb_supplier
+            // lbl_PersonID
             // 
-            this.cmb_supplier.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cmb_supplier.FormattingEnabled = true;
-            this.cmb_supplier.Location = new System.Drawing.Point(291, 81);
-            this.cmb_supplier.Margin = new System.Windows.Forms.Padding(5);
-            this.cmb_supplier.Name = "cmb_supplier";
-            this.cmb_supplier.Size = new System.Drawing.Size(233, 42);
-            this.cmb_supplier.TabIndex = 2;
-            // 
-            // lbl_Person
-            // 
-            this.lbl_Person.AutoSize = true;
-            this.lbl_Person.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_Person.Location = new System.Drawing.Point(42, 152);
-            this.lbl_Person.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lbl_Person.Name = "lbl_Person";
-            this.lbl_Person.Size = new System.Drawing.Size(144, 57);
-            this.lbl_Person.TabIndex = 12;
-            this.lbl_Person.Text = "社員ID";
+            this.lbl_PersonID.AutoSize = true;
+            this.lbl_PersonID.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_PersonID.Location = new System.Drawing.Point(42, 152);
+            this.lbl_PersonID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_PersonID.Name = "lbl_PersonID";
+            this.lbl_PersonID.Size = new System.Drawing.Size(144, 57);
+            this.lbl_PersonID.TabIndex = 12;
+            this.lbl_PersonID.Text = "社員ID";
             // 
             // lbl_orderdate
             // 
@@ -132,9 +122,9 @@
             this.btn_clear.BackColor = System.Drawing.Color.Transparent;
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_clear.Location = new System.Drawing.Point(374, 567);
+            this.btn_clear.Location = new System.Drawing.Point(352, 567);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(150, 56);
+            this.btn_clear.Size = new System.Drawing.Size(172, 56);
             this.btn_clear.TabIndex = 25;
             this.btn_clear.Text = "クリア";
             this.btn_clear.UseVisualStyleBackColor = false;
@@ -145,9 +135,9 @@
             this.btn_order.BackColor = System.Drawing.Color.Transparent;
             this.btn_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_order.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_order.Location = new System.Drawing.Point(205, 567);
+            this.btn_order.Location = new System.Drawing.Point(174, 567);
             this.btn_order.Name = "btn_order";
-            this.btn_order.Size = new System.Drawing.Size(150, 56);
+            this.btn_order.Size = new System.Drawing.Size(172, 56);
             this.btn_order.TabIndex = 26;
             this.btn_order.Text = "発注";
             this.btn_order.UseVisualStyleBackColor = false;
@@ -220,7 +210,7 @@
             this.pictureBox.Location = new System.Drawing.Point(644, 15);
             this.pictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(567, 608);
+            this.pictureBox.Size = new System.Drawing.Size(567, 585);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox.TabIndex = 38;
             this.pictureBox.TabStop = false;
@@ -230,9 +220,9 @@
             this.btn_print.BackColor = System.Drawing.Color.Transparent;
             this.btn_print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_print.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_print.Location = new System.Drawing.Point(374, 629);
+            this.btn_print.Location = new System.Drawing.Point(352, 629);
             this.btn_print.Name = "btn_print";
-            this.btn_print.Size = new System.Drawing.Size(150, 56);
+            this.btn_print.Size = new System.Drawing.Size(172, 56);
             this.btn_print.TabIndex = 39;
             this.btn_print.Text = "印刷";
             this.btn_print.UseVisualStyleBackColor = false;
@@ -247,11 +237,11 @@
             this.btn_preview.BackColor = System.Drawing.Color.Transparent;
             this.btn_preview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_preview.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_preview.Location = new System.Drawing.Point(205, 629);
+            this.btn_preview.Location = new System.Drawing.Point(174, 629);
             this.btn_preview.Name = "btn_preview";
-            this.btn_preview.Size = new System.Drawing.Size(150, 56);
+            this.btn_preview.Size = new System.Drawing.Size(172, 56);
             this.btn_preview.TabIndex = 41;
-            this.btn_preview.Text = "プレ";
+            this.btn_preview.Text = "プレビュー";
             this.btn_preview.UseVisualStyleBackColor = false;
             this.btn_preview.Click += new System.EventHandler(this.btn_preview_Click);
             // 
@@ -274,25 +264,35 @@
             this.txt_orderID.Size = new System.Drawing.Size(233, 42);
             this.txt_orderID.TabIndex = 43;
             // 
-            // txt_Person
+            // txt_PersonID
             // 
-            this.txt_Person.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_Person.Location = new System.Drawing.Point(291, 152);
-            this.txt_Person.Margin = new System.Windows.Forms.Padding(5);
-            this.txt_Person.Name = "txt_Person";
-            this.txt_Person.Size = new System.Drawing.Size(233, 42);
-            this.txt_Person.TabIndex = 44;
+            this.txt_PersonID.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_PersonID.Location = new System.Drawing.Point(291, 152);
+            this.txt_PersonID.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_PersonID.Name = "txt_PersonID";
+            this.txt_PersonID.Size = new System.Drawing.Size(233, 42);
+            this.txt_PersonID.TabIndex = 44;
             // 
             // printDialog
             // 
             this.printDialog.UseEXDialog = true;
+            // 
+            // txt_supplierID
+            // 
+            this.txt_supplierID.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_supplierID.Location = new System.Drawing.Point(291, 81);
+            this.txt_supplierID.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_supplierID.Name = "txt_supplierID";
+            this.txt_supplierID.Size = new System.Drawing.Size(233, 42);
+            this.txt_supplierID.TabIndex = 45;
             // 
             // CarOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.txt_Person);
+            this.Controls.Add(this.txt_supplierID);
+            this.Controls.Add(this.txt_PersonID);
             this.Controls.Add(this.txt_orderID);
             this.Controls.Add(this.lbl_orderID);
             this.Controls.Add(this.btn_preview);
@@ -310,9 +310,8 @@
             this.Controls.Add(this.txt_productname);
             this.Controls.Add(this.lbl_productname);
             this.Controls.Add(this.lbl_orderdate);
-            this.Controls.Add(this.lbl_Person);
-            this.Controls.Add(this.cmb_supplier);
-            this.Controls.Add(this.lbl_supplier);
+            this.Controls.Add(this.lbl_PersonID);
+            this.Controls.Add(this.lbl_supplierID);
             this.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "CarOrder";
@@ -326,9 +325,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbl_supplier;
-        private System.Windows.Forms.ComboBox cmb_supplier;
-        private System.Windows.Forms.Label lbl_Person;
+        private System.Windows.Forms.Label lbl_supplierID;
+        private System.Windows.Forms.Label lbl_PersonID;
         private System.Windows.Forms.Label lbl_orderdate;
         private System.Windows.Forms.Label lbl_productname;
         private System.Windows.Forms.TextBox txt_productname;
@@ -347,7 +345,8 @@
         private System.Windows.Forms.Button btn_preview;
         private System.Windows.Forms.Label lbl_orderID;
         private System.Windows.Forms.TextBox txt_orderID;
-        private System.Windows.Forms.TextBox txt_Person;
+        private System.Windows.Forms.TextBox txt_PersonID;
         private System.Windows.Forms.PrintDialog printDialog;
+        private System.Windows.Forms.TextBox txt_supplierID;
     }
 }
