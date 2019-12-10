@@ -13,8 +13,7 @@ namespace SystemDev_KY_22
 {
     public partial class StockList : UserControl
     {
-
-        OleDbConnection cn = new OleDbConnection();  //コネクションオブジェクト
+        OleDbConnection cn; //コネクションオブジェクト
 
         public StockList()
         {
@@ -23,9 +22,13 @@ namespace SystemDev_KY_22
 
         private void StockList_Load(object sender, EventArgs e)
         {
-            cn.ConnectionString =
-                 @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
-            dataload();
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection();
+                cn.ConnectionString =
+                        @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+                dataload();
+            }
         }
 
         private void dataload()   //カスタム関数

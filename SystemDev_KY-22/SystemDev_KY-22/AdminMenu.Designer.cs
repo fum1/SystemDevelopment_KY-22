@@ -242,6 +242,7 @@
             // vendor_list1
             // 
             this.vendor_list1.Location = new System.Drawing.Point(669, 256);
+            this.vendor_list1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.vendor_list1.Name = "vendor_list1";
             this.vendor_list1.Size = new System.Drawing.Size(531, 695);
             this.vendor_list1.TabIndex = 0;
