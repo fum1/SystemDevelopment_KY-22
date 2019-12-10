@@ -34,7 +34,7 @@ namespace SystemDev_KY_22
                  @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
 
             dataload();
-            
+
 
 
 
@@ -474,6 +474,11 @@ namespace SystemDev_KY_22
                     checkB_Delete.Checked = false;
                 }
             }
+
+        }
+
+        private void cmb_department1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

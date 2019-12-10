@@ -128,7 +128,7 @@
             this.cmb_position.Name = "cmb_position";
             this.cmb_position.Size = new System.Drawing.Size(236, 48);
             this.cmb_position.TabIndex = 16;
-            this.cmb_position.SelectedIndexChanged += new System.EventHandler(this.cmb_position_SelectedIndexChanged);
+            
             // 
             // lbl_clerk
             // 

@@ -26,42 +26,49 @@ namespace SystemDev_KY_22
             this.Close();
         }
 
-        private void Btn_EmpRegister_Click(object sender, EventArgs e)
+       /* private void Btn_EmpRegister_Click(object sender, EventArgs e)
         {
-            pc.Set((Button)sender,selectPanel);
+           pc.Set((Button)sender,selectPanel);
             pc.Chenge(userControls, empRegister1);
-        }
+        }*/
 
         private void Btn_SalesCheck_Click(object sender, EventArgs e)
         {
             pc.Set((Button)sender,selectPanel);
-            pc.Chenge(userControls, salesList1);
+            pc.Chenge(userControls, salesList2);
 
         }
 
         private void Btn_OrderList_Click(object sender, EventArgs e)
         {
             pc.Set((Button)sender,selectPanel);
-            pc.Chenge(userControls, orderCheck1);
+            pc.Chenge(userControls, orderCheck2);
         }
 
-        private void btn_employees_Click(object sender, EventArgs e)
+        /*private void btn_employees_Click(object sender, EventArgs e)
         {
             pc.Set((Button)sender, selectPanel);
             pc.Chenge(userControls, list_of_employees1);
+        }*/
+
+        private void btn_Vendorlist_Click(object sender, EventArgs e)
+        {
+            pc.Set((Button)sender, selectPanel);
+            pc.Chenge(userControls, vendor_list1);
         }
 
-       
+
+
 
 
         private void AdminMenu_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            userControls = new UserControl[4] { empRegister1, orderCheck1, salesList1, list_of_employees1 };
+            userControls = new UserControl[3] {  orderCheck2, salesList2, vendor_list1 };
+            
                
         }
-
-       
+        
     };
 }
 
