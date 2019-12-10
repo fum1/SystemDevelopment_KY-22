@@ -172,6 +172,7 @@
     </Compile>
     <Compile Include="ユーザーコントロール\Storing.Designer.cs">
       <DependentUpon>Storing.cs</DependentUpon>
+    </Compile>
     <Compile Include="ユーザーコントロール\Vendor list.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -247,6 +248,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\Storing.resx">
       <DependentUpon>Storing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\Vendor list.resx">
       <DependentUpon>Vendor list.cs</DependentUpon>
     </EmbeddedResource>
