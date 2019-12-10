@@ -15,6 +15,8 @@ namespace SystemDev_KY_22
     public partial class CarOrder : UserControl
     {
         OleDbConnection cn = new OleDbConnection();  //コネクションオブジェクト
+
+
         public CarOrder()
         {
 
@@ -174,6 +176,7 @@ namespace SystemDev_KY_22
             txt_color.ResetText();
             txt_option.ResetText();
 
+
         }
 
         private void btn_order_Click(object sender, EventArgs e)
@@ -208,9 +211,20 @@ namespace SystemDev_KY_22
 
             MessageBox.Show("登録しました", "発注登録");
 
-            
-
         }
+
+        private void btn_clear_Click_1(object sender, EventArgs e)
+        {
+            txt_orderID.Clear();
+            txt_supplierID.Clear();
+            txt_PersonID.Clear();
+            txt_productname.Clear();
+            txt_model.Clear();
+            txt_color.Clear();
+            txt_option.Clear();
+        }
+
+      
     }
 }
 

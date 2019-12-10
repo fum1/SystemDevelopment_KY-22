@@ -63,12 +63,6 @@
     </Compile>
     <Compile Include="Class\animator.cs" />
     <Compile Include="Class\PanelControl.cs" />
-    <Compile Include="ユーザーコントロール\ClientList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ユーザーコントロール\ClientList.Designer.cs">
-      <DependentUpon>ClientList.cs</DependentUpon>
-    </Compile>
     <Compile Include="ユーザーコントロール\ClientList2.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,6 +155,12 @@
     <Compile Include="ユーザーコントロール\OrderCheck.Designer.cs">
       <DependentUpon>OrderCheck.cs</DependentUpon>
     </Compile>
+    <Compile Include="ユーザーコントロール\shipping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ユーザーコントロール\shipping.Designer.cs">
+      <DependentUpon>shipping.cs</DependentUpon>
+    </Compile>
     <Compile Include="ユーザーコントロール\StockList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -172,15 +172,17 @@
     </Compile>
     <Compile Include="ユーザーコントロール\Storing.Designer.cs">
       <DependentUpon>Storing.cs</DependentUpon>
+    <Compile Include="ユーザーコントロール\Vendor list.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ユーザーコントロール\Vendor list.Designer.cs">
+      <DependentUpon>Vendor list.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ユーザーコントロール\ClientList.resx">
-      <DependentUpon>ClientList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\ClientList2.resx">
       <DependentUpon>ClientList2.cs</DependentUpon>
@@ -237,11 +239,16 @@
     <EmbeddedResource Include="ユーザーコントロール\OrderCheck.resx">
       <DependentUpon>OrderCheck.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ユーザーコントロール\shipping.resx">
+      <DependentUpon>shipping.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\StockList.resx">
       <DependentUpon>StockList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\Storing.resx">
       <DependentUpon>Storing.cs</DependentUpon>
+    <EmbeddedResource Include="ユーザーコントロール\Vendor list.resx">
+      <DependentUpon>Vendor list.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
