@@ -51,14 +51,14 @@ namespace SystemDev_KY_22
 
         private void Salesmenu2_Load(object sender, EventArgs e)
         {
-            userControls = new UserControl[4] { stockList1, clientRegisterU1, order1,clientList1 };
+            userControls = new UserControl[3] { stockList1, clientRegisterU1, order1 };
             this.WindowState = FormWindowState.Maximized;
         }
 
         private void btn_ClientList_Click(object sender, EventArgs e)
         {
-            pc.Set((Button)sender, selectPanel);
-            pc.Chenge(userControls, clientList1);
+            //pc.Set((Button)sender, selectPanel);
+            //pc.Chenge(userControls, clientList1);
         }
     }
 }
