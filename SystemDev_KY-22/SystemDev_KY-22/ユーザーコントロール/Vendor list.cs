@@ -15,6 +15,8 @@ namespace SystemDev_KY_22.ユーザーコントロール
     {
         OleDbConnection cn = new OleDbConnection();  //コネクションオブジェクト
         DataTable dt = new DataTable();
+
+
         public Vendor_list()
         {
             InitializeComponent();
@@ -32,7 +34,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         private void btn_Suppliersearch_Click(object sender, EventArgs e)
         {
             OleDbCommand cmd =
-               new OleDbCommand("SELECT 仕入先ID ,商品ID ,仕入先会社名 ,仕入先郵便番号 ,仕入先住所 ,仕入先電話番号  " +
+               new OleDbCommand("SELECT 仕入先ID ,商品ID ,仕入先会社名 ,仕入先郵便番号 ,仕入先住所 ,仕入先電話番号 " +
               "FROM 仕入先マスタ WHERE 仕入先ID = @仕入先ID  ORDER BY 仕入先ID");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -51,8 +53,8 @@ namespace SystemDev_KY_22.ユーザーコントロール
         private void btn_Suppliernamesearch_Click(object sender, EventArgs e)
         {
             OleDbCommand cmd =
-              new OleDbCommand(("SELECT 仕入先ID ,商品ID ,仕入先会社名 ,仕入先郵便番号 ,仕入先住所 ,仕入先電話番号 " +
-              "FROM 仕入先マスタ WHERE 仕入先会社名 = @仕入先会社名  ORDER BY 仕入先会社名"));
+              new OleDbCommand("SELECT 仕入先ID ,商品ID ,仕入先会社名 ,仕入先郵便番号 ,仕入先住所 ,仕入先電話番号 " +
+              "FROM 仕入先マスタ WHERE 仕入先会社名 = @仕入先会社名  ORDER BY 仕入先会社名");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
@@ -70,8 +72,8 @@ namespace SystemDev_KY_22.ユーザーコントロール
         private void btn_postalcodesearch_Click(object sender, EventArgs e)
         {
             OleDbCommand cmd =
-              new OleDbCommand(("SELECT 仕入先ID ,商品ID ,仕入先会社名 ,仕入先郵便番号 ,仕入先住所 ,仕入先電話番号  " +
-              "FROM 仕入先マスタ WHERE 仕入先郵便番号  = @仕入先郵便番号 ORDER BY 仕入先郵便番号 "));
+              new OleDbCommand("SELECT 仕入先ID ,商品ID ,仕入先会社名 ,仕入先郵便番号 ,仕入先住所 ,仕入先電話番号 " +
+              "FROM 仕入先マスタ WHERE 仕入先郵便番号  = @仕入先郵便番号 ORDER BY 仕入先郵便番号 ");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
@@ -89,7 +91,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         private void btn_telsearch_Click(object sender, EventArgs e)
         {
             OleDbCommand cmd =
-              new OleDbCommand("SELECT 仕入先ID ,商品ID ,仕入先会社名 ,仕入先郵便番号 ,仕入先住所 ,仕入先電話番号  " +
+              new OleDbCommand("SELECT 仕入先ID ,商品ID ,仕入先会社名 ,仕入先郵便番号 ,仕入先住所 ,仕入先電話番号 " +
                "FROM 仕入先マスタ WHERE 仕入先電話番号 = @仕入先電話番号 ORDER BY 仕入先電話番号");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -222,5 +224,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
             txt_productID.Clear();
 
         }
+
+     
     }
 }
