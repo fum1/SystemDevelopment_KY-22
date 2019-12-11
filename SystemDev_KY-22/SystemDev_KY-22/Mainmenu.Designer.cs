@@ -42,6 +42,7 @@
             this.loaUnloading1 = new SystemDev_KY_22.LoaUnloading();
             this.orderCheck2 = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
             this.carOrder2 = new SystemDev_KY_22.CarOrder();
+            this.stockList2 = new SystemDev_KY_22.StockList();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -184,6 +185,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.stockList2);
             this.panel3.Controls.Add(this.loaUnloading1);
             this.panel3.Controls.Add(this.orderCheck2);
             this.panel3.Controls.Add(this.carOrder2);
@@ -197,6 +199,7 @@
             // 
             this.loaUnloading1.BackColor = System.Drawing.Color.White;
             this.loaUnloading1.Location = new System.Drawing.Point(161, 291);
+            this.loaUnloading1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loaUnloading1.Name = "loaUnloading1";
             this.loaUnloading1.Size = new System.Drawing.Size(1002, 592);
             this.loaUnloading1.TabIndex = 3;
@@ -219,6 +222,14 @@
             this.carOrder2.Name = "carOrder2";
             this.carOrder2.Size = new System.Drawing.Size(1230, 735);
             this.carOrder2.TabIndex = 0;
+            // 
+            // stockList2
+            // 
+            this.stockList2.BackColor = System.Drawing.Color.White;
+            this.stockList2.Location = new System.Drawing.Point(-142, -27);
+            this.stockList2.Name = "stockList2";
+            this.stockList2.Size = new System.Drawing.Size(1042, 703);
+            this.stockList2.TabIndex = 4;
             // 
             // MainMenu
             // 
@@ -258,5 +269,6 @@
         private LoaUnloading loaUnloading1;
         private ユーザーコントロール.OrderCheck orderCheck2;
         private CarOrder carOrder2;
+        private StockList stockList2;
     }
 }

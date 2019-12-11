@@ -57,5 +57,37 @@ namespace SystemDev_KY_22
             dataload();
 
         }
+
+        private void btn_decision_Click(object sender, EventArgs e)
+        {
+            OleDbCommand cmd =
+               new OleDbCommand("INSERT INTO 注文テーブル (注文ID ,数量 ,顧客ID ,社員ID ,商品詳細ID, 発送日 , 在庫減フラグ , 店舗ID , 注文日)" +
+               "VALUES (@注文ID,@数量,@顧客ID,@社員ID,@商品詳細ID,@発送日,@在庫減フラグ,@店舗ID,@注文日)", cn);
+
+            //@パラメータが出てくる順番に設定する
+            cmd.Parameters.AddWithValue("@注文ID", ord_Num.Text);
+            cmd.Parameters.AddWithValue("@数量", textBox3.Text);
+            cmd.Parameters.AddWithValue("@顧客ID", comboBox1.Text);
+            cmd.Parameters.AddWithValue("@社員ID", txt_employeeID.Text);
+            cmd.Parameters.AddWithValue("@店舗ID", txt_clientID.Text);
+            
+
+            try
+            {
+                cn.Open();                 //コネクションを開く
+                cmd.ExecuteNonQuery();     //SQLを実行
+                cn.Close();                //コネクションを閉じる
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                cn.Close();               //コネクションを閉じる
+                return;
+            }
+             
+        }
+        }
     }
-}
+            
+    
+

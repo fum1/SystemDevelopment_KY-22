@@ -214,6 +214,32 @@
             this.panel3.Size = new System.Drawing.Size(1259, 749);
             this.panel3.TabIndex = 2;
             // 
+            // orderCheck2
+            // 
+            this.orderCheck2.BackColor = System.Drawing.Color.White;
+            this.orderCheck2.Location = new System.Drawing.Point(111, 376);
+            this.orderCheck2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.orderCheck2.Name = "orderCheck2";
+            this.orderCheck2.Size = new System.Drawing.Size(799, 349);
+            this.orderCheck2.TabIndex = 2;
+            // 
+            // salesList2
+            // 
+            this.salesList2.BackColor = System.Drawing.Color.White;
+            this.salesList2.Location = new System.Drawing.Point(279, 444);
+            this.salesList2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.salesList2.Name = "salesList2";
+            this.salesList2.Size = new System.Drawing.Size(980, 698);
+            this.salesList2.TabIndex = 1;
+            // 
+            // vendor_list1
+            // 
+            this.vendor_list1.Location = new System.Drawing.Point(669, 256);
+            this.vendor_list1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.vendor_list1.Name = "vendor_list1";
+            this.vendor_list1.Size = new System.Drawing.Size(531, 695);
+            this.vendor_list1.TabIndex = 0;
+            // 
             // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
