@@ -13,7 +13,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
 {
     public partial class shipping : UserControl
     {
-        OleDbConnection cn = new OleDbConnection(); //コネクションオブジェクト
+        OleDbConnection cn; //コネクションオブジェクト
 
         public shipping()
         {
@@ -68,8 +68,12 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
         private void shipping_Load(object sender, EventArgs e)
         {
-            cn.ConnectionString =
-                @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection();
+                cn.ConnectionString =
+                    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+            }
         }
     }
 }

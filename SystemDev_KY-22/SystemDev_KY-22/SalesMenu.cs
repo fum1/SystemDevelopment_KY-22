@@ -22,25 +22,25 @@ namespace SystemDev_KY_22
 
             stockList1.Visible = false;
             clientRegisterU1.Visible = false;
-            order1.Visible = false;
+            order.Visible = false;
         }
 
         private void Btn_StockList_Click(object sender, EventArgs e)
         {
             pc.Set((Button)sender, selectPanel);
-            pc.Chenge(userControls, stockList1);
+            pc.Chenge(userControls, stockList);
         }
 
         private void Btn_ClientRegister_Click(object sender, EventArgs e)
         {
             pc.Set((Button)sender, selectPanel);
-            pc.Chenge(userControls, clientRegisterU1);
+            pc.Chenge(userControls, clientRegister);
         }
 
         private void Btn_Order_Click(object sender, EventArgs e)
         {
             pc.Set((Button)sender, selectPanel);
-            pc.Chenge(userControls, order1);
+            pc.Chenge(userControls, order);
 
         }
 
@@ -51,14 +51,14 @@ namespace SystemDev_KY_22
 
         private void Salesmenu2_Load(object sender, EventArgs e)
         {
-            userControls = new UserControl[3] { stockList1, clientRegisterU1, order1 };
+            userControls = new UserControl[4] { stockList, clientRegister, order,clientList };
             this.WindowState = FormWindowState.Maximized;
         }
 
         private void btn_ClientList_Click(object sender, EventArgs e)
         {
-            //pc.Set((Button)sender, selectPanel);
-            //pc.Chenge(userControls, clientList1);
+            pc.Set((Button)sender, selectPanel);
+            pc.Chenge(userControls, clientList);
         }
     }
 }

@@ -14,31 +14,28 @@ namespace SystemDev_KY_22
 {
     public partial class EmpRegister : UserControl
     {
-        OleDbConnection cn = new OleDbConnection(); //コネクションオブジェクト
-        DataTable dt = new DataTable();
+        OleDbConnection cn ; //コネクションオブジェクト
+        DataTable dt;
 
         private string empid;
 
         public EmpRegister()
         {
-
-
-
             InitializeComponent();
         }
 
         private void EmpRegister_Load(object sender, EventArgs e)
         {
-            groupBox_update.Visible = false;
-            cn.ConnectionString =
-                 @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection(); //コネクションオブジェクト
+                dt = new DataTable();
+                groupBox_update.Visible = false;
+                cn.ConnectionString =
+                     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
 
-            dataload();
-
-
-
-
-
+                dataload();
+            }
         }
 
         private void textB_enameID_KeyDown(object sender, KeyEventArgs e)

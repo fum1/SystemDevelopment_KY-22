@@ -13,7 +13,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
 {
     public partial class Storing : UserControl
     {
-        OleDbConnection cn = new OleDbConnection();  //コネクションオブジェクト
+        OleDbConnection cn;  //コネクションオブジェクト
         public Storing()
         {
             InitializeComponent();
@@ -21,8 +21,13 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
         private void Storing_Load(object sender, EventArgs e)
         {
-            cn.ConnectionString =
-               @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection();
+                cn.ConnectionString =
+                   @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+
+            }
         }
 
         private void btn_register_Click(object sender, EventArgs e)

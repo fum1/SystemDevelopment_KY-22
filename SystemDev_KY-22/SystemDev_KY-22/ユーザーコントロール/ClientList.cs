@@ -13,7 +13,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
 {
     public partial class ClientList : UserControl
     {
-        OleDbConnection cn = new OleDbConnection();  //コネクションオブジェクト
+        OleDbConnection cn;  //コネクションオブジェクト
 
         public ClientList()
         {
@@ -22,10 +22,13 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
         private void ClientList2_Load(object sender, EventArgs e)
         {
-            cn.ConnectionString =
-                @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
-            dataload();
-
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection();
+                cn.ConnectionString =
+                    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+                dataload();
+            }
         }
 
         private void dataload()   //カスタム関数

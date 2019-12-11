@@ -13,17 +13,20 @@ namespace SystemDev_KY_22
 {
     public partial class Order : UserControl
     {
-        OleDbConnection cn = new OleDbConnection(); //コネクションオブジェクト
+        OleDbConnection cn; //コネクションオブジェクト
         public Order()
         {
             InitializeComponent();
         }
         private void Order_Load(object sender, EventArgs e)
         {
-            cn.ConnectionString =
-                 @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection();
+                cn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
 
-            dataload();
+                dataload();
+            }
         }
         private void dataload()//カスタム関数
         {
