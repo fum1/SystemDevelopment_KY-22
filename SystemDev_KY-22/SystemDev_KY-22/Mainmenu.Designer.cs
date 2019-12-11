@@ -39,10 +39,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.loaUnloading1 = new SystemDev_KY_22.LoaUnloading();
-            this.orderCheck2 = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
-            this.carOrder2 = new SystemDev_KY_22.CarOrder();
-            this.stockList2 = new SystemDev_KY_22.StockList();
+            this.loaUnloading = new SystemDev_KY_22.LoaUnloading();
+            this.orderCheck = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
+            this.carOrder = new SystemDev_KY_22.CarOrder();
+            this.stockList = new SystemDev_KY_22.StockList();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -83,7 +83,7 @@
             this.lB_MainTitle.Font = new System.Drawing.Font("ＭＳ 明朝", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lB_MainTitle.Location = new System.Drawing.Point(34, 38);
             this.lB_MainTitle.Name = "lB_MainTitle";
-            this.lB_MainTitle.Size = new System.Drawing.Size(345, 40);
+            this.lB_MainTitle.Size = new System.Drawing.Size(279, 33);
             this.lB_MainTitle.TabIndex = 6;
             this.lB_MainTitle.Text = "物流担当メニュー";
             this.lB_MainTitle.Click += new System.EventHandler(this.lB_MainTitle_Click);
@@ -185,51 +185,51 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.stockList2);
-            this.panel3.Controls.Add(this.loaUnloading1);
-            this.panel3.Controls.Add(this.orderCheck2);
-            this.panel3.Controls.Add(this.carOrder2);
+            this.panel3.Controls.Add(this.stockList);
+            this.panel3.Controls.Add(this.loaUnloading);
+            this.panel3.Controls.Add(this.orderCheck);
+            this.panel3.Controls.Add(this.carOrder);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(223, 108);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1042, 702);
             this.panel3.TabIndex = 8;
             // 
-            // loaUnloading1
+            // loaUnloading
             // 
-            this.loaUnloading1.BackColor = System.Drawing.Color.White;
-            this.loaUnloading1.Location = new System.Drawing.Point(161, 291);
-            this.loaUnloading1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.loaUnloading1.Name = "loaUnloading1";
-            this.loaUnloading1.Size = new System.Drawing.Size(1002, 592);
-            this.loaUnloading1.TabIndex = 3;
+            this.loaUnloading.BackColor = System.Drawing.Color.White;
+            this.loaUnloading.Location = new System.Drawing.Point(108, 439);
+            this.loaUnloading.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.loaUnloading.Name = "loaUnloading";
+            this.loaUnloading.Size = new System.Drawing.Size(1002, 592);
+            this.loaUnloading.TabIndex = 3;
             // 
-            // orderCheck2
+            // orderCheck
             // 
-            this.orderCheck2.BackColor = System.Drawing.Color.White;
-            this.orderCheck2.Location = new System.Drawing.Point(207, 234);
-            this.orderCheck2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.orderCheck2.Name = "orderCheck2";
-            this.orderCheck2.Size = new System.Drawing.Size(1389, 879);
-            this.orderCheck2.TabIndex = 1;
+            this.orderCheck.BackColor = System.Drawing.Color.White;
+            this.orderCheck.Location = new System.Drawing.Point(644, 228);
+            this.orderCheck.Margin = new System.Windows.Forms.Padding(5);
+            this.orderCheck.Name = "orderCheck";
+            this.orderCheck.Size = new System.Drawing.Size(1389, 879);
+            this.orderCheck.TabIndex = 1;
             // 
-            // carOrder2
+            // carOrder
             // 
-            this.carOrder2.BackColor = System.Drawing.Color.White;
-            this.carOrder2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.carOrder2.Location = new System.Drawing.Point(366, 203);
-            this.carOrder2.Margin = new System.Windows.Forms.Padding(5);
-            this.carOrder2.Name = "carOrder2";
-            this.carOrder2.Size = new System.Drawing.Size(1230, 735);
-            this.carOrder2.TabIndex = 0;
+            this.carOrder.BackColor = System.Drawing.Color.White;
+            this.carOrder.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.carOrder.Location = new System.Drawing.Point(422, 296);
+            this.carOrder.Margin = new System.Windows.Forms.Padding(5);
+            this.carOrder.Name = "carOrder";
+            this.carOrder.Size = new System.Drawing.Size(1230, 735);
+            this.carOrder.TabIndex = 0;
             // 
-            // stockList2
+            // stockList
             // 
-            this.stockList2.BackColor = System.Drawing.Color.White;
-            this.stockList2.Location = new System.Drawing.Point(-142, -27);
-            this.stockList2.Name = "stockList2";
-            this.stockList2.Size = new System.Drawing.Size(1042, 703);
-            this.stockList2.TabIndex = 4;
+            this.stockList.BackColor = System.Drawing.Color.White;
+            this.stockList.Location = new System.Drawing.Point(3, 545);
+            this.stockList.Name = "stockList";
+            this.stockList.Size = new System.Drawing.Size(1042, 703);
+            this.stockList.TabIndex = 5;
             // 
             // MainMenu
             // 
@@ -266,9 +266,9 @@
         private ユーザーコントロール.OrderCheck orderCheck1;
         private CarOrder carOrder1;
         private System.Windows.Forms.Button button3;
-        private LoaUnloading loaUnloading1;
-        private ユーザーコントロール.OrderCheck orderCheck2;
-        private CarOrder carOrder2;
-        private StockList stockList2;
+        private LoaUnloading loaUnloading;
+        private ユーザーコントロール.OrderCheck orderCheck;
+        private CarOrder carOrder;
+        private StockList stockList;
     }
 }

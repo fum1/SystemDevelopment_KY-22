@@ -14,8 +14,8 @@ namespace SystemDev_KY_22
 {
     public partial class CarOrder : UserControl
     {
-        OleDbConnection cn = new OleDbConnection();  //コネクションオブジェクト
-        DataTable dt = new DataTable();
+        OleDbConnection cn;  //コネクションオブジェクト
+        DataTable dt;
         private string empid;
 
 
@@ -27,9 +27,13 @@ namespace SystemDev_KY_22
 
         private void CarOrder_Load(object sender, EventArgs e)
         {
-            cn.ConnectionString =
-                @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
-
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection();  //コネクションオブジェクト
+                dt = new DataTable();
+                cn.ConnectionString =
+                    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+            }
         }
 
         private void btn_print_Click(object sender, EventArgs e)

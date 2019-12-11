@@ -36,12 +36,15 @@
             this.btn_ClientRegister = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel_Back = new System.Windows.Forms.Panel();
-            this.order1 = new SystemDev_KY_22.Order();
+            this.order = new SystemDev_KY_22.Order();
             this.clientRegisterU1 = new SystemDev_KY_22.ClientRegister();
             this.stockList1 = new SystemDev_KY_22.StockList();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.stockList = new SystemDev_KY_22.StockList();
+            this.clientRegister = new SystemDev_KY_22.ClientRegister();
+            this.clientList = new SystemDev_KY_22.ユーザーコントロール.ClientList();
             this.panel1.SuspendLayout();
             this.panel_Back.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -140,7 +143,10 @@
             // 
             // panel_Back
             // 
-            this.panel_Back.Controls.Add(this.order1);
+            this.panel_Back.Controls.Add(this.clientList);
+            this.panel_Back.Controls.Add(this.clientRegister);
+            this.panel_Back.Controls.Add(this.stockList);
+            this.panel_Back.Controls.Add(this.order);
             this.panel_Back.Controls.Add(this.clientRegisterU1);
             this.panel_Back.Controls.Add(this.stockList1);
             this.panel_Back.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -149,14 +155,14 @@
             this.panel_Back.Size = new System.Drawing.Size(1042, 703);
             this.panel_Back.TabIndex = 0;
             // 
-            // order1
+            // order
             // 
-            this.order1.BackColor = System.Drawing.Color.White;
-            this.order1.Location = new System.Drawing.Point(27, 84);
-            this.order1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
-            this.order1.Name = "order1";
-            this.order1.Size = new System.Drawing.Size(4168, 3471);
-            this.order1.TabIndex = 2;
+            this.order.BackColor = System.Drawing.Color.White;
+            this.order.Location = new System.Drawing.Point(27, 33);
+            this.order.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
+            this.order.Name = "order";
+            this.order.Size = new System.Drawing.Size(4168, 3471);
+            this.order.TabIndex = 2;
             // 
             // clientRegisterU1
             // 
@@ -192,7 +198,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(35, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 34);
+            this.label1.Size = new System.Drawing.Size(236, 27);
             this.label1.TabIndex = 5;
             this.label1.Text = "営業担当メニュー";
             // 
@@ -213,6 +219,31 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // stockList
+            // 
+            this.stockList.BackColor = System.Drawing.Color.White;
+            this.stockList.Location = new System.Drawing.Point(104, 87);
+            this.stockList.Name = "stockList";
+            this.stockList.Size = new System.Drawing.Size(1042, 703);
+            this.stockList.TabIndex = 3;
+            // 
+            // clientRegister
+            // 
+            this.clientRegister.BackColor = System.Drawing.Color.White;
+            this.clientRegister.Location = new System.Drawing.Point(197, 154);
+            this.clientRegister.Name = "clientRegister";
+            this.clientRegister.Size = new System.Drawing.Size(1314, 768);
+            this.clientRegister.TabIndex = 4;
+            // 
+            // clientList
+            // 
+            this.clientList.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clientList.Location = new System.Drawing.Point(275, 224);
+            this.clientList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.clientList.Name = "clientList";
+            this.clientList.Size = new System.Drawing.Size(1312, 683);
+            this.clientList.TabIndex = 5;
             // 
             // SalesMenu
             // 
@@ -247,9 +278,12 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private Order order1;
+        private Order order;
         private ClientRegister clientRegisterU1;
         private StockList stockList1;
         private System.Windows.Forms.Button btn_ClientList;
+        private ユーザーコントロール.ClientList clientList;
+        private ClientRegister clientRegister;
+        private StockList stockList;
     }
 }

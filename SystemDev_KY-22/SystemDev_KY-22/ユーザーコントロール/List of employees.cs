@@ -15,7 +15,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
     public partial class List_of_employees : UserControl
         
     {
-        OleDbConnection cn = new OleDbConnection();  //コネクションオブジェクト
+        OleDbConnection cn;  //コネクションオブジェクト
         public List_of_employees()
         {
             InitializeComponent();
@@ -23,11 +23,13 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
         private void List_of_employees_Load_1(object sender, EventArgs e)
         {
-            cn.ConnectionString =
-                 @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
-
-            dataload();
-            
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection();
+                cn.ConnectionString =
+                    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+                dataload();
+            } 
         }
         private void dataload()   //カスタム関数
         {

@@ -20,10 +20,13 @@ namespace SystemDev_KY_22.ユーザーコントロール
         }
         private void CarOrderHistory_Load(object sender, EventArgs e)
         {
-            cn = new OleDbConnection();
-            cn.ConnectionString =
-                @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
-            dataload();
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection();
+                cn.ConnectionString =
+                    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+                dataload();
+            }
         }
 
         private void dataload()

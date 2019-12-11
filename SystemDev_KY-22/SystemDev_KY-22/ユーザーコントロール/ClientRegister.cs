@@ -13,7 +13,7 @@ namespace SystemDev_KY_22
 {
     public partial class ClientRegister : UserControl
     {
-        OleDbConnection cn = new OleDbConnection();
+        OleDbConnection cn;
 
         private Label[] chenge_labels;
         private TextBox[] chenge_textBoxes;
@@ -24,8 +24,12 @@ namespace SystemDev_KY_22
 
         private void ClientRegister_Load(object sender, EventArgs e)
         {
-            cn.ConnectionString =
-                 @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection();
+                cn.ConnectionString =
+                    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+            }
 
             chenge_labels = new Label[6] { lbl_address, lbl_birthday, lbl_name, lbl_pos, lbl_sex, lbl_tel };
             chenge_textBoxes = new TextBox[4] { txt_address, txt_name, txt_pos, txt_tel };

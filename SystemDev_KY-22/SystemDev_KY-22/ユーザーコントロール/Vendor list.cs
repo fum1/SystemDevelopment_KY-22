@@ -13,8 +13,8 @@ namespace SystemDev_KY_22.ユーザーコントロール
 {
     public partial class Vendor_list : UserControl
     {
-        OleDbConnection cn = new OleDbConnection();  //コネクションオブジェクト
-        DataTable dt = new DataTable();
+        OleDbConnection cn;  //コネクションオブジェクト
+        DataTable dt;
 
 
         public Vendor_list()
@@ -24,11 +24,13 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
         private void Vendor_list_Load(object sender, EventArgs e)
         {
-            cn.ConnectionString =
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection();  //コネクションオブジェクト
+                dt = new DataTable();
+                cn.ConnectionString =
                  @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
-
-
-
+            }
         }
 
         private void btn_Suppliersearch_Click(object sender, EventArgs e)
