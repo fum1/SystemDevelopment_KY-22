@@ -40,12 +40,8 @@
             this.Btn_EmpRegister = new System.Windows.Forms.Button();
             this.btn_SalesList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.orderCheck2 = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
-            this.salesList2 = new SystemDev_KY_22.SalesList();
-            this.vendor_list1 = new SystemDev_KY_22.ユーザーコントロール.Vendor_list();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -211,9 +207,6 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.orderCheck2);
-            this.panel3.Controls.Add(this.salesList2);
-            this.panel3.Controls.Add(this.vendor_list1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(297, 135);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -263,7 +256,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

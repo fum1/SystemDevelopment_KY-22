@@ -95,12 +95,12 @@ namespace SystemDev_KY_22.ユーザーコントロール
             OleDbCommand cmd =
                 new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
                 "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
-                "FROM 社員マスタ WHERE 役職 = @役職 ORDER BY 役職", cn);    
+                "FROM 社員マスタ WHERE 店舗ID = @店舗ID ORDER BY 役職", cn);    
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
 
-            cmd.Parameters.AddWithValue("@役職", cmb_position.Text);   
+            cmd.Parameters.AddWithValue("@店舗ID", cmb_clerk.Text);   
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
