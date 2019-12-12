@@ -63,6 +63,12 @@
     </Compile>
     <Compile Include="Class\animator.cs" />
     <Compile Include="Class\PanelControl.cs" />
+    <Compile Include="ItemRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemRegister.Designer.cs">
+      <DependentUpon>ItemRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="ユーザーコントロール\CarOrderHistory.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRegister.resx">
+      <DependentUpon>ItemRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\CarOrderHistory.resx">
       <DependentUpon>CarOrderHistory.cs</DependentUpon>

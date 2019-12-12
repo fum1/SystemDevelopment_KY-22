@@ -62,8 +62,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
             try
             {
-                OleDbCommand cmd
-                = new OleDbCommand("SELECT 発注テーブル.発注ID, 発注テーブル.発注年月日, 発注テーブル.仕入先ID, 発注テーブル.個数, 発注テーブル.社員ID" +
+                OleDbCommand cmd = new OleDbCommand("SELECT 発注テーブル.発注ID, 発注テーブル.発注年月日, 発注テーブル.仕入先ID, 発注テーブル.個数, 発注テーブル.社員ID" +
                                    "FROM 社員マスタ INNER JOIN(仕入先マスタ INNER JOIN 発注テーブル ON 仕入先マスタ.仕入先ID = 発注テーブル.仕入先ID) ON 社員マスタ.社員ID = 発注テーブル.社員ID" +
                                    "WHERE 仕入先ID = @仕入先ID OR 商品ID = @商品ID OR 社員ID = @社員ID ORDER BY 発注ID", cn);
             }

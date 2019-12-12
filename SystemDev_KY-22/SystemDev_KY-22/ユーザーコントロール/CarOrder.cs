@@ -148,8 +148,6 @@ namespace SystemDev_KY_22
             cmd.Parameters.AddWithValue("@社員ID", txt_PersonID.Text);             //Passのデータ
             cmd.Parameters.AddWithValue("@仕入先ID", txt_supplierID.Text);             //Nameのデータ
             cmd.Parameters.AddWithValue("@個数", txt_number.Text);   //PostNumberのデータ
-           
-
             try
             {
                 cn.Open();                 //コネクションを開く
@@ -162,10 +160,7 @@ namespace SystemDev_KY_22
                 cn.Close();               //コネクションを閉じる
                 return;
             }
-
-
             MessageBox.Show("登録しました", "発注登録");
-
         }
 
         private void btn_clear_Click_1(object sender, EventArgs e)
@@ -174,7 +169,6 @@ namespace SystemDev_KY_22
             txt_supplierID.Clear();
             txt_PersonID.Clear();
             txt_number.Clear();
-           
         }
 
         private void btn_Suppliersearch_Click(object sender, EventArgs e)
@@ -192,16 +186,12 @@ namespace SystemDev_KY_22
 
             try
             {
-
                 DataRow dr = dt.Rows[0];
 
                 txt_companyname.Text = dr["仕入先会社名"].ToString();
                 txt_companytel.Text = dr["仕入先電話番号"].ToString();
-               
 
                 cn.Close();
-
-
             }
             catch (Exception ex)
             {
@@ -209,7 +199,6 @@ namespace SystemDev_KY_22
                 cn.Close();                //コネクションを閉じる
                 return;
             }
-
         }
     }
 }

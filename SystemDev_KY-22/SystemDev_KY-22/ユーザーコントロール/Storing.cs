@@ -96,5 +96,10 @@ namespace SystemDev_KY_22.ユーザーコントロール
         {
 
         }
+
+        private void Btn_itemregister_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

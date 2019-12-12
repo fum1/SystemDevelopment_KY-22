@@ -76,7 +76,7 @@
             this.radioB_Name.AutoSize = true;
             this.radioB_Name.Location = new System.Drawing.Point(107, 26);
             this.radioB_Name.Name = "radioB_Name";
-            this.radioB_Name.Size = new System.Drawing.Size(70, 24);
+            this.radioB_Name.Size = new System.Drawing.Size(83, 28);
             this.radioB_Name.TabIndex = 20;
             this.radioB_Name.TabStop = true;
             this.radioB_Name.Text = "氏名";
@@ -88,7 +88,7 @@
             this.radioB_Id.Checked = true;
             this.radioB_Id.Location = new System.Drawing.Point(13, 26);
             this.radioB_Id.Name = "radioB_Id";
-            this.radioB_Id.Size = new System.Drawing.Size(88, 24);
+            this.radioB_Id.Size = new System.Drawing.Size(105, 28);
             this.radioB_Id.TabIndex = 19;
             this.radioB_Id.TabStop = true;
             this.radioB_Id.Text = "顧客ID";
@@ -124,7 +124,7 @@
             this.txt_id.Location = new System.Drawing.Point(343, 29);
             this.txt_id.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(301, 37);
+            this.txt_id.Size = new System.Drawing.Size(301, 43);
             this.txt_id.TabIndex = 7;
             // 
             // lbl_id
@@ -133,7 +133,7 @@
             this.lbl_id.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lbl_id.Location = new System.Drawing.Point(232, 32);
             this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(105, 30);
+            this.lbl_id.Size = new System.Drawing.Size(126, 36);
             this.lbl_id.TabIndex = 0;
             this.lbl_id.Text = "顧客ID:";
             // 
@@ -144,6 +144,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(17, 0);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 21;
             this.dataGridView1.Size = new System.Drawing.Size(1278, 672);
             this.dataGridView1.TabIndex = 9;
@@ -175,10 +176,11 @@
             this.panel2.Size = new System.Drawing.Size(17, 683);
             this.panel2.TabIndex = 6;
             // 
-            // ClientList2
+            // ClientList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel4);
@@ -186,7 +188,7 @@
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "ClientList2";
+            this.Name = "ClientList";
             this.Size = new System.Drawing.Size(1312, 683);
             this.Load += new System.EventHandler(this.ClientList2_Load);
             this.panel1.ResumeLayout(false);
