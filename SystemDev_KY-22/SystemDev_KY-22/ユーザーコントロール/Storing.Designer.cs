@@ -45,6 +45,7 @@
             this.txt_num = new System.Windows.Forms.TextBox();
             this.lbl_color = new System.Windows.Forms.Label();
             this.txt_receipt = new System.Windows.Forms.TextBox();
+            this.btn_itemregister = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -207,10 +208,23 @@
             this.txt_receipt.Size = new System.Drawing.Size(315, 52);
             this.txt_receipt.TabIndex = 16;
             // 
+            // btn_itemregister
+            // 
+            this.btn_itemregister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_itemregister.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_itemregister.Location = new System.Drawing.Point(1162, 326);
+            this.btn_itemregister.Name = "btn_itemregister";
+            this.btn_itemregister.Size = new System.Drawing.Size(158, 60);
+            this.btn_itemregister.TabIndex = 17;
+            this.btn_itemregister.Text = "商品登録";
+            this.btn_itemregister.UseVisualStyleBackColor = true;
+            this.btn_itemregister.Click += new System.EventHandler(this.btn_itemregister_Click);
+            // 
             // Storing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_itemregister);
             this.Controls.Add(this.txt_receipt);
             this.Controls.Add(this.lbl_color);
             this.Controls.Add(this.txt_num);
@@ -256,5 +270,6 @@
         private System.Windows.Forms.TextBox txt_num;
         private System.Windows.Forms.Label lbl_color;
         private System.Windows.Forms.TextBox txt_receipt;
+        private System.Windows.Forms.Button btn_itemregister;
     }
 }
