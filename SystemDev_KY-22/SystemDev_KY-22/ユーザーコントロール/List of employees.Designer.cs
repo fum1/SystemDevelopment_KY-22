@@ -42,11 +42,11 @@
             this.lbl_id = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,7 +80,7 @@
             this.btn_Clear.Location = new System.Drawing.Point(172, 515);
             this.btn_Clear.Name = "btn_Clear";
             this.btn_Clear.Size = new System.Drawing.Size(165, 59);
-            this.btn_Clear.TabIndex = 20;
+            this.btn_Clear.TabIndex = 8;
             this.btn_Clear.Text = "クリア";
             this.btn_Clear.UseVisualStyleBackColor = false;
             this.btn_Clear.Click += new System.EventHandler(this.button2_Click);
@@ -94,7 +94,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(55, 51);
-            this.button1.TabIndex = 5;
+            this.button1.TabIndex = 1;
             this.button1.Text = "🔍";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -107,7 +107,7 @@
             this.cmb_clerk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_clerk.Name = "cmb_clerk";
             this.cmb_clerk.Size = new System.Drawing.Size(236, 48);
-            this.cmb_clerk.TabIndex = 18;
+            this.cmb_clerk.TabIndex = 2;
             // 
             // cmb_department
             // 
@@ -117,7 +117,8 @@
             this.cmb_department.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_department.Name = "cmb_department";
             this.cmb_department.Size = new System.Drawing.Size(236, 48);
-            this.cmb_department.TabIndex = 17;
+            this.cmb_department.TabIndex = 4;
+            this.cmb_department.SelectedIndexChanged += new System.EventHandler(this.cmb_department_SelectedIndexChanged);
             // 
             // cmb_position
             // 
@@ -127,8 +128,7 @@
             this.cmb_position.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_position.Name = "cmb_position";
             this.cmb_position.Size = new System.Drawing.Size(236, 48);
-            this.cmb_position.TabIndex = 16;
-            
+            this.cmb_position.TabIndex = 0;
             // 
             // lbl_clerk
             // 
@@ -167,7 +167,7 @@
             this.txt_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(236, 47);
-            this.txt_id.TabIndex = 11;
+            this.txt_id.TabIndex = 6;
             // 
             // lbl_id
             // 
@@ -211,6 +211,16 @@
             this.panel3.Size = new System.Drawing.Size(579, 754);
             this.panel3.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::SystemDev_KY_22.Properties.Resources.チェリー;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(35, 661);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(467, 170);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
@@ -234,7 +244,7 @@
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button3.Size = new System.Drawing.Size(55, 50);
-            this.button3.TabIndex = 5;
+            this.button3.TabIndex = 7;
             this.button3.Text = "🔍";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -247,7 +257,7 @@
             this.button2.Location = new System.Drawing.Point(387, 188);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(55, 53);
-            this.button2.TabIndex = 5;
+            this.button2.TabIndex = 3;
             this.button2.Text = "🔍";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
@@ -260,16 +270,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(557, 12);
             this.panel4.TabIndex = 4;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::SystemDev_KY_22.Properties.Resources.チェリー;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 661);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(467, 170);
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
             // 
             // List_of_employees
             // 
