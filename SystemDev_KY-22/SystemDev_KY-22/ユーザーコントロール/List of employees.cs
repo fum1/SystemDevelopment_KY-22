@@ -29,6 +29,8 @@ namespace SystemDev_KY_22.ユーザーコントロール
                 cn.ConnectionString =
                     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
                 dataload();
+
+                
             } 
         }
         private void dataload()   //カスタム関数
