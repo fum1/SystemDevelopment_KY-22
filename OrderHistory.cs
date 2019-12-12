@@ -20,7 +20,7 @@ namespace OrderHistory
 
             // タイマーの間隔(ミリ秒)
             Timer timer = new Timer(300000);
-
+            
 
             // タイマーを開始する
             timer.Start();
@@ -41,7 +41,7 @@ namespace OrderHistory
                 DataTable dt2 = new DataTable();
                 da2.Fill(dt2);
 
-                if (int.Parse(dt.Rows[dt.Rows.Count - 1][0].ToString()) > int.Parse(dt2.Rows[dt.Rows.Count - 1][1].ToString()))
+                if(int.Parse(dt.Rows[dt.Rows.Count - 1][0].ToString()) > int.Parse(dt2.Rows[dt.Rows.Count - 1][1].ToString()))
                 {
                     int load = int.Parse(dt.Rows[dt.Rows.Count - 1][0].ToString());
 
