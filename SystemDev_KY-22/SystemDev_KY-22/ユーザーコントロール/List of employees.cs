@@ -70,7 +70,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
             cmb_position.DataSource = position_dt;
             cmb_position.DisplayMember = "役職名";
-            cmb_position.ValueMember = "役職名";
+           // cmb_position.ValueMember = "役職";
 
 
             OleDbDataAdapter dep_da =
@@ -119,12 +119,12 @@ namespace SystemDev_KY_22.ユーザーコントロール
             OleDbCommand cmd =
                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
                 "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
-                "FROM 社員マスタ WHERE 社員ID = @社員ID  ORDER BY 社員ID");  
+                "FROM 社員マスタ WHERE 役職 = @役職  ORDER BY 社員ID");  
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
 
-            cmd.Parameters.AddWithValue("@社員ID", txt_id.Text);
+            cmd.Parameters.AddWithValue("@役職", cmb_position.Text);
 
 
             DataTable dt = new DataTable();
@@ -186,6 +186,9 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.AutoResizeColumns();          //列の幅の自動調整
         }
 
-        
+        private void cmb_department_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
