@@ -37,7 +37,6 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.cmb_manufacturer = new System.Windows.Forms.ComboBox();
             this.lbl_circle = new System.Windows.Forms.Label();
-            this.rtb_total = new System.Windows.Forms.RichTextBox();
             this.lbl_total = new System.Windows.Forms.Label();
             this.txt_consumptiontax = new System.Windows.Forms.TextBox();
             this.txt_amountofmoney = new System.Windows.Forms.TextBox();
@@ -49,6 +48,9 @@
             this.lbl_modelname = new System.Windows.Forms.Label();
             this.lbl_consumptiontax = new System.Windows.Forms.Label();
             this.gbx_order = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ord_Num = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.gbx_remarks = new System.Windows.Forms.GroupBox();
             this.rtb_remarks = new System.Windows.Forms.RichTextBox();
@@ -60,9 +62,7 @@
             this.lbl_employeeID = new System.Windows.Forms.Label();
             this.lbl_clientID = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.ord_Num = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txt_total = new System.Windows.Forms.TextBox();
             this.gbx_vehicle.SuspendLayout();
             this.gbx_order.SuspendLayout();
             this.gbx_remarks.SuspendLayout();
@@ -77,13 +77,13 @@
             // 
             // gbx_vehicle
             // 
+            this.gbx_vehicle.Controls.Add(this.txt_total);
             this.gbx_vehicle.Controls.Add(this.textBox2);
             this.gbx_vehicle.Controls.Add(this.textBox1);
             this.gbx_vehicle.Controls.Add(this.comboBox3);
             this.gbx_vehicle.Controls.Add(this.comboBox2);
             this.gbx_vehicle.Controls.Add(this.cmb_manufacturer);
             this.gbx_vehicle.Controls.Add(this.lbl_circle);
-            this.gbx_vehicle.Controls.Add(this.rtb_total);
             this.gbx_vehicle.Controls.Add(this.lbl_total);
             this.gbx_vehicle.Controls.Add(this.txt_consumptiontax);
             this.gbx_vehicle.Controls.Add(this.txt_amountofmoney);
@@ -131,11 +131,6 @@
             resources.ApplyResources(this.lbl_circle, "lbl_circle");
             this.lbl_circle.Name = "lbl_circle";
             // 
-            // rtb_total
-            // 
-            resources.ApplyResources(this.rtb_total, "rtb_total");
-            this.rtb_total.Name = "rtb_total";
-            // 
             // lbl_total
             // 
             resources.ApplyResources(this.lbl_total, "lbl_total");
@@ -150,6 +145,7 @@
             // 
             resources.ApplyResources(this.txt_amountofmoney, "txt_amountofmoney");
             this.txt_amountofmoney.Name = "txt_amountofmoney";
+            this.txt_amountofmoney.TextChanged += new System.EventHandler(this.txt_amountofmoney_TextChanged);
             // 
             // lbl_carname
             // 
@@ -203,6 +199,21 @@
             resources.ApplyResources(this.gbx_order, "gbx_order");
             this.gbx_order.Name = "gbx_order";
             this.gbx_order.TabStop = false;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
+            // ord_Num
+            // 
+            resources.ApplyResources(this.ord_Num, "ord_Num");
+            this.ord_Num.Name = "ord_Num";
             // 
             // comboBox1
             // 
@@ -265,20 +276,10 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ord_Num
+            // txt_total
             // 
-            resources.ApplyResources(this.ord_Num, "ord_Num");
-            this.ord_Num.Name = "ord_Num";
-            // 
-            // textBox3
-            // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.txt_total, "txt_total");
+            this.txt_total.Name = "txt_total";
             // 
             // Order
             // 
@@ -304,7 +305,6 @@
         private System.Windows.Forms.Button btn_decision;
         private System.Windows.Forms.GroupBox gbx_vehicle;
         private System.Windows.Forms.Label lbl_circle;
-        private System.Windows.Forms.RichTextBox rtb_total;
         private System.Windows.Forms.Label lbl_total;
         private System.Windows.Forms.TextBox txt_consumptiontax;
         private System.Windows.Forms.TextBox txt_amountofmoney;
@@ -335,5 +335,6 @@
         private System.Windows.Forms.TextBox ord_Num;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_total;
     }
 }

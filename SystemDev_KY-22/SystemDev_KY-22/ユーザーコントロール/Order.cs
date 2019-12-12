@@ -89,7 +89,13 @@ namespace SystemDev_KY_22
             }
              
         }
+
+        private void txt_amountofmoney_TextChanged(object sender, EventArgs e)
+        {
+            txt_consumptiontax.Text = (int.Parse(txt_amountofmoney.Text) * 0.10).ToString();
+            lbl_total.Text = (int.Parse(txt_amountofmoney.Text) * 1.10).ToString();
         }
+    }
     }
             
     
