@@ -62,72 +62,25 @@ namespace SystemDev_KY_22
             ppd.ShowDialog();
         }
 
-        /* private void btn_Check_Click(object sender, EventArgs e)
-         {
-             //表示する文字列
-             string print_lblsupplier = lbl_supplier.Text;
-             string print_lblPerson = lbl_Person.Text;
-             string print_lblorderdate = lbl_orderdate.Text;
-             string print_lblproductname = lbl_productname.Text;
-             string print_lblmodel = lbl_model.Text;
-             string print_lblcolor = lbl_color.Text;
-             string print_lbloption = lbl_option.Text;
-             string print_cmbsupplier = cmb_supplier.Text;
-             string print_cmbPerson = txt_Person.Text;
-             string print_cmborderdate = dtp_admissionday.Text;
-             string print_cmbproductname = txt_productname.Text;
-             string print_cmbmodel = txt_model.Text;
-             string print_cmbcolor = txt_color.Text;
-             string print_cmboption = txt_option.Text;
-
-             Bitmap canvas = new Bitmap(pictureBox.Width, pictureBox.Height);
-             //ImageオブジェクトのGraphicsオブジェクトを作成する
-             Graphics g = Graphics.FromImage(canvas);
-
-             Font fnt = new Font("HGP明朝E", 20);
-             StringFormat sf = new StringFormat();
-             //文字列を描画するときの大きさを計測する
-             SizeF stringSize = g.MeasureString(print_lblsupplier, fnt, 500, sf);
-
-             //文字列を描画する
-
-             g.DrawString(print_lblsupplier + "     " + print_cmbsupplier, fnt, Brushes.Black, 0, 0, sf);
-             g.DrawString(print_lblPerson + "     " + print_cmbPerson, fnt, Brushes.Black, 0, 35, sf);
-             g.DrawString(print_lblorderdate + "     " + print_cmborderdate, fnt, Brushes.Black, 0, 70, sf);
-             g.DrawString(print_lblproductname + "     " + print_cmbproductname, fnt, Brushes.Black, 0, 105, sf);
-             g.DrawString(print_lblmodel + "     " + print_cmbmodel, fnt, Brushes.Black, 0, 140, sf);
-             g.DrawString(print_lblcolor + "           " + print_cmbcolor, fnt, Brushes.Black, 0, 175, sf);
-             g.DrawString(print_lbloption + " " + print_cmboption, fnt, Brushes.Black, 0, 210, sf);
-
-
-
-             //リソースを解放する
-             fnt.Dispose();
-             sf.Dispose();
-             g.Dispose();
-
-             //PictureBox1に表示する
-             pictureBox.Image = canvas;
-         }*/
         private void printDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
             //表示する文字列
             string print_lblorderID = lbl_orderID.Text;
             string print_lblsupplier = lbl_supplierID.Text;
+            string print_lblcmpanyname = lbl_companyname.Text;
+            string print_lblcompanytel = lbl_companytel.Text;
             string print_lblPerson = lbl_PersonID.Text;
             string print_lblorderdate = lbl_orderdate.Text;
-            string print_lblproductname = lbl_productname.Text;
-            string print_lblmodel = lbl_model.Text;
-            string print_lblcolor = lbl_color.Text;
-            string print_lbloption = lbl_option.Text;
+            string print_lblnumber = lbl_number.Text;
+          
             string print_txtorderID = txt_orderID.Text;
             string print_txtsupplier = txt_supplierID.Text;
+            string print_txtcompanyname = txt_companyname.Text;
+            string print_txtcompanytel = txt_companytel.Text;
             string print_txtPerson = txt_PersonID.Text;
             string print_cmborderdate = dtp_admissionday.Text;
-            string print_cmbproductname = txt_productname.Text;
-            string print_cmbmodel = txt_model.Text;
-            string print_cmbcolor = txt_color.Text;
-            string print_cmboption = txt_option.Text;
+            string print_txtnumber = txt_number.Text;
+           
 
             /*Bitmap canvas = new Bitmap(pictureBox.Width, pictureBox.Height);
             //ImageオブジェクトのGraphicsオブジェクトを作成する
@@ -150,14 +103,14 @@ namespace SystemDev_KY_22
             //文字列を描画する
             g.DrawString(print_lblorderID + "        " + print_txtorderID, a, Brushes.Black, 110, 200);
             g.DrawString(print_lblsupplier + "     " + print_txtsupplier, a, Brushes.Black, 110, 300);
-            g.DrawString(print_lblPerson + "        " + print_txtPerson, a, Brushes.Black, 110, 400);
-            g.DrawString(print_lblorderdate + "  " + print_cmborderdate, a, Brushes.Black, 110, 500);
-            g.DrawString(print_lblproductname + "        " + print_cmbproductname, a, Brushes.Black, 110, 600);
-            g.DrawString(print_lblmodel + "        " + print_cmbmodel, a, Brushes.Black, 110, 700);
-            g.DrawString(print_lblcolor + "              " + print_cmbcolor, a, Brushes.Black, 110, 800);
-            g.DrawString(print_lbloption + "    " + print_cmboption, a, Brushes.Black, 110, 900);
+            g.DrawString(print_lblPerson + "        " + print_txtPerson, a, Brushes.Black, 110, 600);
+            g.DrawString(print_lblorderdate + "  " + print_cmborderdate, a, Brushes.Black, 110, 700);
+            g.DrawString(print_lblnumber + " 　　　　 " + print_txtnumber, a, Brushes.Black, 110, 800);
 
+            g.DrawString(print_lblcmpanyname + "    " + print_txtcompanyname, a, Brushes.Black, 130, 400);
+            g.DrawString(print_lblcompanytel + " " + print_txtcompanytel, a, Brushes.Black, 130, 500);
 
+            
 
             /* //リソースを解放する
              fnt.Dispose();
@@ -177,10 +130,8 @@ namespace SystemDev_KY_22
             txt_supplierID.ResetText();
             txt_PersonID.ResetText();
             dtp_admissionday.ResetText();
-            txt_productname.ResetText();
-            txt_model.ResetText();
-            txt_color.ResetText();
-            txt_option.ResetText();
+            txt_number.ResetText();
+            
 
 
         }
@@ -188,18 +139,16 @@ namespace SystemDev_KY_22
         private void btn_order_Click(object sender, EventArgs e)
         {
             OleDbCommand cmd =
-                new OleDbCommand("INSERT INTO 発注テーブル (発注ID,発注年月日, 社員ID, 仕入先ID, 商品名,モデル,色,オプション) " +
-                "VALUES (@発注ID, @発注年月日, @社員ID, @仕入先ID, @商品名,@モデル,@色,@オプション)", cn);
+                new OleDbCommand("INSERT INTO 発注テーブル (発注ID,発注年月日, 社員ID, 仕入先ID, 個数) " +
+                "VALUES (@発注ID, @発注年月日, @社員ID, @仕入先ID, @個数)", cn);
             //DBの列名に、PassWord (Microsoft Jet 4.0 の予約語)は使用できない
             //@パラメータが出てくる順番に設定する
             cmd.Parameters.AddWithValue("@発注ID", txt_orderID.Text);
             cmd.Parameters.AddWithValue("@発注年月日", dtp_admissionday.Text);                 //IDのデータ
             cmd.Parameters.AddWithValue("@社員ID", txt_PersonID.Text);             //Passのデータ
             cmd.Parameters.AddWithValue("@仕入先ID", txt_supplierID.Text);             //Nameのデータ
-            cmd.Parameters.AddWithValue("@商品名", txt_productname.Text);   //PostNumberのデータ
-            cmd.Parameters.AddWithValue("@モデル", txt_model.Text);      //Addressのデータ
-            cmd.Parameters.AddWithValue("@色", txt_color.Text);
-            cmd.Parameters.AddWithValue("@オプション", txt_option.Text);
+            cmd.Parameters.AddWithValue("@個数", txt_number.Text);   //PostNumberのデータ
+           
 
             try
             {
@@ -224,10 +173,8 @@ namespace SystemDev_KY_22
             txt_orderID.Clear();
             txt_supplierID.Clear();
             txt_PersonID.Clear();
-            txt_productname.Clear();
-            txt_model.Clear();
-            txt_color.Clear();
-            txt_option.Clear();
+            txt_number.Clear();
+           
         }
 
         private void btn_Suppliersearch_Click(object sender, EventArgs e)
@@ -248,8 +195,8 @@ namespace SystemDev_KY_22
 
                 DataRow dr = dt.Rows[0];
 
-                txt_suppliername.Text = dr["仕入先会社名"].ToString();
-                txt_suppliertel.Text = dr["仕入先電話番号"].ToString();
+                txt_companyname.Text = dr["仕入先会社名"].ToString();
+                txt_companytel.Text = dr["仕入先電話番号"].ToString();
                
 
                 cn.Close();
