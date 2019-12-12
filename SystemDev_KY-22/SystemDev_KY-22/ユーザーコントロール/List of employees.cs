@@ -33,11 +33,13 @@ namespace SystemDev_KY_22.ユーザーコントロール
         }
         private void dataload()   //カスタム関数
         {
-            
+
+            //OleDbDataAdapter da =
+            //    new OleDbDataAdapter("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
+            //    "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+            //    "FROM 社員マスタ ORDER BY 社員ID", cn);
             OleDbDataAdapter da =
-                new OleDbDataAdapter("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
-                "FROM 社員マスタ ORDER BY 社員ID", cn);
+                new OleDbDataAdapter("SELECT * FROM 社員マスタ ORDER BY 社員ID", cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
 

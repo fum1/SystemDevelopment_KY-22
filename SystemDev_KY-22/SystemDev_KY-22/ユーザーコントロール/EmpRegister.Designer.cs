@@ -81,6 +81,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.btn_Updates = new System.Windows.Forms.Button();
             this.groupBox_login.SuspendLayout();
             this.groupBox_information.SuspendLayout();
             this.groupBox_update.SuspendLayout();
@@ -411,6 +412,7 @@
             // 
             this.groupBox_update.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox_update.Controls.Add(this.btn_Updates);
             this.groupBox_update.Controls.Add(this.lbl_password1);
             this.groupBox_update.Controls.Add(this.checkB_Delete);
             this.groupBox_update.Controls.Add(this.label3);
@@ -434,7 +436,7 @@
             this.groupBox_update.Controls.Add(this.txt_name1);
             this.groupBox_update.Location = new System.Drawing.Point(5, 76);
             this.groupBox_update.Name = "groupBox_update";
-            this.groupBox_update.Size = new System.Drawing.Size(638, 609);
+            this.groupBox_update.Size = new System.Drawing.Size(638, 626);
             this.groupBox_update.TabIndex = 32;
             this.groupBox_update.TabStop = false;
             // 
@@ -772,6 +774,22 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // btn_Updates
+            // 
+            this.btn_Updates.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Updates.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Updates.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Updates.Font = new System.Drawing.Font("MS UI Gothic", 19.8F);
+            this.btn_Updates.Location = new System.Drawing.Point(172, 467);
+            this.btn_Updates.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Updates.Name = "btn_Updates";
+            this.btn_Updates.Size = new System.Drawing.Size(296, 59);
+            this.btn_Updates.TabIndex = 45;
+            this.btn_Updates.Text = "登録";
+            this.btn_Updates.UseVisualStyleBackColor = false;
+            this.btn_Updates.Click += new System.EventHandler(this.btn_Updates_Click);
+            // 
             // EmpRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -848,5 +866,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkB_Delete;
         private System.Windows.Forms.Label lbl_password1;
+        private System.Windows.Forms.Button btn_Updates;
     }
 }
