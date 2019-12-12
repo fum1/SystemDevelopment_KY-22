@@ -39,10 +39,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.stockList = new SystemDev_KY_22.StockList();
             this.loaUnloading = new SystemDev_KY_22.LoaUnloading();
             this.orderCheck = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
             this.carOrder = new SystemDev_KY_22.CarOrder();
-            this.stockList = new SystemDev_KY_22.StockList();
+            this.btn_storing = new System.Windows.Forms.Button();
+            this.storing1 = new SystemDev_KY_22.ユーザーコントロール.Storing();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -83,7 +85,7 @@
             this.lB_MainTitle.Font = new System.Drawing.Font("ＭＳ 明朝", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lB_MainTitle.Location = new System.Drawing.Point(34, 38);
             this.lB_MainTitle.Name = "lB_MainTitle";
-            this.lB_MainTitle.Size = new System.Drawing.Size(279, 33);
+            this.lB_MainTitle.Size = new System.Drawing.Size(345, 40);
             this.lB_MainTitle.TabIndex = 6;
             this.lB_MainTitle.Text = "物流担当メニュー";
             this.lB_MainTitle.Click += new System.EventHandler(this.lB_MainTitle_Click);
@@ -91,6 +93,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.btn_storing);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.selectPanel);
             this.panel2.Controls.Add(this.button2);
@@ -185,6 +188,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.storing1);
             this.panel3.Controls.Add(this.stockList);
             this.panel3.Controls.Add(this.loaUnloading);
             this.panel3.Controls.Add(this.orderCheck);
@@ -194,6 +198,14 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1042, 702);
             this.panel3.TabIndex = 8;
+            // 
+            // stockList
+            // 
+            this.stockList.BackColor = System.Drawing.Color.White;
+            this.stockList.Location = new System.Drawing.Point(3, 545);
+            this.stockList.Name = "stockList";
+            this.stockList.Size = new System.Drawing.Size(1042, 703);
+            this.stockList.TabIndex = 5;
             // 
             // loaUnloading
             // 
@@ -208,7 +220,7 @@
             // 
             this.orderCheck.BackColor = System.Drawing.Color.White;
             this.orderCheck.Location = new System.Drawing.Point(644, 228);
-            this.orderCheck.Margin = new System.Windows.Forms.Padding(5);
+            this.orderCheck.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.orderCheck.Name = "orderCheck";
             this.orderCheck.Size = new System.Drawing.Size(1389, 879);
             this.orderCheck.TabIndex = 1;
@@ -223,13 +235,30 @@
             this.carOrder.Size = new System.Drawing.Size(1230, 735);
             this.carOrder.TabIndex = 0;
             // 
-            // stockList
+            // btn_storing
             // 
-            this.stockList.BackColor = System.Drawing.Color.White;
-            this.stockList.Location = new System.Drawing.Point(3, 545);
-            this.stockList.Name = "stockList";
-            this.stockList.Size = new System.Drawing.Size(1042, 703);
-            this.stockList.TabIndex = 5;
+            this.btn_storing.BackColor = System.Drawing.Color.Transparent;
+            this.btn_storing.FlatAppearance.BorderSize = 0;
+            this.btn_storing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_storing.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_storing.ForeColor = System.Drawing.Color.Black;
+            this.btn_storing.Image = ((System.Drawing.Image)(resources.GetObject("btn_storing.Image")));
+            this.btn_storing.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_storing.Location = new System.Drawing.Point(12, 596);
+            this.btn_storing.Name = "btn_storing";
+            this.btn_storing.Size = new System.Drawing.Size(75, 94);
+            this.btn_storing.TabIndex = 7;
+            this.btn_storing.Text = "入庫登録";
+            this.btn_storing.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_storing.UseVisualStyleBackColor = false;
+            this.btn_storing.Click += new System.EventHandler(this.btn_storing_Click);
+            // 
+            // storing1
+            // 
+            this.storing1.Location = new System.Drawing.Point(27, 49);
+            this.storing1.Name = "storing1";
+            this.storing1.Size = new System.Drawing.Size(1747, 929);
+            this.storing1.TabIndex = 6;
             // 
             // MainMenu
             // 
@@ -270,5 +299,7 @@
         private ユーザーコントロール.OrderCheck orderCheck;
         private CarOrder carOrder;
         private StockList stockList;
+        private System.Windows.Forms.Button btn_storing;
+        private ユーザーコントロール.Storing storing1;
     }
 }
