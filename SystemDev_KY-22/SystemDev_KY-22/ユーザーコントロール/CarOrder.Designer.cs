@@ -38,11 +38,7 @@
             this.btn_order = new System.Windows.Forms.Button();
             this.lbl_number = new System.Windows.Forms.Label();
             this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.btn_print = new System.Windows.Forms.Button();
             this.printDocument = new System.Drawing.Printing.PrintDocument();
-            this.btn_preview = new System.Windows.Forms.Button();
-            this.lbl_orderID = new System.Windows.Forms.Label();
-            this.txt_orderID = new System.Windows.Forms.TextBox();
             this.txt_PersonID = new System.Windows.Forms.TextBox();
             this.printDialog = new System.Windows.Forms.PrintDialog();
             this.txt_supplierID = new System.Windows.Forms.TextBox();
@@ -165,54 +161,9 @@
             this.pictureBox.TabIndex = 38;
             this.pictureBox.TabStop = false;
             // 
-            // btn_print
-            // 
-            this.btn_print.BackColor = System.Drawing.Color.Transparent;
-            this.btn_print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_print.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_print.Location = new System.Drawing.Point(352, 629);
-            this.btn_print.Name = "btn_print";
-            this.btn_print.Size = new System.Drawing.Size(172, 56);
-            this.btn_print.TabIndex = 10;
-            this.btn_print.Text = "印刷";
-            this.btn_print.UseVisualStyleBackColor = false;
-            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
-            // 
             // printDocument
             // 
             this.printDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument_PrintPage);
-            // 
-            // btn_preview
-            // 
-            this.btn_preview.BackColor = System.Drawing.Color.Transparent;
-            this.btn_preview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_preview.Font = new System.Drawing.Font("メイリオ", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_preview.Location = new System.Drawing.Point(174, 629);
-            this.btn_preview.Name = "btn_preview";
-            this.btn_preview.Size = new System.Drawing.Size(172, 56);
-            this.btn_preview.TabIndex = 9;
-            this.btn_preview.Text = "プレビュー";
-            this.btn_preview.UseVisualStyleBackColor = false;
-            this.btn_preview.Click += new System.EventHandler(this.btn_preview_Click);
-            // 
-            // lbl_orderID
-            // 
-            this.lbl_orderID.AutoSize = true;
-            this.lbl_orderID.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_orderID.Location = new System.Drawing.Point(42, 29);
-            this.lbl_orderID.Name = "lbl_orderID";
-            this.lbl_orderID.Size = new System.Drawing.Size(144, 57);
-            this.lbl_orderID.TabIndex = 42;
-            this.lbl_orderID.Text = "発注ID";
-            // 
-            // txt_orderID
-            // 
-            this.txt_orderID.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_orderID.Location = new System.Drawing.Point(291, 29);
-            this.txt_orderID.Margin = new System.Windows.Forms.Padding(5);
-            this.txt_orderID.Name = "txt_orderID";
-            this.txt_orderID.Size = new System.Drawing.Size(233, 42);
-            this.txt_orderID.TabIndex = 0;
             // 
             // txt_PersonID
             // 
@@ -304,10 +255,6 @@
             this.Controls.Add(this.txt_companyname);
             this.Controls.Add(this.txt_supplierID);
             this.Controls.Add(this.txt_PersonID);
-            this.Controls.Add(this.txt_orderID);
-            this.Controls.Add(this.lbl_orderID);
-            this.Controls.Add(this.btn_preview);
-            this.Controls.Add(this.btn_print);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.lbl_number);
             this.Controls.Add(this.btn_order);
@@ -341,11 +288,7 @@
         private System.Windows.Forms.Button btn_order;
         private System.Windows.Forms.Label lbl_number;
         private System.Windows.Forms.PictureBox pictureBox;
-        private System.Windows.Forms.Button btn_print;
         private System.Drawing.Printing.PrintDocument printDocument;
-        private System.Windows.Forms.Button btn_preview;
-        private System.Windows.Forms.Label lbl_orderID;
-        private System.Windows.Forms.TextBox txt_orderID;
         private System.Windows.Forms.TextBox txt_PersonID;
         private System.Windows.Forms.PrintDialog printDialog;
         private System.Windows.Forms.TextBox txt_supplierID;
