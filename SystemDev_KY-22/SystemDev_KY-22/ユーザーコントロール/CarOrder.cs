@@ -16,7 +16,9 @@ namespace SystemDev_KY_22
     {
         OleDbConnection cn;  //コネクションオブジェクト
         DataTable dt;
+        
         private string empid;
+        private int orderid;
 
 
         public CarOrder()
@@ -38,16 +40,16 @@ namespace SystemDev_KY_22
 
         private void btn_print_Click(object sender, EventArgs e)
         {
-            DialogResult dr = printDialog.ShowDialog();
+            /*DialogResult dr = printDialog.ShowDialog();
             printDocument.PrintPage += new PrintPageEventHandler(printDocument_PrintPage);
-            printDocument.Print();
+            printDocument.Print();*/
         }
 
 
 
         private void btn_preview_Click(object sender, EventArgs e)
         {
-            //PrintDocumentオブジェクトの作成
+            /*//PrintDocumentオブジェクトの作成
             System.Drawing.Printing.PrintDocument po =
                 new System.Drawing.Printing.PrintDocument();
             //PrintPageイベントハンドラの追加
@@ -59,13 +61,12 @@ namespace SystemDev_KY_22
             //プレビューするPrintDocumentを設定
             ppd.Document = po;
             //印刷プレビューダイアログを表示する
-            ppd.ShowDialog();
+            ppd.ShowDialog();*/
         }
 
         private void printDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
             //表示する文字列
-            string print_lblorderID = lbl_orderID.Text;
             string print_lblsupplier = lbl_supplierID.Text;
             string print_lblcmpanyname = lbl_companyname.Text;
             string print_lblcompanytel = lbl_companytel.Text;
@@ -73,7 +74,6 @@ namespace SystemDev_KY_22
             string print_lblorderdate = lbl_orderdate.Text;
             string print_lblnumber = lbl_number.Text;
           
-            string print_txtorderID = txt_orderID.Text;
             string print_txtsupplier = txt_supplierID.Text;
             string print_txtcompanyname = txt_companyname.Text;
             string print_txtcompanytel = txt_companytel.Text;
@@ -101,7 +101,7 @@ namespace SystemDev_KY_22
 
 
             //文字列を描画する
-            g.DrawString(print_lblorderID + "        " + print_txtorderID, a, Brushes.Black, 110, 200);
+            g.DrawString("発注ID" + "        " + orderid, a, Brushes.Black, 110, 200);
             g.DrawString(print_lblsupplier + "     " + print_txtsupplier, a, Brushes.Black, 110, 300);
             g.DrawString(print_lblPerson + "        " + print_txtPerson, a, Brushes.Black, 110, 600);
             g.DrawString(print_lblorderdate + "  " + print_cmborderdate, a, Brushes.Black, 110, 700);
@@ -126,7 +126,6 @@ namespace SystemDev_KY_22
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-            txt_orderID.ResetText();
             txt_supplierID.ResetText();
             txt_PersonID.ResetText();
             dtp_admissionday.ResetText();
@@ -138,12 +137,22 @@ namespace SystemDev_KY_22
 
         private void btn_order_Click(object sender, EventArgs e)
         {
+            string queryString = "SELECT 発注ID FROM 発注テーブル ORDER BY 発注ID DESC";//連番コードここから
+            OleDbDataAdapter da = new OleDbDataAdapter(queryString, cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            DataRow dr = dt.Rows[0];
+
+            orderid = int.Parse(dr["発注ID"].ToString());
+            orderid += 1;　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//ここまで
+
             OleDbCommand cmd =
                 new OleDbCommand("INSERT INTO 発注テーブル (発注ID,発注年月日, 社員ID, 仕入先ID, 個数) " +
                 "VALUES (@発注ID, @発注年月日, @社員ID, @仕入先ID, @個数)", cn);
             //DBの列名に、PassWord (Microsoft Jet 4.0 の予約語)は使用できない
             //@パラメータが出てくる順番に設定する
-            cmd.Parameters.AddWithValue("@発注ID", txt_orderID.Text);
+            cmd.Parameters.AddWithValue("@発注ID", orderid.ToString());
             cmd.Parameters.AddWithValue("@発注年月日", dtp_admissionday.Text);                 //IDのデータ
             cmd.Parameters.AddWithValue("@社員ID", txt_PersonID.Text);             //Passのデータ
             cmd.Parameters.AddWithValue("@仕入先ID", txt_supplierID.Text);             //Nameのデータ
@@ -161,11 +170,51 @@ namespace SystemDev_KY_22
                 return;
             }
             MessageBox.Show("登録しました", "発注登録");
+
+            //PrintDocumentオブジェクトの作成
+            System.Drawing.Printing.PrintDocument po =
+                new System.Drawing.Printing.PrintDocument();
+            //PrintPageイベントハンドラの追加
+            po.PrintPage +=
+                new System.Drawing.Printing.PrintPageEventHandler(printDocument_PrintPage);
+
+            ///PrintPreviewDialogオブジェクトの作成
+            PrintPreviewDialog ppd = new PrintPreviewDialog();
+            //プレビューするPrintDocumentを設定
+            ppd.Document = po;
+
+
+            ppd.StartPosition = FormStartPosition.CenterScreen;
+            ppd.PrintPreviewControl.Zoom = 1.5;
+            ppd.Width = 1200;
+            ppd.Height = 800;
+
+
+            //印刷プレビューダイアログを表示する
+            ppd.ShowDialog();
+
+            if (MessageBox.Show("これを印刷しますか？", "発注", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                PrintDialog di = new PrintDialog();
+                printDocument.PrintPage += new PrintPageEventHandler(printDocument_PrintPage);
+                if (di.ShowDialog() == DialogResult.OK)
+                {
+
+                    printDocument.Print();
+                }
+            }
+            else
+            {
+                MessageBox.Show("印刷せず終了します");
+            }
+
+
+
+
         }
 
         private void btn_clear_Click_1(object sender, EventArgs e)
         {
-            txt_orderID.Clear();
             txt_supplierID.Clear();
             txt_PersonID.Clear();
             txt_number.Clear();
@@ -199,6 +248,10 @@ namespace SystemDev_KY_22
                 cn.Close();                //コネクションを閉じる
                 return;
             }
+        }
+
+        private void txt_orderID_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }
