@@ -14,6 +14,9 @@ namespace SystemDev_KY_22
     public partial class Order : UserControl
     {
         OleDbConnection cn; //コネクションオブジェクト
+        DataTable dt;
+        private int orederid;
+
         public Order()
         {
             InitializeComponent();
@@ -40,24 +43,24 @@ namespace SystemDev_KY_22
             comboBox1.ValueMember = "店舗ID";
 
 
-            OleDbDataAdapter cmb_manu_da =
-                new OleDbDataAdapter("SELECT メーカー FROM メーカーマスタ", cn);
-            DataTable manufacturer_dt = new DataTable();
-            cmb_manu_da.Fill(manufacturer_dt);
+            //OleDbDataAdapter cmb_manu_da =
+            //    new OleDbDataAdapter("SELECT メーカー FROM メーカーマスタ", cn);
+            //DataTable manufacturer_dt = new DataTable();
+            //cmb_manu_da.Fill(manufacturer_dt);
 
-            cmb_manufacturer.DataSource = manufacturer_dt;
-            cmb_manufacturer.DisplayMember = "メーカー";
-            cmb_manufacturer.ValueMember = "メーカー";
+            //cmb_manufacturer.DataSource = manufacturer_dt;
+            //cmb_manufacturer.DisplayMember = "メーカー";
+            //cmb_manufacturer.ValueMember = "メーカー";
 
 
-            OleDbDataAdapter cmb2_da =
-                new OleDbDataAdapter("SELECT 車種,安全在庫数 FROM 車種マスタ", cn);
-            DataTable cmb2_dt = new DataTable();
-            cmb2_da.Fill(cmb2_dt);
+            //OleDbDataAdapter cmb2_da =
+            //    new OleDbDataAdapter("SELECT 車種,安全在庫数 FROM 車種マスタ", cn);
+            //DataTable cmb2_dt = new DataTable();
+            //cmb2_da.Fill(cmb2_dt);
 
-            comboBox2.DataSource = cmb2_dt;
-            comboBox2.DisplayMember = "車種";
-            comboBox2.ValueMember = "車種";
+            //comboBox2.DataSource = cmb2_dt;
+            //comboBox2.DisplayMember = "車種";
+            //comboBox2.ValueMember = "車種";
 
             //OleDbDataAdapter txt_money_da =
             //    new OleDbDataAdapter("SELECT 商品ID,商品名,定価,車種,メーカー,仕入れ先ID FROM 商品マスタ", cn);
@@ -83,6 +86,7 @@ namespace SystemDev_KY_22
             txt_consumptiontax.Clear();
             txt_employeeID.Clear();
             txt_clientID.Clear();
+            txt_amountofmoney.Clear();
 
 
             dataload();
@@ -101,37 +105,78 @@ namespace SystemDev_KY_22
             cmd.Parameters.AddWithValue("@社員ID", txt_employeeID.Text);
             cmd.Parameters.AddWithValue("@顧客ID", comboBox1.Text);
             cmd.Parameters.AddWithValue("@数量", textBox3.Text);
-            
-            
-            
 
-           
-             
+            MessageBox.Show("登録しますか",
+                            "登録",
+                             MessageBoxButtons.OK,
+                             MessageBoxIcon.Error);
+            //string queryString = "SELECT 注文ID FROM 注文テーブル ORDER BY 注文ID DESC";
+            //OleDbDataAdapter da = new OleDbDataAdapter(queryString,cn);
+            //DataTable dt = new DataTable();
+
+            //DataRow dr = dt.Rows[0];
+
+            //da.Fill(dt);
+            //orederid = int.Parse(dr["注文ID"].ToString());
+            //orederid += 1;
+
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
             OleDbCommand cmd =
-              new OleDbCommand("SELECT 商品ID , 商品名 , 定価 , 車種 , メーカー , 仕入れ先ID " +
-              "FROM 商品マスタ WHERE 商品ID = @商品ID");
+              new OleDbCommand("SELECT 商品詳細テーブル.商品詳細ID, 商品マスタ.[メーカー], 商品マスタ.車種, 商品マスタ.商品名, 商品詳細テーブル.色, 商品詳細テーブル.車両状態, 商品詳細テーブル.実売価格, 商品詳細テーブル.[オプション] " +
+              "FROM 商品マスタ INNER JOIN 商品詳細テーブル ON 商品マスタ.商品ID = 商品詳細テーブル.商品ID WHERE 商品詳細テーブル.商品詳細ID = @商品詳細ID");
+
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
+            cmd.Parameters.AddWithValue("@商品詳細ID", txt_itemid.Text);
             da.SelectCommand = cmd;
 
-            cmd.Parameters.AddWithValue("@メーカー", cmb_manufacturer.Text);
-            cmd.Parameters.AddWithValue("@車種", comboBox2.Text);
-            cmd.Parameters.AddWithValue("@定価", txt_amountofmoney.Text);
-
-            DataTable dt = new DataTable();
             da.Fill(dt);
-        }
-        private void txt_amountofmoney_TextChanged(object sender, EventArgs e)
-        {
-            txt_consumptiontax.Text = (int.Parse(txt_amountofmoney.Text) * 0.10).ToString();
-            txt_total.Text = (int.Parse(txt_amountofmoney.Text) * 1.10).ToString();
-        }
+            try
+            {
+                cn.Open();
+
+                DataTable dt = new DataTable();
+                try
+                {
+                    da.Fill(dt);
+                    DataRow dr = dt.Rows[0];
+                    cmb_manufacturer.Text = dr["メーカー"].ToString();
+                    cn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                    cn.Close();                //コネクションを閉じる
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("登録できません。"+ ex.ToString());
+                cn.Close();                //コネクションを閉じる
+                return;
+            }
+
+         }
+
 
         
+
+
         }
+        //private void txt_amountofmoney_TextChanged(object sender, EventArgs e)
+        //{
+        //    txt_consumptiontax.Text = (int.Parse(txt_amountofmoney.Text) * 0.10).ToString();
+        //    txt_total.Text = (int.Parse(txt_amountofmoney.Text) * 1.10).ToString();
+        //}
+
+        //private void textBox4_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
     }
     
             
