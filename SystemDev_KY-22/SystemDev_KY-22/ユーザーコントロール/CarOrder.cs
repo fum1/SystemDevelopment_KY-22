@@ -130,7 +130,7 @@ namespace SystemDev_KY_22
             txt_PersonID.ResetText();
             dtp_admissionday.ResetText();
             txt_number.ResetText();
-            
+
 
 
         }
