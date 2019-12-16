@@ -33,18 +33,18 @@
             this.button4 = new System.Windows.Forms.Button();
             this.lB_MainTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_storing = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.selectPanel = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.storing1 = new SystemDev_KY_22.ユーザーコントロール.Storing();
             this.stockList = new SystemDev_KY_22.StockList();
             this.loaUnloading = new SystemDev_KY_22.LoaUnloading();
             this.orderCheck = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
             this.carOrder = new SystemDev_KY_22.CarOrder();
-            this.btn_storing = new System.Windows.Forms.Button();
-            this.storing1 = new SystemDev_KY_22.ユーザーコントロール.Storing();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -85,7 +85,7 @@
             this.lB_MainTitle.Font = new System.Drawing.Font("ＭＳ 明朝", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lB_MainTitle.Location = new System.Drawing.Point(34, 38);
             this.lB_MainTitle.Name = "lB_MainTitle";
-            this.lB_MainTitle.Size = new System.Drawing.Size(345, 40);
+            this.lB_MainTitle.Size = new System.Drawing.Size(279, 33);
             this.lB_MainTitle.TabIndex = 6;
             this.lB_MainTitle.Text = "物流担当メニュー";
             this.lB_MainTitle.Click += new System.EventHandler(this.lB_MainTitle_Click);
@@ -105,6 +105,24 @@
             this.panel2.Size = new System.Drawing.Size(223, 702);
             this.panel2.TabIndex = 8;
             // 
+            // btn_storing
+            // 
+            this.btn_storing.BackColor = System.Drawing.Color.Transparent;
+            this.btn_storing.FlatAppearance.BorderSize = 0;
+            this.btn_storing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_storing.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_storing.ForeColor = System.Drawing.Color.Black;
+            this.btn_storing.Image = ((System.Drawing.Image)(resources.GetObject("btn_storing.Image")));
+            this.btn_storing.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_storing.Location = new System.Drawing.Point(12, 331);
+            this.btn_storing.Name = "btn_storing";
+            this.btn_storing.Size = new System.Drawing.Size(201, 115);
+            this.btn_storing.TabIndex = 7;
+            this.btn_storing.Text = "入庫登録";
+            this.btn_storing.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_storing.UseVisualStyleBackColor = false;
+            this.btn_storing.Click += new System.EventHandler(this.btn_storing_Click);
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
@@ -114,7 +132,7 @@
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(12, 215);
+            this.button3.Location = new System.Drawing.Point(12, 190);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(201, 115);
             this.button3.TabIndex = 6;
@@ -141,7 +159,7 @@
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(12, 374);
+            this.button2.Location = new System.Drawing.Point(12, 472);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(201, 115);
             this.button2.TabIndex = 4;
@@ -159,7 +177,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(12, 525);
+            this.button1.Location = new System.Drawing.Point(12, 613);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(201, 115);
             this.button1.TabIndex = 3;
@@ -177,7 +195,7 @@
             this.btn_StockList.ForeColor = System.Drawing.Color.Black;
             this.btn_StockList.Image = ((System.Drawing.Image)(resources.GetObject("btn_StockList.Image")));
             this.btn_StockList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_StockList.Location = new System.Drawing.Point(12, 69);
+            this.btn_StockList.Location = new System.Drawing.Point(12, 49);
             this.btn_StockList.Name = "btn_StockList";
             this.btn_StockList.Size = new System.Drawing.Size(201, 115);
             this.btn_StockList.TabIndex = 2;
@@ -198,6 +216,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1042, 702);
             this.panel3.TabIndex = 8;
+            // 
+            // storing1
+            // 
+            this.storing1.BackColor = System.Drawing.Color.White;
+            this.storing1.Location = new System.Drawing.Point(27, 49);
+            this.storing1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.storing1.Name = "storing1";
+            this.storing1.Size = new System.Drawing.Size(1747, 929);
+            this.storing1.TabIndex = 6;
             // 
             // stockList
             // 
@@ -220,7 +247,7 @@
             // 
             this.orderCheck.BackColor = System.Drawing.Color.White;
             this.orderCheck.Location = new System.Drawing.Point(644, 228);
-            this.orderCheck.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.orderCheck.Margin = new System.Windows.Forms.Padding(5);
             this.orderCheck.Name = "orderCheck";
             this.orderCheck.Size = new System.Drawing.Size(1389, 879);
             this.orderCheck.TabIndex = 1;
@@ -234,31 +261,6 @@
             this.carOrder.Name = "carOrder";
             this.carOrder.Size = new System.Drawing.Size(1230, 735);
             this.carOrder.TabIndex = 0;
-            // 
-            // btn_storing
-            // 
-            this.btn_storing.BackColor = System.Drawing.Color.Transparent;
-            this.btn_storing.FlatAppearance.BorderSize = 0;
-            this.btn_storing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_storing.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_storing.ForeColor = System.Drawing.Color.Black;
-            this.btn_storing.Image = ((System.Drawing.Image)(resources.GetObject("btn_storing.Image")));
-            this.btn_storing.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_storing.Location = new System.Drawing.Point(12, 596);
-            this.btn_storing.Name = "btn_storing";
-            this.btn_storing.Size = new System.Drawing.Size(75, 94);
-            this.btn_storing.TabIndex = 7;
-            this.btn_storing.Text = "入庫登録";
-            this.btn_storing.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_storing.UseVisualStyleBackColor = false;
-            this.btn_storing.Click += new System.EventHandler(this.btn_storing_Click);
-            // 
-            // storing1
-            // 
-            this.storing1.Location = new System.Drawing.Point(27, 49);
-            this.storing1.Name = "storing1";
-            this.storing1.Size = new System.Drawing.Size(1747, 929);
-            this.storing1.TabIndex = 6;
             // 
             // MainMenu
             // 
