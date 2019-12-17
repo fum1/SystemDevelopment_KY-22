@@ -381,9 +381,6 @@
   <data name="cmb_manufacturer.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="cmb_manufacturer.Text" xml:space="preserve">
-    <value>aaa</value>
-  </data>
   <data name="&gt;&gt;cmb_manufacturer.Name" xml:space="preserve">
     <value>cmb_manufacturer</value>
   </data>
@@ -774,6 +771,15 @@
   <data name="&gt;&gt;gbx_vehicle.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>536, 17</value>
+  </data>
+  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 34</value>
+  </data>
+  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
   <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
     <value>textBox4</value>
   </data>
@@ -785,171 +791,6 @@
   </data>
   <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;gbx_remarks.Name" xml:space="preserve">
-    <value>gbx_remarks</value>
-  </data>
-  <data name="&gt;&gt;gbx_remarks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbx_remarks.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;gbx_remarks.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;txt_clientID.Name" xml:space="preserve">
-    <value>txt_clientID</value>
-  </data>
-  <data name="&gt;&gt;txt_clientID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_clientID.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;txt_clientID.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txt_employeeID.Name" xml:space="preserve">
-    <value>txt_employeeID</value>
-  </data>
-  <data name="&gt;&gt;txt_employeeID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_employeeID.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;txt_employeeID.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;dtp_Orderdate.Name" xml:space="preserve">
-    <value>dtp_Orderdate</value>
-  </data>
-  <data name="&gt;&gt;dtp_Orderdate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dtp_Orderdate.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;dtp_Orderdate.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;lbl_storeID.Name" xml:space="preserve">
-    <value>lbl_storeID</value>
-  </data>
-  <data name="&gt;&gt;lbl_storeID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_storeID.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;lbl_storeID.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;lbl_Orderdate.Name" xml:space="preserve">
-    <value>lbl_Orderdate</value>
-  </data>
-  <data name="&gt;&gt;lbl_Orderdate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_Orderdate.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;lbl_Orderdate.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;lbl_employeeID.Name" xml:space="preserve">
-    <value>lbl_employeeID</value>
-  </data>
-  <data name="&gt;&gt;lbl_employeeID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_employeeID.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;lbl_employeeID.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;lbl_clientID.Name" xml:space="preserve">
-    <value>lbl_clientID</value>
-  </data>
-  <data name="&gt;&gt;lbl_clientID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_clientID.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;lbl_clientID.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="gbx_order.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 16.2pt</value>
-  </data>
-  <data name="gbx_order.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 0</value>
-  </data>
-  <data name="gbx_order.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="gbx_order.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="gbx_order.Size" type="System.Drawing.Size, System.Drawing">
-    <value>643, 699</value>
-  </data>
-  <data name="gbx_order.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="gbx_order.Text" xml:space="preserve">
-    <value>注文</value>
-  </data>
-  <data name="&gt;&gt;gbx_order.Name" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;gbx_order.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbx_order.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gbx_order.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1029,6 +870,21 @@
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="rtb_remarks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 32</value>
+  </data>
+  <data name="rtb_remarks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="rtb_remarks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 265</value>
+  </data>
+  <data name="rtb_remarks.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rtb_remarks.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;rtb_remarks.Name" xml:space="preserve">
     <value>rtb_remarks</value>
   </data>
@@ -1073,33 +929,6 @@
   </data>
   <data name="&gt;&gt;gbx_remarks.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="rtb_remarks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 32</value>
-  </data>
-  <data name="rtb_remarks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="rtb_remarks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 265</value>
-  </data>
-  <data name="rtb_remarks.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="rtb_remarks.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;rtb_remarks.Name" xml:space="preserve">
-    <value>rtb_remarks</value>
-  </data>
-  <data name="&gt;&gt;rtb_remarks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rtb_remarks.Parent" xml:space="preserve">
-    <value>gbx_remarks</value>
-  </data>
-  <data name="&gt;&gt;rtb_remarks.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="txt_clientID.Location" type="System.Drawing.Point, System.Drawing">
     <value>148, 289</value>
@@ -1305,6 +1134,39 @@
   <data name="&gt;&gt;lbl_clientID.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="gbx_order.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 16.2pt</value>
+  </data>
+  <data name="gbx_order.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 0</value>
+  </data>
+  <data name="gbx_order.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="gbx_order.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="gbx_order.Size" type="System.Drawing.Size, System.Drawing">
+    <value>643, 699</value>
+  </data>
+  <data name="gbx_order.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="gbx_order.Text" xml:space="preserve">
+    <value>注文</value>
+  </data>
+  <data name="&gt;&gt;gbx_order.Name" xml:space="preserve">
+    <value>gbx_order</value>
+  </data>
+  <data name="&gt;&gt;gbx_order.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbx_order.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbx_order.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1339,27 +1201,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 17</value>
-  </data>
-  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 34</value>
-  </data>
-  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
-    <value>textBox4</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
-    <value>gbx_order</value>
-  </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
