@@ -136,7 +136,7 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_decision.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>2</value>
   </data>
   <data name="btn_decision.Text" xml:space="preserve">
     <value>決定</value>
@@ -172,7 +172,7 @@
     <value>35, 34</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
+    <value>1</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
     <value>🔍</value>
@@ -199,7 +199,7 @@
     <value>240, 34</value>
   </data>
   <data name="txt_itemid.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txt_itemid.Name" xml:space="preserve">
     <value>txt_itemid</value>
@@ -259,7 +259,7 @@
     <value>235, 34</value>
   </data>
   <data name="txt_total.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;txt_total.Name" xml:space="preserve">
     <value>txt_total</value>
@@ -280,7 +280,7 @@
     <value>240, 34</value>
   </data>
   <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
     <value>textBox2</value>
@@ -301,7 +301,7 @@
     <value>240, 34</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
     <value>textBox1</value>
@@ -337,7 +337,7 @@
     <value>240, 35</value>
   </data>
   <data name="comboBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;comboBox3.Name" xml:space="preserve">
     <value>comboBox3</value>
@@ -358,7 +358,7 @@
     <value>240, 35</value>
   </data>
   <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;comboBox2.Name" xml:space="preserve">
     <value>comboBox2</value>
@@ -379,7 +379,7 @@
     <value>240, 35</value>
   </data>
   <data name="cmb_manufacturer.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;cmb_manufacturer.Name" xml:space="preserve">
     <value>cmb_manufacturer</value>
@@ -469,7 +469,7 @@
     <value>245, 34</value>
   </data>
   <data name="txt_consumptiontax.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;txt_consumptiontax.Name" xml:space="preserve">
     <value>txt_consumptiontax</value>
@@ -493,7 +493,7 @@
     <value>240, 34</value>
   </data>
   <data name="txt_amountofmoney.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;txt_amountofmoney.Name" xml:space="preserve">
     <value>txt_amountofmoney</value>
@@ -754,7 +754,7 @@
     <value>642, 602</value>
   </data>
   <data name="gbx_vehicle.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+    <value>1</value>
   </data>
   <data name="gbx_vehicle.Text" xml:space="preserve">
     <value>車両</value>
@@ -835,7 +835,7 @@
     <value>319, 34</value>
   </data>
   <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
     <value>textBox3</value>
@@ -856,7 +856,7 @@
     <value>316, 35</value>
   </data>
   <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
     <value>comboBox1</value>
@@ -940,7 +940,7 @@
     <value>319, 34</value>
   </data>
   <data name="txt_clientID.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;txt_clientID.Name" xml:space="preserve">
     <value>txt_clientID</value>
@@ -964,7 +964,7 @@
     <value>316, 34</value>
   </data>
   <data name="txt_employeeID.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;txt_employeeID.Name" xml:space="preserve">
     <value>txt_employeeID</value>
@@ -988,7 +988,7 @@
     <value>316, 34</value>
   </data>
   <data name="dtp_Orderdate.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;dtp_Orderdate.Name" xml:space="preserve">
     <value>dtp_Orderdate</value>
@@ -1150,7 +1150,7 @@
     <value>643, 699</value>
   </data>
   <data name="gbx_order.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+    <value>0</value>
   </data>
   <data name="gbx_order.Text" xml:space="preserve">
     <value>注文</value>
@@ -1186,7 +1186,7 @@
     <value>235, 60</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+    <value>3</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>クリア</value>
