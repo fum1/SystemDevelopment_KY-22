@@ -99,18 +99,6 @@
     <Compile Include="PassWordChange.Designer.cs">
       <DependentUpon>PassWordChange.cs</DependentUpon>
     </Compile>
-    <Compile Include="ユーザーコントロール\ReceiveList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ユーザーコントロール\ReceiveList.Designer.cs">
-      <DependentUpon>ReceiveList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ユーザーコントロール\SalesList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ユーザーコントロール\SalesList.Designer.cs">
-      <DependentUpon>SalesList.cs</DependentUpon>
-    </Compile>
     <Compile Include="ユーザーコントロール\CarOrder.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -220,12 +208,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PassWordChange.resx">
       <DependentUpon>PassWordChange.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ユーザーコントロール\ReceiveList.resx">
-      <DependentUpon>ReceiveList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ユーザーコントロール\SalesList.resx">
-      <DependentUpon>SalesList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\CarOrder.resx">
       <DependentUpon>CarOrder.cs</DependentUpon>
