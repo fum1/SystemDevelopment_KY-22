@@ -172,13 +172,13 @@ namespace SystemDev_KY_22
 
 
             OleDbDataAdapter position_da =
-                new OleDbDataAdapter("SELECT 役職ID,役職名 FROM 役職テーブル", cn);
+                new OleDbDataAdapter("SELECT 役職 FROM 役職テーブル", cn);
             DataTable position_dt = new DataTable();
             position_da.Fill(position_dt);
 
             cmb_position1.DataSource = position_dt;
-            cmb_position1.DisplayMember = "役職名";
-            cmb_position1.ValueMember = "役職名";
+            cmb_position1.DisplayMember = "役職";
+            cmb_position1.ValueMember = "役職";
 
             OleDbDataAdapter clerk_da =
                 new OleDbDataAdapter("SELECT 店舗ID,店舗名,郵便番号,住所,責任者,電話番号" +
@@ -201,13 +201,13 @@ namespace SystemDev_KY_22
 
 
             OleDbDataAdapter position1_da =
-                new OleDbDataAdapter("SELECT 役職ID,役職名 FROM 役職テーブル", cn);
+                new OleDbDataAdapter("SELECT 役職 FROM 役職テーブル", cn);
             DataTable position1_dt = new DataTable();
             position1_da.Fill(position1_dt);
 
             cmb_position.DataSource = position1_dt;
-            cmb_position.DisplayMember = "役職名";
-            cmb_position.ValueMember = "役職名";
+            cmb_position.DisplayMember = "役職";
+            cmb_position.ValueMember = "役職";
 
             OleDbDataAdapter clerk1_da =
                 new OleDbDataAdapter("SELECT 店舗ID,店舗名,郵便番号,住所,責任者,電話番号" +

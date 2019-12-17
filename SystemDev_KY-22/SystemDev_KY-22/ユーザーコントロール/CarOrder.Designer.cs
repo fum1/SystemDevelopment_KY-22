@@ -47,6 +47,8 @@
             this.lbl_companytel = new System.Windows.Forms.Label();
             this.lbl_companyname = new System.Windows.Forms.Label();
             this.btn_Suppliersearch = new System.Windows.Forms.Button();
+            this.txt_ItemId = new System.Windows.Forms.TextBox();
+            this.lbl_ItemId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,11 +56,11 @@
             // 
             this.lbl_supplierID.AutoSize = true;
             this.lbl_supplierID.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_supplierID.Location = new System.Drawing.Point(42, 102);
+            this.lbl_supplierID.Location = new System.Drawing.Point(50, 44);
             this.lbl_supplierID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_supplierID.Name = "lbl_supplierID";
             this.lbl_supplierID.Size = new System.Drawing.Size(182, 57);
-            this.lbl_supplierID.TabIndex = 0;
+            this.lbl_supplierID.TabIndex = 10;
             this.lbl_supplierID.Text = "仕入先ID";
             // 
             // lbl_PersonID
@@ -69,7 +71,7 @@
             this.lbl_PersonID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_PersonID.Name = "lbl_PersonID";
             this.lbl_PersonID.Size = new System.Drawing.Size(144, 57);
-            this.lbl_PersonID.TabIndex = 12;
+            this.lbl_PersonID.TabIndex = 14;
             this.lbl_PersonID.Text = "社員ID";
             // 
             // lbl_orderdate
@@ -80,7 +82,7 @@
             this.lbl_orderdate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_orderdate.Name = "lbl_orderdate";
             this.lbl_orderdate.Size = new System.Drawing.Size(215, 57);
-            this.lbl_orderdate.TabIndex = 14;
+            this.lbl_orderdate.TabIndex = 15;
             this.lbl_orderdate.Text = "発注年月日";
             // 
             // lbl_productname
@@ -91,7 +93,7 @@
             this.lbl_productname.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_productname.Name = "lbl_productname";
             this.lbl_productname.Size = new System.Drawing.Size(0, 57);
-            this.lbl_productname.TabIndex = 18;
+            this.lbl_productname.TabIndex = 17;
             // 
             // txt_number
             // 
@@ -120,7 +122,7 @@
             this.btn_clear.Location = new System.Drawing.Point(352, 567);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(172, 56);
-            this.btn_clear.TabIndex = 11;
+            this.btn_clear.TabIndex = 9;
             this.btn_clear.Text = "クリア";
             this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click_1);
@@ -146,7 +148,7 @@
             this.lbl_number.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_number.Name = "lbl_number";
             this.lbl_number.Size = new System.Drawing.Size(101, 57);
-            this.lbl_number.TabIndex = 33;
+            this.lbl_number.TabIndex = 16;
             this.lbl_number.Text = "個数";
             // 
             // pictureBox
@@ -181,52 +183,52 @@
             // txt_supplierID
             // 
             this.txt_supplierID.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_supplierID.Location = new System.Drawing.Point(291, 104);
+            this.txt_supplierID.Location = new System.Drawing.Point(299, 46);
             this.txt_supplierID.Margin = new System.Windows.Forms.Padding(5);
             this.txt_supplierID.Name = "txt_supplierID";
             this.txt_supplierID.Size = new System.Drawing.Size(233, 42);
-            this.txt_supplierID.TabIndex = 1;
+            this.txt_supplierID.TabIndex = 0;
             // 
             // txt_companyname
             // 
             this.txt_companyname.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_companyname.Location = new System.Drawing.Point(291, 175);
+            this.txt_companyname.Location = new System.Drawing.Point(299, 117);
             this.txt_companyname.Margin = new System.Windows.Forms.Padding(5);
             this.txt_companyname.Name = "txt_companyname";
             this.txt_companyname.ReadOnly = true;
             this.txt_companyname.Size = new System.Drawing.Size(233, 42);
-            this.txt_companyname.TabIndex = 3;
+            this.txt_companyname.TabIndex = 2;
             // 
             // txt_companytel
             // 
             this.txt_companytel.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_companytel.Location = new System.Drawing.Point(291, 242);
+            this.txt_companytel.Location = new System.Drawing.Point(299, 184);
             this.txt_companytel.Margin = new System.Windows.Forms.Padding(5);
             this.txt_companytel.Name = "txt_companytel";
             this.txt_companytel.ReadOnly = true;
             this.txt_companytel.Size = new System.Drawing.Size(233, 42);
-            this.txt_companytel.TabIndex = 4;
+            this.txt_companytel.TabIndex = 3;
             // 
             // lbl_companytel
             // 
             this.lbl_companytel.AutoSize = true;
             this.lbl_companytel.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_companytel.Location = new System.Drawing.Point(101, 242);
+            this.lbl_companytel.Location = new System.Drawing.Point(109, 184);
             this.lbl_companytel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_companytel.Name = "lbl_companytel";
             this.lbl_companytel.Size = new System.Drawing.Size(226, 51);
-            this.lbl_companytel.TabIndex = 48;
+            this.lbl_companytel.TabIndex = 12;
             this.lbl_companytel.Text = "（電話番号）";
             // 
             // lbl_companyname
             // 
             this.lbl_companyname.AutoSize = true;
             this.lbl_companyname.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_companyname.Location = new System.Drawing.Point(101, 175);
+            this.lbl_companyname.Location = new System.Drawing.Point(109, 117);
             this.lbl_companyname.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_companyname.Name = "lbl_companyname";
             this.lbl_companyname.Size = new System.Drawing.Size(192, 51);
-            this.lbl_companyname.TabIndex = 49;
+            this.lbl_companyname.TabIndex = 11;
             this.lbl_companyname.Text = "（会社名）";
             // 
             // btn_Suppliersearch
@@ -234,20 +236,42 @@
             this.btn_Suppliersearch.BackColor = System.Drawing.Color.White;
             this.btn_Suppliersearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Suppliersearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_Suppliersearch.Location = new System.Drawing.Point(531, 104);
+            this.btn_Suppliersearch.Location = new System.Drawing.Point(539, 46);
             this.btn_Suppliersearch.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Suppliersearch.Name = "btn_Suppliersearch";
             this.btn_Suppliersearch.Size = new System.Drawing.Size(53, 42);
-            this.btn_Suppliersearch.TabIndex = 2;
+            this.btn_Suppliersearch.TabIndex = 1;
             this.btn_Suppliersearch.Text = "🔍";
             this.btn_Suppliersearch.UseVisualStyleBackColor = false;
             this.btn_Suppliersearch.Click += new System.EventHandler(this.btn_Suppliersearch_Click);
+            // 
+            // txt_ItemId
+            // 
+            this.txt_ItemId.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_ItemId.Location = new System.Drawing.Point(291, 240);
+            this.txt_ItemId.Margin = new System.Windows.Forms.Padding(5);
+            this.txt_ItemId.Name = "txt_ItemId";
+            this.txt_ItemId.Size = new System.Drawing.Size(233, 42);
+            this.txt_ItemId.TabIndex = 4;
+            // 
+            // lbl_ItemId
+            // 
+            this.lbl_ItemId.AutoSize = true;
+            this.lbl_ItemId.Font = new System.Drawing.Font("メイリオ", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_ItemId.Location = new System.Drawing.Point(42, 240);
+            this.lbl_ItemId.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_ItemId.Name = "lbl_ItemId";
+            this.lbl_ItemId.Size = new System.Drawing.Size(144, 57);
+            this.lbl_ItemId.TabIndex = 13;
+            this.lbl_ItemId.Text = "商品ID";
             // 
             // CarOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.txt_ItemId);
+            this.Controls.Add(this.lbl_ItemId);
             this.Controls.Add(this.btn_Suppliersearch);
             this.Controls.Add(this.lbl_companyname);
             this.Controls.Add(this.lbl_companytel);
@@ -297,5 +321,7 @@
         private System.Windows.Forms.Label lbl_companytel;
         private System.Windows.Forms.Label lbl_companyname;
         private System.Windows.Forms.Button btn_Suppliersearch;
+        private System.Windows.Forms.TextBox txt_ItemId;
+        private System.Windows.Forms.Label lbl_ItemId;
     }
 }

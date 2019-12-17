@@ -105,7 +105,8 @@ namespace SystemDev_KY_22
             g.DrawString(print_lblsupplier + "     " + print_txtsupplier, a, Brushes.Black, 110, 300);
             g.DrawString(print_lblPerson + "        " + print_txtPerson, a, Brushes.Black, 110, 600);
             g.DrawString(print_lblorderdate + "  " + print_cmborderdate, a, Brushes.Black, 110, 700);
-            g.DrawString(print_lblnumber + " 　　　　 " + print_txtnumber, a, Brushes.Black, 110, 800);
+            g.DrawString(lbl_ItemId.Text + " 　　　　 " + txt_ItemId.Text, a, Brushes.Black, 110, 800);
+            g.DrawString(print_lblnumber + " 　　　　 " + print_txtnumber, a, Brushes.Black, 110, 900);
 
             g.DrawString(print_lblcmpanyname + "    " + print_txtcompanyname, a, Brushes.Black, 130, 400);
             g.DrawString(print_lblcompanytel + " " + print_txtcompanytel, a, Brushes.Black, 130, 500);
@@ -148,12 +149,13 @@ namespace SystemDev_KY_22
             orderid += 1;　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　//ここまで
 
             OleDbCommand cmd =
-                new OleDbCommand("INSERT INTO 発注テーブル (発注ID,発注年月日, 社員ID, 仕入先ID, 個数) " +
-                "VALUES (@発注ID, @発注年月日, @社員ID, @仕入先ID, @個数)", cn);
+                new OleDbCommand("INSERT INTO 発注テーブル (発注ID,発注年月日, 商品ID,社員ID, 仕入先ID, 個数) " +
+                "VALUES (@発注ID, @発注年月日, @商品ID,@社員ID, @仕入先ID, @個数)", cn);
             //DBの列名に、PassWord (Microsoft Jet 4.0 の予約語)は使用できない
             //@パラメータが出てくる順番に設定する
             cmd.Parameters.AddWithValue("@発注ID", orderid.ToString());
             cmd.Parameters.AddWithValue("@発注年月日", dtp_admissionday.Text);                 //IDのデータ
+            cmd.Parameters.AddWithValue("@商品ID", txt_ItemId.Text);
             cmd.Parameters.AddWithValue("@社員ID", txt_PersonID.Text);             //Passのデータ
             cmd.Parameters.AddWithValue("@仕入先ID", txt_supplierID.Text);             //Nameのデータ
             cmd.Parameters.AddWithValue("@個数", txt_number.Text);   //PostNumberのデータ
