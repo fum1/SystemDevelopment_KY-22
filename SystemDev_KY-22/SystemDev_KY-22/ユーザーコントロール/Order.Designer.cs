@@ -52,6 +52,7 @@
             this.lbl_modelname = new System.Windows.Forms.Label();
             this.lbl_consumptiontax = new System.Windows.Forms.Label();
             this.gbx_order = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -65,7 +66,6 @@
             this.lbl_employeeID = new System.Windows.Forms.Label();
             this.lbl_clientID = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.gbx_vehicle.SuspendLayout();
             this.gbx_order.SuspendLayout();
             this.gbx_remarks.SuspendLayout();
@@ -180,7 +180,6 @@
             // 
             resources.ApplyResources(this.txt_amountofmoney, "txt_amountofmoney");
             this.txt_amountofmoney.Name = "txt_amountofmoney";
-            //this.txt_amountofmoney.TextChanged += new System.EventHandler(this.txt_amountofmoney_TextChanged);
             // 
             // lbl_carname
             // 
@@ -234,6 +233,11 @@
             resources.ApplyResources(this.gbx_order, "gbx_order");
             this.gbx_order.Name = "gbx_order";
             this.gbx_order.TabStop = false;
+            // 
+            // textBox4
+            // 
+            resources.ApplyResources(this.textBox4, "textBox4");
+            this.textBox4.Name = "textBox4";
             // 
             // label1
             // 
@@ -305,12 +309,6 @@
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox4
-            // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            //this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // Order
             // 
