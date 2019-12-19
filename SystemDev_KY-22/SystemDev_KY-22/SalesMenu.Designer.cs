@@ -36,15 +36,15 @@
             this.btn_ClientRegister = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel_Back = new System.Windows.Forms.Panel();
+            this.stockList = new SystemDev_KY_22.StockList();
+            this.stockList1 = new SystemDev_KY_22.StockList();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.clientList = new SystemDev_KY_22.ユーザーコントロール.ClientList();
             this.clientRegister = new SystemDev_KY_22.ClientRegister();
-            this.stockList = new SystemDev_KY_22.StockList();
             this.order = new SystemDev_KY_22.Order();
             this.clientRegisterU1 = new SystemDev_KY_22.ClientRegister();
-            this.stockList1 = new SystemDev_KY_22.StockList();
             this.panel1.SuspendLayout();
             this.panel_Back.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -155,6 +155,25 @@
             this.panel_Back.Size = new System.Drawing.Size(1042, 702);
             this.panel_Back.TabIndex = 0;
             // 
+            // stockList
+            // 
+            this.stockList.BackColor = System.Drawing.Color.White;
+            this.stockList.Font = new System.Drawing.Font("ＭＳ 明朝", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.stockList.Location = new System.Drawing.Point(104, 87);
+            this.stockList.Name = "stockList";
+            this.stockList.Size = new System.Drawing.Size(1042, 703);
+            this.stockList.TabIndex = 3;
+            this.stockList.Visible = false;
+            // 
+            // stockList1
+            // 
+            this.stockList1.BackColor = System.Drawing.Color.White;
+            this.stockList1.Location = new System.Drawing.Point(1384, 1229);
+            this.stockList1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
+            this.stockList1.Name = "stockList1";
+            this.stockList1.Size = new System.Drawing.Size(4168, 3471);
+            this.stockList1.TabIndex = 0;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
@@ -171,7 +190,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(35, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 27);
+            this.label1.Size = new System.Drawing.Size(287, 34);
             this.label1.TabIndex = 5;
             this.label1.Text = "営業担当メニュー";
             // 
@@ -195,29 +214,23 @@
             // 
             // clientList
             // 
+            this.clientList.BackColor = System.Drawing.Color.White;
             this.clientList.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.clientList.Location = new System.Drawing.Point(275, 224);
             this.clientList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.clientList.Name = "clientList";
             this.clientList.Size = new System.Drawing.Size(1312, 683);
             this.clientList.TabIndex = 5;
+            this.clientList.Visible = false;
             // 
             // clientRegister
             // 
             this.clientRegister.BackColor = System.Drawing.Color.White;
-            this.clientRegister.Location = new System.Drawing.Point(197, 154);
+            this.clientRegister.Location = new System.Drawing.Point(150, 279);
             this.clientRegister.Name = "clientRegister";
             this.clientRegister.Size = new System.Drawing.Size(1314, 768);
             this.clientRegister.TabIndex = 4;
-            // 
-            // stockList
-            // 
-            this.stockList.BackColor = System.Drawing.Color.White;
-            this.stockList.Font = new System.Drawing.Font("ＭＳ 明朝", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.stockList.Location = new System.Drawing.Point(104, 87);
-            this.stockList.Name = "stockList";
-            this.stockList.Size = new System.Drawing.Size(1042, 703);
-            this.stockList.TabIndex = 3;
+            this.clientRegister.Visible = false;
             // 
             // order
             // 
@@ -227,6 +240,7 @@
             this.order.Name = "order";
             this.order.Size = new System.Drawing.Size(4168, 3471);
             this.order.TabIndex = 2;
+            this.order.Visible = false;
             // 
             // clientRegisterU1
             // 
@@ -236,15 +250,6 @@
             this.clientRegisterU1.Name = "clientRegisterU1";
             this.clientRegisterU1.Size = new System.Drawing.Size(4168, 3471);
             this.clientRegisterU1.TabIndex = 1;
-            // 
-            // stockList1
-            // 
-            this.stockList1.BackColor = System.Drawing.Color.White;
-            this.stockList1.Location = new System.Drawing.Point(1384, 1229);
-            this.stockList1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
-            this.stockList1.Name = "stockList1";
-            this.stockList1.Size = new System.Drawing.Size(4168, 3471);
-            this.stockList1.TabIndex = 0;
             // 
             // SalesMenu
             // 
