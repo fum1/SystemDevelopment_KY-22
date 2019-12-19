@@ -40,7 +40,7 @@
             this.btn_ProductIDSeach = new System.Windows.Forms.Button();
             this.btn_SupplierIDSeach = new System.Windows.Forms.Button();
             this.btn_DateSeach = new System.Windows.Forms.Button();
-            this.cmd_SupplierID = new System.Windows.Forms.ComboBox();
+            this.cmb_SupplierID = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -97,7 +97,7 @@
             this.panel5.Controls.Add(this.btn_ProductIDSeach);
             this.panel5.Controls.Add(this.btn_SupplierIDSeach);
             this.panel5.Controls.Add(this.btn_DateSeach);
-            this.panel5.Controls.Add(this.cmd_SupplierID);
+            this.panel5.Controls.Add(this.cmb_SupplierID);
             this.panel5.Controls.Add(this.dateTimePicker1);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label3);
@@ -195,15 +195,15 @@
             this.btn_DateSeach.UseVisualStyleBackColor = false;
             this.btn_DateSeach.Click += new System.EventHandler(this.btn_DateSeach_Click);
             // 
-            // cmd_SupplierID
+            // cmb_SupplierID
             // 
-            this.cmd_SupplierID.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cmd_SupplierID.FormattingEnabled = true;
-            this.cmd_SupplierID.Location = new System.Drawing.Point(145, 68);
-            this.cmd_SupplierID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.cmd_SupplierID.Name = "cmd_SupplierID";
-            this.cmd_SupplierID.Size = new System.Drawing.Size(208, 42);
-            this.cmd_SupplierID.TabIndex = 2;
+            this.cmb_SupplierID.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmb_SupplierID.FormattingEnabled = true;
+            this.cmb_SupplierID.Location = new System.Drawing.Point(145, 68);
+            this.cmb_SupplierID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.cmb_SupplierID.Name = "cmb_SupplierID";
+            this.cmb_SupplierID.Size = new System.Drawing.Size(208, 42);
+            this.cmb_SupplierID.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
@@ -214,7 +214,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(255, 42);
             this.dateTimePicker1.TabIndex = 0;
-            this.dateTimePicker1.Value = new System.DateTime(2019, 12, 10, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2019, 12, 19, 0, 0, 0, 0);
             // 
             // label4
             // 
@@ -297,7 +297,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ComboBox cmd_SupplierID;
+        private System.Windows.Forms.ComboBox cmb_SupplierID;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
