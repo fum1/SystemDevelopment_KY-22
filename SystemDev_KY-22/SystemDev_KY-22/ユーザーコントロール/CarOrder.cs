@@ -169,7 +169,7 @@ namespace SystemDev_KY_22
                 cn.Close();               //コネクションを閉じる
                 return;
             }
-            MessageBox.Show("登録しました", "発注登録");
+            MessageBox.Show("登録しました", "発注");
 
             //PrintDocumentオブジェクトの作成
             System.Drawing.Printing.PrintDocument po =

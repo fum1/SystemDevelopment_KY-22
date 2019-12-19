@@ -40,11 +40,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_Item = new System.Windows.Forms.Button();
             this.storing1 = new SystemDev_KY_22.ユーザーコントロール.Storing();
             this.stockList = new SystemDev_KY_22.StockList();
             this.loaUnloading = new SystemDev_KY_22.LoaUnloading();
             this.orderCheck = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
             this.carOrder = new SystemDev_KY_22.CarOrder();
+            this.Item = new SystemDev_KY_22.ユーザーコントロール.Item();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -85,7 +87,7 @@
             this.lB_MainTitle.Font = new System.Drawing.Font("ＭＳ 明朝", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lB_MainTitle.Location = new System.Drawing.Point(34, 38);
             this.lB_MainTitle.Name = "lB_MainTitle";
-            this.lB_MainTitle.Size = new System.Drawing.Size(279, 33);
+            this.lB_MainTitle.Size = new System.Drawing.Size(345, 40);
             this.lB_MainTitle.TabIndex = 6;
             this.lB_MainTitle.Text = "物流担当メニュー";
             this.lB_MainTitle.Click += new System.EventHandler(this.lB_MainTitle_Click);
@@ -93,6 +95,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.btn_Item);
             this.panel2.Controls.Add(this.btn_storing);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.selectPanel);
@@ -206,6 +209,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.Item);
             this.panel3.Controls.Add(this.storing1);
             this.panel3.Controls.Add(this.stockList);
             this.panel3.Controls.Add(this.loaUnloading);
@@ -216,6 +220,24 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1042, 702);
             this.panel3.TabIndex = 8;
+            // 
+            // btn_Item
+            // 
+            this.btn_Item.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Item.FlatAppearance.BorderSize = 0;
+            this.btn_Item.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Item.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_Item.ForeColor = System.Drawing.Color.Black;
+            this.btn_Item.Image = ((System.Drawing.Image)(resources.GetObject("btn_Item.Image")));
+            this.btn_Item.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Item.Location = new System.Drawing.Point(12, 579);
+            this.btn_Item.Name = "btn_Item";
+            this.btn_Item.Size = new System.Drawing.Size(51, 120);
+            this.btn_Item.TabIndex = 8;
+            this.btn_Item.Text = "商品";
+            this.btn_Item.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Item.UseVisualStyleBackColor = false;
+            this.btn_Item.Click += new System.EventHandler(this.btn_Item_Click);
             // 
             // storing1
             // 
@@ -262,6 +284,14 @@
             this.carOrder.Size = new System.Drawing.Size(1230, 735);
             this.carOrder.TabIndex = 0;
             // 
+            // Item
+            // 
+            this.Item.BackColor = System.Drawing.Color.White;
+            this.Item.Location = new System.Drawing.Point(6, 69);
+            this.Item.Name = "Item";
+            this.Item.Size = new System.Drawing.Size(1273, 652);
+            this.Item.TabIndex = 7;
+            // 
             // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -303,5 +333,7 @@
         private StockList stockList;
         private System.Windows.Forms.Button btn_storing;
         private ユーザーコントロール.Storing storing1;
+        private System.Windows.Forms.Button btn_Item;
+        private ユーザーコントロール.Item Item;
     }
 }
