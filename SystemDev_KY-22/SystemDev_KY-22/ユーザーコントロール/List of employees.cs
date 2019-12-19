@@ -50,47 +50,37 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.AllowUserToAddRows = false;    //最下行を非表示
             dataGridView1.AutoResizeColumns();           //列の幅の自動調整
 
-            cmb_position.DataSource = dt;
-            cmb_position.DisplayMember = "役職名";
-            cmb_position.ValueMember = "役職";
 
-            cmb_clerk.DataSource = dt;
-            cmb_clerk.DisplayMember = "店舗ID";
-            cmb_clerk.ValueMember = "店舗ID";
 
-            cmb_department.DataSource = dt;
-            cmb_department.DisplayMember = "部署";
-            cmb_department.ValueMember = "部署";
+
 
 
             OleDbDataAdapter position_da =
-                new OleDbDataAdapter("SELECT 役職ID,役職名 FROM 役職テーブル", cn);
+                new OleDbDataAdapter("SELECT 役職 FROM 役職テーブル", cn);
             DataTable position_dt = new DataTable();
             position_da.Fill(position_dt);
 
+
             cmb_position.DataSource = position_dt;
-            cmb_position.DisplayMember = "役職名";
-           // cmb_position.ValueMember = "役職";
+            cmb_position.DisplayMember = "役職";
+            cmb_position.ValueMember = "役職";
 
 
             OleDbDataAdapter dep_da =
-                new OleDbDataAdapter("SELECT 部署ID,部署名,部署責任者 FROM 部署テーブル", cn);
+                new OleDbDataAdapter("SELECT 部署名 FROM 部署テーブル", cn);
             DataTable dep_dt = new DataTable();
             dep_da.Fill(dep_dt);
-
             cmb_department.DataSource = dep_dt;
             cmb_department.DisplayMember = "部署名";
-            //cmb_department.ValueMember = "部署";
+            cmb_department.ValueMember = "部署名";
 
             OleDbDataAdapter clk_da =
-                new OleDbDataAdapter("SELECT 店舗ID,店舗名,郵便番号,住所,責任者,電話番号 FROM 店舗マスタ", cn);
+                new OleDbDataAdapter("SELECT 店舗ID FROM 店舗マスタ", cn);
             DataTable clk_dt = new DataTable();
             clk_da.Fill(clk_dt);
-
             cmb_clerk.DataSource = clk_dt;
             cmb_clerk.DisplayMember = "店舗ID";
             cmb_clerk.ValueMember = "店舗ID";
-
 
         }
 
