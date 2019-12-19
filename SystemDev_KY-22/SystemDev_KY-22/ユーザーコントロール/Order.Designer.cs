@@ -38,8 +38,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.cmb_manufacturer = new System.Windows.Forms.ComboBox();
             this.lbl_circle = new System.Windows.Forms.Label();
             this.lbl_total = new System.Windows.Forms.Label();
             this.txt_consumptiontax = new System.Windows.Forms.TextBox();
@@ -52,6 +50,7 @@
             this.lbl_modelname = new System.Windows.Forms.Label();
             this.lbl_consumptiontax = new System.Windows.Forms.Label();
             this.gbx_order = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -66,6 +65,8 @@
             this.lbl_employeeID = new System.Windows.Forms.Label();
             this.lbl_clientID = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.gbx_vehicle.SuspendLayout();
             this.gbx_order.SuspendLayout();
             this.gbx_remarks.SuspendLayout();
@@ -80,6 +81,8 @@
             // 
             // gbx_vehicle
             // 
+            this.gbx_vehicle.Controls.Add(this.textBox6);
+            this.gbx_vehicle.Controls.Add(this.textBox5);
             this.gbx_vehicle.Controls.Add(this.button2);
             this.gbx_vehicle.Controls.Add(this.txt_itemid);
             this.gbx_vehicle.Controls.Add(this.lbl_itemid);
@@ -87,8 +90,6 @@
             this.gbx_vehicle.Controls.Add(this.textBox2);
             this.gbx_vehicle.Controls.Add(this.textBox1);
             this.gbx_vehicle.Controls.Add(this.comboBox3);
-            this.gbx_vehicle.Controls.Add(this.comboBox2);
-            this.gbx_vehicle.Controls.Add(this.cmb_manufacturer);
             this.gbx_vehicle.Controls.Add(this.lbl_circle);
             this.gbx_vehicle.Controls.Add(this.lbl_total);
             this.gbx_vehicle.Controls.Add(this.txt_consumptiontax);
@@ -125,6 +126,7 @@
             // 
             resources.ApplyResources(this.txt_total, "txt_total");
             this.txt_total.Name = "txt_total";
+            this.txt_total.ReadOnly = true;
             // 
             // textBox2
             // 
@@ -148,19 +150,6 @@
             resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.Name = "comboBox3";
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.Name = "comboBox2";
-            // 
-            // cmb_manufacturer
-            // 
-            this.cmb_manufacturer.DisplayMember = "a";
-            this.cmb_manufacturer.FormattingEnabled = true;
-            resources.ApplyResources(this.cmb_manufacturer, "cmb_manufacturer");
-            this.cmb_manufacturer.Name = "cmb_manufacturer";
-            // 
             // lbl_circle
             // 
             resources.ApplyResources(this.lbl_circle, "lbl_circle");
@@ -175,6 +164,7 @@
             // 
             resources.ApplyResources(this.txt_consumptiontax, "txt_consumptiontax");
             this.txt_consumptiontax.Name = "txt_consumptiontax";
+            this.txt_consumptiontax.ReadOnly = true;
             // 
             // txt_amountofmoney
             // 
@@ -219,6 +209,7 @@
             // 
             // gbx_order
             // 
+            this.gbx_order.Controls.Add(this.label2);
             this.gbx_order.Controls.Add(this.textBox4);
             this.gbx_order.Controls.Add(this.label1);
             this.gbx_order.Controls.Add(this.textBox3);
@@ -234,6 +225,11 @@
             resources.ApplyResources(this.gbx_order, "gbx_order");
             this.gbx_order.Name = "gbx_order";
             this.gbx_order.TabStop = false;
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
             // textBox4
             // 
@@ -311,6 +307,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // textBox5
+            // 
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.Name = "textBox5";
+            // 
+            // textBox6
+            // 
+            resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.Name = "textBox6";
+            // 
             // Order
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -355,9 +361,7 @@
         private System.Windows.Forms.Label lbl_Orderdate;
         private System.Windows.Forms.Label lbl_employeeID;
         private System.Windows.Forms.Label lbl_clientID;
-        private System.Windows.Forms.ComboBox cmb_manufacturer;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
@@ -369,5 +373,8 @@
         private System.Windows.Forms.Label lbl_itemid;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
