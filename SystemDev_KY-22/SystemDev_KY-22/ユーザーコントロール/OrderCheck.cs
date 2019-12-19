@@ -33,7 +33,8 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
         private void dataload()
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT 受注テーブル.受注ID, 受注テーブル.注文ID, 注文テーブル.数量, 注文テーブル.商品詳細ID, 注文テーブル.在庫減フラグ, 注文テーブル.店舗ID, 注文テーブル.注文日, 受注テーブル.処理 FROM 受注テーブル INNER JOIN 注文テーブル ON 受注テーブル.受注ID = 注文テーブル.注文ID", cn);
+            OleDbCommand cmd = new OleDbCommand("SELECT 受注テーブル.受注ID, 受注テーブル.注文ID, 注文テーブル.数量, 注文テーブル.商品詳細ID, 注文テーブル.在庫減フラグ, 注文テーブル.店舗ID, 注文テーブル.注文日, 受注テーブル.処理" +
+                " FROM 受注テーブル INNER JOIN 注文テーブル ON 受注テーブル.受注ID = 注文テーブル.注文ID", cn);
             cmd.Connection = cn;
             //cmd.Parameters.AddWithValue("@処理", "1");
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -55,11 +56,8 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-                   new OleDbCommand("SELECT 受注テーブル.受注ID, 受注テーブル.注文ID, 注文テーブル.数量, 注文テーブル.商品詳細ID, 注文テーブル.在庫減フラグ, 注文テーブル.店舗ID, 注文テーブル.注文日, 受注テーブル.処理" +
-                                    "FROM 受注テーブル INNER JOIN 注文テーブル ON 受注テーブル.受注ID = 注文テーブル.注文ID WHERE 受注ID = @受注ID ORDER BY 受注ID", cn);
-
-            cmd.Parameters.AddWithValue("@処理", "1");
+            OleDbCommand cmd = new OleDbCommand("SELECT 受注テーブル.受注ID, 受注テーブル.注文ID, 注文テーブル.数量, 注文テーブル.商品詳細ID, 注文テーブル.在庫減フラグ, 注文テーブル.店舗ID, 注文テーブル.注文日, 受注テーブル.処理" +
+                " FROM 受注テーブル INNER JOIN 注文テーブル ON 受注テーブル.受注ID = 注文テーブル.注文ID WHERE 受注テーブル.受注ID = @受注ID", cn);
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
@@ -68,6 +66,18 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
             DataTable dt = new DataTable();
             da.Fill(dt);
+            for (int i = 0; dt.Rows.Count < i; i++)
+            {
+                if (dt.Rows[i]["処理"].ToString() == "1")
+                {
+                    dt.Rows[i].Delete();
+                }
+            }
+
+            dgv_ordercheck.DataSource = dt;
+            dgv_ordercheck.AllowUserToAddRows = false;    //最下行を非表示
+            dgv_ordercheck.AutoResizeColumns();           //列の幅の自動調整
+
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
@@ -75,6 +85,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
             mxt_productname.ResetText();
             dtp_orderdate1.ResetText();
             dtp_orderdate2.ResetText();
+            dataload();
         }
 
         private void dgv_ordercheck_Click(object sender, EventArgs e)
@@ -87,7 +98,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
             
             if(MessageBox.Show("業務の完了を申請します。", "受注完了", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                int selectrow = dgv_ordercheck.CurrentCell.RowIndex;                 //選択されている行番号
+                int selectrow = dgv_ordercheck.CurrentCell.RowIndex; //選択されている行番号
                 OleDbCommand cmd =
                             new OleDbCommand("UPDATE 受注テーブル SET 処理 = @処理 WHERE (受注ID = @受注ID)", cn);
                 cmd.Parameters.AddWithValue("@処理", "1");
@@ -105,10 +116,12 @@ namespace SystemDev_KY_22.ユーザーコントロール
                     return;
                 }
 
-                dataload();                   //データをロードする関数
+                dataload();                    //データをロードする関数
 
             }
 
         }
+
+       
     }
 }

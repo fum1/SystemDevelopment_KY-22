@@ -36,6 +36,7 @@
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_end = new System.Windows.Forms.Button();
             this.dtp_orderdate2 = new System.Windows.Forms.DateTimePicker();
             this.lbl_stretchingrod = new System.Windows.Forms.Label();
             this.btn_search = new System.Windows.Forms.Button();
@@ -44,7 +45,6 @@
             this.lbl_productname = new System.Windows.Forms.Label();
             this.dtp_orderdate1 = new System.Windows.Forms.DateTimePicker();
             this.lbl_orderdate = new System.Windows.Forms.Label();
-            this.btn_end = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ordercheck)).BeginInit();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -119,6 +119,21 @@
             this.panel4.Size = new System.Drawing.Size(1363, 78);
             this.panel4.TabIndex = 2;
             // 
+            // btn_end
+            // 
+            this.btn_end.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_end.BackColor = System.Drawing.Color.Transparent;
+            this.btn_end.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_end.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_end.Location = new System.Drawing.Point(1169, 4);
+            this.btn_end.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_end.Name = "btn_end";
+            this.btn_end.Size = new System.Drawing.Size(191, 68);
+            this.btn_end.TabIndex = 29;
+            this.btn_end.Text = "完了";
+            this.btn_end.UseVisualStyleBackColor = false;
+            this.btn_end.Click += new System.EventHandler(this.btn_end_Click);
+            // 
             // dtp_orderdate2
             // 
             this.dtp_orderdate2.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -189,6 +204,7 @@
             this.lbl_productname.Size = new System.Drawing.Size(110, 33);
             this.lbl_productname.TabIndex = 24;
             this.lbl_productname.Text = "受注ID";
+            
             // 
             // dtp_orderdate1
             // 
@@ -210,21 +226,6 @@
             this.lbl_orderdate.Size = new System.Drawing.Size(114, 33);
             this.lbl_orderdate.TabIndex = 22;
             this.lbl_orderdate.Text = "受注日";
-            // 
-            // btn_end
-            // 
-            this.btn_end.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_end.BackColor = System.Drawing.Color.Transparent;
-            this.btn_end.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_end.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_end.Location = new System.Drawing.Point(1169, 4);
-            this.btn_end.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_end.Name = "btn_end";
-            this.btn_end.Size = new System.Drawing.Size(191, 68);
-            this.btn_end.TabIndex = 29;
-            this.btn_end.Text = "完了";
-            this.btn_end.UseVisualStyleBackColor = false;
-            this.btn_end.Click += new System.EventHandler(this.btn_end_Click);
             // 
             // OrderCheck
             // 
