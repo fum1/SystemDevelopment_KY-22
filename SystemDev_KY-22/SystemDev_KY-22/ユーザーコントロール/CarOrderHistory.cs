@@ -43,9 +43,17 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.AllowUserToAddRows = false;    //最下行を非表示
             dataGridView1.AutoResizeColumns();
 
-            cmd_SupplierID.DataSource = dt;
-            cmd_SupplierID.DisplayMember = "仕入先ID";
-            cmd_SupplierID.ValueMember = "仕入先ID";
+            OleDbDataAdapter da1 =
+                 new OleDbDataAdapter("SELECT * FROM 仕入先マスタ", cn);
+
+            DataTable dt1 = new DataTable();
+            da1.Fill(dt1);
+
+            cmb_SupplierID.DataSource = dt1;
+            cmb_SupplierID.DisplayMember = "仕入先ID";
+            cmb_SupplierID.ValueMember = "仕入先ID";
+
+
         }
 
 
@@ -91,7 +99,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
             da.SelectCommand = cmd;
 
             //日時を設定しているコントロールを設定
-            cmd.Parameters.AddWithValue("@supplier", cmd_SupplierID.Text);
+            cmd.Parameters.AddWithValue("@supplier", cmb_SupplierID.Text);
 
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -125,12 +133,12 @@ namespace SystemDev_KY_22.ユーザーコントロール
             OleDbCommand cmd =
                new OleDbCommand("SELECT 発注テーブル.発注ID, 発注テーブル.発注年月日, 発注テーブル.商品ID, 発注テーブル.社員ID, 発注テーブル.仕入先ID, 発注テーブル.個数 " +
                                 "FROM 発注テーブル " +
-                                "WHERE 商品ID=@emp ORDER BY 発注ID", cn);
+                                "WHERE 社員ID=@emp ORDER BY 発注ID", cn);
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
 
-            //日時を設定しているコントロールを設定
+          
             cmd.Parameters.AddWithValue("@emp", txt_EmpID.Text);
 
             DataTable dt = new DataTable();
