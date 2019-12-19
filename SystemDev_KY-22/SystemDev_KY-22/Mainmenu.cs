@@ -51,6 +51,8 @@ namespace SystemDev_KY_22
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Login login = new Login();
+            login.Show();
             this.Close();
         }
 
