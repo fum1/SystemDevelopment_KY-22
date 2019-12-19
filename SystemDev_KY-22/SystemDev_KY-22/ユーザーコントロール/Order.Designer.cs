@@ -180,6 +180,7 @@
             // 
             resources.ApplyResources(this.txt_amountofmoney, "txt_amountofmoney");
             this.txt_amountofmoney.Name = "txt_amountofmoney";
+            this.txt_amountofmoney.TextChanged += new System.EventHandler(this.txt_amountofmoney_TextChanged_1);
             // 
             // lbl_carname
             // 
