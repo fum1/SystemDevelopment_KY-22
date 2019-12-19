@@ -30,8 +30,7 @@ namespace SystemDev_KY_22
 
         private void Btn_SalesCheck_Click(object sender, EventArgs e)
         {
-            pc.Set((Button)sender,selectPanel);
-            pc.Chenge(userControls, salesList);
+           
 
         }
 
@@ -51,7 +50,7 @@ namespace SystemDev_KY_22
         private void AdminMenu_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            userControls = new UserControl[6] {  orderCheck, salesList, vendor_list,empRegister,list_of_employees, carOrderHistory1 };
+            userControls = new UserControl[5] {  orderCheck, vendor_list,empRegister,list_of_employees, carOrderHistory1 };
         }
 
         private void Btn_EmpRegister_Click_1(object sender, EventArgs e)

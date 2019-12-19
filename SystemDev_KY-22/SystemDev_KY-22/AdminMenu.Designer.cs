@@ -44,7 +44,6 @@
             this.list_of_employees = new SystemDev_KY_22.ユーザーコントロール.List_of_employees();
             this.orderCheck = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
             this.empRegister = new SystemDev_KY_22.EmpRegister();
-            this.salesList = new SystemDev_KY_22.SalesList();
             this.button1 = new System.Windows.Forms.Button();
             this.carOrderHistory1 = new SystemDev_KY_22.ユーザーコントロール.CarOrderHistory();
             this.panel1.SuspendLayout();
@@ -223,7 +222,6 @@
             this.panel3.Controls.Add(this.list_of_employees);
             this.panel3.Controls.Add(this.orderCheck);
             this.panel3.Controls.Add(this.empRegister);
-            this.panel3.Controls.Add(this.salesList);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(297, 135);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -268,12 +266,7 @@
             // 
             // salesList
             // 
-            this.salesList.BackColor = System.Drawing.Color.White;
-            this.salesList.Location = new System.Drawing.Point(49, 32);
-            this.salesList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.salesList.Name = "salesList";
-            this.salesList.Size = new System.Drawing.Size(1761, 1104);
-            this.salesList.TabIndex = 0;
+           
             // 
             // button1
             // 
@@ -337,17 +330,14 @@
         private EmpRegister empRegister1;
         private ユーザーコントロール.List_of_employees list_of_employees1;
         private ユーザーコントロール.OrderCheck orderCheck1;
-        private SalesList salesList1;
         private System.Windows.Forms.Button btn_employees;
         private System.Windows.Forms.Button btn_Vendorlist;
         private ユーザーコントロール.Vendor_list vendor_list1;
-        private SalesList salesList2;
         private ユーザーコントロール.OrderCheck orderCheck2;
         private ユーザーコントロール.Vendor_list vendor_list;
         private ユーザーコントロール.List_of_employees list_of_employees;
         private ユーザーコントロール.OrderCheck orderCheck;
         private EmpRegister empRegister;
-        private SalesList salesList;
         private System.Windows.Forms.Button button1;
         private ユーザーコントロール.CarOrderHistory carOrderHistory1;
     }
