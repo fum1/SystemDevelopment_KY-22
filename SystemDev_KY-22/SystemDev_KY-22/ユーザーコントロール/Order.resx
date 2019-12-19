@@ -136,7 +136,7 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_decision.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="btn_decision.Text" xml:space="preserve">
     <value>決定</value>
@@ -151,6 +151,48 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_decision.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 155</value>
+  </data>
+  <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 34</value>
+  </data>
+  <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
+    <value>textBox6</value>
+  </data>
+  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
+    <value>gbx_vehicle</value>
+  </data>
+  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 110</value>
+  </data>
+  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 34</value>
+  </data>
+  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
+    <value>textBox5</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
+    <value>gbx_vehicle</value>
+  </data>
+  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -169,7 +211,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 34</value>
+    <value>35, 29</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -187,7 +229,7 @@
     <value>gbx_vehicle</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="txt_itemid.Location" type="System.Drawing.Point, System.Drawing">
     <value>199, 64</value>
@@ -211,7 +253,7 @@
     <value>gbx_vehicle</value>
   </data>
   <data name="&gt;&gt;txt_itemid.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="lbl_itemid.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -247,7 +289,7 @@
     <value>gbx_vehicle</value>
   </data>
   <data name="&gt;&gt;lbl_itemid.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="txt_total.Location" type="System.Drawing.Point, System.Drawing">
     <value>199, 517</value>
@@ -271,7 +313,7 @@
     <value>gbx_vehicle</value>
   </data>
   <data name="&gt;&gt;txt_total.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>199, 206</value>
@@ -292,7 +334,7 @@
     <value>gbx_vehicle</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>199, 246</value>
@@ -313,7 +355,7 @@
     <value>gbx_vehicle</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="comboBox3.Items" xml:space="preserve">
     <value>S(未使用）</value>
@@ -349,48 +391,6 @@
     <value>gbx_vehicle</value>
   </data>
   <data name="&gt;&gt;comboBox3.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 156</value>
-  </data>
-  <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 35</value>
-  </data>
-  <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;comboBox2.Name" xml:space="preserve">
-    <value>comboBox2</value>
-  </data>
-  <data name="&gt;&gt;comboBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox2.Parent" xml:space="preserve">
-    <value>gbx_vehicle</value>
-  </data>
-  <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="cmb_manufacturer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 111</value>
-  </data>
-  <data name="cmb_manufacturer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 35</value>
-  </data>
-  <data name="cmb_manufacturer.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;cmb_manufacturer.Name" xml:space="preserve">
-    <value>cmb_manufacturer</value>
-  </data>
-  <data name="&gt;&gt;cmb_manufacturer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmb_manufacturer.Parent" xml:space="preserve">
-    <value>gbx_vehicle</value>
-  </data>
-  <data name="&gt;&gt;cmb_manufacturer.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="lbl_circle.AutoSize" type="System.Boolean, mscorlib">
@@ -771,14 +771,50 @@
   <data name="&gt;&gt;gbx_vehicle.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 314</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>在庫数減：</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>gbx_order</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 17</value>
+    <value>151, 305</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 34</value>
+    <value>316, 34</value>
   </data>
   <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
     <value>textBox4</value>
@@ -790,7 +826,7 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -802,7 +838,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 339</value>
+    <value>45, 270</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -826,13 +862,13 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 330</value>
+    <value>151, 256</value>
   </data>
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 34</value>
+    <value>316, 34</value>
   </data>
   <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -847,10 +883,10 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 162</value>
+    <value>151, 120</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>316, 35</value>
@@ -868,7 +904,7 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="rtb_remarks.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 32</value>
@@ -928,16 +964,16 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;gbx_remarks.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="txt_clientID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 289</value>
+    <value>151, 215</value>
   </data>
   <data name="txt_clientID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="txt_clientID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 34</value>
+    <value>316, 34</value>
   </data>
   <data name="txt_clientID.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -952,10 +988,10 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;txt_clientID.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="txt_employeeID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 225</value>
+    <value>151, 173</value>
   </data>
   <data name="txt_employeeID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -976,10 +1012,10 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;txt_employeeID.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="dtp_Orderdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 102</value>
+    <value>151, 64</value>
   </data>
   <data name="dtp_Orderdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1000,7 +1036,7 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;dtp_Orderdate.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="lbl_storeID.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1009,7 +1045,7 @@
     <value>MS UI Gothic, 12pt</value>
   </data>
   <data name="lbl_storeID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 171</value>
+    <value>45, 129</value>
   </data>
   <data name="lbl_storeID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1033,7 +1069,7 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;lbl_storeID.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="lbl_Orderdate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1042,7 +1078,7 @@
     <value>MS UI Gothic, 12pt</value>
   </data>
   <data name="lbl_Orderdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 107</value>
+    <value>43, 73</value>
   </data>
   <data name="lbl_Orderdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1066,7 +1102,7 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;lbl_Orderdate.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="lbl_employeeID.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1075,7 +1111,7 @@
     <value>MS UI Gothic, 12pt</value>
   </data>
   <data name="lbl_employeeID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 235</value>
+    <value>45, 182</value>
   </data>
   <data name="lbl_employeeID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1099,7 +1135,7 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;lbl_employeeID.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="lbl_clientID.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1108,7 +1144,7 @@
     <value>MS UI Gothic, 12pt</value>
   </data>
   <data name="lbl_clientID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 299</value>
+    <value>45, 224</value>
   </data>
   <data name="lbl_clientID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1132,7 +1168,7 @@
     <value>gbx_order</value>
   </data>
   <data name="&gt;&gt;lbl_clientID.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="gbx_order.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 16.2pt</value>
@@ -1186,7 +1222,7 @@
     <value>235, 60</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>クリア</value>
