@@ -135,5 +135,71 @@ namespace SystemDev_KY_22.ユーザーコントロール
         {
             lbl_id.Text = "氏名:";
         }
+
+        private void radioB_Name_CheckedChanged_1(object sender, EventArgs e)
+        {
+            lbl_id.Text = "氏名:";
+        }
+
+        private void btn_search_Click_1(object sender, EventArgs e)
+        {
+            if (radioB_Id.Checked == true)
+            {
+                OleDbCommand cmd =
+                    new OleDbCommand("SELECT 顧客ID , 氏名 , 住所 , 郵便番号 , 電話番号 , 性別 , 生年月日 FROM 顧客マスタ WHERE 顧客ID = @顧客ID ORDER BY 顧客ID", cn);
+                cmd.Connection = cn;
+                OleDbDataAdapter da = new OleDbDataAdapter();
+                da.SelectCommand = cmd;
+
+                cmd.Parameters.AddWithValue("@顧客ID", txt_id.Text);
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                try
+                {
+                    DataRow dr = dt.Rows[0];
+                    cn.Close();
+                    MessageBox.Show("顧客ID : " + dr["顧客ID"].ToString() + Environment.NewLine + "氏名 : " + dr["氏名"].ToString() + Environment.NewLine + "郵便番号 : " + dr["郵便番号"].ToString() + Environment.NewLine + "住所 : " + dr["住所"].ToString() + Environment.NewLine + "電話番号 : " + dr["電話番号"].ToString() + Environment.NewLine + "性別 : " + dr["性別"].ToString() + Environment.NewLine + "生年月日 : " + dr["生年月日"].ToString(), txt_id.Text + "の検索結果");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("IDが見つかりませんでした");
+                    cn.Close();                //コネクションを閉じる
+                    return;
+                }
+            }
+            else
+            {
+                OleDbCommand cmd =
+                    new OleDbCommand("SELECT 顧客ID , 氏名 , 住所 , 郵便番号 , 電話番号 , 性別 , 生年月日 FROM 顧客マスタ WHERE 氏名 = @氏名 ORDER BY 顧客ID", cn);
+                cmd.Connection = cn;
+                OleDbDataAdapter da = new OleDbDataAdapter();
+                da.SelectCommand = cmd;
+
+                cmd.Parameters.AddWithValue("@氏名", txt_id.Text);
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                try
+                {
+                    DataRow dr = dt.Rows[0];
+                    cn.Close();
+                    MessageBox.Show("顧客ID : " + dr["顧客ID"].ToString() + Environment.NewLine + "氏名 : " + dr["氏名"].ToString() + Environment.NewLine + "郵便番号 : " + dr["郵便番号"].ToString() + Environment.NewLine + "住所 : " + dr["住所"].ToString() + Environment.NewLine + "電話番号 : " + dr["電話番号"].ToString() + Environment.NewLine + "性別 : " + dr["性別"].ToString() + Environment.NewLine + "生年月日 : " + dr["生年月日"].ToString(), txt_id.Text + "の検索結果");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("氏名が見つかりませんでした");
+                    cn.Close();                //コネクションを閉じる
+                    return;
+                }
+            }
+        }
+
+        private void radioB_Id_CheckedChanged_1(object sender, EventArgs e)
+        {
+            lbl_id.Text = "顧客ID:";
+        }
     }
 }

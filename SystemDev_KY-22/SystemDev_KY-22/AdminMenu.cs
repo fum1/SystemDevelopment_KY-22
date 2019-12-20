@@ -39,7 +39,7 @@ namespace SystemDev_KY_22
         private void Btn_OrderList_Click(object sender, EventArgs e)
         {
             pc.Set((Button)sender,selectPanel);
-            pc.Chenge(userControls, orderCheck);
+            pc.Chenge(userControls, orderHistory1);
         }
 
 
@@ -52,7 +52,7 @@ namespace SystemDev_KY_22
         private void AdminMenu_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            userControls = new UserControl[5] {  orderCheck, vendor_list,empRegister,list_of_employees, carOrderHistory1 };
+            userControls = new UserControl[5] {  orderHistory1, vendor_list,empRegister,list_of_employees, carOrderHistory1 };
             
         }
 
