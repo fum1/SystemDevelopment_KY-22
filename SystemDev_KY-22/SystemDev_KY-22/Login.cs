@@ -58,6 +58,9 @@ namespace SystemDev_KY_22
 
             cn.ConnectionString =
      @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+
+            this.ActiveControl = textB_id;
+
         }
 
         private void Button1_Click(object sender, EventArgs e)
