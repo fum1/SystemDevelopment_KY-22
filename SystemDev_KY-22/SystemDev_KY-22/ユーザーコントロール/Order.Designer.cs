@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Order));
             this.btn_decision = new System.Windows.Forms.Button();
             this.gbx_vehicle = new System.Windows.Forms.GroupBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.txt_itemid = new System.Windows.Forms.TextBox();
             this.lbl_itemid = new System.Windows.Forms.Label();
@@ -65,8 +67,6 @@
             this.lbl_employeeID = new System.Windows.Forms.Label();
             this.lbl_clientID = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.gbx_vehicle.SuspendLayout();
             this.gbx_order.SuspendLayout();
             this.gbx_remarks.SuspendLayout();
@@ -104,6 +104,16 @@
             resources.ApplyResources(this.gbx_vehicle, "gbx_vehicle");
             this.gbx_vehicle.Name = "gbx_vehicle";
             this.gbx_vehicle.TabStop = false;
+            // 
+            // textBox6
+            // 
+            resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.Name = "textBox6";
+            // 
+            // textBox5
+            // 
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.Name = "textBox5";
             // 
             // button2
             // 
@@ -306,16 +316,6 @@
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox5
-            // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            // 
-            // textBox6
-            // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
             // 
             // Order
             // 
