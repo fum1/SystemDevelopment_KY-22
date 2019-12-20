@@ -23,6 +23,8 @@ namespace SystemDev_KY_22
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
+            Login login = new Login();
+            login.Show();
             this.Close();
         }
 
@@ -51,6 +53,7 @@ namespace SystemDev_KY_22
         {
             this.WindowState = FormWindowState.Maximized;
             userControls = new UserControl[5] {  orderCheck, vendor_list,empRegister,list_of_employees, carOrderHistory1 };
+            
         }
 
         private void Btn_EmpRegister_Click_1(object sender, EventArgs e)
