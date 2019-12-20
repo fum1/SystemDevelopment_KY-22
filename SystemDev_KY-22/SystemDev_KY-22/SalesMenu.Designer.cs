@@ -36,15 +36,15 @@
             this.btn_ClientRegister = new System.Windows.Forms.Button();
             this.btn_StockList = new System.Windows.Forms.Button();
             this.panel_Back = new System.Windows.Forms.Panel();
+            this.clientList = new SystemDev_KY_22.ユーザーコントロール.ClientList();
+            this.clientRegister = new SystemDev_KY_22.ClientRegister();
             this.stockList = new SystemDev_KY_22.StockList();
+            this.order = new SystemDev_KY_22.Order();
+            this.clientRegisterU1 = new SystemDev_KY_22.ClientRegister();
             this.stockList1 = new SystemDev_KY_22.StockList();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.clientList = new SystemDev_KY_22.ユーザーコントロール.ClientList();
-            this.clientRegister = new SystemDev_KY_22.ClientRegister();
-            this.order = new SystemDev_KY_22.Order();
-            this.clientRegisterU1 = new SystemDev_KY_22.ClientRegister();
             this.panel1.SuspendLayout();
             this.panel_Back.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -72,7 +72,7 @@
             this.btn_ClientList.ForeColor = System.Drawing.Color.Black;
             this.btn_ClientList.Image = ((System.Drawing.Image)(resources.GetObject("btn_ClientList.Image")));
             this.btn_ClientList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_ClientList.Location = new System.Drawing.Point(12, 671);
+            this.btn_ClientList.Location = new System.Drawing.Point(12, 540);
             this.btn_ClientList.Name = "btn_ClientList";
             this.btn_ClientList.Size = new System.Drawing.Size(201, 115);
             this.btn_ClientList.TabIndex = 4;
@@ -98,7 +98,7 @@
             this.btn_Order.ForeColor = System.Drawing.Color.Black;
             this.btn_Order.Image = ((System.Drawing.Image)(resources.GetObject("btn_Order.Image")));
             this.btn_Order.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Order.Location = new System.Drawing.Point(12, 518);
+            this.btn_Order.Location = new System.Drawing.Point(12, 387);
             this.btn_Order.Name = "btn_Order";
             this.btn_Order.Size = new System.Drawing.Size(201, 115);
             this.btn_Order.TabIndex = 3;
@@ -115,7 +115,7 @@
             this.btn_ClientRegister.ForeColor = System.Drawing.Color.Black;
             this.btn_ClientRegister.Image = ((System.Drawing.Image)(resources.GetObject("btn_ClientRegister.Image")));
             this.btn_ClientRegister.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_ClientRegister.Location = new System.Drawing.Point(12, 361);
+            this.btn_ClientRegister.Location = new System.Drawing.Point(12, 230);
             this.btn_ClientRegister.Name = "btn_ClientRegister";
             this.btn_ClientRegister.Size = new System.Drawing.Size(201, 115);
             this.btn_ClientRegister.TabIndex = 2;
@@ -132,7 +132,7 @@
             this.btn_StockList.ForeColor = System.Drawing.Color.Black;
             this.btn_StockList.Image = ((System.Drawing.Image)(resources.GetObject("btn_StockList.Image")));
             this.btn_StockList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_StockList.Location = new System.Drawing.Point(12, 204);
+            this.btn_StockList.Location = new System.Drawing.Point(12, 73);
             this.btn_StockList.Name = "btn_StockList";
             this.btn_StockList.Size = new System.Drawing.Size(201, 115);
             this.btn_StockList.TabIndex = 1;
@@ -155,6 +155,26 @@
             this.panel_Back.Size = new System.Drawing.Size(1042, 702);
             this.panel_Back.TabIndex = 0;
             // 
+            // clientList
+            // 
+            this.clientList.BackColor = System.Drawing.Color.White;
+            this.clientList.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clientList.Location = new System.Drawing.Point(275, 224);
+            this.clientList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.clientList.Name = "clientList";
+            this.clientList.Size = new System.Drawing.Size(1312, 683);
+            this.clientList.TabIndex = 5;
+            this.clientList.Visible = false;
+            // 
+            // clientRegister
+            // 
+            this.clientRegister.BackColor = System.Drawing.Color.White;
+            this.clientRegister.Location = new System.Drawing.Point(150, 279);
+            this.clientRegister.Name = "clientRegister";
+            this.clientRegister.Size = new System.Drawing.Size(1314, 768);
+            this.clientRegister.TabIndex = 4;
+            this.clientRegister.Visible = false;
+            // 
             // stockList
             // 
             this.stockList.BackColor = System.Drawing.Color.White;
@@ -164,6 +184,25 @@
             this.stockList.Size = new System.Drawing.Size(1042, 703);
             this.stockList.TabIndex = 3;
             this.stockList.Visible = false;
+            // 
+            // order
+            // 
+            this.order.BackColor = System.Drawing.Color.White;
+            this.order.Location = new System.Drawing.Point(27, 33);
+            this.order.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
+            this.order.Name = "order";
+            this.order.Size = new System.Drawing.Size(4168, 3471);
+            this.order.TabIndex = 2;
+            this.order.Visible = false;
+            // 
+            // clientRegisterU1
+            // 
+            this.clientRegisterU1.BackColor = System.Drawing.Color.White;
+            this.clientRegisterU1.Location = new System.Drawing.Point(2372, 1131);
+            this.clientRegisterU1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
+            this.clientRegisterU1.Name = "clientRegisterU1";
+            this.clientRegisterU1.Size = new System.Drawing.Size(4168, 3471);
+            this.clientRegisterU1.TabIndex = 1;
             // 
             // stockList1
             // 
@@ -211,45 +250,6 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
-            // 
-            // clientList
-            // 
-            this.clientList.BackColor = System.Drawing.Color.White;
-            this.clientList.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.clientList.Location = new System.Drawing.Point(275, 224);
-            this.clientList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.clientList.Name = "clientList";
-            this.clientList.Size = new System.Drawing.Size(1312, 683);
-            this.clientList.TabIndex = 5;
-            this.clientList.Visible = false;
-            // 
-            // clientRegister
-            // 
-            this.clientRegister.BackColor = System.Drawing.Color.White;
-            this.clientRegister.Location = new System.Drawing.Point(150, 279);
-            this.clientRegister.Name = "clientRegister";
-            this.clientRegister.Size = new System.Drawing.Size(1314, 768);
-            this.clientRegister.TabIndex = 4;
-            this.clientRegister.Visible = false;
-            // 
-            // order
-            // 
-            this.order.BackColor = System.Drawing.Color.White;
-            this.order.Location = new System.Drawing.Point(27, 33);
-            this.order.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
-            this.order.Name = "order";
-            this.order.Size = new System.Drawing.Size(4168, 3471);
-            this.order.TabIndex = 2;
-            this.order.Visible = false;
-            // 
-            // clientRegisterU1
-            // 
-            this.clientRegisterU1.BackColor = System.Drawing.Color.White;
-            this.clientRegisterU1.Location = new System.Drawing.Point(2372, 1131);
-            this.clientRegisterU1.Margin = new System.Windows.Forms.Padding(24, 36, 24, 36);
-            this.clientRegisterU1.Name = "clientRegisterU1";
-            this.clientRegisterU1.Size = new System.Drawing.Size(4168, 3471);
-            this.clientRegisterU1.TabIndex = 1;
             // 
             // SalesMenu
             // 

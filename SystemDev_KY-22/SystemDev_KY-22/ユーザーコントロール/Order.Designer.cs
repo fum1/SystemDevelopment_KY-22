@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Order));
             this.btn_decision = new System.Windows.Forms.Button();
             this.gbx_vehicle = new System.Windows.Forms.GroupBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.txt_itemid = new System.Windows.Forms.TextBox();
             this.lbl_itemid = new System.Windows.Forms.Label();
@@ -50,8 +52,6 @@
             this.lbl_modelname = new System.Windows.Forms.Label();
             this.lbl_consumptiontax = new System.Windows.Forms.Label();
             this.gbx_order = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -65,8 +65,6 @@
             this.lbl_employeeID = new System.Windows.Forms.Label();
             this.lbl_clientID = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.gbx_vehicle.SuspendLayout();
             this.gbx_order.SuspendLayout();
             this.gbx_remarks.SuspendLayout();
@@ -104,6 +102,16 @@
             resources.ApplyResources(this.gbx_vehicle, "gbx_vehicle");
             this.gbx_vehicle.Name = "gbx_vehicle";
             this.gbx_vehicle.TabStop = false;
+            // 
+            // textBox6
+            // 
+            resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.Name = "textBox6";
+            // 
+            // textBox5
+            // 
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.Name = "textBox5";
             // 
             // button2
             // 
@@ -209,8 +217,6 @@
             // 
             // gbx_order
             // 
-            this.gbx_order.Controls.Add(this.label2);
-            this.gbx_order.Controls.Add(this.textBox4);
             this.gbx_order.Controls.Add(this.label1);
             this.gbx_order.Controls.Add(this.textBox3);
             this.gbx_order.Controls.Add(this.comboBox1);
@@ -225,16 +231,6 @@
             resources.ApplyResources(this.gbx_order, "gbx_order");
             this.gbx_order.Name = "gbx_order";
             this.gbx_order.TabStop = false;
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // textBox4
-            // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
             // 
             // label1
             // 
@@ -307,16 +303,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox5
-            // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            // 
-            // textBox6
-            // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
-            // 
             // Order
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -372,8 +358,6 @@
         private System.Windows.Forms.TextBox txt_itemid;
         private System.Windows.Forms.Label lbl_itemid;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
     }

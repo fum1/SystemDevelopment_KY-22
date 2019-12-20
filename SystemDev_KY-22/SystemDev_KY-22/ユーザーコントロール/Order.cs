@@ -62,7 +62,6 @@ namespace SystemDev_KY_22
             txt_clientID.Clear();
             textBox3.Clear();
             txt_itemid.Clear();
-            textBox4.Clear();
 
             dataload();
 
@@ -86,19 +85,20 @@ namespace SystemDev_KY_22
             //連番END
 
             OleDbCommand cmd =
-               new OleDbCommand("INSERT INTO 注文テーブル (注文ID,数量,顧客ID,社員ID,商品詳細ID,在庫減フラグ,店舗ID,注文日)" +
-               "VALUES (@注文ID,@数量,@顧客ID,@社員ID,@商品詳細ID,@在庫減フラグ,@店舗ID,@注文日)", cn);
+               new OleDbCommand("INSERT INTO 注文テーブル (注文ID,数量,顧客ID,社員ID,商品詳細ID,店舗ID,注文日)" +
+               "VALUES (@注文ID,@数量,@顧客ID,@社員ID,@商品詳細ID,@店舗ID,@注文日)", cn);
 
 
             //@パラメータが出てくる順番に設定する
             cmd.Parameters.AddWithValue("@注文ID", itemID.ToString());
             cmd.Parameters.AddWithValue("@数量", textBox3.Text);
-            cmd.Parameters.AddWithValue("@店舗ID", comboBox1.Text);
+            cmd.Parameters.AddWithValue("@顧客ID", txt_clientID.Text);
             cmd.Parameters.AddWithValue("@社員ID", txt_employeeID.Text);
             cmd.Parameters.AddWithValue("@商品詳細ID", txt_itemid.Text);
-            cmd.Parameters.AddWithValue("@在庫数減フラグ", textBox4.Text);
-            cmd.Parameters.AddWithValue("@顧客ID", txt_clientID.Text);
+            cmd.Parameters.AddWithValue("@店舗ID", comboBox1.Text);
             cmd.Parameters.AddWithValue("@注文日", dtp_Orderdate.Text);
+
+
             try
             {
                 cn.Open();                 //コネクションを開く
