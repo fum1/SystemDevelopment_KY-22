@@ -37,14 +37,11 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.btn_end = new System.Windows.Forms.Button();
-            this.dtp_orderdate2 = new System.Windows.Forms.DateTimePicker();
-            this.lbl_stretchingrod = new System.Windows.Forms.Label();
             this.btn_search = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
             this.mxt_productname = new System.Windows.Forms.MaskedTextBox();
             this.lbl_productname = new System.Windows.Forms.Label();
-            this.dtp_orderdate1 = new System.Windows.Forms.DateTimePicker();
-            this.lbl_orderdate = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ordercheck)).BeginInit();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -103,15 +100,12 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.checkBox1);
             this.panel4.Controls.Add(this.btn_end);
-            this.panel4.Controls.Add(this.dtp_orderdate2);
-            this.panel4.Controls.Add(this.lbl_stretchingrod);
             this.panel4.Controls.Add(this.btn_search);
             this.panel4.Controls.Add(this.btn_delete);
             this.panel4.Controls.Add(this.mxt_productname);
             this.panel4.Controls.Add(this.lbl_productname);
-            this.panel4.Controls.Add(this.dtp_orderdate1);
-            this.panel4.Controls.Add(this.lbl_orderdate);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(13, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
@@ -133,27 +127,6 @@
             this.btn_end.Text = "完了";
             this.btn_end.UseVisualStyleBackColor = false;
             this.btn_end.Click += new System.EventHandler(this.btn_end_Click);
-            // 
-            // dtp_orderdate2
-            // 
-            this.dtp_orderdate2.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dtp_orderdate2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_orderdate2.Location = new System.Drawing.Point(841, 13);
-            this.dtp_orderdate2.Margin = new System.Windows.Forms.Padding(5);
-            this.dtp_orderdate2.Name = "dtp_orderdate2";
-            this.dtp_orderdate2.Size = new System.Drawing.Size(267, 40);
-            this.dtp_orderdate2.TabIndex = 2;
-            // 
-            // lbl_stretchingrod
-            // 
-            this.lbl_stretchingrod.AutoSize = true;
-            this.lbl_stretchingrod.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_stretchingrod.Location = new System.Drawing.Point(924, 22);
-            this.lbl_stretchingrod.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.lbl_stretchingrod.Name = "lbl_stretchingrod";
-            this.lbl_stretchingrod.Size = new System.Drawing.Size(48, 33);
-            this.lbl_stretchingrod.TabIndex = 28;
-            this.lbl_stretchingrod.Text = "～";
             // 
             // btn_search
             // 
@@ -204,28 +177,18 @@
             this.lbl_productname.Size = new System.Drawing.Size(110, 33);
             this.lbl_productname.TabIndex = 24;
             this.lbl_productname.Text = "受注ID";
-            
             // 
-            // dtp_orderdate1
+            // checkBox1
             // 
-            this.dtp_orderdate1.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dtp_orderdate1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_orderdate1.Location = new System.Drawing.Point(533, 12);
-            this.dtp_orderdate1.Margin = new System.Windows.Forms.Padding(5);
-            this.dtp_orderdate1.Name = "dtp_orderdate1";
-            this.dtp_orderdate1.Size = new System.Drawing.Size(260, 40);
-            this.dtp_orderdate1.TabIndex = 1;
-            // 
-            // lbl_orderdate
-            // 
-            this.lbl_orderdate.AutoSize = true;
-            this.lbl_orderdate.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_orderdate.Location = new System.Drawing.Point(413, 15);
-            this.lbl_orderdate.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.lbl_orderdate.Name = "lbl_orderdate";
-            this.lbl_orderdate.Size = new System.Drawing.Size(114, 33);
-            this.lbl_orderdate.TabIndex = 22;
-            this.lbl_orderdate.Text = "受注日";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkBox1.Location = new System.Drawing.Point(608, 20);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(139, 38);
+            this.checkBox1.TabIndex = 30;
+            this.checkBox1.Text = "受注済";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // OrderCheck
             // 
@@ -257,14 +220,11 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DateTimePicker dtp_orderdate2;
-        private System.Windows.Forms.Label lbl_stretchingrod;
         private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.MaskedTextBox mxt_productname;
         private System.Windows.Forms.Label lbl_productname;
-        private System.Windows.Forms.DateTimePicker dtp_orderdate1;
-        private System.Windows.Forms.Label lbl_orderdate;
         private System.Windows.Forms.Button btn_end;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

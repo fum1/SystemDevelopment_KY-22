@@ -39,13 +39,13 @@
             this.selectPanel = new System.Windows.Forms.Panel();
             this.btn_OrderList = new System.Windows.Forms.Button();
             this.Btn_EmpRegister = new System.Windows.Forms.Button();
-            this.btn_SalesList = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.carOrderHistory1 = new SystemDev_KY_22.ユーザーコントロール.CarOrderHistory();
             this.vendor_list = new SystemDev_KY_22.ユーザーコントロール.Vendor_list();
             this.list_of_employees = new SystemDev_KY_22.ユーザーコントロール.List_of_employees();
             this.orderCheck = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
             this.empRegister = new SystemDev_KY_22.EmpRegister();
+            this.orderHistory1 = new SystemDev_KY_22.ユーザーコントロール.OrderHistory();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -101,7 +101,6 @@
             this.panel2.Controls.Add(this.selectPanel);
             this.panel2.Controls.Add(this.btn_OrderList);
             this.panel2.Controls.Add(this.Btn_EmpRegister);
-            this.panel2.Controls.Add(this.btn_SalesList);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 135);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -118,7 +117,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(28, 488);
+            this.button1.Location = new System.Drawing.Point(22, 401);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(248, 160);
@@ -137,7 +136,7 @@
             this.btn_Vendorlist.ForeColor = System.Drawing.Color.Black;
             this.btn_Vendorlist.Image = ((System.Drawing.Image)(resources.GetObject("btn_Vendorlist.Image")));
             this.btn_Vendorlist.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Vendorlist.Location = new System.Drawing.Point(28, 785);
+            this.btn_Vendorlist.Location = new System.Drawing.Point(22, 698);
             this.btn_Vendorlist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Vendorlist.Name = "btn_Vendorlist";
             this.btn_Vendorlist.Size = new System.Drawing.Size(248, 160);
@@ -156,7 +155,7 @@
             this.btn_employees.ForeColor = System.Drawing.Color.Black;
             this.btn_employees.Image = ((System.Drawing.Image)(resources.GetObject("btn_employees.Image")));
             this.btn_employees.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_employees.Location = new System.Drawing.Point(28, 638);
+            this.btn_employees.Location = new System.Drawing.Point(22, 551);
             this.btn_employees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_employees.Name = "btn_employees";
             this.btn_employees.Size = new System.Drawing.Size(248, 160);
@@ -185,7 +184,7 @@
             this.btn_OrderList.ForeColor = System.Drawing.Color.Black;
             this.btn_OrderList.Image = ((System.Drawing.Image)(resources.GetObject("btn_OrderList.Image")));
             this.btn_OrderList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_OrderList.Location = new System.Drawing.Point(28, 324);
+            this.btn_OrderList.Location = new System.Drawing.Point(22, 237);
             this.btn_OrderList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_OrderList.Name = "btn_OrderList";
             this.btn_OrderList.Size = new System.Drawing.Size(248, 160);
@@ -204,7 +203,7 @@
             this.Btn_EmpRegister.ForeColor = System.Drawing.Color.Black;
             this.Btn_EmpRegister.Image = ((System.Drawing.Image)(resources.GetObject("Btn_EmpRegister.Image")));
             this.Btn_EmpRegister.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_EmpRegister.Location = new System.Drawing.Point(28, 160);
+            this.Btn_EmpRegister.Location = new System.Drawing.Point(22, 73);
             this.Btn_EmpRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_EmpRegister.Name = "Btn_EmpRegister";
             this.Btn_EmpRegister.Size = new System.Drawing.Size(248, 160);
@@ -214,28 +213,10 @@
             this.Btn_EmpRegister.UseVisualStyleBackColor = false;
             this.Btn_EmpRegister.Click += new System.EventHandler(this.Btn_EmpRegister_Click_1);
             // 
-            // btn_SalesList
-            // 
-            this.btn_SalesList.BackColor = System.Drawing.Color.Transparent;
-            this.btn_SalesList.FlatAppearance.BorderSize = 0;
-            this.btn_SalesList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SalesList.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-R", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_SalesList.ForeColor = System.Drawing.Color.Black;
-            this.btn_SalesList.Image = ((System.Drawing.Image)(resources.GetObject("btn_SalesList.Image")));
-            this.btn_SalesList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_SalesList.Location = new System.Drawing.Point(28, 4);
-            this.btn_SalesList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_SalesList.Name = "btn_SalesList";
-            this.btn_SalesList.Size = new System.Drawing.Size(248, 152);
-            this.btn_SalesList.TabIndex = 3;
-            this.btn_SalesList.Text = "売上確認";
-            this.btn_SalesList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_SalesList.UseVisualStyleBackColor = false;
-            this.btn_SalesList.Click += new System.EventHandler(this.Btn_SalesCheck_Click);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.orderHistory1);
             this.panel3.Controls.Add(this.carOrderHistory1);
             this.panel3.Controls.Add(this.vendor_list);
             this.panel3.Controls.Add(this.list_of_employees);
@@ -298,6 +279,14 @@
             this.empRegister.TabIndex = 1;
             this.empRegister.Visible = false;
             // 
+            // orderHistory1
+            // 
+            this.orderHistory1.BackColor = System.Drawing.Color.White;
+            this.orderHistory1.Location = new System.Drawing.Point(42, 222);
+            this.orderHistory1.Name = "orderHistory1";
+            this.orderHistory1.Size = new System.Drawing.Size(1230, 735);
+            this.orderHistory1.TabIndex = 6;
+            // 
             // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -327,7 +316,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_logout;
         private System.Windows.Forms.Button Btn_EmpRegister;
-        private System.Windows.Forms.Button btn_SalesList;
         private System.Windows.Forms.Button btn_OrderList;
         public System.Windows.Forms.Panel selectPanel;
         private EmpRegister empRegister1;
@@ -343,5 +331,6 @@
         private EmpRegister empRegister;
         private System.Windows.Forms.Button button1;
         private ユーザーコントロール.CarOrderHistory carOrderHistory1;
+        private ユーザーコントロール.OrderHistory orderHistory1;
     }
 }

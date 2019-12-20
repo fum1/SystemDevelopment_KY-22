@@ -44,7 +44,6 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
             cmb_StoreID.DataSource = dt;
             cmb_StoreID.DisplayMember = "店舗ID";
-            cmb_StoreID.ValueMember = "店舗ID";
         }
 
         private void btn_DateTimeSeach_Click(object sender, EventArgs e)

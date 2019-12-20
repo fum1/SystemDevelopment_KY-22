@@ -20,14 +20,17 @@ namespace OrderHistory
 
             // タイマーの間隔(ミリ秒)
             //Timer timer = new Timer(300000);
-            Timer timer = new Timer(300000);
+            Timer timer = new Timer(10000);
 
             int a;
             int b;
             int c;
 
+
             // タイマーを開始する
             timer.Start();
+
+
             
             timer.Elapsed += (sender, e) =>
             {
