@@ -82,6 +82,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
             }
             MessageBox.Show("登録しました", "管理者");
+            dataload();
         }
 
         private void btn_register1_Click(object sender, EventArgs e)
@@ -125,6 +126,8 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
             }
             MessageBox.Show("登録しました", "管理者");
+
+            dataload2();
         }
 
         private void dataload()   //カスタム関数

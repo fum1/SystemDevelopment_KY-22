@@ -135,5 +135,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         {
             lbl_id.Text = "氏名:";
         }
+
+        
     }
 }
