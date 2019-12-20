@@ -52,8 +52,6 @@
             this.lbl_modelname = new System.Windows.Forms.Label();
             this.lbl_consumptiontax = new System.Windows.Forms.Label();
             this.gbx_order = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -219,8 +217,6 @@
             // 
             // gbx_order
             // 
-            this.gbx_order.Controls.Add(this.label2);
-            this.gbx_order.Controls.Add(this.textBox4);
             this.gbx_order.Controls.Add(this.label1);
             this.gbx_order.Controls.Add(this.textBox3);
             this.gbx_order.Controls.Add(this.comboBox1);
@@ -235,16 +231,6 @@
             resources.ApplyResources(this.gbx_order, "gbx_order");
             this.gbx_order.Name = "gbx_order";
             this.gbx_order.TabStop = false;
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // textBox4
-            // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
             // 
             // label1
             // 
@@ -372,8 +358,6 @@
         private System.Windows.Forms.TextBox txt_itemid;
         private System.Windows.Forms.Label lbl_itemid;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
     }

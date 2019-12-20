@@ -14,6 +14,7 @@ namespace SystemDev_KY_22
     public partial class LoaUnloading : UserControl
     {
         OleDbConnection cn;
+
         public LoaUnloading()
         {
             InitializeComponent();
@@ -21,13 +22,7 @@ namespace SystemDev_KY_22
 
         private void LoaUnloading_Load(object sender, EventArgs e)
         {
-            if (!this.DesignMode)
-            {
-                cn = new OleDbConnection();
-                cn.ConnectionString =
-                    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
-                dataload();
-            }
+
         }
 
         private void dataload()   //カスタム関数
@@ -35,7 +30,7 @@ namespace SystemDev_KY_22
             if (rbt_storing.Checked)
             {
                 OleDbDataAdapter da =
-                        new OleDbDataAdapter("SELECT * FROM 入庫テーブル", cn);
+                    new OleDbDataAdapter("SELECT * FROM 入庫テーブル", cn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dgv_loaunloading.DataSource = dt;
@@ -57,12 +52,23 @@ namespace SystemDev_KY_22
 
         private void rbt_storing_CheckedChanged(object sender, EventArgs e)
         {
-            dataload();
+            if (rbt_storing.Checked) dataload();
         }
 
         private void rbt_Issue_CheckedChanged(object sender, EventArgs e)
         {
-            dataload();
+            if(rbt_Issue.Checked) dataload();
+        }
+
+        private void LoaUnloading_Load_1(object sender, EventArgs e)
+        {
+            if (!this.DesignMode)
+            {
+                cn = new OleDbConnection();
+                cn.ConnectionString =
+                    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
+                dataload();
+            }
         }
     }
 }

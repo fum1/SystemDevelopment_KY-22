@@ -81,6 +81,7 @@
             this.radioB_Name.TabStop = true;
             this.radioB_Name.Text = "氏名";
             this.radioB_Name.UseVisualStyleBackColor = true;
+            this.radioB_Name.CheckedChanged += new System.EventHandler(this.radioB_Name_CheckedChanged_1);
             // 
             // radioB_Id
             // 
@@ -93,6 +94,7 @@
             this.radioB_Id.TabStop = true;
             this.radioB_Id.Text = "顧客ID";
             this.radioB_Id.UseVisualStyleBackColor = true;
+            this.radioB_Id.CheckedChanged += new System.EventHandler(this.radioB_Id_CheckedChanged_1);
             // 
             // btn_search
             // 
@@ -105,7 +107,7 @@
             this.btn_search.TabIndex = 17;
             this.btn_search.Text = "検索";
             this.btn_search.UseVisualStyleBackColor = true;
-            
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click_1);
             // 
             // btn_clear
             // 
@@ -142,12 +144,12 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 87);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.Size = new System.Drawing.Size(1278, 672);
+            this.dataGridView1.Size = new System.Drawing.Size(1278, 585);
             this.dataGridView1.TabIndex = 9;
             // 
             // panel4
@@ -182,8 +184,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
