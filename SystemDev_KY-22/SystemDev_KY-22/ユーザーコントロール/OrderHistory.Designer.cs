@@ -246,7 +246,7 @@
             this.lbl_OrderDate.Name = "lbl_OrderDate";
             this.lbl_OrderDate.Size = new System.Drawing.Size(73, 30);
             this.lbl_OrderDate.TabIndex = 0;
-            this.lbl_OrderDate.Text = "受注日";
+            this.lbl_OrderDate.Text = "注文日";
             // 
             // dataGridView1
             // 

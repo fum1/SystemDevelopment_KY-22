@@ -34,7 +34,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         private void dataload()
         {
             OleDbDataAdapter da =
-               new OleDbDataAdapter("SELECT * FROM 受注テーブル", cn);
+               new OleDbDataAdapter("SELECT * FROM 注文テーブル", cn);
 
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -42,14 +42,21 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.AllowUserToAddRows = false;    //最下行を非表示
             dataGridView1.AutoResizeColumns();
 
-            cmb_StoreID.DataSource = dt;
+            OleDbDataAdapter da1 =
+                 new OleDbDataAdapter("SELECT * FROM 店舗マスタ", cn);
+
+            DataTable dt1 = new DataTable();
+            da1.Fill(dt1);
+
+            cmb_StoreID.DataSource = dt1;
             cmb_StoreID.DisplayMember = "店舗ID";
+            cmb_StoreID.ValueMember = "店舗ID";
         }
 
         private void btn_DateTimeSeach_Click(object sender, EventArgs e)
         {
             OleDbCommand cmd =
-               new OleDbCommand("SELECT * FROM 受注テーブル WHERE 受注日=@dtime", cn);
+               new OleDbCommand("SELECT * FROM 注文テーブル WHERE 注文日=@dtime", cn);
 
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -67,7 +74,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         private void btn_StoreIDSeach_Click(object sender, EventArgs e)
         {
             OleDbCommand cmd =
-               new OleDbCommand("SELECT * FROM 受注テーブル WHERE 店舗ID=@storeid", cn);
+               new OleDbCommand("SELECT * FROM 注文テーブル WHERE 店舗ID=@storeid", cn);
 
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -86,7 +93,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         private void btn_EmpIDSeach_Click(object sender, EventArgs e)
         {
             OleDbCommand cmd =
-               new OleDbCommand("SELECT * FROM 受注テーブル WHERE 社員ID=@empid", cn);
+               new OleDbCommand("SELECT * FROM 注文テーブル WHERE 社員ID=@empid", cn);
 
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -105,7 +112,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         private void btn_ClientID_Click(object sender, EventArgs e)
         {
             OleDbCommand cmd =
-              new OleDbCommand("SELECT * FROM 受注テーブル WHERE 顧客ID=@clientid", cn);
+              new OleDbCommand("SELECT * FROM 注文テーブル WHERE 顧客ID=@clientid", cn);
 
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
