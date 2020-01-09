@@ -27,6 +27,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox));
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.labelProductName = new System.Windows.Forms.Label();
@@ -52,8 +53,7 @@
             this.tableLayoutPanel.Controls.Add(this.textBoxDescription, 1, 4);
             this.tableLayoutPanel.Controls.Add(this.okButton, 1, 5);
             this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel.Location = new System.Drawing.Point(15, 12);
-            this.tableLayoutPanel.Margin = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel.Location = new System.Drawing.Point(9, 8);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 6;
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -62,18 +62,17 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(871, 437);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(523, 291);
             this.tableLayoutPanel.TabIndex = 0;
             // 
             // logoPictureBox
             // 
             this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.logoPictureBox.Image = global::SystemDev_KY_22.Properties.Resources.チェリー;
-            this.logoPictureBox.Location = new System.Drawing.Point(5, 5);
-            this.logoPictureBox.Margin = new System.Windows.Forms.Padding(5);
+            this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
             this.logoPictureBox.Name = "logoPictureBox";
             this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
-            this.logoPictureBox.Size = new System.Drawing.Size(277, 427);
+            this.logoPictureBox.Size = new System.Drawing.Size(166, 285);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
@@ -81,11 +80,11 @@
             // labelProductName
             // 
             this.labelProductName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelProductName.Location = new System.Drawing.Point(297, 0);
-            this.labelProductName.Margin = new System.Windows.Forms.Padding(10, 0, 5, 0);
-            this.labelProductName.MaximumSize = new System.Drawing.Size(0, 24);
+            this.labelProductName.Location = new System.Drawing.Point(178, 0);
+            this.labelProductName.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
+            this.labelProductName.MaximumSize = new System.Drawing.Size(0, 16);
             this.labelProductName.Name = "labelProductName";
-            this.labelProductName.Size = new System.Drawing.Size(569, 24);
+            this.labelProductName.Size = new System.Drawing.Size(342, 16);
             this.labelProductName.TabIndex = 19;
             this.labelProductName.Text = "販売管理システム";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -94,11 +93,11 @@
             // labelVersion
             // 
             this.labelVersion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelVersion.Location = new System.Drawing.Point(297, 43);
-            this.labelVersion.Margin = new System.Windows.Forms.Padding(10, 0, 5, 0);
-            this.labelVersion.MaximumSize = new System.Drawing.Size(0, 24);
+            this.labelVersion.Location = new System.Drawing.Point(178, 29);
+            this.labelVersion.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
+            this.labelVersion.MaximumSize = new System.Drawing.Size(0, 16);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(569, 24);
+            this.labelVersion.Size = new System.Drawing.Size(342, 16);
             this.labelVersion.TabIndex = 0;
             this.labelVersion.Text = "バージョン：1.1.1.1";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -106,11 +105,11 @@
             // labelCopyright
             // 
             this.labelCopyright.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCopyright.Location = new System.Drawing.Point(297, 86);
-            this.labelCopyright.Margin = new System.Windows.Forms.Padding(10, 0, 5, 0);
-            this.labelCopyright.MaximumSize = new System.Drawing.Size(0, 24);
+            this.labelCopyright.Location = new System.Drawing.Point(178, 58);
+            this.labelCopyright.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
+            this.labelCopyright.MaximumSize = new System.Drawing.Size(0, 16);
             this.labelCopyright.Name = "labelCopyright";
-            this.labelCopyright.Size = new System.Drawing.Size(569, 24);
+            this.labelCopyright.Size = new System.Drawing.Size(342, 16);
             this.labelCopyright.TabIndex = 21;
             this.labelCopyright.Tag = "";
             this.labelCopyright.Text = "copyright©2019";
@@ -120,11 +119,11 @@
             // labelCompanyName
             // 
             this.labelCompanyName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCompanyName.Location = new System.Drawing.Point(297, 129);
-            this.labelCompanyName.Margin = new System.Windows.Forms.Padding(10, 0, 5, 0);
-            this.labelCompanyName.MaximumSize = new System.Drawing.Size(0, 24);
+            this.labelCompanyName.Location = new System.Drawing.Point(178, 87);
+            this.labelCompanyName.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
+            this.labelCompanyName.MaximumSize = new System.Drawing.Size(0, 16);
             this.labelCompanyName.Name = "labelCompanyName";
-            this.labelCompanyName.Size = new System.Drawing.Size(569, 24);
+            this.labelCompanyName.Size = new System.Drawing.Size(342, 16);
             this.labelCompanyName.TabIndex = 22;
             this.labelCompanyName.Text = "チェリー佐藤株式会社";
             this.labelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -133,13 +132,13 @@
             // 
             this.textBoxDescription.BackColor = System.Drawing.Color.White;
             this.textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxDescription.Location = new System.Drawing.Point(297, 177);
-            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(10, 5, 5, 5);
+            this.textBoxDescription.Location = new System.Drawing.Point(178, 119);
+            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
             this.textBoxDescription.Multiline = true;
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.ReadOnly = true;
             this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDescription.Size = new System.Drawing.Size(569, 208);
+            this.textBoxDescription.Size = new System.Drawing.Size(342, 139);
             this.textBoxDescription.TabIndex = 23;
             this.textBoxDescription.TabStop = false;
             this.textBoxDescription.Text = "\r\n\r\n\r\n\r\n本ソフトウェアの著作権はチェリー佐藤自動車株式会社が保有しています。";
@@ -148,27 +147,26 @@
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.okButton.Location = new System.Drawing.Point(741, 401);
-            this.okButton.Margin = new System.Windows.Forms.Padding(5);
+            this.okButton.Location = new System.Drawing.Point(445, 267);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(125, 31);
+            this.okButton.Size = new System.Drawing.Size(75, 21);
             this.okButton.TabIndex = 24;
             this.okButton.Text = "&OK";
             // 
             // AboutBox
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(901, 461);
+            this.ClientSize = new System.Drawing.Size(541, 307);
             this.Controls.Add(this.tableLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutBox";
-            this.Padding = new System.Windows.Forms.Padding(15, 12, 15, 12);
+            this.Padding = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

@@ -20,7 +20,7 @@ namespace OrderHistory
 
             // タイマーの間隔(ミリ秒)
             //Timer timer = new Timer(300000);
-            Timer timer = new Timer(10000);
+            Timer timer = new Timer(20000);
 
             int a;
             int b;
