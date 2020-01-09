@@ -33,13 +33,13 @@
             this.button4 = new System.Windows.Forms.Button();
             this.lB_MainTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.selectPanel = new System.Windows.Forms.Panel();
-            this.btn_storing = new System.Windows.Forms.Button();
-            this.btn_Item = new System.Windows.Forms.Button();
-            this.btn_StockList = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btn_storing = new System.Windows.Forms.Button();
+            this.selectPanel = new System.Windows.Forms.Panel();
+            this.btn_StockList = new System.Windows.Forms.Button();
+            this.btn_Item = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Item = new SystemDev_KY_22.ユーザーコントロール.Item();
             this.storing1 = new SystemDev_KY_22.ユーザーコントロール.Storing();
@@ -87,7 +87,7 @@
             this.lB_MainTitle.Font = new System.Drawing.Font("ＭＳ 明朝", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lB_MainTitle.Location = new System.Drawing.Point(34, 38);
             this.lB_MainTitle.Name = "lB_MainTitle";
-            this.lB_MainTitle.Size = new System.Drawing.Size(345, 40);
+            this.lB_MainTitle.Size = new System.Drawing.Size(279, 33);
             this.lB_MainTitle.TabIndex = 6;
             this.lB_MainTitle.Text = "物流担当メニュー";
             this.lB_MainTitle.Click += new System.EventHandler(this.lB_MainTitle_Click);
@@ -108,86 +108,23 @@
             this.panel2.Size = new System.Drawing.Size(223, 702);
             this.panel2.TabIndex = 8;
             // 
-            // selectPanel
+            // button1
             // 
-            this.selectPanel.BackColor = System.Drawing.Color.Gray;
-            this.selectPanel.Location = new System.Drawing.Point(213, 57);
-            this.selectPanel.Name = "selectPanel";
-            this.selectPanel.Size = new System.Drawing.Size(10, 89);
-            this.selectPanel.TabIndex = 5;
-            this.selectPanel.Visible = false;
-            // 
-            // btn_storing
-            // 
-            this.btn_storing.BackColor = System.Drawing.Color.Transparent;
-            this.btn_storing.FlatAppearance.BorderSize = 0;
-            this.btn_storing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_storing.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_storing.ForeColor = System.Drawing.Color.Black;
-            this.btn_storing.Image = ((System.Drawing.Image)(resources.GetObject("btn_storing.Image")));
-            this.btn_storing.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_storing.Location = new System.Drawing.Point(6, 367);
-            this.btn_storing.Name = "btn_storing";
-            this.btn_storing.Size = new System.Drawing.Size(201, 115);
-            this.btn_storing.TabIndex = 7;
-            this.btn_storing.Text = "入庫登録";
-            this.btn_storing.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_storing.UseVisualStyleBackColor = false;
-            this.btn_storing.Click += new System.EventHandler(this.btn_storing_Click);
-            // 
-            // btn_Item
-            // 
-            this.btn_Item.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Item.FlatAppearance.BorderSize = 0;
-            this.btn_Item.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Item.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_Item.ForeColor = System.Drawing.Color.Black;
-            this.btn_Item.Image = ((System.Drawing.Image)(resources.GetObject("btn_Item.Image")));
-            this.btn_Item.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Item.Location = new System.Drawing.Point(23, 248);
-            this.btn_Item.Name = "btn_Item";
-            this.btn_Item.Size = new System.Drawing.Size(165, 113);
-            this.btn_Item.TabIndex = 8;
-            this.btn_Item.Text = "商品";
-            this.btn_Item.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Item.UseVisualStyleBackColor = false;
-            this.btn_Item.Click += new System.EventHandler(this.btn_Item_Click);
-            // 
-            // btn_StockList
-            // 
-            this.btn_StockList.BackColor = System.Drawing.Color.Transparent;
-            this.btn_StockList.FlatAppearance.BorderSize = 0;
-            this.btn_StockList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_StockList.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_StockList.ForeColor = System.Drawing.Color.Black;
-            this.btn_StockList.Image = ((System.Drawing.Image)(resources.GetObject("btn_StockList.Image")));
-            this.btn_StockList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_StockList.Location = new System.Drawing.Point(3, 6);
-            this.btn_StockList.Name = "btn_StockList";
-            this.btn_StockList.Size = new System.Drawing.Size(201, 115);
-            this.btn_StockList.TabIndex = 2;
-            this.btn_StockList.Text = "在庫一覧";
-            this.btn_StockList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_StockList.UseVisualStyleBackColor = false;
-            this.btn_StockList.Click += new System.EventHandler(this.btn_StockList_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(6, 127);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(201, 115);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "受注";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(12, 609);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(201, 115);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "発注";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -207,23 +144,86 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button1
+            // btn_storing
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(12, 609);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 115);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "発注";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_storing.BackColor = System.Drawing.Color.Transparent;
+            this.btn_storing.FlatAppearance.BorderSize = 0;
+            this.btn_storing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_storing.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_storing.ForeColor = System.Drawing.Color.Black;
+            this.btn_storing.Image = ((System.Drawing.Image)(resources.GetObject("btn_storing.Image")));
+            this.btn_storing.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_storing.Location = new System.Drawing.Point(6, 367);
+            this.btn_storing.Name = "btn_storing";
+            this.btn_storing.Size = new System.Drawing.Size(201, 115);
+            this.btn_storing.TabIndex = 7;
+            this.btn_storing.Text = "入庫登録";
+            this.btn_storing.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_storing.UseVisualStyleBackColor = false;
+            this.btn_storing.Click += new System.EventHandler(this.btn_storing_Click);
+            // 
+            // selectPanel
+            // 
+            this.selectPanel.BackColor = System.Drawing.Color.Gray;
+            this.selectPanel.Location = new System.Drawing.Point(213, 57);
+            this.selectPanel.Name = "selectPanel";
+            this.selectPanel.Size = new System.Drawing.Size(10, 89);
+            this.selectPanel.TabIndex = 5;
+            this.selectPanel.Visible = false;
+            // 
+            // btn_StockList
+            // 
+            this.btn_StockList.BackColor = System.Drawing.Color.Transparent;
+            this.btn_StockList.FlatAppearance.BorderSize = 0;
+            this.btn_StockList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_StockList.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_StockList.ForeColor = System.Drawing.Color.Black;
+            this.btn_StockList.Image = ((System.Drawing.Image)(resources.GetObject("btn_StockList.Image")));
+            this.btn_StockList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_StockList.Location = new System.Drawing.Point(3, 6);
+            this.btn_StockList.Name = "btn_StockList";
+            this.btn_StockList.Size = new System.Drawing.Size(201, 115);
+            this.btn_StockList.TabIndex = 2;
+            this.btn_StockList.Text = "在庫一覧";
+            this.btn_StockList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_StockList.UseVisualStyleBackColor = false;
+            this.btn_StockList.Click += new System.EventHandler(this.btn_StockList_Click);
+            // 
+            // btn_Item
+            // 
+            this.btn_Item.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Item.FlatAppearance.BorderSize = 0;
+            this.btn_Item.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Item.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_Item.ForeColor = System.Drawing.Color.Black;
+            this.btn_Item.Image = ((System.Drawing.Image)(resources.GetObject("btn_Item.Image")));
+            this.btn_Item.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Item.Location = new System.Drawing.Point(23, 248);
+            this.btn_Item.Name = "btn_Item";
+            this.btn_Item.Size = new System.Drawing.Size(165, 113);
+            this.btn_Item.TabIndex = 8;
+            this.btn_Item.Text = "商品";
+            this.btn_Item.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Item.UseVisualStyleBackColor = false;
+            this.btn_Item.Click += new System.EventHandler(this.btn_Item_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.Location = new System.Drawing.Point(6, 127);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(201, 115);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "受注";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
@@ -243,6 +243,7 @@
             // 
             this.Item.BackColor = System.Drawing.Color.White;
             this.Item.Location = new System.Drawing.Point(6, 579);
+            this.Item.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Item.Name = "Item";
             this.Item.Size = new System.Drawing.Size(1273, 652);
             this.Item.TabIndex = 7;
@@ -307,6 +308,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenu";
             this.Text = "MainMenu2";
             this.Load += new System.EventHandler(this.MainMenu2_Load);

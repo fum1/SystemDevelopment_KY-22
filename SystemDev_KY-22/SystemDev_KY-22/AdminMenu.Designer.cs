@@ -40,12 +40,12 @@
             this.btn_OrderList = new System.Windows.Forms.Button();
             this.Btn_EmpRegister = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.orderHistory1 = new SystemDev_KY_22.ユーザーコントロール.OrderHistory();
             this.carOrderHistory1 = new SystemDev_KY_22.ユーザーコントロール.CarOrderHistory();
             this.vendor_list = new SystemDev_KY_22.ユーザーコントロール.Vendor_list();
             this.list_of_employees = new SystemDev_KY_22.ユーザーコントロール.List_of_employees();
             this.orderCheck = new SystemDev_KY_22.ユーザーコントロール.OrderCheck();
             this.empRegister = new SystemDev_KY_22.EmpRegister();
-            this.orderHistory1 = new SystemDev_KY_22.ユーザーコントロール.OrderHistory();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -58,9 +58,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1556, 135);
+            this.panel1.Size = new System.Drawing.Size(1167, 108);
             this.panel1.TabIndex = 0;
             // 
             // btn_logout
@@ -72,10 +72,10 @@
             this.btn_logout.ForeColor = System.Drawing.Color.Black;
             this.btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_logout.Image")));
             this.btn_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_logout.Location = new System.Drawing.Point(1180, 14);
-            this.btn_logout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_logout.Location = new System.Drawing.Point(885, 11);
+            this.btn_logout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(361, 102);
+            this.btn_logout.Size = new System.Drawing.Size(271, 82);
             this.btn_logout.TabIndex = 7;
             this.btn_logout.Text = "ログアウト";
             this.btn_logout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -86,9 +86,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("UD デジタル 教科書体 NK-R", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(55, 35);
+            this.label1.Location = new System.Drawing.Point(41, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(474, 70);
+            this.label1.Size = new System.Drawing.Size(379, 55);
             this.label1.TabIndex = 6;
             this.label1.Text = "管理者用メニュー";
             // 
@@ -102,10 +103,10 @@
             this.panel2.Controls.Add(this.btn_OrderList);
             this.panel2.Controls.Add(this.Btn_EmpRegister);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 135);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 108);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(297, 749);
+            this.panel2.Size = new System.Drawing.Size(223, 599);
             this.panel2.TabIndex = 1;
             // 
             // button1
@@ -117,10 +118,10 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(22, 401);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(16, 321);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(248, 160);
+            this.button1.Size = new System.Drawing.Size(186, 128);
             this.button1.TabIndex = 8;
             this.button1.Text = "発注履歴";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -136,10 +137,10 @@
             this.btn_Vendorlist.ForeColor = System.Drawing.Color.Black;
             this.btn_Vendorlist.Image = ((System.Drawing.Image)(resources.GetObject("btn_Vendorlist.Image")));
             this.btn_Vendorlist.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Vendorlist.Location = new System.Drawing.Point(22, 698);
-            this.btn_Vendorlist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Vendorlist.Location = new System.Drawing.Point(16, 558);
+            this.btn_Vendorlist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Vendorlist.Name = "btn_Vendorlist";
-            this.btn_Vendorlist.Size = new System.Drawing.Size(248, 160);
+            this.btn_Vendorlist.Size = new System.Drawing.Size(186, 128);
             this.btn_Vendorlist.TabIndex = 7;
             this.btn_Vendorlist.Text = "仕入先一覧";
             this.btn_Vendorlist.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -155,10 +156,10 @@
             this.btn_employees.ForeColor = System.Drawing.Color.Black;
             this.btn_employees.Image = ((System.Drawing.Image)(resources.GetObject("btn_employees.Image")));
             this.btn_employees.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_employees.Location = new System.Drawing.Point(22, 551);
-            this.btn_employees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_employees.Location = new System.Drawing.Point(16, 441);
+            this.btn_employees.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_employees.Name = "btn_employees";
-            this.btn_employees.Size = new System.Drawing.Size(248, 160);
+            this.btn_employees.Size = new System.Drawing.Size(186, 128);
             this.btn_employees.TabIndex = 6;
             this.btn_employees.Text = "社員一覧";
             this.btn_employees.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -168,10 +169,10 @@
             // selectPanel
             // 
             this.selectPanel.BackColor = System.Drawing.Color.Gray;
-            this.selectPanel.Location = new System.Drawing.Point(280, 32);
-            this.selectPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.selectPanel.Location = new System.Drawing.Point(210, 26);
+            this.selectPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.selectPanel.Name = "selectPanel";
-            this.selectPanel.Size = new System.Drawing.Size(11, 89);
+            this.selectPanel.Size = new System.Drawing.Size(8, 71);
             this.selectPanel.TabIndex = 5;
             this.selectPanel.Visible = false;
             // 
@@ -184,10 +185,10 @@
             this.btn_OrderList.ForeColor = System.Drawing.Color.Black;
             this.btn_OrderList.Image = ((System.Drawing.Image)(resources.GetObject("btn_OrderList.Image")));
             this.btn_OrderList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_OrderList.Location = new System.Drawing.Point(22, 237);
-            this.btn_OrderList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_OrderList.Location = new System.Drawing.Point(16, 190);
+            this.btn_OrderList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_OrderList.Name = "btn_OrderList";
-            this.btn_OrderList.Size = new System.Drawing.Size(248, 160);
+            this.btn_OrderList.Size = new System.Drawing.Size(186, 128);
             this.btn_OrderList.TabIndex = 2;
             this.btn_OrderList.Text = "注文履歴";
             this.btn_OrderList.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -203,10 +204,10 @@
             this.Btn_EmpRegister.ForeColor = System.Drawing.Color.Black;
             this.Btn_EmpRegister.Image = ((System.Drawing.Image)(resources.GetObject("Btn_EmpRegister.Image")));
             this.Btn_EmpRegister.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_EmpRegister.Location = new System.Drawing.Point(22, 73);
-            this.Btn_EmpRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_EmpRegister.Location = new System.Drawing.Point(16, 58);
+            this.Btn_EmpRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Btn_EmpRegister.Name = "Btn_EmpRegister";
-            this.Btn_EmpRegister.Size = new System.Drawing.Size(248, 160);
+            this.Btn_EmpRegister.Size = new System.Drawing.Size(186, 128);
             this.Btn_EmpRegister.TabIndex = 4;
             this.Btn_EmpRegister.Text = "社員登録";
             this.Btn_EmpRegister.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -223,80 +224,82 @@
             this.panel3.Controls.Add(this.orderCheck);
             this.panel3.Controls.Add(this.empRegister);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(297, 135);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(223, 108);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1259, 749);
+            this.panel3.Size = new System.Drawing.Size(944, 599);
             this.panel3.TabIndex = 2;
+            // 
+            // orderHistory1
+            // 
+            this.orderHistory1.BackColor = System.Drawing.Color.White;
+            this.orderHistory1.Location = new System.Drawing.Point(32, 178);
+            this.orderHistory1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.orderHistory1.Name = "orderHistory1";
+            this.orderHistory1.Size = new System.Drawing.Size(922, 588);
+            this.orderHistory1.TabIndex = 6;
             // 
             // carOrderHistory1
             // 
             this.carOrderHistory1.BackColor = System.Drawing.Color.White;
             this.carOrderHistory1.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.carOrderHistory1.Location = new System.Drawing.Point(80, 348);
-            this.carOrderHistory1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.carOrderHistory1.Location = new System.Drawing.Point(60, 278);
+            this.carOrderHistory1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.carOrderHistory1.Name = "carOrderHistory1";
-            this.carOrderHistory1.Size = new System.Drawing.Size(1230, 735);
+            this.carOrderHistory1.Size = new System.Drawing.Size(922, 588);
             this.carOrderHistory1.TabIndex = 5;
             this.carOrderHistory1.Visible = false;
             // 
             // vendor_list
             // 
-            this.vendor_list.Location = new System.Drawing.Point(107, 401);
-            this.vendor_list.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.vendor_list.Location = new System.Drawing.Point(80, 321);
+            this.vendor_list.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.vendor_list.Name = "vendor_list";
-            this.vendor_list.Size = new System.Drawing.Size(1149, 764);
+            this.vendor_list.Size = new System.Drawing.Size(862, 611);
             this.vendor_list.TabIndex = 4;
             this.vendor_list.Visible = false;
             // 
             // list_of_employees
             // 
             this.list_of_employees.BackColor = System.Drawing.Color.White;
-            this.list_of_employees.Location = new System.Drawing.Point(161, 420);
-            this.list_of_employees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.list_of_employees.Location = new System.Drawing.Point(121, 336);
+            this.list_of_employees.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.list_of_employees.Name = "list_of_employees";
-            this.list_of_employees.Size = new System.Drawing.Size(1149, 764);
+            this.list_of_employees.Size = new System.Drawing.Size(862, 611);
             this.list_of_employees.TabIndex = 3;
             this.list_of_employees.Visible = false;
             // 
             // orderCheck
             // 
             this.orderCheck.BackColor = System.Drawing.Color.White;
-            this.orderCheck.Location = new System.Drawing.Point(80, 305);
-            this.orderCheck.Margin = new System.Windows.Forms.Padding(5);
+            this.orderCheck.Location = new System.Drawing.Point(60, 244);
+            this.orderCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.orderCheck.Name = "orderCheck";
-            this.orderCheck.Size = new System.Drawing.Size(1389, 879);
+            this.orderCheck.Size = new System.Drawing.Size(1042, 703);
             this.orderCheck.TabIndex = 2;
             this.orderCheck.Visible = false;
             // 
             // empRegister
             // 
             this.empRegister.BackColor = System.Drawing.Color.White;
-            this.empRegister.Location = new System.Drawing.Point(220, 222);
-            this.empRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.empRegister.Location = new System.Drawing.Point(165, 178);
+            this.empRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.empRegister.Name = "empRegister";
-            this.empRegister.Size = new System.Drawing.Size(1799, 982);
+            this.empRegister.Size = new System.Drawing.Size(1349, 786);
             this.empRegister.TabIndex = 1;
             this.empRegister.Visible = false;
             // 
-            // orderHistory1
-            // 
-            this.orderHistory1.BackColor = System.Drawing.Color.White;
-            this.orderHistory1.Location = new System.Drawing.Point(42, 222);
-            this.orderHistory1.Name = "orderHistory1";
-            this.orderHistory1.Size = new System.Drawing.Size(1230, 735);
-            this.orderHistory1.TabIndex = 6;
-            // 
             // AdminMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1556, 884);
+            this.ClientSize = new System.Drawing.Size(1167, 707);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdminMenu";
             this.Text = "AdminMenu2";
             this.Load += new System.EventHandler(this.AdminMenu_Load);

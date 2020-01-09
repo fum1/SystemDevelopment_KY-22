@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cherry.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\Bunifu_UI_v1.52.dll</HintPath>
@@ -315,6 +318,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mercedes-benz-slr-mclaren-stirling-moss-for-sale-in-miami-30172_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cherry.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
