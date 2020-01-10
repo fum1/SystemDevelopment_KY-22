@@ -90,7 +90,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         {
             OleDbCommand cmd =
                 new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
                 "FROM 社員マスタ WHERE 店舗ID = @店舗ID ORDER BY 役職", cn);    
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -108,7 +108,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         {
             OleDbCommand cmd =
                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
                 "FROM 社員マスタ WHERE 役職 = @役職  ORDER BY 社員ID");  
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -140,7 +140,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         {
             OleDbCommand cmd =
                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
                 "FROM 社員マスタ WHERE 店舗ID = @店舗ID  ORDER BY 社員ID");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -160,7 +160,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         {
             OleDbCommand cmd =
                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
                 "FROM 社員マスタ WHERE 部署 = @部署  ORDER BY 社員ID");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
