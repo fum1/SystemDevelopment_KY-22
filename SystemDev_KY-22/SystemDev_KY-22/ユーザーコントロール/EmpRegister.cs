@@ -46,17 +46,6 @@ namespace SystemDev_KY_22
             }
         }
 
-        private void btn_login_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void txt_password_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_register_Click(object sender, EventArgs e)
         {
@@ -93,10 +82,6 @@ namespace SystemDev_KY_22
             MessageBox.Show("登録しました", "管理者");
         }
 
-        private void txt_id1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_search_Click(object sender, EventArgs e)
         {
@@ -150,11 +135,7 @@ namespace SystemDev_KY_22
             string selectedItem = cmb_sex1.SelectedItem.ToString();
         }
 
-        private void btn_update_Click(object sender, EventArgs e)
-        {
-
-        }
-
+ 
 
         private void dataload()   //カスタム関数
         {
@@ -225,15 +206,6 @@ namespace SystemDev_KY_22
             string selectedItem = cmb_sex.SelectedItem.ToString();
         }
 
-        private void cmb_department_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmb_position_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -306,11 +278,6 @@ namespace SystemDev_KY_22
             }
         }
 
-        private void txt_id_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer2_Tick(object sender, EventArgs e)
         {
             if (cmb_department1.Text == "営業")
@@ -348,11 +315,6 @@ namespace SystemDev_KY_22
             }
         }
 
-        private void txt_idhead_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void checkB_Delete_CheckedChanged(object sender, EventArgs e)
         {
             if (checkB_Delete.Checked)
@@ -363,12 +325,6 @@ namespace SystemDev_KY_22
                     checkB_Delete.Checked = false;
                 }
             }
-
-        }
-
-        private void cmb_department1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_Updates_Click(object sender, EventArgs e)
