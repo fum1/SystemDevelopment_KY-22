@@ -4,7 +4,6 @@ using System.Data;
 using System.Data.OleDb;
 using System.Linq;
 using System.Text;
-using System.Timers;
 
 namespace OrderHistory
 {
@@ -16,12 +15,6 @@ namespace OrderHistory
             OleDbConnection cn = new OleDbConnection();  //コネクションオブジェクト
             cn.ConnectionString =
                 @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
-
-            Timer timer = new Timer(300000); //5分毎に実行するタイマーを宣言し開始
-            timer.Start();
-
-            timer.Elapsed += (sender, e) =>
-            {
                 OleDbCommand cmd = new OleDbCommand();
                 cmd.Connection = cn;
                 cn.Open();
@@ -65,8 +58,6 @@ namespace OrderHistory
                     Console.WriteLine("注文テーブルの変更があったので登録しました");
                 }
                 cn.Close();
-            };
-            Console.ReadKey();
         }
     }
 }

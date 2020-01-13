@@ -133,7 +133,6 @@
             this.txt_idhead.ReadOnly = true;
             this.txt_idhead.Size = new System.Drawing.Size(56, 37);
             this.txt_idhead.TabIndex = 40;
-            this.txt_idhead.TextChanged += new System.EventHandler(this.txt_idhead_TextChanged);
             // 
             // cmb_clerk
             // 
@@ -160,7 +159,6 @@
             this.cmb_position.Name = "cmb_position";
             this.cmb_position.Size = new System.Drawing.Size(171, 35);
             this.cmb_position.TabIndex = 7;
-            this.cmb_position.SelectedIndexChanged += new System.EventHandler(this.cmb_position_SelectedIndexChanged);
             // 
             // cmb_department
             // 
@@ -174,7 +172,6 @@
             this.cmb_department.Name = "cmb_department";
             this.cmb_department.Size = new System.Drawing.Size(171, 35);
             this.cmb_department.TabIndex = 6;
-            this.cmb_department.SelectedIndexChanged += new System.EventHandler(this.cmb_department_SelectedIndexChanged);
             // 
             // lbl_password
             // 
@@ -196,7 +193,6 @@
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(525, 37);
             this.txt_password.TabIndex = 9;
-            this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             // 
             // btn_register
             // 
@@ -310,7 +306,6 @@
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(463, 37);
             this.txt_id.TabIndex = 0;
-            this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
             // 
             // lbl_tel
             // 
@@ -623,7 +618,6 @@
             this.cmb_department1.Name = "cmb_department1";
             this.cmb_department1.Size = new System.Drawing.Size(171, 35);
             this.cmb_department1.TabIndex = 6;
-            this.cmb_department1.SelectedIndexChanged += new System.EventHandler(this.cmb_department1_SelectedIndexChanged);
             // 
             // lbl_department1
             // 
@@ -728,7 +722,6 @@
             this.txt_id1.Name = "txt_id1";
             this.txt_id1.Size = new System.Drawing.Size(393, 37);
             this.txt_id1.TabIndex = 0;
-            this.txt_id1.TextChanged += new System.EventHandler(this.txt_id1_TextChanged);
             // 
             // btn_search
             // 
