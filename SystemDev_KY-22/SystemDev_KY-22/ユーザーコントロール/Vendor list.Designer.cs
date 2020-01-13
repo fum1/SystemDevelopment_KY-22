@@ -32,6 +32,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_Clear = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.txt_productID = new System.Windows.Forms.TextBox();
             this.txt_address = new System.Windows.Forms.TextBox();
             this.txt_tel = new System.Windows.Forms.TextBox();
@@ -47,7 +52,6 @@
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_registration = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_Clear = new System.Windows.Forms.Button();
             this.btn_telsearch = new System.Windows.Forms.Button();
             this.btn_Suppliersearch = new System.Windows.Forms.Button();
             this.lbl_id = new System.Windows.Forms.Label();
@@ -56,14 +60,10 @@
             this.btn_Suppliernamesearch = new System.Windows.Forms.Button();
             this.lbl_Suppliername = new System.Windows.Forms.Label();
             this.dgv_vendorlist = new System.Windows.Forms.DataGridView();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel4.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vendorlist)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -125,6 +125,71 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(579, 739);
             this.panel4.TabIndex = 0;
+            // 
+            // btn_Clear
+            // 
+            this.btn_Clear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Clear.BackColor = System.Drawing.Color.White;
+            this.btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Clear.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_Clear.Location = new System.Drawing.Point(221, 628);
+            this.btn_Clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(171, 59);
+            this.btn_Clear.TabIndex = 13;
+            this.btn_Clear.Text = "クリア";
+            this.btn_Clear.UseVisualStyleBackColor = false;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButton3);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Location = new System.Drawing.Point(27, 5);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(351, 82);
+            this.groupBox1.TabIndex = 48;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "やりたいことを選択してください";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Checked = true;
+            this.radioButton3.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.radioButton3.Location = new System.Drawing.Point(26, 30);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(89, 32);
+            this.radioButton3.TabIndex = 47;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "検索";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.radioButton1.Location = new System.Drawing.Point(134, 30);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(89, 32);
+            this.radioButton1.TabIndex = 45;
+            this.radioButton1.Text = "登録";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.radioButton2.Location = new System.Drawing.Point(239, 30);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(89, 32);
+            this.radioButton2.TabIndex = 46;
+            this.radioButton2.Text = "更新";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // txt_productID
             // 
@@ -261,7 +326,7 @@
             this.btn_update.BackColor = System.Drawing.Color.White;
             this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_update.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_update.Location = new System.Drawing.Point(219, 558);
+            this.btn_update.Location = new System.Drawing.Point(221, 628);
             this.btn_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(171, 59);
@@ -276,7 +341,7 @@
             this.btn_registration.BackColor = System.Drawing.Color.White;
             this.btn_registration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_registration.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_registration.Location = new System.Drawing.Point(219, 558);
+            this.btn_registration.Location = new System.Drawing.Point(221, 549);
             this.btn_registration.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_registration.Name = "btn_registration";
             this.btn_registration.Size = new System.Drawing.Size(171, 59);
@@ -295,21 +360,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(467, 170);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
-            // 
-            // btn_Clear
-            // 
-            this.btn_Clear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Clear.BackColor = System.Drawing.Color.White;
-            this.btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Clear.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_Clear.Location = new System.Drawing.Point(219, 558);
-            this.btn_Clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Clear.Name = "btn_Clear";
-            this.btn_Clear.Size = new System.Drawing.Size(171, 59);
-            this.btn_Clear.TabIndex = 13;
-            this.btn_Clear.Text = "クリア";
-            this.btn_Clear.UseVisualStyleBackColor = false;
-            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // btn_telsearch
             // 
@@ -403,56 +453,6 @@
             this.dgv_vendorlist.Size = new System.Drawing.Size(557, 739);
             this.dgv_vendorlist.TabIndex = 5;
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioButton1.Location = new System.Drawing.Point(134, 30);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(89, 32);
-            this.radioButton1.TabIndex = 45;
-            this.radioButton1.Text = "登録";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioButton2.Location = new System.Drawing.Point(239, 30);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(89, 32);
-            this.radioButton2.TabIndex = 46;
-            this.radioButton2.Text = "更新";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Checked = true;
-            this.radioButton3.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioButton3.Location = new System.Drawing.Point(26, 30);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(89, 32);
-            this.radioButton3.TabIndex = 47;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "検索";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(27, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(351, 82);
-            this.groupBox1.TabIndex = 48;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "やりたいことを選択してください";
-            // 
             // Vendor_list
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -468,10 +468,10 @@
             this.Load += new System.EventHandler(this.Vendor_list_Load_1);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_vendorlist)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_vendorlist)).EndInit();
             this.ResumeLayout(false);
 
         }
