@@ -105,8 +105,8 @@ namespace SystemDev_KY_22
             g.DrawString(print_lblsupplier + "     " + print_txtsupplier, a, Brushes.Black, 110, 300);
             g.DrawString(print_lblPerson + "        " + print_txtPerson, a, Brushes.Black, 110, 600);
             g.DrawString(print_lblorderdate + "  " + print_cmborderdate, a, Brushes.Black, 110, 700);
-            g.DrawString(lbl_ItemId.Text + " 　　　　 " + txt_ItemId.Text, a, Brushes.Black, 110, 800);
-            g.DrawString(print_lblnumber + " 　　　　 " + print_txtnumber, a, Brushes.Black, 110, 900);
+            g.DrawString(lbl_ItemId.Text + " 　　　 " + txt_ItemId.Text, a, Brushes.Black, 110, 800);
+            g.DrawString(print_lblnumber + " 　　　　  " + print_txtnumber, a, Brushes.Black, 110, 900);
 
             g.DrawString(print_lblcmpanyname + "    " + print_txtcompanyname, a, Brushes.Black, 130, 400);
             g.DrawString(print_lblcompanytel + " " + print_txtcompanytel, a, Brushes.Black, 130, 500);
