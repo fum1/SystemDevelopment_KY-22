@@ -23,7 +23,6 @@ namespace SystemDev_KY_22
 
         public CarOrder()
         {
-
             InitializeComponent();
         }
 
@@ -37,33 +36,6 @@ namespace SystemDev_KY_22
                     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SysDev.accdb;";
             }
         }
-
-        private void btn_print_Click(object sender, EventArgs e)
-        {
-            /*DialogResult dr = printDialog.ShowDialog();
-            printDocument.PrintPage += new PrintPageEventHandler(printDocument_PrintPage);
-            printDocument.Print();*/
-        }
-
-
-
-        private void btn_preview_Click(object sender, EventArgs e)
-        {
-            /*//PrintDocumentオブジェクトの作成
-            System.Drawing.Printing.PrintDocument po =
-                new System.Drawing.Printing.PrintDocument();
-            //PrintPageイベントハンドラの追加
-            po.PrintPage +=
-                new System.Drawing.Printing.PrintPageEventHandler(printDocument_PrintPage);
-
-            ///PrintPreviewDialogオブジェクトの作成
-            PrintPreviewDialog ppd = new PrintPreviewDialog();
-            //プレビューするPrintDocumentを設定
-            ppd.Document = po;
-            //印刷プレビューダイアログを表示する
-            ppd.ShowDialog();*/
-        }
-
         private void printDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
             //表示する文字列
@@ -111,18 +83,6 @@ namespace SystemDev_KY_22
             g.DrawString(print_lblcmpanyname + "    " + print_txtcompanyname, a, Brushes.Black, 130, 400);
             g.DrawString(print_lblcompanytel + " " + print_txtcompanytel, a, Brushes.Black, 130, 500);
 
-            
-
-            /* //リソースを解放する
-             fnt.Dispose();
-             sf.Dispose();
-             g.Dispose();
-
-             //PictureBox1に表示する
-
-
-             /*var image = pictureBox.Image;
-             e.Graphics.DrawImage(image, e.MarginBounds);*/
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
@@ -131,9 +91,6 @@ namespace SystemDev_KY_22
             txt_PersonID.ResetText();
             dtp_admissionday.ResetText();
             txt_number.ResetText();
-
-
-
         }
 
         private void btn_order_Click(object sender, EventArgs e)
@@ -209,10 +166,6 @@ namespace SystemDev_KY_22
             {
                 MessageBox.Show("印刷せず終了します");
             }
-
-
-
-
         }
 
         private void btn_clear_Click_1(object sender, EventArgs e)
@@ -250,10 +203,6 @@ namespace SystemDev_KY_22
                 cn.Close();                //コネクションを閉じる
                 return;
             }
-        }
-
-        private void txt_orderID_TextChanged(object sender, EventArgs e)
-        {
         }
     }
 }

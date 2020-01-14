@@ -87,7 +87,7 @@
             this.lB_MainTitle.Font = new System.Drawing.Font("ＭＳ 明朝", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lB_MainTitle.Location = new System.Drawing.Point(34, 38);
             this.lB_MainTitle.Name = "lB_MainTitle";
-            this.lB_MainTitle.Size = new System.Drawing.Size(279, 33);
+            this.lB_MainTitle.Size = new System.Drawing.Size(345, 40);
             this.lB_MainTitle.TabIndex = 6;
             this.lB_MainTitle.Text = "物流担当メニュー";
             this.lB_MainTitle.Click += new System.EventHandler(this.lB_MainTitle_Click);
@@ -243,7 +243,7 @@
             // 
             this.Item.BackColor = System.Drawing.Color.White;
             this.Item.Location = new System.Drawing.Point(6, 579);
-            this.Item.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Item.Margin = new System.Windows.Forms.Padding(2);
             this.Item.Name = "Item";
             this.Item.Size = new System.Drawing.Size(1273, 652);
             this.Item.TabIndex = 7;
