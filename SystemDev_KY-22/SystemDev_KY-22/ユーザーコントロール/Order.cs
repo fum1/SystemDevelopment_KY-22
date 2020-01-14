@@ -42,11 +42,6 @@ namespace SystemDev_KY_22
             comboBox1.DataSource = clk_dt;
             comboBox1.DisplayMember = "店舗ID";
             comboBox1.ValueMember = "店舗ID";
-
-
-            
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
