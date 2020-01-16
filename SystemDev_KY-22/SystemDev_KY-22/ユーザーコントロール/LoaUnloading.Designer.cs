@@ -39,10 +39,10 @@
             this.rbt_storing.AutoSize = true;
             this.rbt_storing.Checked = true;
             this.rbt_storing.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.rbt_storing.Location = new System.Drawing.Point(19, 26);
-            this.rbt_storing.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbt_storing.Location = new System.Drawing.Point(14, 21);
+            this.rbt_storing.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbt_storing.Name = "rbt_storing";
-            this.rbt_storing.Size = new System.Drawing.Size(102, 37);
+            this.rbt_storing.Size = new System.Drawing.Size(84, 31);
             this.rbt_storing.TabIndex = 2;
             this.rbt_storing.TabStop = true;
             this.rbt_storing.Text = "入庫";
@@ -53,10 +53,10 @@
             // 
             this.rbt_Issue.AutoSize = true;
             this.rbt_Issue.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.rbt_Issue.Location = new System.Drawing.Point(155, 26);
-            this.rbt_Issue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbt_Issue.Location = new System.Drawing.Point(116, 21);
+            this.rbt_Issue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbt_Issue.Name = "rbt_Issue";
-            this.rbt_Issue.Size = new System.Drawing.Size(102, 37);
+            this.rbt_Issue.Size = new System.Drawing.Size(84, 31);
             this.rbt_Issue.TabIndex = 3;
             this.rbt_Issue.Text = "出庫";
             this.rbt_Issue.UseVisualStyleBackColor = true;
@@ -65,25 +65,25 @@
             // dgv_loaunloading
             // 
             this.dgv_loaunloading.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_loaunloading.Location = new System.Drawing.Point(19, 87);
-            this.dgv_loaunloading.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_loaunloading.Location = new System.Drawing.Point(14, 70);
+            this.dgv_loaunloading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_loaunloading.Name = "dgv_loaunloading";
             this.dgv_loaunloading.RowHeadersWidth = 62;
             this.dgv_loaunloading.RowTemplate.Height = 24;
-            this.dgv_loaunloading.Size = new System.Drawing.Size(1715, 805);
+            this.dgv_loaunloading.Size = new System.Drawing.Size(1665, 888);
             this.dgv_loaunloading.TabIndex = 4;
             // 
             // LoaUnloading
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.dgv_loaunloading);
             this.Controls.Add(this.rbt_Issue);
             this.Controls.Add(this.rbt_storing);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoaUnloading";
-            this.Size = new System.Drawing.Size(1747, 929);
+            this.Size = new System.Drawing.Size(1690, 960);
             this.Load += new System.EventHandler(this.LoaUnloading_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_loaunloading)).EndInit();
             this.ResumeLayout(false);
