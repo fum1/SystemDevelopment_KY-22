@@ -295,5 +295,50 @@ namespace SystemDev_KY_22.ユーザーコントロール
             txt_vehicle.Clear();
             dataload2();
         }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_mileage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_release_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_option_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_color_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_model_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_actual_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_itemID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_vehicle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
