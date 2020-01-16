@@ -23,6 +23,7 @@ namespace SystemDev_KY_22
             stockList1.Visible = false;
             clientRegisterU1.Visible = false;
             order.Visible = false;
+
         }
 
         private void Btn_StockList_Click(object sender, EventArgs e)

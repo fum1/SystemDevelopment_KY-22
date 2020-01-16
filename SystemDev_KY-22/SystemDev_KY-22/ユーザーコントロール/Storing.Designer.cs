@@ -80,7 +80,7 @@
             this.groupBox2.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.groupBox2.Location = new System.Drawing.Point(846, 10);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(833, 385);
+            this.groupBox2.Size = new System.Drawing.Size(833, 452);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "新規在庫登録";
@@ -90,7 +90,7 @@
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4.Location = new System.Drawing.Point(264, 253);
+            this.button4.Location = new System.Drawing.Point(288, 305);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(296, 59);
             this.button4.TabIndex = 19;
@@ -102,7 +102,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(170, 112);
+            this.label6.Location = new System.Drawing.Point(194, 164);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(211, 38);
             this.label6.TabIndex = 7;
@@ -111,7 +111,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox5.Location = new System.Drawing.Point(399, 112);
+            this.textBox5.Location = new System.Drawing.Point(423, 164);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(264, 45);
             this.textBox5.TabIndex = 5;
@@ -120,10 +120,10 @@
             // 
             this.pictureBox1.BackgroundImage = global::SystemDev_KY_22.Properties.Resources.チェリー;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(846, 400);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(846, 477);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(841, 547);
+            this.pictureBox1.Size = new System.Drawing.Size(841, 470);
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
@@ -192,7 +192,7 @@
             "9",
             "10"});
             this.comboBox1.Location = new System.Drawing.Point(306, 240);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(161, 46);
             this.comboBox1.TabIndex = 25;
@@ -303,7 +303,7 @@
             "9",
             "10"});
             this.cmb_Shipping_Vol.Location = new System.Drawing.Point(306, 272);
-            this.cmb_Shipping_Vol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_Shipping_Vol.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_Shipping_Vol.Name = "cmb_Shipping_Vol";
             this.cmb_Shipping_Vol.Size = new System.Drawing.Size(161, 46);
             this.cmb_Shipping_Vol.TabIndex = 25;
@@ -355,7 +355,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Storing";
             this.Size = new System.Drawing.Size(1682, 950);
             this.Load += new System.EventHandler(this.Storing_Load);
