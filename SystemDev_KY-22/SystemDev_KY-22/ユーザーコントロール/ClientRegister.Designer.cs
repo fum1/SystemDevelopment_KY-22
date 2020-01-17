@@ -59,10 +59,10 @@
             this.btn_search.BackColor = System.Drawing.Color.Transparent;
             this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_search.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_search.Location = new System.Drawing.Point(716, 61);
+            this.btn_search.Location = new System.Drawing.Point(1016, 162);
             this.btn_search.Margin = new System.Windows.Forms.Padding(4);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(80, 54);
+            this.btn_search.Size = new System.Drawing.Size(64, 45);
             this.btn_search.TabIndex = 28;
             this.btn_search.Text = "🔍";
             this.btn_search.UseVisualStyleBackColor = false;
@@ -74,9 +74,9 @@
             this.groupBox1.Controls.Add(this.radioB_Update);
             this.groupBox1.Controls.Add(this.radioB_Register);
             this.groupBox1.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.groupBox1.Location = new System.Drawing.Point(18, 45);
+            this.groupBox1.Location = new System.Drawing.Point(251, 99);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(126, 108);
+            this.groupBox1.Size = new System.Drawing.Size(193, 108);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "実行する作業";
@@ -85,9 +85,9 @@
             // 
             this.radioB_Update.AutoSize = true;
             this.radioB_Update.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioB_Update.Location = new System.Drawing.Point(13, 64);
+            this.radioB_Update.Location = new System.Drawing.Point(87, 63);
             this.radioB_Update.Name = "radioB_Update";
-            this.radioB_Update.Size = new System.Drawing.Size(89, 32);
+            this.radioB_Update.Size = new System.Drawing.Size(72, 26);
             this.radioB_Update.TabIndex = 20;
             this.radioB_Update.TabStop = true;
             this.radioB_Update.Text = "更新";
@@ -99,9 +99,9 @@
             this.radioB_Register.AutoSize = true;
             this.radioB_Register.Checked = true;
             this.radioB_Register.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioB_Register.Location = new System.Drawing.Point(13, 26);
+            this.radioB_Register.Location = new System.Drawing.Point(87, 20);
             this.radioB_Register.Name = "radioB_Register";
-            this.radioB_Register.Size = new System.Drawing.Size(89, 32);
+            this.radioB_Register.Size = new System.Drawing.Size(72, 26);
             this.radioB_Register.TabIndex = 19;
             this.radioB_Register.TabStop = true;
             this.radioB_Register.Text = "登録";
@@ -114,7 +114,7 @@
             this.btn_clear.BackColor = System.Drawing.Color.Transparent;
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_clear.Location = new System.Drawing.Point(571, 579);
+            this.btn_clear.Location = new System.Drawing.Point(874, 721);
             this.btn_clear.Margin = new System.Windows.Forms.Padding(4);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(395, 74);
@@ -130,19 +130,19 @@
             this.cmb_sex.Items.AddRange(new object[] {
             "男性",
             "女性"});
-            this.cmb_sex.Location = new System.Drawing.Point(331, 225);
+            this.cmb_sex.Location = new System.Drawing.Point(612, 326);
             this.cmb_sex.Name = "cmb_sex";
-            this.cmb_sex.Size = new System.Drawing.Size(213, 55);
+            this.cmb_sex.Size = new System.Drawing.Size(213, 46);
             this.cmb_sex.TabIndex = 25;
             this.cmb_sex.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmb_sex_KeyDown);
             // 
             // txt_pos
             // 
             this.txt_pos.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_pos.Location = new System.Drawing.Point(325, 312);
+            this.txt_pos.Location = new System.Drawing.Point(606, 413);
             this.txt_pos.Margin = new System.Windows.Forms.Padding(4);
             this.txt_pos.Name = "txt_pos";
-            this.txt_pos.Size = new System.Drawing.Size(383, 54);
+            this.txt_pos.Size = new System.Drawing.Size(383, 45);
             this.txt_pos.TabIndex = 24;
             this.txt_pos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_pos_KeyDown);
             // 
@@ -150,20 +150,20 @@
             // 
             this.lbl_pos.AutoSize = true;
             this.lbl_pos.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_pos.Location = new System.Drawing.Point(141, 312);
+            this.lbl_pos.Location = new System.Drawing.Point(422, 413);
             this.lbl_pos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_pos.Name = "lbl_pos";
-            this.lbl_pos.Size = new System.Drawing.Size(236, 48);
+            this.lbl_pos.Size = new System.Drawing.Size(188, 38);
             this.lbl_pos.TabIndex = 23;
             this.lbl_pos.Text = "郵便番号：";
             // 
             // txt_id
             // 
             this.txt_id.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_id.Location = new System.Drawing.Point(325, 61);
+            this.txt_id.Location = new System.Drawing.Point(612, 162);
             this.txt_id.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(383, 54);
+            this.txt_id.Size = new System.Drawing.Size(383, 45);
             this.txt_id.TabIndex = 22;
             this.txt_id.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_id_KeyDown);
             // 
@@ -172,9 +172,9 @@
             this.lbl_id.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_id.AutoSize = true;
             this.lbl_id.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_id.Location = new System.Drawing.Point(183, 61);
+            this.lbl_id.Location = new System.Drawing.Point(464, 165);
             this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(183, 48);
+            this.lbl_id.Size = new System.Drawing.Size(146, 38);
             this.lbl_id.TabIndex = 21;
             this.lbl_id.Text = "顧客ID：";
             // 
@@ -184,7 +184,7 @@
             this.btn_login.BackColor = System.Drawing.Color.Transparent;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_login.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_login.Location = new System.Drawing.Point(149, 579);
+            this.btn_login.Location = new System.Drawing.Point(471, 721);
             this.btn_login.Margin = new System.Windows.Forms.Padding(4);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(395, 74);
@@ -196,10 +196,10 @@
             // txt_tel
             // 
             this.txt_tel.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_tel.Location = new System.Drawing.Point(325, 482);
+            this.txt_tel.Location = new System.Drawing.Point(606, 583);
             this.txt_tel.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tel.Name = "txt_tel";
-            this.txt_tel.Size = new System.Drawing.Size(497, 54);
+            this.txt_tel.Size = new System.Drawing.Size(497, 45);
             this.txt_tel.TabIndex = 18;
             this.txt_tel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_tel_KeyDown);
             // 
@@ -207,10 +207,10 @@
             // 
             this.lbl_tel.AutoSize = true;
             this.lbl_tel.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_tel.Location = new System.Drawing.Point(234, 482);
+            this.lbl_tel.Location = new System.Drawing.Point(515, 583);
             this.lbl_tel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_tel.Name = "lbl_tel";
-            this.lbl_tel.Size = new System.Drawing.Size(111, 48);
+            this.lbl_tel.Size = new System.Drawing.Size(89, 38);
             this.lbl_tel.TabIndex = 17;
             this.lbl_tel.Text = "TEL:";
             // 
@@ -218,20 +218,20 @@
             // 
             this.lbl_address.AutoSize = true;
             this.lbl_address.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_address.Location = new System.Drawing.Point(223, 396);
+            this.lbl_address.Location = new System.Drawing.Point(504, 497);
             this.lbl_address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_address.Name = "lbl_address";
-            this.lbl_address.Size = new System.Drawing.Size(126, 48);
+            this.lbl_address.Size = new System.Drawing.Size(101, 38);
             this.lbl_address.TabIndex = 16;
             this.lbl_address.Text = "住所:";
             // 
             // txt_address
             // 
             this.txt_address.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_address.Location = new System.Drawing.Point(325, 395);
+            this.txt_address.Location = new System.Drawing.Point(606, 496);
             this.txt_address.Margin = new System.Windows.Forms.Padding(4);
             this.txt_address.Name = "txt_address";
-            this.txt_address.Size = new System.Drawing.Size(768, 54);
+            this.txt_address.Size = new System.Drawing.Size(768, 45);
             this.txt_address.TabIndex = 15;
             this.txt_address.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_address_KeyDown);
             // 
@@ -239,10 +239,10 @@
             // 
             this.lbl_birthday.AutoSize = true;
             this.lbl_birthday.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_birthday.Location = new System.Drawing.Point(586, 229);
+            this.lbl_birthday.Location = new System.Drawing.Point(867, 330);
             this.lbl_birthday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_birthday.Name = "lbl_birthday";
-            this.lbl_birthday.Size = new System.Drawing.Size(222, 48);
+            this.lbl_birthday.Size = new System.Drawing.Size(177, 38);
             this.lbl_birthday.TabIndex = 14;
             this.lbl_birthday.Text = "生年月日:";
             // 
@@ -250,10 +250,10 @@
             // 
             this.dtp_birthday.CalendarFont = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtp_birthday.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dtp_birthday.Location = new System.Drawing.Point(764, 229);
+            this.dtp_birthday.Location = new System.Drawing.Point(1045, 330);
             this.dtp_birthday.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_birthday.Name = "dtp_birthday";
-            this.dtp_birthday.Size = new System.Drawing.Size(308, 47);
+            this.dtp_birthday.Size = new System.Drawing.Size(308, 39);
             this.dtp_birthday.TabIndex = 13;
             this.dtp_birthday.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtp_birthday_KeyDown);
             // 
@@ -261,10 +261,10 @@
             // 
             this.lbl_name.AutoSize = true;
             this.lbl_name.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_name.Location = new System.Drawing.Point(223, 147);
+            this.lbl_name.Location = new System.Drawing.Point(504, 248);
             this.lbl_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(126, 48);
+            this.lbl_name.Size = new System.Drawing.Size(101, 38);
             this.lbl_name.TabIndex = 7;
             this.lbl_name.Text = "氏名:";
             // 
@@ -272,20 +272,20 @@
             // 
             this.lbl_sex.AutoSize = true;
             this.lbl_sex.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbl_sex.Location = new System.Drawing.Point(224, 228);
+            this.lbl_sex.Location = new System.Drawing.Point(505, 329);
             this.lbl_sex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sex.Name = "lbl_sex";
-            this.lbl_sex.Size = new System.Drawing.Size(126, 48);
+            this.lbl_sex.Size = new System.Drawing.Size(101, 38);
             this.lbl_sex.TabIndex = 12;
             this.lbl_sex.Text = "性別:";
             // 
             // txt_name
             // 
             this.txt_name.Font = new System.Drawing.Font("MS UI Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_name.Location = new System.Drawing.Point(326, 147);
+            this.txt_name.Location = new System.Drawing.Point(607, 248);
             this.txt_name.Margin = new System.Windows.Forms.Padding(4);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(383, 54);
+            this.txt_name.Size = new System.Drawing.Size(383, 45);
             this.txt_name.TabIndex = 5;
             this.txt_name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_name_KeyDown);
             // 
@@ -314,7 +314,7 @@
             this.groupBox.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox.Name = "groupBox";
             this.groupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox.Size = new System.Drawing.Size(1275, 688);
+            this.groupBox.Size = new System.Drawing.Size(1650, 952);
             this.groupBox.TabIndex = 15;
             this.groupBox.TabStop = false;
             this.groupBox.Text = "顧客情報";
@@ -325,7 +325,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.groupBox);
             this.Name = "ClientRegister";
-            this.Size = new System.Drawing.Size(1314, 768);
+            this.Size = new System.Drawing.Size(1690, 960);
             this.Load += new System.EventHandler(this.ClientRegister_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

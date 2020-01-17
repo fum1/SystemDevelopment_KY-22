@@ -148,6 +148,7 @@
             // 
             // comboBox3
             // 
+            resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             resources.GetString("comboBox3.Items"),
@@ -155,7 +156,6 @@
             resources.GetString("comboBox3.Items2"),
             resources.GetString("comboBox3.Items3"),
             resources.GetString("comboBox3.Items4")});
-            resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.Name = "comboBox3";
             // 
             // lbl_circle
@@ -244,8 +244,8 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Name = "comboBox1";
             // 
             // gbx_remarks
@@ -272,8 +272,8 @@
             // 
             // dtp_Orderdate
             // 
-            this.dtp_Orderdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dtp_Orderdate, "dtp_Orderdate");
+            this.dtp_Orderdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_Orderdate.Name = "dtp_Orderdate";
             // 
             // lbl_storeID

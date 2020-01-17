@@ -224,7 +224,7 @@
             // 
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_clear.Location = new System.Drawing.Point(225, 467);
+            this.btn_clear.Location = new System.Drawing.Point(199, 467);
             this.btn_clear.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(119, 48);
@@ -379,7 +379,7 @@
             // 
             this.btn_clear2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear2.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_clear2.Location = new System.Drawing.Point(236, 598);
+            this.btn_clear2.Location = new System.Drawing.Point(218, 598);
             this.btn_clear2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_clear2.Name = "btn_clear2";
             this.btn_clear2.Size = new System.Drawing.Size(119, 48);

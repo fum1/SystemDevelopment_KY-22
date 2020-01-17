@@ -131,7 +131,7 @@
             this.txt_EmpID.Location = new System.Drawing.Point(707, 59);
             this.txt_EmpID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_EmpID.Name = "txt_EmpID";
-            this.txt_EmpID.Size = new System.Drawing.Size(194, 42);
+            this.txt_EmpID.Size = new System.Drawing.Size(194, 35);
             this.txt_EmpID.TabIndex = 6;
             // 
             // txt_ProductID
@@ -140,7 +140,7 @@
             this.txt_ProductID.Location = new System.Drawing.Point(707, 7);
             this.txt_ProductID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txt_ProductID.Name = "txt_ProductID";
-            this.txt_ProductID.Size = new System.Drawing.Size(194, 42);
+            this.txt_ProductID.Size = new System.Drawing.Size(194, 35);
             this.txt_ProductID.TabIndex = 4;
             // 
             // btn_EmpIDSeach
@@ -202,7 +202,7 @@
             this.cmb_SupplierID.Location = new System.Drawing.Point(145, 68);
             this.cmb_SupplierID.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.cmb_SupplierID.Name = "cmb_SupplierID";
-            this.cmb_SupplierID.Size = new System.Drawing.Size(208, 42);
+            this.cmb_SupplierID.Size = new System.Drawing.Size(208, 35);
             this.cmb_SupplierID.TabIndex = 2;
             // 
             // dateTimePicker1
@@ -212,7 +212,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(145, 4);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(255, 42);
+            this.dateTimePicker1.Size = new System.Drawing.Size(255, 35);
             this.dateTimePicker1.TabIndex = 0;
             this.dateTimePicker1.Value = new System.DateTime(2019, 12, 19, 0, 0, 0, 0);
             // 
@@ -222,7 +222,7 @@
             this.label4.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label4.Location = new System.Drawing.Point(597, 65);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 36);
+            this.label4.Size = new System.Drawing.Size(72, 28);
             this.label4.TabIndex = 31;
             this.label4.Text = "社員ID";
             // 
@@ -232,7 +232,7 @@
             this.label3.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label3.Location = new System.Drawing.Point(597, 10);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 36);
+            this.label3.Size = new System.Drawing.Size(72, 28);
             this.label3.TabIndex = 30;
             this.label3.Text = "商品ID";
             // 
@@ -240,9 +240,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(1, 71);
+            this.label2.Location = new System.Drawing.Point(10, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 36);
+            this.label2.Size = new System.Drawing.Size(91, 28);
             this.label2.TabIndex = 29;
             this.label2.Text = "仕入先ID";
             // 
@@ -252,7 +252,7 @@
             this.label1.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label1.Location = new System.Drawing.Point(32, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 36);
+            this.label1.Size = new System.Drawing.Size(69, 28);
             this.label1.TabIndex = 28;
             this.label1.Text = "年月日";
             // 
@@ -269,7 +269,7 @@
             // 
             // CarOrderHistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.dataGridView1);
