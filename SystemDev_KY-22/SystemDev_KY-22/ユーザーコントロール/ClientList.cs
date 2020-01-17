@@ -42,7 +42,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.AutoResizeColumns();           //列の幅の自動調整
         }
 
-        private void btn_clear_Click(object sender, EventArgs e)
+        private void btn_clear_Click_1(object sender, EventArgs e)
         {
             txt_id.Clear();
         }
