@@ -60,7 +60,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1265, 108);
+            this.panel1.Size = new System.Drawing.Size(1920, 108);
             this.panel1.TabIndex = 0;
             // 
             // button4
@@ -72,7 +72,7 @@
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(1035, 22);
+            this.button4.Location = new System.Drawing.Point(1690, 22);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(208, 73);
             this.button4.TabIndex = 7;
@@ -105,7 +105,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 108);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(223, 702);
+            this.panel2.Size = new System.Drawing.Size(223, 972);
             this.panel2.TabIndex = 8;
             // 
             // button1
@@ -117,7 +117,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(12, 609);
+            this.button1.Location = new System.Drawing.Point(12, 803);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(201, 115);
             this.button1.TabIndex = 3;
@@ -135,7 +135,7 @@
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(12, 488);
+            this.button3.Location = new System.Drawing.Point(12, 631);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(201, 115);
             this.button3.TabIndex = 6;
@@ -153,7 +153,7 @@
             this.btn_storing.ForeColor = System.Drawing.Color.Black;
             this.btn_storing.Image = ((System.Drawing.Image)(resources.GetObject("btn_storing.Image")));
             this.btn_storing.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_storing.Location = new System.Drawing.Point(6, 367);
+            this.btn_storing.Location = new System.Drawing.Point(6, 487);
             this.btn_storing.Name = "btn_storing";
             this.btn_storing.Size = new System.Drawing.Size(201, 115);
             this.btn_storing.TabIndex = 7;
@@ -180,7 +180,7 @@
             this.btn_StockList.ForeColor = System.Drawing.Color.Black;
             this.btn_StockList.Image = ((System.Drawing.Image)(resources.GetObject("btn_StockList.Image")));
             this.btn_StockList.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_StockList.Location = new System.Drawing.Point(3, 6);
+            this.btn_StockList.Location = new System.Drawing.Point(6, 57);
             this.btn_StockList.Name = "btn_StockList";
             this.btn_StockList.Size = new System.Drawing.Size(201, 115);
             this.btn_StockList.TabIndex = 2;
@@ -198,7 +198,7 @@
             this.btn_Item.ForeColor = System.Drawing.Color.Black;
             this.btn_Item.Image = ((System.Drawing.Image)(resources.GetObject("btn_Item.Image")));
             this.btn_Item.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Item.Location = new System.Drawing.Point(23, 248);
+            this.btn_Item.Location = new System.Drawing.Point(23, 345);
             this.btn_Item.Name = "btn_Item";
             this.btn_Item.Size = new System.Drawing.Size(165, 113);
             this.btn_Item.TabIndex = 8;
@@ -216,7 +216,7 @@
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(6, 127);
+            this.button2.Location = new System.Drawing.Point(6, 201);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(201, 115);
             this.button2.TabIndex = 4;
@@ -236,7 +236,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(223, 108);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1042, 702);
+            this.panel3.Size = new System.Drawing.Size(1697, 972);
             this.panel3.TabIndex = 8;
             // 
             // Item
@@ -303,7 +303,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1265, 810);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
