@@ -97,7 +97,7 @@ namespace SystemDev_KY_22
         {
             OleDbCommand cmd =
                 new OleDbCommand("SELECT 在庫テーブル.在庫ID, 在庫テーブル.商品詳細ID, 商品詳細テーブル.商品ID, 商品マスタ.商品名, 商品マスタ.定価, 商品マスタ.車種, 商品マスタ.[メーカー], 商品マスタ.仕入先ID, 商品詳細テーブル.走行距離, 商品詳細テーブル.発売日, 商品詳細テーブル.[オプション], 商品詳細テーブル.色, 商品詳細テーブル.[モデル], 商品詳細テーブル.実売価格, 在庫テーブル.在庫数量 FROM 商品マスタ INNER JOIN (商品詳細テーブル INNER JOIN 在庫テーブル ON 商品詳細テーブル.商品詳細ID = 在庫テーブル.商品詳細ID) ON 商品マスタ.商品ID = 商品詳細テーブル.商品ID " +
-                        " ORDER BY 在庫ID");
+                        "ORDER BY 在庫ID");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
@@ -142,12 +142,12 @@ namespace SystemDev_KY_22
             DataTable dt = new DataTable();
             da.Fill(dt);
 
-            if (int.Parse(comboBox3.Text) < int.Parse(comboBox1.Text))
+            if (int.Parse(comboBox4.Text) < int.Parse(comboBox5.Text))
             {
                 for (int i = 0; dt.Rows.Count > i; i++)
                 {
-                    int price = int.Parse(dt.Rows[i][13].ToString());
-                    if (int.Parse(comboBox4.Text) > price || price > int.Parse(comboBox5.Text))
+                    int milieage = int.Parse(dt.Rows[i][8].ToString());
+                    if (int.Parse(comboBox4.Text) > milieage || milieage > int.Parse(comboBox5.Text))
                         dt.Rows[i].Delete();            
                 }
             }
@@ -155,8 +155,8 @@ namespace SystemDev_KY_22
             {
                 for (int i = 0; dt.Rows.Count > i; i++)
                 {
-                    int price = int.Parse(dt.Rows[i][13].ToString());
-                    if (int.Parse(comboBox5.Text) > price || price > int.Parse(comboBox4.Text))
+                    int milieage = int.Parse(dt.Rows[i][8].ToString());
+                    if (int.Parse(comboBox5.Text) > milieage || milieage > int.Parse(comboBox4.Text))
                         dt.Rows[i].Delete();
                 }
             }

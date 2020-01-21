@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_MileageSeach = new System.Windows.Forms.Button();
+            this.btn_PriceSeach = new System.Windows.Forms.Button();
+            this.btn_MakerSeach = new System.Windows.Forms.Button();
+            this.btn_CarNameSeach = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboB_CarName = new System.Windows.Forms.ComboBox();
@@ -48,10 +52,6 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_CarNameSeach = new System.Windows.Forms.Button();
-            this.btn_MakerSeach = new System.Windows.Forms.Button();
-            this.btn_PriceSeach = new System.Windows.Forms.Button();
-            this.btn_MileageSeach = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,62 @@
             this.panel1.Size = new System.Drawing.Size(1042, 149);
             this.panel1.TabIndex = 2;
             // 
+            // btn_MileageSeach
+            // 
+            this.btn_MileageSeach.BackColor = System.Drawing.Color.White;
+            this.btn_MileageSeach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MileageSeach.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_MileageSeach.Location = new System.Drawing.Point(896, 75);
+            this.btn_MileageSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_MileageSeach.Name = "btn_MileageSeach";
+            this.btn_MileageSeach.Size = new System.Drawing.Size(45, 45);
+            this.btn_MileageSeach.TabIndex = 35;
+            this.btn_MileageSeach.Text = "🔍";
+            this.btn_MileageSeach.UseVisualStyleBackColor = false;
+            this.btn_MileageSeach.Click += new System.EventHandler(this.btn_MileageSeach_Click);
+            // 
+            // btn_PriceSeach
+            // 
+            this.btn_PriceSeach.BackColor = System.Drawing.Color.White;
+            this.btn_PriceSeach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_PriceSeach.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_PriceSeach.Location = new System.Drawing.Point(896, 25);
+            this.btn_PriceSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_PriceSeach.Name = "btn_PriceSeach";
+            this.btn_PriceSeach.Size = new System.Drawing.Size(45, 45);
+            this.btn_PriceSeach.TabIndex = 34;
+            this.btn_PriceSeach.Text = "🔍";
+            this.btn_PriceSeach.UseVisualStyleBackColor = false;
+            this.btn_PriceSeach.Click += new System.EventHandler(this.btn_PriceSeach_Click);
+            // 
+            // btn_MakerSeach
+            // 
+            this.btn_MakerSeach.BackColor = System.Drawing.Color.White;
+            this.btn_MakerSeach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MakerSeach.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_MakerSeach.Location = new System.Drawing.Point(307, 76);
+            this.btn_MakerSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_MakerSeach.Name = "btn_MakerSeach";
+            this.btn_MakerSeach.Size = new System.Drawing.Size(45, 45);
+            this.btn_MakerSeach.TabIndex = 33;
+            this.btn_MakerSeach.Text = "🔍";
+            this.btn_MakerSeach.UseVisualStyleBackColor = false;
+            this.btn_MakerSeach.Click += new System.EventHandler(this.btn_MakerSeach_Click);
+            // 
+            // btn_CarNameSeach
+            // 
+            this.btn_CarNameSeach.BackColor = System.Drawing.Color.White;
+            this.btn_CarNameSeach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CarNameSeach.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_CarNameSeach.Location = new System.Drawing.Point(307, 29);
+            this.btn_CarNameSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_CarNameSeach.Name = "btn_CarNameSeach";
+            this.btn_CarNameSeach.Size = new System.Drawing.Size(45, 45);
+            this.btn_CarNameSeach.TabIndex = 32;
+            this.btn_CarNameSeach.Text = "🔍";
+            this.btn_CarNameSeach.UseVisualStyleBackColor = false;
+            this.btn_CarNameSeach.Click += new System.EventHandler(this.btn_CarNameSeach_Click);
+            // 
             // checkBox1
             // 
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -100,14 +156,14 @@
             this.comboBox5.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
-            "10000",
-            "20000",
-            "30000",
-            "40000",
-            "50000",
             "100000",
-            "150000",
             "200000",
+            "300000",
+            "400000",
+            "500000",
+            "1000000",
+            "1500000",
+            "2000000",
             "99999999"});
             this.comboBox5.Location = new System.Drawing.Point(769, 76);
             this.comboBox5.Name = "comboBox5";
@@ -149,14 +205,14 @@
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "0",
-            "10001",
-            "20001",
-            "30001",
-            "40001",
-            "50001",
             "100001",
-            "150001",
-            "200001"});
+            "200001",
+            "300001",
+            "400001",
+            "500001",
+            "1000001",
+            "1500001",
+            "2000001"});
             this.comboBox4.Location = new System.Drawing.Point(551, 75);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 42);
@@ -317,62 +373,6 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 15);
             this.label4.TabIndex = 14;
-            // 
-            // btn_CarNameSeach
-            // 
-            this.btn_CarNameSeach.BackColor = System.Drawing.Color.White;
-            this.btn_CarNameSeach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CarNameSeach.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_CarNameSeach.Location = new System.Drawing.Point(307, 29);
-            this.btn_CarNameSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_CarNameSeach.Name = "btn_CarNameSeach";
-            this.btn_CarNameSeach.Size = new System.Drawing.Size(45, 45);
-            this.btn_CarNameSeach.TabIndex = 32;
-            this.btn_CarNameSeach.Text = "🔍";
-            this.btn_CarNameSeach.UseVisualStyleBackColor = false;
-            this.btn_CarNameSeach.Click += new System.EventHandler(this.btn_CarNameSeach_Click);
-            // 
-            // btn_MakerSeach
-            // 
-            this.btn_MakerSeach.BackColor = System.Drawing.Color.White;
-            this.btn_MakerSeach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MakerSeach.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_MakerSeach.Location = new System.Drawing.Point(307, 76);
-            this.btn_MakerSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_MakerSeach.Name = "btn_MakerSeach";
-            this.btn_MakerSeach.Size = new System.Drawing.Size(45, 45);
-            this.btn_MakerSeach.TabIndex = 33;
-            this.btn_MakerSeach.Text = "🔍";
-            this.btn_MakerSeach.UseVisualStyleBackColor = false;
-            this.btn_MakerSeach.Click += new System.EventHandler(this.btn_MakerSeach_Click);
-            // 
-            // btn_PriceSeach
-            // 
-            this.btn_PriceSeach.BackColor = System.Drawing.Color.White;
-            this.btn_PriceSeach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PriceSeach.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_PriceSeach.Location = new System.Drawing.Point(896, 25);
-            this.btn_PriceSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_PriceSeach.Name = "btn_PriceSeach";
-            this.btn_PriceSeach.Size = new System.Drawing.Size(45, 45);
-            this.btn_PriceSeach.TabIndex = 34;
-            this.btn_PriceSeach.Text = "🔍";
-            this.btn_PriceSeach.UseVisualStyleBackColor = false;
-            this.btn_PriceSeach.Click += new System.EventHandler(this.btn_PriceSeach_Click);
-            // 
-            // btn_MileageSeach
-            // 
-            this.btn_MileageSeach.BackColor = System.Drawing.Color.White;
-            this.btn_MileageSeach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MileageSeach.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_MileageSeach.Location = new System.Drawing.Point(896, 75);
-            this.btn_MileageSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_MileageSeach.Name = "btn_MileageSeach";
-            this.btn_MileageSeach.Size = new System.Drawing.Size(45, 45);
-            this.btn_MileageSeach.TabIndex = 35;
-            this.btn_MileageSeach.Text = "🔍";
-            this.btn_MileageSeach.UseVisualStyleBackColor = false;
-            this.btn_MileageSeach.Click += new System.EventHandler(this.btn_MileageSeach_Click);
             // 
             // StockList
             // 
