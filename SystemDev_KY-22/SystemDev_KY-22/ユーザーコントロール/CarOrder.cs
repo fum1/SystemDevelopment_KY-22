@@ -128,7 +128,9 @@ namespace SystemDev_KY_22
                 cn.Close();               //コネクションを閉じる
                 return;
             }
+            System.Diagnostics.Process p = System.Diagnostics.Process.Start("|DataDirectory|\\OrderHistory.exe");
             MessageBox.Show("登録しました", "発注");
+
 
             //PrintDocumentオブジェクトの作成
             System.Drawing.Printing.PrintDocument po =
