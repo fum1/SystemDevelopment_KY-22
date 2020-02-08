@@ -55,7 +55,7 @@ namespace SystemDev_KY_22
         private void Salesmenu2_Load(object sender, EventArgs e)
         {
             userControls = new UserControl[4] { stockList, clientRegister, order,clientList };
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
         }
 
         private void btn_ClientList_Click(object sender, EventArgs e)

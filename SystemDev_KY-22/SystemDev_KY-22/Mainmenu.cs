@@ -23,7 +23,8 @@ namespace SystemDev_KY_22
         private void MainMenu2_Load(object sender, EventArgs e)
         {
             userControls = new UserControl[6] {carOrder,orderCheck,loaUnloading,stockList,storing1, Item };
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
+            
         }
 
         private void lB_MainTitle_Click(object sender, EventArgs e)
