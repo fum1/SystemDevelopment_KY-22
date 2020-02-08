@@ -87,9 +87,10 @@
             // 
             this.lbl_item.AutoSize = true;
             this.lbl_item.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_item.Location = new System.Drawing.Point(51, 52);
+            this.lbl_item.Location = new System.Drawing.Point(108, 81);
+            this.lbl_item.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_item.Name = "lbl_item";
-            this.lbl_item.Size = new System.Drawing.Size(139, 57);
+            this.lbl_item.Size = new System.Drawing.Size(110, 45);
             this.lbl_item.TabIndex = 21;
             this.lbl_item.Text = "商品名";
             // 
@@ -97,9 +98,10 @@
             // 
             this.lbl_price.AutoSize = true;
             this.lbl_price.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_price.Location = new System.Drawing.Point(89, 139);
+            this.lbl_price.Location = new System.Drawing.Point(131, 153);
+            this.lbl_price.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_price.Name = "lbl_price";
-            this.lbl_price.Size = new System.Drawing.Size(101, 57);
+            this.lbl_price.Size = new System.Drawing.Size(80, 45);
             this.lbl_price.TabIndex = 22;
             this.lbl_price.Text = "定価";
             // 
@@ -107,9 +109,10 @@
             // 
             this.lbl_type.AutoSize = true;
             this.lbl_type.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_type.Location = new System.Drawing.Point(89, 226);
+            this.lbl_type.Location = new System.Drawing.Point(131, 225);
+            this.lbl_type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_type.Name = "lbl_type";
-            this.lbl_type.Size = new System.Drawing.Size(101, 57);
+            this.lbl_type.Size = new System.Drawing.Size(80, 45);
             this.lbl_type.TabIndex = 23;
             this.lbl_type.Text = "車種";
             // 
@@ -117,52 +120,59 @@
             // 
             this.lbl_maker.AutoSize = true;
             this.lbl_maker.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_maker.Location = new System.Drawing.Point(13, 313);
+            this.lbl_maker.Location = new System.Drawing.Point(74, 297);
+            this.lbl_maker.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_maker.Name = "lbl_maker";
-            this.lbl_maker.Size = new System.Drawing.Size(177, 57);
+            this.lbl_maker.Size = new System.Drawing.Size(140, 45);
             this.lbl_maker.TabIndex = 24;
             this.lbl_maker.Text = "メーカー";
             // 
             // txt_item
             // 
             this.txt_item.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_item.Location = new System.Drawing.Point(229, 56);
+            this.txt_item.Location = new System.Drawing.Point(241, 81);
+            this.txt_item.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_item.Name = "txt_item";
-            this.txt_item.Size = new System.Drawing.Size(227, 52);
+            this.txt_item.Size = new System.Drawing.Size(171, 43);
             this.txt_item.TabIndex = 25;
             // 
             // txt_price
             // 
             this.txt_price.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_price.Location = new System.Drawing.Point(229, 142);
+            this.txt_price.Location = new System.Drawing.Point(241, 153);
+            this.txt_price.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_price.Name = "txt_price";
-            this.txt_price.Size = new System.Drawing.Size(227, 52);
+            this.txt_price.Size = new System.Drawing.Size(171, 43);
             this.txt_price.TabIndex = 26;
             // 
             // txt_maker
             // 
             this.txt_maker.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_maker.Location = new System.Drawing.Point(229, 314);
+            this.txt_maker.Location = new System.Drawing.Point(241, 297);
+            this.txt_maker.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_maker.Name = "txt_maker";
-            this.txt_maker.Size = new System.Drawing.Size(227, 52);
+            this.txt_maker.Size = new System.Drawing.Size(171, 43);
             this.txt_maker.TabIndex = 28;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(560, 6);
+            this.dataGridView1.Location = new System.Drawing.Point(597, 5);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1700, 890);
+            this.dataGridView1.Size = new System.Drawing.Size(1680, 950);
             this.dataGridView1.TabIndex = 29;
             // 
             // btn_register
             // 
             this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_register.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_register.Location = new System.Drawing.Point(359, 484);
+            this.btn_register.Location = new System.Drawing.Point(348, 467);
+            this.btn_register.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_register.Name = "btn_register";
-            this.btn_register.Size = new System.Drawing.Size(158, 60);
+            this.btn_register.Size = new System.Drawing.Size(119, 48);
             this.btn_register.TabIndex = 30;
             this.btn_register.Text = "登録";
             this.btn_register.UseVisualStyleBackColor = true;
@@ -173,10 +183,11 @@
             this.tab.Controls.Add(this.tabPage1);
             this.tab.Controls.Add(this.tabPage2);
             this.tab.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.tab.Location = new System.Drawing.Point(3, 3);
+            this.tab.Location = new System.Drawing.Point(2, 3);
+            this.tab.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tab.Name = "tab";
             this.tab.SelectedIndex = 0;
-            this.tab.Size = new System.Drawing.Size(1720, 899);
+            this.tab.Size = new System.Drawing.Size(1690, 960);
             this.tab.TabIndex = 31;
             // 
             // tabPage1
@@ -200,10 +211,11 @@
             this.tabPage1.Controls.Add(this.lbl_maker);
             this.tabPage1.Controls.Add(this.lbl_type);
             this.tabPage1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 28);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1712, 867);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tabPage1.Size = new System.Drawing.Size(1682, 932);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "商品";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -212,9 +224,10 @@
             // 
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_clear.Location = new System.Drawing.Point(176, 484);
+            this.btn_clear.Location = new System.Drawing.Point(199, 467);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(158, 60);
+            this.btn_clear.Size = new System.Drawing.Size(119, 48);
             this.btn_clear.TabIndex = 40;
             this.btn_clear.Text = "クリア";
             this.btn_clear.UseVisualStyleBackColor = true;
@@ -225,10 +238,10 @@
             this.btn_pricesearch.BackColor = System.Drawing.Color.White;
             this.btn_pricesearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_pricesearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_pricesearch.Location = new System.Drawing.Point(462, 142);
-            this.btn_pricesearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_pricesearch.Location = new System.Drawing.Point(426, 153);
+            this.btn_pricesearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_pricesearch.Name = "btn_pricesearch";
-            this.btn_pricesearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_pricesearch.Size = new System.Drawing.Size(41, 41);
             this.btn_pricesearch.TabIndex = 39;
             this.btn_pricesearch.Text = "🔍";
             this.btn_pricesearch.UseVisualStyleBackColor = false;
@@ -239,10 +252,10 @@
             this.btn_typesearch.BackColor = System.Drawing.Color.White;
             this.btn_typesearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_typesearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_typesearch.Location = new System.Drawing.Point(462, 230);
-            this.btn_typesearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_typesearch.Location = new System.Drawing.Point(426, 228);
+            this.btn_typesearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_typesearch.Name = "btn_typesearch";
-            this.btn_typesearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_typesearch.Size = new System.Drawing.Size(41, 41);
             this.btn_typesearch.TabIndex = 38;
             this.btn_typesearch.Text = "🔍";
             this.btn_typesearch.UseVisualStyleBackColor = false;
@@ -253,10 +266,10 @@
             this.btn_makersearch.BackColor = System.Drawing.Color.White;
             this.btn_makersearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_makersearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_makersearch.Location = new System.Drawing.Point(462, 315);
-            this.btn_makersearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_makersearch.Location = new System.Drawing.Point(426, 294);
+            this.btn_makersearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_makersearch.Name = "btn_makersearch";
-            this.btn_makersearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_makersearch.Size = new System.Drawing.Size(41, 41);
             this.btn_makersearch.TabIndex = 37;
             this.btn_makersearch.Text = "🔍";
             this.btn_makersearch.UseVisualStyleBackColor = false;
@@ -267,10 +280,10 @@
             this.btn_suppliersearch.BackColor = System.Drawing.Color.White;
             this.btn_suppliersearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_suppliersearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_suppliersearch.Location = new System.Drawing.Point(462, 400);
-            this.btn_suppliersearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_suppliersearch.Location = new System.Drawing.Point(426, 370);
+            this.btn_suppliersearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_suppliersearch.Name = "btn_suppliersearch";
-            this.btn_suppliersearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_suppliersearch.Size = new System.Drawing.Size(41, 41);
             this.btn_suppliersearch.TabIndex = 36;
             this.btn_suppliersearch.Text = "🔍";
             this.btn_suppliersearch.UseVisualStyleBackColor = false;
@@ -281,10 +294,10 @@
             this.btn_itemsearch.BackColor = System.Drawing.Color.White;
             this.btn_itemsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_itemsearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_itemsearch.Location = new System.Drawing.Point(462, 58);
-            this.btn_itemsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_itemsearch.Location = new System.Drawing.Point(426, 78);
+            this.btn_itemsearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_itemsearch.Name = "btn_itemsearch";
-            this.btn_itemsearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_itemsearch.Size = new System.Drawing.Size(41, 41);
             this.btn_itemsearch.TabIndex = 34;
             this.btn_itemsearch.Text = "🔍";
             this.btn_itemsearch.UseVisualStyleBackColor = false;
@@ -297,27 +310,29 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmb_type.Font = new System.Drawing.Font("メイリオ", 18F);
             this.cmb_type.FormattingEnabled = true;
-            this.cmb_type.Location = new System.Drawing.Point(229, 228);
-            this.cmb_type.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_type.Location = new System.Drawing.Point(241, 225);
+            this.cmb_type.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cmb_type.Name = "cmb_type";
-            this.cmb_type.Size = new System.Drawing.Size(222, 53);
+            this.cmb_type.Size = new System.Drawing.Size(171, 44);
             this.cmb_type.TabIndex = 33;
             // 
             // txt_supplier
             // 
             this.txt_supplier.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_supplier.Location = new System.Drawing.Point(229, 400);
+            this.txt_supplier.Location = new System.Drawing.Point(241, 369);
+            this.txt_supplier.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_supplier.Name = "txt_supplier";
-            this.txt_supplier.Size = new System.Drawing.Size(227, 52);
+            this.txt_supplier.Size = new System.Drawing.Size(171, 43);
             this.txt_supplier.TabIndex = 32;
             // 
             // lbl_supplier
             // 
             this.lbl_supplier.AutoSize = true;
             this.lbl_supplier.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_supplier.Location = new System.Drawing.Point(13, 400);
+            this.lbl_supplier.Location = new System.Drawing.Point(74, 369);
+            this.lbl_supplier.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_supplier.Name = "lbl_supplier";
-            this.lbl_supplier.Size = new System.Drawing.Size(182, 57);
+            this.lbl_supplier.Size = new System.Drawing.Size(144, 45);
             this.lbl_supplier.TabIndex = 31;
             this.lbl_supplier.Text = "仕入先ID";
             // 
@@ -350,21 +365,24 @@
             this.tabPage2.Controls.Add(this.lbl_release);
             this.tabPage2.Controls.Add(this.txt_mileage);
             this.tabPage2.Controls.Add(this.lbl_mileage);
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1712, 867);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tabPage2.Size = new System.Drawing.Size(1682, 932);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "商品詳細";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // btn_clear2
             // 
             this.btn_clear2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear2.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_clear2.Location = new System.Drawing.Point(209, 627);
+            this.btn_clear2.Location = new System.Drawing.Point(218, 598);
+            this.btn_clear2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_clear2.Name = "btn_clear2";
-            this.btn_clear2.Size = new System.Drawing.Size(158, 60);
+            this.btn_clear2.Size = new System.Drawing.Size(119, 48);
             this.btn_clear2.TabIndex = 56;
             this.btn_clear2.Text = "クリア";
             this.btn_clear2.UseVisualStyleBackColor = true;
@@ -373,10 +391,12 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(548, 9);
+            this.dataGridView2.Location = new System.Drawing.Point(577, 7);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1200, 850);
+            this.dataGridView2.Size = new System.Drawing.Size(1680, 950);
             this.dataGridView2.TabIndex = 55;
             // 
             // btn_itemIDsearch
@@ -384,10 +404,10 @@
             this.btn_itemIDsearch.BackColor = System.Drawing.Color.White;
             this.btn_itemIDsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_itemIDsearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_itemIDsearch.Location = new System.Drawing.Point(477, 9);
-            this.btn_itemIDsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_itemIDsearch.Location = new System.Drawing.Point(437, 69);
+            this.btn_itemIDsearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_itemIDsearch.Name = "btn_itemIDsearch";
-            this.btn_itemIDsearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_itemIDsearch.Size = new System.Drawing.Size(41, 41);
             this.btn_itemIDsearch.TabIndex = 54;
             this.btn_itemIDsearch.Text = "🔍";
             this.btn_itemIDsearch.UseVisualStyleBackColor = false;
@@ -398,10 +418,10 @@
             this.btn_mileagesearch.BackColor = System.Drawing.Color.White;
             this.btn_mileagesearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mileagesearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_mileagesearch.Location = new System.Drawing.Point(477, 81);
-            this.btn_mileagesearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_mileagesearch.Location = new System.Drawing.Point(437, 131);
+            this.btn_mileagesearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_mileagesearch.Name = "btn_mileagesearch";
-            this.btn_mileagesearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_mileagesearch.Size = new System.Drawing.Size(41, 41);
             this.btn_mileagesearch.TabIndex = 53;
             this.btn_mileagesearch.Text = "🔍";
             this.btn_mileagesearch.UseVisualStyleBackColor = false;
@@ -412,10 +432,10 @@
             this.btn_releasesearch.BackColor = System.Drawing.Color.White;
             this.btn_releasesearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_releasesearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_releasesearch.Location = new System.Drawing.Point(477, 162);
-            this.btn_releasesearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_releasesearch.Location = new System.Drawing.Point(437, 201);
+            this.btn_releasesearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_releasesearch.Name = "btn_releasesearch";
-            this.btn_releasesearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_releasesearch.Size = new System.Drawing.Size(41, 41);
             this.btn_releasesearch.TabIndex = 52;
             this.btn_releasesearch.Text = "🔍";
             this.btn_releasesearch.UseVisualStyleBackColor = false;
@@ -426,10 +446,10 @@
             this.btn_optionsearch.BackColor = System.Drawing.Color.White;
             this.btn_optionsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_optionsearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_optionsearch.Location = new System.Drawing.Point(477, 240);
-            this.btn_optionsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_optionsearch.Location = new System.Drawing.Point(437, 263);
+            this.btn_optionsearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_optionsearch.Name = "btn_optionsearch";
-            this.btn_optionsearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_optionsearch.Size = new System.Drawing.Size(41, 41);
             this.btn_optionsearch.TabIndex = 51;
             this.btn_optionsearch.Text = "🔍";
             this.btn_optionsearch.UseVisualStyleBackColor = false;
@@ -440,10 +460,10 @@
             this.btn_colorsearch.BackColor = System.Drawing.Color.White;
             this.btn_colorsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_colorsearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_colorsearch.Location = new System.Drawing.Point(477, 312);
-            this.btn_colorsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_colorsearch.Location = new System.Drawing.Point(437, 332);
+            this.btn_colorsearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_colorsearch.Name = "btn_colorsearch";
-            this.btn_colorsearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_colorsearch.Size = new System.Drawing.Size(41, 41);
             this.btn_colorsearch.TabIndex = 50;
             this.btn_colorsearch.Text = "🔍";
             this.btn_colorsearch.UseVisualStyleBackColor = false;
@@ -454,10 +474,10 @@
             this.btn_modelsearch.BackColor = System.Drawing.Color.White;
             this.btn_modelsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_modelsearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_modelsearch.Location = new System.Drawing.Point(477, 393);
-            this.btn_modelsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_modelsearch.Location = new System.Drawing.Point(437, 399);
+            this.btn_modelsearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_modelsearch.Name = "btn_modelsearch";
-            this.btn_modelsearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_modelsearch.Size = new System.Drawing.Size(41, 41);
             this.btn_modelsearch.TabIndex = 49;
             this.btn_modelsearch.Text = "🔍";
             this.btn_modelsearch.UseVisualStyleBackColor = false;
@@ -468,10 +488,10 @@
             this.btn_actualsearch.BackColor = System.Drawing.Color.White;
             this.btn_actualsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_actualsearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_actualsearch.Location = new System.Drawing.Point(477, 466);
-            this.btn_actualsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_actualsearch.Location = new System.Drawing.Point(437, 465);
+            this.btn_actualsearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_actualsearch.Name = "btn_actualsearch";
-            this.btn_actualsearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_actualsearch.Size = new System.Drawing.Size(41, 41);
             this.btn_actualsearch.TabIndex = 48;
             this.btn_actualsearch.Text = "🔍";
             this.btn_actualsearch.UseVisualStyleBackColor = false;
@@ -482,10 +502,10 @@
             this.btn_vehiclesearch.BackColor = System.Drawing.Color.White;
             this.btn_vehiclesearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_vehiclesearch.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_vehiclesearch.Location = new System.Drawing.Point(477, 551);
-            this.btn_vehiclesearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_vehiclesearch.Location = new System.Drawing.Point(437, 527);
+            this.btn_vehiclesearch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btn_vehiclesearch.Name = "btn_vehiclesearch";
-            this.btn_vehiclesearch.Size = new System.Drawing.Size(55, 51);
+            this.btn_vehiclesearch.Size = new System.Drawing.Size(41, 41);
             this.btn_vehiclesearch.TabIndex = 47;
             this.btn_vehiclesearch.Text = "🔍";
             this.btn_vehiclesearch.UseVisualStyleBackColor = false;
@@ -494,28 +514,32 @@
             // txt_itemID
             // 
             this.txt_itemID.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_itemID.Location = new System.Drawing.Point(244, 8);
+            this.txt_itemID.Location = new System.Drawing.Point(251, 68);
+            this.txt_itemID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_itemID.Name = "txt_itemID";
-            this.txt_itemID.Size = new System.Drawing.Size(227, 52);
+            this.txt_itemID.Size = new System.Drawing.Size(171, 43);
             this.txt_itemID.TabIndex = 46;
             // 
             // lbl_itemID
             // 
             this.lbl_itemID.AutoSize = true;
             this.lbl_itemID.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_itemID.Location = new System.Drawing.Point(73, 8);
+            this.lbl_itemID.Location = new System.Drawing.Point(118, 68);
+            this.lbl_itemID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_itemID.Name = "lbl_itemID";
-            this.lbl_itemID.Size = new System.Drawing.Size(144, 57);
+            this.lbl_itemID.Size = new System.Drawing.Size(114, 45);
             this.lbl_itemID.TabIndex = 45;
             this.lbl_itemID.Text = "商品ID";
+            this.lbl_itemID.Click += new System.EventHandler(this.lbl_itemID_Click);
             // 
             // btn_register1
             // 
             this.btn_register1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_register1.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_register1.Location = new System.Drawing.Point(373, 622);
+            this.btn_register1.Location = new System.Drawing.Point(359, 598);
+            this.btn_register1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_register1.Name = "btn_register1";
-            this.btn_register1.Size = new System.Drawing.Size(158, 53);
+            this.btn_register1.Size = new System.Drawing.Size(119, 48);
             this.btn_register1.TabIndex = 32;
             this.btn_register1.Text = "登録";
             this.btn_register1.UseVisualStyleBackColor = true;
@@ -524,137 +548,159 @@
             // txt_vehicle
             // 
             this.txt_vehicle.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_vehicle.Location = new System.Drawing.Point(244, 551);
+            this.txt_vehicle.Location = new System.Drawing.Point(251, 530);
+            this.txt_vehicle.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_vehicle.Name = "txt_vehicle";
-            this.txt_vehicle.Size = new System.Drawing.Size(227, 52);
+            this.txt_vehicle.Size = new System.Drawing.Size(171, 43);
             this.txt_vehicle.TabIndex = 44;
             // 
             // txt_actual
             // 
             this.txt_actual.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_actual.Location = new System.Drawing.Point(244, 470);
+            this.txt_actual.Location = new System.Drawing.Point(251, 464);
+            this.txt_actual.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_actual.Name = "txt_actual";
-            this.txt_actual.Size = new System.Drawing.Size(227, 52);
+            this.txt_actual.Size = new System.Drawing.Size(171, 43);
             this.txt_actual.TabIndex = 43;
             // 
             // lbl_vehicle
             // 
             this.lbl_vehicle.AutoSize = true;
             this.lbl_vehicle.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_vehicle.Location = new System.Drawing.Point(40, 547);
+            this.lbl_vehicle.Location = new System.Drawing.Point(91, 530);
+            this.lbl_vehicle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_vehicle.Name = "lbl_vehicle";
-            this.lbl_vehicle.Size = new System.Drawing.Size(177, 57);
+            this.lbl_vehicle.Size = new System.Drawing.Size(140, 45);
             this.lbl_vehicle.TabIndex = 42;
             this.lbl_vehicle.Text = "車両状態";
+            this.lbl_vehicle.Click += new System.EventHandler(this.lbl_vehicle_Click);
             // 
             // lbl_actual
             // 
             this.lbl_actual.AutoSize = true;
             this.lbl_actual.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_actual.Location = new System.Drawing.Point(40, 470);
+            this.lbl_actual.Location = new System.Drawing.Point(91, 464);
+            this.lbl_actual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_actual.Name = "lbl_actual";
-            this.lbl_actual.Size = new System.Drawing.Size(177, 57);
+            this.lbl_actual.Size = new System.Drawing.Size(140, 45);
             this.lbl_actual.TabIndex = 41;
             this.lbl_actual.Text = "実売価格";
+            this.lbl_actual.Click += new System.EventHandler(this.lbl_actual_Click);
             // 
             // txt_model
             // 
             this.txt_model.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_model.Location = new System.Drawing.Point(244, 393);
+            this.txt_model.Location = new System.Drawing.Point(251, 398);
+            this.txt_model.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_model.Name = "txt_model";
-            this.txt_model.Size = new System.Drawing.Size(227, 52);
+            this.txt_model.Size = new System.Drawing.Size(171, 43);
             this.txt_model.TabIndex = 40;
             // 
             // txt_color
             // 
             this.txt_color.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_color.Location = new System.Drawing.Point(244, 316);
+            this.txt_color.Location = new System.Drawing.Point(251, 328);
+            this.txt_color.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_color.Name = "txt_color";
-            this.txt_color.Size = new System.Drawing.Size(227, 52);
+            this.txt_color.Size = new System.Drawing.Size(171, 43);
             this.txt_color.TabIndex = 39;
             // 
             // txt_option
             // 
             this.txt_option.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_option.Location = new System.Drawing.Point(244, 239);
+            this.txt_option.Location = new System.Drawing.Point(251, 266);
+            this.txt_option.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_option.Name = "txt_option";
-            this.txt_option.Size = new System.Drawing.Size(227, 52);
+            this.txt_option.Size = new System.Drawing.Size(171, 43);
             this.txt_option.TabIndex = 38;
             // 
             // txt_release
             // 
             this.txt_release.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_release.Location = new System.Drawing.Point(244, 162);
+            this.txt_release.Location = new System.Drawing.Point(251, 200);
+            this.txt_release.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_release.Name = "txt_release";
-            this.txt_release.Size = new System.Drawing.Size(227, 52);
+            this.txt_release.Size = new System.Drawing.Size(171, 43);
             this.txt_release.TabIndex = 37;
             // 
             // lbl_model
             // 
             this.lbl_model.AutoSize = true;
             this.lbl_model.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_model.Location = new System.Drawing.Point(78, 393);
+            this.lbl_model.Location = new System.Drawing.Point(120, 398);
+            this.lbl_model.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_model.Name = "lbl_model";
-            this.lbl_model.Size = new System.Drawing.Size(139, 57);
+            this.lbl_model.Size = new System.Drawing.Size(110, 45);
             this.lbl_model.TabIndex = 36;
             this.lbl_model.Text = "モデル";
+            this.lbl_model.Click += new System.EventHandler(this.lbl_model_Click);
             // 
             // lbl_color
             // 
             this.lbl_color.AutoSize = true;
             this.lbl_color.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_color.Location = new System.Drawing.Point(154, 316);
+            this.lbl_color.Location = new System.Drawing.Point(176, 332);
+            this.lbl_color.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_color.Name = "lbl_color";
-            this.lbl_color.Size = new System.Drawing.Size(63, 57);
+            this.lbl_color.Size = new System.Drawing.Size(50, 45);
             this.lbl_color.TabIndex = 35;
             this.lbl_color.Text = "色";
+            this.lbl_color.Click += new System.EventHandler(this.lbl_color_Click);
             // 
             // lbl_option
             // 
             this.lbl_option.AutoSize = true;
             this.lbl_option.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_option.Location = new System.Drawing.Point(2, 239);
+            this.lbl_option.Location = new System.Drawing.Point(62, 266);
+            this.lbl_option.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_option.Name = "lbl_option";
-            this.lbl_option.Size = new System.Drawing.Size(215, 57);
+            this.lbl_option.Size = new System.Drawing.Size(170, 45);
             this.lbl_option.TabIndex = 34;
             this.lbl_option.Text = "オプション";
+            this.lbl_option.Click += new System.EventHandler(this.lbl_option_Click);
             // 
             // lbl_release
             // 
             this.lbl_release.AutoSize = true;
             this.lbl_release.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_release.Location = new System.Drawing.Point(78, 162);
+            this.lbl_release.Location = new System.Drawing.Point(120, 200);
+            this.lbl_release.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_release.Name = "lbl_release";
-            this.lbl_release.Size = new System.Drawing.Size(139, 57);
+            this.lbl_release.Size = new System.Drawing.Size(110, 45);
             this.lbl_release.TabIndex = 33;
             this.lbl_release.Text = "発売日";
+            this.lbl_release.Click += new System.EventHandler(this.lbl_release_Click);
             // 
             // txt_mileage
             // 
             this.txt_mileage.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_mileage.Location = new System.Drawing.Point(244, 85);
+            this.txt_mileage.Location = new System.Drawing.Point(251, 134);
+            this.txt_mileage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_mileage.Name = "txt_mileage";
-            this.txt_mileage.Size = new System.Drawing.Size(227, 52);
+            this.txt_mileage.Size = new System.Drawing.Size(171, 43);
             this.txt_mileage.TabIndex = 31;
             // 
             // lbl_mileage
             // 
             this.lbl_mileage.AutoSize = true;
             this.lbl_mileage.Font = new System.Drawing.Font("メイリオ", 22.2F);
-            this.lbl_mileage.Location = new System.Drawing.Point(40, 85);
+            this.lbl_mileage.Location = new System.Drawing.Point(91, 134);
+            this.lbl_mileage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_mileage.Name = "lbl_mileage";
-            this.lbl_mileage.Size = new System.Drawing.Size(177, 57);
+            this.lbl_mileage.Size = new System.Drawing.Size(140, 45);
             this.lbl_mileage.TabIndex = 32;
             this.lbl_mileage.Text = "走行距離";
+            this.lbl_mileage.Click += new System.EventHandler(this.lbl_mileage_Click);
             // 
             // Item
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tab);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Item";
-            this.Size = new System.Drawing.Size(1833, 906);
+            this.Size = new System.Drawing.Size(1573, 725);
             this.Load += new System.EventHandler(this.Item_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tab.ResumeLayout(false);

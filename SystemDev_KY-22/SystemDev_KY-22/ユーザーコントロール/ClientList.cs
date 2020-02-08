@@ -42,7 +42,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.AutoResizeColumns();           //列の幅の自動調整
         }
 
-        private void btn_clear_Click(object sender, EventArgs e)
+        private void btn_clear_Click_1(object sender, EventArgs e)
         {
             txt_id.Clear();
         }
@@ -102,29 +102,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
                     return;
                 }
             }
-
-
-        }
-
-        private void txt_id_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_Click(object sender, EventArgs e)
-        {
-            /*int selectrow = dataGridView1.CurrentCell.RowIndex;                 //選択されている行番号
-            textBID.Text =
-                dataGridView1.Rows[selectrow].Cells["ID"].Value.ToString();     //ID
-            textBPass.Text =
-                dataGridView1.Rows[selectrow].Cells["パスワード"].Value.ToString(); //パスワード
-            textBName.Text =
-                dataGridView1.Rows[selectrow].Cells["名前"].Value.ToString();     //名前
-            maskedTextBPostal.Text =
-                dataGridView1.Rows[selectrow].Cells["郵便番号"].Value.ToString(); //郵便番号
-            textBAddress.Text =
-                dataGridView1.Rows[selectrow].Cells["住所"].Value.ToString();     //住所*/
-        }
+       }
 
         private void radioB_Id_CheckedChanged(object sender, EventArgs e)
         {

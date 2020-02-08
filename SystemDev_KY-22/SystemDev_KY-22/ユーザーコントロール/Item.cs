@@ -14,9 +14,6 @@ namespace SystemDev_KY_22.ユーザーコントロール
     public partial class Item : UserControl
     {
         OleDbConnection cn; //コネクションオブジェクト
-        DataTable dt;
-
-
         private int itemID;
         private int ProductID;
 
@@ -24,10 +21,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         public Item()
         {
             InitializeComponent();
-
         }
-
-
 
         private void Item_Load(object sender, EventArgs e)
         {
@@ -137,12 +131,9 @@ namespace SystemDev_KY_22.ユーザーコントロール
             DataTable dt = new DataTable();
             da.Fill(dt);
 
-
             dataGridView1.DataSource = dt;
             dataGridView1.AllowUserToAddRows = false;    //最下行を非表示
             dataGridView1.AutoResizeColumns();           //列の幅の自動調整
-
-
 
             OleDbDataAdapter type_da =
               new OleDbDataAdapter("SELECT 車種 FROM 車種マスタ", cn);
@@ -152,10 +143,6 @@ namespace SystemDev_KY_22.ユーザーコントロール
             cmb_type.DataSource = type_dt;
             cmb_type.DisplayMember = "車種";
             cmb_type.ValueMember = "車種";
-
-
-
-
 
         }
 
@@ -178,265 +165,108 @@ namespace SystemDev_KY_22.ユーザーコントロール
 
         private void btn_itemsearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-              new OleDbCommand("SELECT 商品ID , 商品名 , 定価 , 車種 ," +
-               "メーカー , 仕入先ID  " +
-               "FROM 商品マスタ WHERE 商品名 = @商品名  ORDER BY 商品ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@商品名", txt_item.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+           dataserch("商品名", txt_item.Text, dataGridView1);
         }
 
         private void btn_pricesearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-            new OleDbCommand("SELECT 商品ID , 商品名 , 定価 , 車種 ," +
-             "メーカー , 仕入先ID  " +
-             "FROM 商品マスタ WHERE 定価 = @定価  ORDER BY 商品ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@定価", txt_price.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            dataserch("定価", txt_price.Text, dataGridView1);
         }
 
         private void btn_typesearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-            new OleDbCommand("SELECT 商品ID , 商品名 , 定価 , 車種 ," +
-             "メーカー , 仕入先ID  " +
-             "FROM 商品マスタ WHERE 車種 = @車種  ORDER BY 商品ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@車種", cmb_type.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            dataserch("車種", cmb_type.Text, dataGridView1);
         }
 
         private void btn_makersearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-            new OleDbCommand("SELECT 商品ID , 商品名 , 定価 , 車種 ," +
-             "メーカー , 仕入先ID  " +
-             "FROM 商品マスタ WHERE メーカー = @メーカー  ORDER BY 商品ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@メーカー", txt_maker.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            dataserch("メーカー", txt_maker.Text, dataGridView1);
         }
 
         private void btn_suppliersearch_Click(object sender, EventArgs e)
         {
+            dataserch("仕入先ID", txt_supplier.Text, dataGridView1);
+        }
+
+        void dataserch(string filter,string filterstr,DataGridView data)
+        {
             OleDbCommand cmd =
             new OleDbCommand("SELECT 商品ID , 商品名 , 定価 , 車種 ," +
              "メーカー , 仕入先ID  " +
-             "FROM 商品マスタ WHERE 仕入先ID = @仕入先ID  ORDER BY 商品ID");
+             "FROM 商品マスタ WHERE "+ filter +" = @"+filter+" ORDER BY 商品ID");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
             da.SelectCommand = cmd;
 
-            cmd.Parameters.AddWithValue("@仕入先ID", txt_supplier.Text);
+            cmd.Parameters.AddWithValue("@"+filter, filterstr);
 
 
             DataTable dt = new DataTable();
             da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            data.DataSource = dt;
+            data.AllowUserToAddRows = false;   //最下行を非表示
+            data.AutoResizeColumns();          //列の幅の自動調整
+        }
+
+        void dataserch2(string filter, string filterstr, DataGridView data)
+        {
+            OleDbCommand cmd =
+            new OleDbCommand("SELECT * FROM 商品詳細テーブル WHERE "+filter + "= @"+filter+"商品詳細ID");
+            cmd.Connection = cn;
+            OleDbDataAdapter da = new OleDbDataAdapter();
+            da.SelectCommand = cmd;
+
+            cmd.Parameters.AddWithValue("@" + filter, filterstr);
+
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            data.DataSource = dt;
+            data.AllowUserToAddRows = false;   //最下行を非表示
+            data.AutoResizeColumns();          //列の幅の自動調整
         }
 
         private void btn_itemIDsearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-           new OleDbCommand("SELECT 商品詳細ID , 走行距離 , 発売日 , オプション ," +
-            "商品ID , 色 ,モデル ,実版価格 ,車両状態  " +
-            "FROM 商品詳細テーブル WHERE 商品ID = @商品ID  ORDER BY 商品詳細ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@商品ID", txt_itemID.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            dataserch2("商品ID",txt_itemID.Text,dataGridView2);
         }
 
         private void btn_mileagesearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-          new OleDbCommand("SELECT 商品詳細ID , 走行距離 , 発売日 , オプション ," +
-           "商品ID , 色 ,モデル ,実版価格 ,車両状態  " +
-           "FROM 商品詳細テーブル WHERE 走行距離 = @走行距離  ORDER BY 商品詳細ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@走行距離", txt_mileage.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            dataserch2("走行距離", txt_mileage.Text, dataGridView2);
         }
 
         private void btn_releasesearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-     　　 new OleDbCommand("SELECT 商品詳細ID , 走行距離 , 発売日 , オプション ," +
-      　　 "商品ID , 色 ,モデル ,実版価格 ,車両状態  " +
-      　　 "FROM 商品詳細テーブル WHERE 発売日 = @発売日  ORDER BY 商品詳細ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@発売日", txt_release.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            dataserch2("発売日", txt_release.Text, dataGridView2);
         }
 
         private void btn_optionsearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-   　　　 new OleDbCommand("SELECT 商品詳細ID , 走行距離 , 発売日 , オプション ," +
-    　　　 "商品ID , 色 ,モデル ,実版価格 ,車両状態  " +
-    　　　 "FROM 商品詳細テーブル WHERE オプション = @オプション  ORDER BY 商品詳細ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@オプション", txt_option.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            dataserch2("オプション", txt_option.Text, dataGridView2);
         }
 
         private void btn_colorsearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-   　　　new OleDbCommand("SELECT 商品詳細ID , 走行距離 , 発売日 , オプション ," +
-    　　　"商品ID , 色 ,モデル ,実版価格 ,車両状態  " +
-   　　　 "FROM 商品詳細テーブル WHERE 色 = @色  ORDER BY 商品詳細ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@色", txt_color.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            dataserch2("色", txt_color.Text, dataGridView2);
         }
 
         private void btn_modelsearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
- 　　　　new OleDbCommand("SELECT 商品詳細ID , 走行距離 , 発売日 , オプション ," +
- 　　　　 　"商品ID , 色 ,モデル ,実版価格 ,車両状態  " +
- 　　　　　 "FROM 商品詳細テーブル WHERE モデル = @モデル  ORDER BY 商品詳細ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@モデル", txt_model.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            dataserch2("モデル", txt_model.Text, dataGridView2);
         }
 
         private void btn_actualsearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-　　　　　new OleDbCommand("SELECT 商品詳細ID , 走行距離 , 発売日 , オプション ," +
- 　　　　　"商品ID , 色 ,モデル ,実版価格 ,車両状態  " +
- 　　　　　"FROM 商品詳細テーブル WHERE 実売価格 = @実売価格  ORDER BY 商品詳細ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@実売価格", txt_actual.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            dataserch2("実売価格", txt_actual.Text, dataGridView2);
         }
 
         private void btn_vehiclesearch_Click(object sender, EventArgs e)
         {
-            OleDbCommand cmd =
-　　　　　new OleDbCommand("SELECT 商品詳細ID , 走行距離 , 発売日 , オプション ," +
- 　　　　　　"商品ID , 色 ,モデル ,実版価格 ,車両状態  " +
- 　　　　　　"FROM 商品詳細テーブル WHERE 車両状況 = @車両状況  ORDER BY 商品詳細ID");
-            cmd.Connection = cn;
-            OleDbDataAdapter da = new OleDbDataAdapter();
-            da.SelectCommand = cmd;
-
-            cmd.Parameters.AddWithValue("@車両状況", txt_vehicle.Text);
-
-
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
-            dataGridView1.AutoResizeColumns();          //列の幅の自動調整
+            dataserch2("車両状況", txt_vehicle.Text, dataGridView2);
         }
 
-        private void Font()
+        private new void Font()
         {
             this.dataGridView1.DefaultCellStyle.Font = new Font("メイリオ", 9);
             this.dataGridView2.DefaultCellStyle.Font = new Font("メイリオ", 9);
@@ -449,6 +279,8 @@ namespace SystemDev_KY_22.ユーザーコントロール
             txt_maker.Clear();
             txt_supplier.Clear();
             cmb_type.SelectedIndex = -1;
+
+            dataload();
         }
 
         private void btn_clear2_Click(object sender, EventArgs e)
@@ -461,10 +293,51 @@ namespace SystemDev_KY_22.ユーザーコントロール
             txt_model.Clear();
             txt_actual.Clear();
             txt_vehicle.Clear();
+            dataload2();
+        }
 
-                
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void lbl_mileage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_release_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_option_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_color_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_model_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_actual_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_itemID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_vehicle_Click(object sender, EventArgs e)
+        {
 
         }
     }

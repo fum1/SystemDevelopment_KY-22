@@ -52,8 +52,6 @@ namespace SystemDev_KY_22.ユーザーコントロール
             cmb_SupplierID.DataSource = dt1;
             cmb_SupplierID.DisplayMember = "仕入先ID";
             cmb_SupplierID.ValueMember = "仕入先ID";
-
-
         }
 
 

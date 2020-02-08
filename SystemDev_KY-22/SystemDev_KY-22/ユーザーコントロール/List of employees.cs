@@ -35,11 +35,6 @@ namespace SystemDev_KY_22.ユーザーコントロール
         }
         private void dataload()   //カスタム関数
         {
-
-            //OleDbDataAdapter da =
-            //    new OleDbDataAdapter("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-            //    "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
-            //    "FROM 社員マスタ ORDER BY 社員ID", cn);
             OleDbDataAdapter da =
                 new OleDbDataAdapter("SELECT * FROM 社員マスタ ORDER BY 社員ID", cn);
             DataTable dt = new DataTable();
@@ -50,11 +45,6 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.AllowUserToAddRows = false;    //最下行を非表示
             dataGridView1.AutoResizeColumns();           //列の幅の自動調整
 
-
-
-
-
-
             OleDbDataAdapter position_da =
                 new OleDbDataAdapter("SELECT 役職 FROM 役職テーブル", cn);
             DataTable position_dt = new DataTable();
@@ -64,7 +54,6 @@ namespace SystemDev_KY_22.ユーザーコントロール
             cmb_position.DataSource = position_dt;
             cmb_position.DisplayMember = "役職";
             cmb_position.ValueMember = "役職";
-
 
             OleDbDataAdapter dep_da =
                 new OleDbDataAdapter("SELECT 部署名 FROM 部署テーブル", cn);
@@ -81,7 +70,6 @@ namespace SystemDev_KY_22.ユーザーコントロール
             cmb_clerk.DataSource = clk_dt;
             cmb_clerk.DisplayMember = "店舗ID";
             cmb_clerk.ValueMember = "店舗ID";
-
         }
 
 
@@ -90,7 +78,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         {
             OleDbCommand cmd =
                 new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
                 "FROM 社員マスタ WHERE 店舗ID = @店舗ID ORDER BY 役職", cn);    
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -108,7 +96,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         {
             OleDbCommand cmd =
                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
                 "FROM 社員マスタ WHERE 役職 = @役職  ORDER BY 社員ID");  
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -140,7 +128,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         {
             OleDbCommand cmd =
                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
                 "FROM 社員マスタ WHERE 店舗ID = @店舗ID  ORDER BY 社員ID");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -160,7 +148,7 @@ namespace SystemDev_KY_22.ユーザーコントロール
         {
             OleDbCommand cmd =
                new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード , 生年月日 " +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
                 "FROM 社員マスタ WHERE 部署 = @部署  ORDER BY 社員ID");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -174,11 +162,6 @@ namespace SystemDev_KY_22.ユーザーコントロール
             dataGridView1.DataSource = dt;
             dataGridView1.AllowUserToAddRows = false;   //最下行を非表示
             dataGridView1.AutoResizeColumns();          //列の幅の自動調整
-        }
-
-        private void cmb_department_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

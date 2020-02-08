@@ -66,12 +66,6 @@
     </Compile>
     <Compile Include="Class\animator.cs" />
     <Compile Include="Class\PanelControl.cs" />
-    <Compile Include="ItemRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ItemRegister.Designer.cs">
-      <DependentUpon>ItemRegister.cs</DependentUpon>
-    </Compile>
     <Compile Include="ユーザーコントロール\CarOrderHistory.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,12 +89,6 @@
     </Compile>
     <Compile Include="ユーザーコントロール\LoaUnloading.Designer.cs">
       <DependentUpon>LoaUnloading.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PassWordChange.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PassWordChange.Designer.cs">
-      <DependentUpon>PassWordChange.cs</DependentUpon>
     </Compile>
     <Compile Include="ユーザーコントロール\CarOrder.cs">
       <SubType>UserControl</SubType>
@@ -170,12 +158,6 @@
     <Compile Include="ユーザーコントロール\OrderHistory.Designer.cs">
       <DependentUpon>OrderHistory.cs</DependentUpon>
     </Compile>
-    <Compile Include="ユーザーコントロール\shipping.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ユーザーコントロール\shipping.Designer.cs">
-      <DependentUpon>shipping.cs</DependentUpon>
-    </Compile>
     <Compile Include="ユーザーコントロール\StockList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -200,9 +182,6 @@
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ItemRegister.resx">
-      <DependentUpon>ItemRegister.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\CarOrderHistory.resx">
       <DependentUpon>CarOrderHistory.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,9 +193,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\LoaUnloading.resx">
       <DependentUpon>LoaUnloading.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PassWordChange.resx">
-      <DependentUpon>PassWordChange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\CarOrder.resx">
       <DependentUpon>CarOrder.cs</DependentUpon>
@@ -260,9 +236,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\OrderHistory.resx">
       <DependentUpon>OrderHistory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ユーザーコントロール\shipping.resx">
-      <DependentUpon>shipping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ユーザーコントロール\StockList.resx">
       <DependentUpon>StockList.cs</DependentUpon>

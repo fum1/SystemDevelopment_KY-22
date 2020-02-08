@@ -143,9 +143,9 @@
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBox1.Location = new System.Drawing.Point(859, 69);
+            this.checkBox1.Location = new System.Drawing.Point(891, 78);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(162, 49);
+            this.checkBox1.Size = new System.Drawing.Size(130, 40);
             this.checkBox1.TabIndex = 31;
             this.checkBox1.Text = "在庫なし";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -167,7 +167,7 @@
             "99999999"});
             this.comboBox5.Location = new System.Drawing.Point(769, 76);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 42);
+            this.comboBox5.Size = new System.Drawing.Size(121, 35);
             this.comboBox5.TabIndex = 28;
             // 
             // comboB_CarName
@@ -176,7 +176,7 @@
             this.comboB_CarName.FormattingEnabled = true;
             this.comboB_CarName.Location = new System.Drawing.Point(177, 31);
             this.comboB_CarName.Name = "comboB_CarName";
-            this.comboB_CarName.Size = new System.Drawing.Size(121, 42);
+            this.comboB_CarName.Size = new System.Drawing.Size(160, 35);
             this.comboB_CarName.TabIndex = 29;
             // 
             // label7
@@ -185,7 +185,7 @@
             this.label7.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label7.Location = new System.Drawing.Point(703, 81);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 30);
+            this.label7.Size = new System.Drawing.Size(34, 24);
             this.label7.TabIndex = 27;
             this.label7.Text = "～";
             // 
@@ -195,7 +195,7 @@
             this.label8.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label8.Location = new System.Drawing.Point(68, 29);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 45);
+            this.label8.Size = new System.Drawing.Size(63, 36);
             this.label8.TabIndex = 30;
             this.label8.Text = "車名";
             // 
@@ -215,7 +215,7 @@
             "2000001"});
             this.comboBox4.Location = new System.Drawing.Point(551, 75);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 42);
+            this.comboBox4.Size = new System.Drawing.Size(121, 35);
             this.comboBox4.TabIndex = 26;
             // 
             // label6
@@ -224,7 +224,7 @@
             this.label6.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label6.Location = new System.Drawing.Point(417, 77);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 45);
+            this.label6.Size = new System.Drawing.Size(111, 36);
             this.label6.TabIndex = 25;
             this.label6.Text = "走行距離";
             // 
@@ -264,7 +264,7 @@
             "99999999"});
             this.comboBox1.Location = new System.Drawing.Point(769, 29);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 42);
+            this.comboBox1.Size = new System.Drawing.Size(121, 35);
             this.comboBox1.TabIndex = 24;
             // 
             // label3
@@ -273,7 +273,7 @@
             this.label3.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label3.Location = new System.Drawing.Point(34, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 45);
+            this.label3.Size = new System.Drawing.Size(111, 36);
             this.label3.TabIndex = 13;
             this.label3.Text = "メーカー";
             // 
@@ -283,7 +283,7 @@
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label1.Location = new System.Drawing.Point(703, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 30);
+            this.label1.Size = new System.Drawing.Size(34, 24);
             this.label1.TabIndex = 20;
             this.label1.Text = "～";
             // 
@@ -309,7 +309,7 @@
             "500001"});
             this.comboBox3.Location = new System.Drawing.Point(551, 27);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 42);
+            this.comboBox3.Size = new System.Drawing.Size(121, 35);
             this.comboBox3.TabIndex = 23;
             // 
             // comboB_Maker
@@ -318,7 +318,7 @@
             this.comboB_Maker.FormattingEnabled = true;
             this.comboB_Maker.Location = new System.Drawing.Point(177, 73);
             this.comboB_Maker.Name = "comboB_Maker";
-            this.comboB_Maker.Size = new System.Drawing.Size(121, 42);
+            this.comboB_Maker.Size = new System.Drawing.Size(160, 35);
             this.comboB_Maker.TabIndex = 22;
             // 
             // label5
@@ -327,7 +327,7 @@
             this.label5.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label5.Location = new System.Drawing.Point(438, 29);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 45);
+            this.label5.Size = new System.Drawing.Size(63, 36);
             this.label5.TabIndex = 15;
             this.label5.Text = "価格";
             // 
@@ -371,7 +371,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(109, 202);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 15);
+            this.label4.Size = new System.Drawing.Size(0, 12);
             this.label4.TabIndex = 14;
             // 
             // StockList

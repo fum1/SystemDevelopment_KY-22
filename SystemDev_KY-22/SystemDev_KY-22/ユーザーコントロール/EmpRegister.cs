@@ -46,24 +46,13 @@ namespace SystemDev_KY_22
             }
         }
 
-        private void btn_login_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void txt_password_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_register_Click(object sender, EventArgs e)
         {
             // ID、Pass、Name、PostNumber、AddressをINSERT  
             OleDbCommand cmd =
-                new OleDbCommand("INSERT INTO 社員マスタ (社員ID,氏名, 住所, 郵便番号, 電話番号,生年月日,性別,部署,役職,店舗ID,パスワード) " +
-                "VALUES (@社員ID, @社員名, @住所, @郵便番号, @電話番号,@生年月日,@性別,@部署,@役職,@店舗ID,@パスワード)", cn);
+                new OleDbCommand("INSERT INTO 社員マスタ (社員ID,氏名, 住所, 郵便番号, 電話番号,性別,部署,役職,店舗ID,パスワード) " +
+                "VALUES (@社員ID, @社員名, @住所, @郵便番号, @電話番号,@性別,@部署,@役職,@店舗ID,@パスワード)", cn);
             //DBの列名に、PassWord (Microsoft Jet 4.0 の予約語)は使用できない
             //@パラメータが出てくる順番に設定する
             cmd.Parameters.AddWithValue("@社員ID", txt_idhead.Text + txt_id.Text);
@@ -71,7 +60,6 @@ namespace SystemDev_KY_22
             cmd.Parameters.AddWithValue("@住所", txt_address.Text);             //Passのデータ
             cmd.Parameters.AddWithValue("@郵便番号", txt_postal.Text);             //Nameのデータ
             cmd.Parameters.AddWithValue("@電話番号", txt_tel.Text);  //PostNumberのデータ
-            //cmd.Parameters.AddWithValue("@生年月日", txt_birthday.Text); 
             cmd.Parameters.AddWithValue("@性別", cmb_sex.Text);      //Addressのデータ
             cmd.Parameters.AddWithValue("@部署", cmb_department.Text);
             cmd.Parameters.AddWithValue("@役職", cmb_position.Text);
@@ -94,10 +82,6 @@ namespace SystemDev_KY_22
             MessageBox.Show("登録しました", "管理者");
         }
 
-        private void txt_id1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_search_Click(object sender, EventArgs e)
         {
@@ -106,7 +90,7 @@ namespace SystemDev_KY_22
 
             OleDbCommand cmd =
                 new OleDbCommand("SELECT 社員ID , 氏名 , 住所 , 郵便番号 ," +
-                "電話番号 , 生年月日 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
+                "電話番号 , 性別 , 部署 , 役職 , 店舗ID , パスワード " +
                 "FROM 社員マスタ WHERE 社員ID = @社員ID ORDER BY 社員ID");
             cmd.Connection = cn;
             OleDbDataAdapter da = new OleDbDataAdapter();
@@ -151,11 +135,7 @@ namespace SystemDev_KY_22
             string selectedItem = cmb_sex1.SelectedItem.ToString();
         }
 
-        private void btn_update_Click(object sender, EventArgs e)
-        {
-
-        }
-
+ 
 
         private void dataload()   //カスタム関数
         {
@@ -226,15 +206,6 @@ namespace SystemDev_KY_22
             string selectedItem = cmb_sex.SelectedItem.ToString();
         }
 
-        private void cmb_department_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmb_position_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -307,11 +278,6 @@ namespace SystemDev_KY_22
             }
         }
 
-        private void txt_id_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer2_Tick(object sender, EventArgs e)
         {
             if (cmb_department1.Text == "営業")
@@ -349,11 +315,6 @@ namespace SystemDev_KY_22
             }
         }
 
-        private void txt_idhead_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void checkB_Delete_CheckedChanged(object sender, EventArgs e)
         {
             if (checkB_Delete.Checked)
@@ -364,12 +325,6 @@ namespace SystemDev_KY_22
                     checkB_Delete.Checked = false;
                 }
             }
-
-        }
-
-        private void cmb_department1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_Updates_Click(object sender, EventArgs e)

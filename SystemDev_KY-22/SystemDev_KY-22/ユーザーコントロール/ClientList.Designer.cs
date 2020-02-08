@@ -120,6 +120,7 @@
             this.btn_clear.TabIndex = 16;
             this.btn_clear.Text = "クリア";
             this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click_1);
             // 
             // txt_id
             // 
