@@ -115,10 +115,10 @@
             this.btn_MakerSeach.BackColor = System.Drawing.Color.White;
             this.btn_MakerSeach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MakerSeach.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_MakerSeach.Location = new System.Drawing.Point(343, 73);
+            this.btn_MakerSeach.Location = new System.Drawing.Point(307, 76);
             this.btn_MakerSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_MakerSeach.Name = "btn_MakerSeach";
-            this.btn_MakerSeach.Size = new System.Drawing.Size(45, 37);
+            this.btn_MakerSeach.Size = new System.Drawing.Size(45, 45);
             this.btn_MakerSeach.TabIndex = 33;
             this.btn_MakerSeach.Text = "🔍";
             this.btn_MakerSeach.UseVisualStyleBackColor = false;
@@ -129,10 +129,10 @@
             this.btn_CarNameSeach.BackColor = System.Drawing.Color.White;
             this.btn_CarNameSeach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CarNameSeach.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn_CarNameSeach.Location = new System.Drawing.Point(343, 29);
+            this.btn_CarNameSeach.Location = new System.Drawing.Point(307, 29);
             this.btn_CarNameSeach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_CarNameSeach.Name = "btn_CarNameSeach";
-            this.btn_CarNameSeach.Size = new System.Drawing.Size(45, 37);
+            this.btn_CarNameSeach.Size = new System.Drawing.Size(45, 45);
             this.btn_CarNameSeach.TabIndex = 32;
             this.btn_CarNameSeach.Text = "🔍";
             this.btn_CarNameSeach.UseVisualStyleBackColor = false;
@@ -156,14 +156,14 @@
             this.comboBox5.Font = new System.Drawing.Font("メイリオ", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
-            "10000",
-            "20000",
-            "30000",
-            "40000",
-            "50000",
             "100000",
-            "150000",
             "200000",
+            "300000",
+            "400000",
+            "500000",
+            "1000000",
+            "1500000",
+            "2000000",
             "99999999"});
             this.comboBox5.Location = new System.Drawing.Point(769, 76);
             this.comboBox5.Name = "comboBox5";
@@ -205,14 +205,14 @@
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "0",
-            "10001",
-            "20001",
-            "30001",
-            "40001",
-            "50001",
             "100001",
-            "150001",
-            "200001"});
+            "200001",
+            "300001",
+            "400001",
+            "500001",
+            "1000001",
+            "1500001",
+            "2000001"});
             this.comboBox4.Location = new System.Drawing.Point(551, 75);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 35);
